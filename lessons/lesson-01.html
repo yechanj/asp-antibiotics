@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>1강 · 항생제 전체 지도와 β-lactam의 기본 구조</title>
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+</head>
+<body>
+  <!-- 모바일 상단바 -->
+  <div class="topbar">
+    <button class="hamburger" aria-label="목차 열기" aria-expanded="false"><span></span></button>
+    <div class="topbar__title">1강 · β-lactam 기본 구조</div>
+  </div>
+  <div class="scrim" aria-hidden="true"></div>
+
+  <div class="app">
+    <!-- 사이드바 -->
+    <aside class="sidebar" aria-label="강의 목차">
+      <div class="sidebar__brand">
+        <div class="sidebar__logo">ASP</div>
+        <div class="sidebar__title">항생제 학습
+          <small>1강 · β-lactam</small>
+        </div>
+      </div>
+      <nav>
+        <ul class="toc">
+          <li><a href="#map"><span class="num">1</span> Antibiotic Map</a></li>
+          <li><a href="#mechanism"><span class="num">2</span> β-lactam 작용기전</a></li>
+          <li><a href="#pkpd"><span class="num">3</span> PK/PD</a></li>
+          <li><a href="#spectrum"><span class="num">4</span> Spectrum 보는 법</a></li>
+          <li><a href="#penicillins"><span class="num">5</span> Penicillins</a></li>
+          <li><a href="#cephalosporins"><span class="num">6</span> Cephalosporins</a></li>
+          <li><a href="#carbapenems"><span class="num">7</span> Carbapenems</a></li>
+          <li><a href="#table"><span class="num">8</span> Spectrum 대형표</a></li>
+          <li><a href="#asp"><span class="num">9</span> 사각지대 & ASP Case</a></li>
+          <li><a href="#quiz"><span class="num">10</span> 정리 & Quiz</a></li>
+        </ul>
+      </nav>
+      <a class="sidebar__back" href="../index.html">← 강의 목록으로</a>
+    </aside>
+
+    <!-- 본문 -->
+    <div class="content">
+      <div class="wrap">
+
+        <header class="lesson-hero">
+          <div class="kicker">ASP 항생제 학습 · 1강</div>
+          <h1>항생제 전체 지도와 β-lactam의 기본 구조</h1>
+          <p>개별 약물을 외우기 전에 — 계열 · spectrum · 균 · 임상 · ASP 결정의 흐름을 먼저 잡습니다.</p>
+        </header>
+
+        <!-- ================= SECTION 1 ================= -->
+        <section id="map" class="section">
+          <h2><span class="sec-no">01</span> 항생제의 전체 지도</h2>
+
+          <div class="card card--key">
+            <div class="card__label"><span class="dot"></span>KEY POINT</div>
+            <p>항생제를 개별 약물부터 외우기 시작하면 약물이 너무 많아 금방 혼란스러워진다.
+              먼저 <b>계열 단위로 분류한 뒤</b>, 각 계열의 대표 spectrum과 특징을 연결하는 방식으로 공부한다.</p>
+          </div>
+
+          <div class="figure">
+            <div class="figure__title">도식 1 · 항생제 전체 계통도</div>
+            <div class="tree">
+              <div class="tree__root">Antibiotics</div>
+              <div class="tree__grid">
+                <div class="tree__node is-hero">
+                  <h5>β-lactam</h5>
+                  <div class="tree__pill-row">
+                    <span class="tree__pill">Penicillins</span>
+                    <span class="tree__pill">Cephalosporins</span>
+                    <span class="tree__pill">Carbapenems</span>
+                    <span class="tree__pill">Monobactams</span>
+                  </div>
+                  <div class="note">병원 감염 치료와 ASP에서 가장 중요한 항생제군 중 하나</div>
+                </div>
+                <div class="tree__node"><h5>Glycopeptides</h5><ul><li>Vancomycin</li><li>Teicoplanin</li></ul></div>
+                <div class="tree__node"><h5>Fluoroquinolones</h5><ul><li>Ciprofloxacin</li><li>Levofloxacin</li><li>Moxifloxacin</li></ul></div>
+                <div class="tree__node"><h5>Aminoglycosides</h5><ul><li>Gentamicin</li><li>Amikacin</li><li>Tobramycin</li></ul></div>
+                <div class="tree__node"><h5>Macrolides</h5><ul><li>Azithromycin</li><li>Clarithromycin</li></ul></div>
+                <div class="tree__node"><h5>Tetracyclines</h5><ul><li>Doxycycline</li><li>Minocycline</li></ul></div>
+                <div class="tree__node"><h5>기타 주요 항생제</h5><ul><li>Linezolid · Daptomycin</li><li>TMP/SMX · Metronidazole</li><li>Clindamycin · Colistin</li></ul></div>
+              </div>
+            </div>
+            <div class="figure__cap">β-lactam 영역을 가장 크게 — 이 강의의 중심입니다.</div>
+          </div>
+        </section>
+
+        <!-- ================= SECTION 2 ================= -->
+        <section id="mechanism" class="section">
+          <h2><span class="sec-no">02</span> β-lactam이란?</h2>
+
+          <p>β-lactam 계열은 세균의 <b>세포벽 합성을 억제</b>한다. 세균 세포벽은 peptidoglycan으로
+            이루어져 있으며, β-lactam은 <b>Penicillin-Binding Protein(PBP)</b>에 결합하여
+            peptidoglycan의 cross-linking을 방해한다. 결과적으로 세포벽이 불안정해지고 세균이 사멸한다.</p>
+
+          <div class="legend">
+            <span class="chip chip--gn"><span class="sw"></span>Cell wall synthesis inhibition</span>
+            <span class="chip chip--gp"><span class="sw"></span>대부분 Bactericidal</span>
+            <span class="chip chip--pseudo"><span class="sw"></span>Time-dependent killing</span>
+          </div>
+
+          <div class="figure">
+            <div class="figure__title">도식 2 · β-lactam 작용기전</div>
+            <div class="twopanel">
+              <div class="panel panel--normal">
+                <h5>정상적인 세균 세포벽</h5>
+                <ol>
+                  <li>peptidoglycan chain</li>
+                  <li>PBP</li>
+                  <li>cross-linking</li>
+                  <li>안정된 cell wall</li>
+                </ol>
+              </div>
+              <div class="panel panel--drug">
+                <h5>β-lactam 투여 후</h5>
+                <ol>
+                  <li>β-lactam이 PBP에 결합</li>
+                  <li>cross-linking 억제</li>
+                  <li>cell wall weakening</li>
+                  <li>bacterial lysis</li>
+                </ol>
+              </div>
+            </div>
+            <div class="mech-flow">β-lactam → PBP inhibition → impaired cell wall synthesis → bacterial death</div>
+          </div>
+        </section>
+
+        <!-- ================= SECTION 3 ================= -->
+        <section id="pkpd" class="section">
+          <h2><span class="sec-no">03</span> β-lactam의 PK/PD</h2>
+
+          <h3>Time-dependent killing</h3>
+          <p>β-lactam은 일반적으로 약물 농도가 아주 높게 올라가는 것보다,
+            <b>free drug concentration이 MIC보다 높은 상태가 얼마나 오래 유지되는가</b>가 중요하다.
+            이를 <b>fT &gt; MIC</b>로 표현한다.</p>
+
+          <div class="oneline">β-lactam은 "얼마나 높이 올라갔는가?"보다 "MIC 위에 얼마나 오래 머물렀는가?"가 중요하다.</div>
+
+          <div class="figure">
+            <div class="figure__title">도식 3 · Time-dependent killing 그래프</div>
+            <svg viewBox="0 0 640 320" width="100%" role="img" aria-label="Standard vs Extended infusion 농도곡선과 MIC">
+              <!-- axes -->
+              <line x1="60" y1="270" x2="610" y2="270" stroke="#c7d2df" stroke-width="2"/>
+              <line x1="60" y1="30" x2="60" y2="270" stroke="#c7d2df" stroke-width="2"/>
+              <text x="330" y="305" text-anchor="middle" fill="#7b8aa0" font-size="14">Time</text>
+              <text x="20" y="150" text-anchor="middle" fill="#7b8aa0" font-size="14" transform="rotate(-90 20 150)">Drug concentration</text>
+              <!-- MIC line -->
+              <line x1="60" y1="185" x2="610" y2="185" stroke="#e5484d" stroke-width="2" stroke-dasharray="6 5"/>
+              <text x="600" y="178" text-anchor="end" fill="#e5484d" font-size="13" font-weight="700">MIC</text>
+              <!-- fT>MIC shaded region for extended -->
+              <path d="M110,185 C170,60 260,70 360,120 C430,152 470,175 500,185 Z" fill="#f08a24" opacity="0.16"/>
+              <!-- Standard infusion: rise fast, fall fast -->
+              <path d="M60,270 C90,90 110,70 130,70 C170,72 210,200 250,255 C280,268 320,270 360,270"
+                    fill="none" stroke="#2f6fed" stroke-width="3"/>
+              <!-- Extended infusion: gentle rise, stays above MIC longer -->
+              <path d="M60,270 C110,240 130,190 170,150 C230,95 300,110 360,120 C430,132 470,170 500,200 C530,225 560,255 590,268"
+                    fill="none" stroke="#12a594" stroke-width="3"/>
+              <!-- legend -->
+              <rect x="80" y="40" width="16" height="4" fill="#2f6fed"/><text x="102" y="45" font-size="13" fill="#1f2b3a">Standard infusion</text>
+              <rect x="230" y="40" width="16" height="4" fill="#12a594"/><text x="252" y="45" font-size="13" fill="#1f2b3a">Extended infusion</text>
+              <text x="305" y="100" font-size="12" fill="#c0700f" font-weight="700">fT &gt; MIC 확보</text>
+            </svg>
+            <div class="figure__cap">MIC 위에 머무는 구간(주황 음영)이 핵심. Standard는 빠르게 오르내리고, Extended는 완만하지만 오래 유지.</div>
+          </div>
+
+          <div class="card card--asp">
+            <div class="card__label"><span class="dot"></span>ASP POINT</div>
+            <p>Extended infusion은 일부 상황에서 fT &gt; MIC 확보에 유리할 수 있다. 대표 연결 약물:</p>
+            <div class="legend">
+              <span class="chip chip--pseudo"><span class="sw"></span>Piperacillin/Tazobactam</span>
+              <span class="chip chip--pseudo"><span class="sw"></span>Cefepime</span>
+              <span class="chip chip--pseudo"><span class="sw"></span>Meropenem</span>
+            </div>
+            <p style="margin-top:8px;color:var(--ink-faint);font-size:13.5px;">지금 단계에서는 정확한 목표 비율까지 암기할 필요는 없다.</p>
+          </div>
+        </section>
+
+        <!-- ================= SECTION 4 ================= -->
+        <section id="spectrum" class="section">
+          <h2><span class="sec-no">04</span> Spectrum을 보는 방법</h2>
+          <p>모든 세균 이름을 하나씩 외우는 것은 비효율적이다. 처음에는 다음 <b>6개 그룹</b>으로 spectrum을 생각한다.</p>
+
+          <div class="figure">
+            <div class="figure__title">도식 4 · Spectrum 6분할 지도</div>
+            <div class="spec6">
+              <div class="spec6__card is-gp"><h5><span class="tag" style="background:var(--gp)"></span>1. Gram-positive</h5><ul><li>Streptococcus</li><li>MSSA / MRSA</li><li>Enterococcus</li></ul></div>
+              <div class="spec6__card is-gn"><h5><span class="tag" style="background:var(--gn)"></span>2. Enterobacterales</h5><ul><li>E. coli</li><li>Klebsiella</li><li>Proteus · Enterobacter</li></ul></div>
+              <div class="spec6__card is-pseudo"><h5><span class="tag" style="background:var(--pseudo)"></span>3. Pseudomonas</h5><ul><li>별도 카테고리</li><li>coverage 여부가 항생제 선택에서 매우 중요</li></ul></div>
+              <div class="spec6__card is-anaerobe"><h5><span class="tag" style="background:var(--anaerobe)"></span>4. Anaerobes</h5><ul><li>Bacteroides spp.</li></ul></div>
+              <div class="spec6__card is-atypical"><h5><span class="tag" style="background:#6b7280"></span>5. Atypical bacteria</h5><ul><li>Mycoplasma</li><li>Chlamydophila</li><li>Legionella</li></ul></div>
+              <div class="spec6__card is-resist"><h5><span class="tag" style="background:var(--resist)"></span>6. Resistant organisms</h5><ul><li>MRSA · VRE</li><li>ESBL-producing</li><li>CRE</li></ul></div>
+            </div>
+          </div>
+
+          <div class="card card--caution">
+            <div class="card__label"><span class="dot"></span>CAUTION · β-lactam의 중요한 한계</div>
+            <p>β-lactam은 기본적으로 <b>atypical bacteria에 효과가 없다.</b>
+              특히 <b>Mycoplasma는 세포벽 자체가 없기 때문에</b> β-lactam의 표적(세포벽/PBP)이 존재하지 않는다.</p>
+          </div>
+        </section>
+
+        <!-- ================= SECTION 5 : Penicillins ================= -->
+        <section id="penicillins" class="section">
+          <h2><span class="sec-no">05</span> Penicillins</h2>
+
+          <h3>5-1. Penicillin G</h3>
+          <p>초기 penicillin 계열의 대표적인 <b>좁은 spectrum</b> 항생제.</p>
+          <ul class="clean">
+            <li>주요 연상균: Streptococcus, Treponema pallidum</li>
+            <li>대표 임상 연결: Syphilis, 일부 streptococcal infection</li>
+          </ul>
+          <div class="oneline">Penicillin G = 좁지만 특정 균에서는 매우 강력한 고전적 β-lactam</div>
+
+          <h3>5-2. Ampicillin / Amoxicillin</h3>
+          <p>Spectrum이 확장된 <b>aminopenicillin</b>. 반드시 기억할 균:
+            <b>Enterococcus</b>(특히 <i>Enterococcus faecalis</i>)와 <b>Listeria monocytogenes</b>.</p>
+
+          <div class="card card--case">
+            <div class="card__label"><span class="dot"></span>CLINICAL CASE · 고령/면역저하 meningitis</div>
+            <p>일반적인 세균성 meningitis에서는 ceftriaxone을 사용할 수 있지만, <b>Listeria 가능성</b>이 있는
+              환자에서는 <b>ampicillin 추가</b>를 고려한다.</p>
+            <p style="margin-bottom:0;"><b>이유:</b> Cephalosporin은 Listeria를 충분히 커버하지 못한다.</p>
+          </div>
+          <div class="oneline">Ampicillin = Enterococcus + Listeria</div>
+
+          <h3>5-3. Ampicillin/Sulbactam</h3>
+          <p>Ampicillin에 β-lactamase inhibitor인 sulbactam을 결합한 제제.</p>
+
+          <div class="figure">
+            <div class="figure__title">도식 5 · β-lactamase inhibitor 개념</div>
+            <div class="twopanel">
+              <div class="panel panel--drug">
+                <h5>Ampicillin 단독</h5>
+                <ol><li>세균의 β-lactamase가 β-lactam을 분해</li><li>→ 항생제 효과 감소</li></ol>
+              </div>
+              <div class="panel panel--normal">
+                <h5>Ampicillin + Sulbactam</h5>
+                <ol><li>Sulbactam이 일부 β-lactamase를 억제</li><li>→ ampicillin 보호</li></ol>
+              </div>
+            </div>
+            <div class="legend" style="margin-top:14px;">
+              <span class="chip chip--gp"><span class="sw"></span>일부 Gram-positive</span>
+              <span class="chip chip--gn"><span class="sw"></span>일부 Gram-negative</span>
+              <span class="chip chip--anaerobe"><span class="sw"></span>Anaerobes</span>
+              <span class="chip chip--resist"><span class="sw"></span>Pseudomonas ✕</span>
+            </div>
+          </div>
+          <div class="oneline">Ampicillin/sulbactam = GP + GN + anaerobe, 그러나 Pseudomonas는 안 된다.</div>
+
+          <h3>5-4. Piperacillin/Tazobactam</h3>
+          <p>ASP에서 매우 중요한 광범위 β-lactam. 약어: <b>Pip/Tazo</b>, <b>PTZ</b>.</p>
+
+          <div class="figure">
+            <div class="figure__title">도식 6 · Pip/Tazo spectrum</div>
+            <div class="radial">
+              <div class="center">Piperacillin / Tazobactam</div>
+              <div class="item yes"><span class="m">✓</span> Gram-positive 일부</div>
+              <div class="item yes"><span class="m">✓</span> Enterobacterales</div>
+              <div class="item yes"><span class="m">✓</span> Pseudomonas</div>
+              <div class="item yes"><span class="m">✓</span> Anaerobes</div>
+              <div class="item no"><span class="m">✕</span> MRSA</div>
+            </div>
+          </div>
+
+          <div class="card card--asp">
+            <div class="card__label"><span class="dot"></span>ASP POINT · 임상 연결</div>
+            <p>중증 감염에서 empiric therapy로 자주 접한다. 예: <b>Vancomycin + Piperacillin/Tazobactam</b></p>
+            <ul class="clean" style="margin-bottom:0;">
+              <li><b>Vancomycin</b> → MRSA coverage</li>
+              <li><b>Pip/Tazo</b> → Gram-negative + Pseudomonas + anaerobe coverage</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- ================= SECTION 6 : Cephalosporins ================= -->
+        <section id="cephalosporins" class="section">
+          <h2><span class="sec-no">06</span> Cephalosporins</h2>
+          <blockquote>세대가 올라가면서 대체로 Gram-negative coverage가 증가한다. 단, 완벽하게 적용되는 법칙은 아니다.</blockquote>
+
+          <div class="figure" data-genslider>
+            <div class="figure__title">도식 7 · Cephalosporin 세대 슬라이더 (움직여 보세요)</div>
+            <div class="gen-slider">
+              <div class="gen-slider__track">
+                <input type="range" min="0" max="3" step="1" value="0" aria-label="세대 선택" />
+                <div class="gen-steps">
+                  <span class="on">1세대</span><span>2세대</span><span>3세대</span><span>4세대</span>
+                </div>
+              </div>
+              <div class="gen-card"></div>
+            </div>
+            <div class="figure__cap">세대가 올라간다고 무조건 "더 좋은 항생제"가 되는 것은 아니다. 중요한 것은 적절한 spectrum이다.</div>
+          </div>
+
+          <h3>6-1. Cefazolin (1세대)</h3>
+          <p>가장 중요한 연결: <b>MSSA</b>. Streptococcus·일부 Enterobacterales에도 작용.
+            약점: MRSA ✕ / Enterococcus ✕ / Pseudomonas ✕. 주요 사용: MSSA infection, surgical prophylaxis.</p>
+          <div class="oneline">Cefazolin = MSSA</div>
+
+          <h3>6-2. 2세대 (Cefuroxime · Cefoxitin)</h3>
+          <p>지금 단계에서는 세부 내용을 깊게 외울 필요는 없다.
+            <b>Cefoxitin</b>은 일부 anaerobic coverage가 있어 복강 내 감염이나 수술 예방 등의 맥락에서 접할 수 있다.</p>
+
+          <h3>6-3. Ceftriaxone (3세대)</h3>
+          <p>병원에서 매우 많이 사용. 대표 임상 연결: Community-acquired pneumonia, Pyelonephritis, Bacteremia, Meningitis.</p>
+          <div class="card card--caution">
+            <div class="card__label"><span class="dot"></span>CAUTION · 흔한 착각</div>
+            <p>"Ceftriaxone은 광범위 항생제니까 대부분 잡는다." → <b>틀림.</b> 특히 다음 세 가지를 기억한다.</p>
+            <div class="legend" style="margin-bottom:0;">
+              <span class="chip chip--resist"><span class="sw"></span>MRSA ✕</span>
+              <span class="chip chip--resist"><span class="sw"></span>Enterococcus ✕</span>
+              <span class="chip chip--resist"><span class="sw"></span>Pseudomonas ✕</span>
+            </div>
+          </div>
+
+          <h3>6-4. Ceftazidime (3세대, 특징적)</h3>
+          <p>중요한 특징: <b>Pseudomonas coverage O.</b> 대신 Gram-positive coverage가 상대적으로 약한 편이다.</p>
+          <div class="oneline">Ceftazidime = 3세대 중 Pseudomonas를 강하게 연상</div>
+
+          <h3>6-5. Cefepime (4세대)</h3>
+          <p>Spectrum: Gram-positive 일부 · 많은 Gram-negative · Pseudomonas.
+            약점: MRSA ✕ / Enterococcus ✕ / anaerobic coverage 부족.</p>
+
+          <div class="card card--pharm">
+            <div class="card__label"><span class="dot"></span>PHARMACIST POINT · Cefepime neurotoxicity</div>
+            <p>특히 신기능 저하 환자에서 용량조절이 충분하지 않으면 위험이 증가할 수 있다. 관찰 가능한 증상:</p>
+            <ul class="clean"><li>Confusion</li><li>Encephalopathy</li><li>Myoclonus</li><li>Seizure</li></ul>
+            <p style="margin-bottom:0;"><b>ASP 약사에게 중요한 질문:</b> 현재 renal function에 맞는 cefepime dose인가?</p>
+          </div>
+          <div class="oneline">Cefepime = Pseudomonas + renal function + neurotoxicity</div>
+        </section>
+
+        <!-- ================= SECTION 7 : Carbapenems ================= -->
+        <section id="carbapenems" class="section">
+          <h2><span class="sec-no">07</span> Carbapenems</h2>
+          <p>매우 광범위한 β-lactam 계열. 대표: Ertapenem, Meropenem, Imipenem/cilastatin.
+            특히 일부 <b>ESBL-producing Enterobacterales</b> 감염에서 중요한 역할을 한다.</p>
+
+          <h3>7-1. Meropenem</h3>
+          <p>넓은 spectrum: 많은 Gram-negative · 일부 resistant Enterobacterales · Pseudomonas · Anaerobes.
+            약점: MRSA ✕ / VRE ✕.</p>
+          <div class="card card--asp">
+            <div class="card__label"><span class="dot"></span>ASP POINT · 사고</div>
+            <p>Carbapenem을 불필요하게 많이 사용하면 carbapenem-resistant organism의 선택 압력을 높일 수 있다.
+              따라서 meropenem은 ASP에서 특히 관리할 가치가 높다.</p>
+            <p style="margin-bottom:0;">"Meropenem을 <b>사용할 수 있는가?</b>" 보다 더 중요한 질문 → <b>"Meropenem이 정말 필요한가?"</b></p>
+          </div>
+
+          <h3>7-2. Ertapenem</h3>
+          <p>Carbapenem 계열이지만 중요한 차이: <b>Pseudomonas ✕, Acinetobacter ✕.</b></p>
+
+          <div class="figure">
+            <div class="figure__title">도식 8 · Ertapenem vs Meropenem</div>
+            <div class="table-scroll">
+              <table class="data">
+                <thead><tr><th>특징</th><th>Ertapenem</th><th>Meropenem</th></tr></thead>
+                <tbody>
+                  <tr><th>Enterobacterales</th><td class="cov cov-yes-c">O</td><td class="cov cov-yes-c">O</td></tr>
+                  <tr><th>ESBL 관련 감염</th><td class="cov cov-yes-c">O</td><td class="cov cov-yes-c">O</td></tr>
+                  <tr><th>Anaerobe</th><td class="cov cov-yes-c">O</td><td class="cov cov-yes-c">O</td></tr>
+                  <tr><th>Pseudomonas</th><td class="cov cov-no-c">X</td><td class="cov cov-yes-c">O</td></tr>
+                  <tr><th>Acinetobacter</th><td class="cov cov-no-c">X</td><td class="cov cov-partial-c">상대적 O</td></tr>
+                  <tr><th>Spectrum</th><td>상대적으로 좁음</td><td>더 넓음</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="figure__cap">Pseudomonas가 필요하지 않은 상황이라면 모든 환자에게 meropenem이 필요한 것은 아니다.</div>
+          </div>
+          <div class="oneline">Ertapenem = Carbapenem인데 Pseudomonas를 못 잡는다.</div>
+        </section>
+
+        <!-- ================= SECTION 8 : 대형표 + 인터랙션 ================= -->
+        <section id="table" class="section">
+          <h2><span class="sec-no">08</span> 주요 β-lactam Spectrum 비교</h2>
+
+          <div class="legend">
+            <span class="chip"><span class="sw" style="background:var(--cov-strong)"></span>◎ 매우 강함</span>
+            <span class="chip"><span class="sw" style="background:var(--cov-yes)"></span>O 커버</span>
+            <span class="chip"><span class="sw" style="background:var(--cov-partial)"></span>△ 제한적</span>
+            <span class="chip"><span class="sw" style="background:var(--cov-no)"></span>X 없음</span>
+          </div>
+          <p style="font-size:13.5px;color:var(--ink-faint);">약물 이름에 마우스를 올리거나(모바일은 탭) 강점·약점·대표 연상 팝업이 뜹니다.</p>
+
+          <div class="table-scroll">
+            <table class="data">
+              <thead>
+                <tr>
+                  <th>Antibiotic</th><th>MSSA</th><th>Enterococcus</th>
+                  <th>Enterobacterales</th><th>Pseudomonas</th><th>Anaerobes</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><th><span class="drugname" data-drug="Ampicillin">Ampicillin</span></th>
+                  <td class="cov cov-partial-c">△</td><td class="cov cov-strong-c">◎</td><td class="cov cov-partial-c">△</td><td class="cov cov-no-c">X</td><td class="cov cov-partial-c">△</td></tr>
+                <tr><th><span class="drugname" data-drug="Ampicillin/Sulbactam">Ampicillin/Sulbactam</span></th>
+                  <td class="cov cov-yes-c">O</td><td class="cov cov-yes-c">O</td><td class="cov cov-yes-c">O</td><td class="cov cov-no-c">X</td><td class="cov cov-yes-c">O</td></tr>
+                <tr><th><span class="drugname" data-drug="Piperacillin/Tazobactam">Piperacillin/Tazobactam</span></th>
+                  <td class="cov cov-yes-c">O</td><td class="cov cov-yes-c">O</td><td class="cov cov-yes-c">O</td><td class="cov cov-strong-c">◎</td><td class="cov cov-strong-c">◎</td></tr>
+                <tr><th><span class="drugname" data-drug="Cefazolin">Cefazolin</span></th>
+                  <td class="cov cov-strong-c">◎</td><td class="cov cov-no-c">X</td><td class="cov cov-partial-c">△</td><td class="cov cov-no-c">X</td><td class="cov cov-no-c">X</td></tr>
+                <tr><th><span class="drugname" data-drug="Ceftriaxone">Ceftriaxone</span></th>
+                  <td class="cov cov-yes-c">O</td><td class="cov cov-no-c">X</td><td class="cov cov-strong-c">◎</td><td class="cov cov-no-c">X</td><td class="cov cov-no-c">X</td></tr>
+                <tr><th><span class="drugname" data-drug="Ceftazidime">Ceftazidime</span></th>
+                  <td class="cov cov-partial-c">△</td><td class="cov cov-no-c">X</td><td class="cov cov-strong-c">◎</td><td class="cov cov-strong-c">◎</td><td class="cov cov-no-c">X</td></tr>
+                <tr><th><span class="drugname" data-drug="Cefepime">Cefepime</span></th>
+                  <td class="cov cov-yes-c">O</td><td class="cov cov-no-c">X</td><td class="cov cov-strong-c">◎</td><td class="cov cov-strong-c">◎</td><td class="cov cov-no-c">X</td></tr>
+                <tr><th><span class="drugname" data-drug="Ertapenem">Ertapenem</span></th>
+                  <td class="cov cov-yes-c">O</td><td class="cov cov-no-c">X</td><td class="cov cov-strong-c">◎</td><td class="cov cov-no-c">X</td><td class="cov cov-strong-c">◎</td></tr>
+                <tr><th><span class="drugname" data-drug="Meropenem">Meropenem</span></th>
+                  <td class="cov cov-yes-c">O</td><td class="cov cov-no-c">X</td><td class="cov cov-strong-c">◎</td><td class="cov cov-strong-c">◎</td><td class="cov cov-strong-c">◎</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="card card--caution">
+            <div class="card__label"><span class="dot"></span>CAUTION · 표 사용 주의</div>
+            <p>이 표는 학습 초기의 <b>spectrum mental map</b>을 위한 단순화된 표현이다. 실제 임상에서는 다음을 추가로 확인한다:
+              균종 · susceptibility result · MIC · 내성기전 · 감염 부위 · 환자 상태 · 기관 antibiogram.</p>
+          </div>
+
+          <h3>인터랙션 · Spectrum toggle</h3>
+          <p>약물을 클릭하면 커버하는 균 그룹이 활성화됩니다.</p>
+          <div class="figure" data-spectoggle>
+            <div class="spectoggle">
+              <div class="spectoggle__list" role="tablist" aria-label="약물 선택"></div>
+              <div class="spectoggle__panel">
+                <div class="orggrid"></div>
+                <div class="spectoggle__meta"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ================= SECTION 9 : 사각지대 + ASP Case ================= -->
+        <section id="asp" class="section">
+          <h2><span class="sec-no">09</span> β-lactam 사각지대 &amp; ASP Case</h2>
+
+          <div class="figure">
+            <div class="figure__title">도식 9 · "β-lactam이 안 잡는 것" 경고 카드</div>
+            <div class="warncards">
+              <div class="warncard">
+                <h5>⚠ MRSA</h5>
+                <ul><li>대부분의 일반 β-lactam <span class="x">✕</span></li><li>단, ceftaroline 같은 예외 존재 (이후 학습)</li></ul>
+              </div>
+              <div class="warncard">
+                <h5>⚠ Atypical pathogens</h5>
+                <ul><li>Mycoplasma · Chlamydophila · Legionella</li><li>일반 β-lactam coverage <span class="x">✕</span></li></ul>
+              </div>
+              <div class="warncard">
+                <h5>⚠ VRE</h5>
+                <ul><li>일반 β-lactam <span class="x">✕</span></li></ul>
+              </div>
+            </div>
+          </div>
+          <div class="oneline">"Broad-spectrum β-lactam"이라는 말은 "모든 세균을 잡는다"는 뜻이 아니다.</div>
+
+          <h3>ASP 사고방식 · Broad → Narrow</h3>
+          <div class="card card--case">
+            <div class="card__label"><span class="dot"></span>CLINICAL CASE</div>
+            <p>72세 남성이 severe pneumonia와 sepsis로 입원. 최근 입원력이 있어 초기 empiric therapy로
+              <b>Vancomycin + Piperacillin/Tazobactam</b> 시작. 3일 후 sputum culture에서
+              <b>Streptococcus pneumoniae</b> 확인, susceptibility상 ceftriaxone으로 치료 가능.</p>
+          </div>
+
+          <div class="figure" data-deesc>
+            <div class="figure__title">도식 10 · De-escalation Flow (재생해 보세요)</div>
+            <div class="deesc">
+              <div class="deesc__stage"></div>
+              <div class="deesc__result"></div>
+              <div class="deesc__steps">
+                <div class="deesc__step"><span class="q">MRSA coverage 필요?</span><span class="a">No</span></div>
+                <div class="deesc__step"><span class="q">Pseudomonas coverage 필요?</span><span class="a">No</span></div>
+                <div class="deesc__step"><span class="q">Anaerobic coverage 필요?</span><span class="a">No</span></div>
+              </div>
+              <div style="margin-top:18px;display:flex;gap:10px;justify-content:center;flex-wrap:wrap;">
+                <button class="btn" data-deesc-play>▶ De-escalation 재생</button>
+                <button class="btn btn--ghost" data-deesc-reset>↺ 처음으로</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card card--asp">
+            <div class="card__label"><span class="dot"></span>ASP POINT · 핵심 메시지</div>
+            <p>ASP는 가장 넓고 강해 보이는 항생제를 오래 쓰는 것이 목적이 아니다. 목표는
+              <b>현재 환자에게 필요한 spectrum만 사용하는 것</b> — 이를 <b>de-escalation</b>이라고 한다.</p>
+          </div>
+        </section>
+
+        <!-- ================= SECTION 10 : 정리 + Quiz ================= -->
+        <section id="quiz" class="section">
+          <h2><span class="sec-no">10</span> 정리 &amp; Active Recall</h2>
+
+          <h3>오늘의 핵심 8문장</h3>
+          <div class="eightcards">
+            <div class="factcard"><span class="n">1</span><p>β-lactam은 PBP를 억제하여 세포벽 합성을 방해한다.</p></div>
+            <div class="factcard"><span class="n">2</span><p>β-lactam은 대표적인 time-dependent antibiotic이다.</p></div>
+            <div class="factcard"><span class="n">3</span><p>Ampicillin은 Enterococcus와 Listeria를 연상한다.</p></div>
+            <div class="factcard"><span class="n">4</span><p>Piperacillin/Tazobactam은 Pseudomonas와 anaerobe를 커버한다.</p></div>
+            <div class="factcard"><span class="n">5</span><p>Cefazolin은 MSSA를 강하게 연상한다.</p></div>
+            <div class="factcard"><span class="n">6</span><p>Ceftriaxone은 Pseudomonas를 커버하지 않는다.</p></div>
+            <div class="factcard"><span class="n">7</span><p>Cefepime은 Pseudomonas를 커버하며 신기능 저하 시 neurotoxicity를 주의한다.</p></div>
+            <div class="factcard"><span class="n">8</span><p>Ertapenem은 Pseudomonas X, meropenem은 Pseudomonas O이다.</p></div>
+          </div>
+
+          <h3 style="margin-top:34px;">Active Recall (정답 보기 버튼)</h3>
+          <div class="quiz">
+            <div class="qcard">
+              <div class="q"><span class="qn">Q1</span> β-lactam의 대표적인 PK/PD 특성은?</div>
+              <button class="reveal-btn">정답 보기</button>
+              <div class="answer">Time-dependent killing.</div>
+            </div>
+            <div class="qcard">
+              <div class="q"><span class="qn">Q2</span> Ampicillin을 보면 가장 먼저 떠올려야 할 두 균은?</div>
+              <button class="reveal-btn">정답 보기</button>
+              <div class="answer">Enterococcus와 Listeria.</div>
+            </div>
+            <div class="qcard">
+              <div class="q"><span class="qn">Q3</span> Piperacillin/Tazobactam은 Pseudomonas를 커버하는가?</div>
+              <button class="reveal-btn">정답 보기</button>
+              <div class="answer">Yes.</div>
+            </div>
+            <div class="qcard">
+              <div class="q"><span class="qn">Q4</span> Ceftriaxone은 Pseudomonas를 커버하는가?</div>
+              <button class="reveal-btn">정답 보기</button>
+              <div class="answer">No.</div>
+            </div>
+            <div class="qcard">
+              <div class="q"><span class="qn">Q5</span> MSSA를 보면 대표적으로 어떤 cephalosporin을 떠올릴 수 있는가?</div>
+              <button class="reveal-btn">정답 보기</button>
+              <div class="answer">Cefazolin.</div>
+            </div>
+            <div class="qcard">
+              <div class="q"><span class="qn">Q6</span> Cefepime을 사용하는 신기능 저하 환자에게서 주의할 대표적 toxicity는?</div>
+              <button class="reveal-btn">정답 보기</button>
+              <div class="answer">Neurotoxicity.</div>
+            </div>
+            <div class="qcard">
+              <div class="q"><span class="qn">Q7</span> Ertapenem과 meropenem의 대표적인 spectrum 차이는?</div>
+              <button class="reveal-btn">정답 보기</button>
+              <div class="answer">Ertapenem은 Pseudomonas를 커버하지 않지만 meropenem은 커버한다.</div>
+            </div>
+            <div class="qcard">
+              <div class="q"><span class="qn">Q8</span> Culture 결과 후 불필요한 broad-spectrum coverage를 제거하는 ASP 전략은?</div>
+              <button class="reveal-btn">정답 보기</button>
+              <div class="answer">De-escalation.</div>
+            </div>
+          </div>
+
+          <h3 style="margin-top:34px;">Mini Case Quiz</h3>
+          <div class="qcard">
+            <div class="q" style="display:block;">
+              68세 환자. Septic shock로 입원하여 empirically <b>Vancomycin + Cefepime</b> 투여 중.
+              Blood culture에서 <b>MSSA</b> 확인. 환자는 안정화되었고 다른 균은 검출되지 않았다.
+              <br/><br/>ASP 관점에서 가장 먼저 고려해야 할 것은?
+            </div>
+            <ul class="mcq" data-answer="C">
+              <li data-opt="A"><span class="opt">A</span> Vancomycin + Cefepime 유지</li>
+              <li data-opt="B"><span class="opt">B</span> Meropenem으로 변경</li>
+              <li data-opt="C"><span class="opt">C</span> Cefazolin 등 MSSA-targeted β-lactam으로 변경 검토</li>
+              <li data-opt="D"><span class="opt">D</span> Metronidazole 추가</li>
+            </ul>
+            <div class="answer mcq-exp" style="display:none;">
+              정답: C
+              <div class="exp">원인균이 MSSA로 확인되었기 때문에 MRSA 및 broad Gram-negative coverage를 계속 유지할 이유가
+                있는지 재평가해야 한다. ASP 기본 원칙: <b>Broad empiric therapy → microbiologic diagnosis → targeted therapy.</b></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ================= 학습 종료 ================= -->
+        <section class="closing">
+          <h3>오늘의 한 문장</h3>
+          <p class="big">항생제를 공부할 때는 "이 약이 얼마나 강한가?"가 아니라
+            "어떤 균을 잡고, 무엇을 못 잡는가?"를 생각한다.</p>
+          <p>그리고 ASP에서는 한 단계 더 나아간다.</p>
+          <p class="big">현재 환자에게 이 spectrum이 정말 필요한가?</p>
+          <p style="margin-top:22px;"><a href="../index.html" style="color:#fff;text-decoration:underline;">← 강의 목록으로 돌아가기</a></p>
+        </section>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- 약물 팝업 (대형표) -->
+  <div class="popup" role="tooltip"></div>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

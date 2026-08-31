@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ASP 항생제 학습</title>
+  <meta name="description" content="ASP(항생제 적정사용 관리) 약사를 위한 항생제 기초 학습 교재" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <main class="hub">
+    <header class="hub__hero">
+      <span class="badge">ASP · Antibiotic Stewardship</span>
+      <h1>ASP 항생제 학습</h1>
+      <p>
+        항생제를 개별 약물이 아니라 <b>계열 → spectrum → 균 → 임상 → ASP 결정</b>의
+        흐름으로 익히는 학습 교재입니다. 출퇴근 중 모바일로도 편하게 보세요.
+      </p>
+    </header>
+
+    <section id="lessonGrid" class="lesson-grid" aria-label="강의 목록"></section>
+  </main>
+
+  <script src="assets/data/lessons.js"></script>
+  <script>
+    window.ASP_renderHub("#lessonGrid");
+  </script>
+</body>
+</html>
