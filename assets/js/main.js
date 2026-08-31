@@ -354,6 +354,22 @@
     });
   }
 
+  /* ---------- 11. Quick Review 플로팅 패널 ---------- */
+  function initQuickReview() {
+    var root = document.querySelector(".quickrev");
+    if (!root) return;
+    var btn = root.querySelector(".quickrev__btn");
+    var panel = root.querySelector(".quickrev__panel");
+    if (!btn || !panel) return;
+    btn.addEventListener("click", function (e) {
+      e.stopPropagation();
+      panel.classList.toggle("show");
+    });
+    document.addEventListener("click", function (e) {
+      if (!root.contains(e.target)) panel.classList.remove("show");
+    });
+  }
+
   /* ---------- init ---------- */
   document.addEventListener("DOMContentLoaded", function () {
     initSidebar();
@@ -366,5 +382,6 @@
     initTablePopup();
     initSelectors();
     initDecisions();
+    initQuickReview();
   });
 })();

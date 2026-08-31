@@ -819,6 +819,36 @@ table.data td.cov { font-weight: 700; font-size: 16px; }
 .bottomnav > * + * { border-left: 1px solid var(--line); }
 
 /* =========================================================
+   AST (감수성 표) — 결과 강조
+   ========================================================= */
+table.data td.ast-r { color: var(--cov-no); font-weight: 700; }
+table.data td.ast-s { color: var(--cov-yes); font-weight: 700; }
+
+/* =========================================================
+   QUICK REVIEW · 하단 고정 플로팅 버튼 + 패널
+   ========================================================= */
+.quickrev { position: fixed; right: 18px; bottom: 18px; z-index: 46; }
+.quickrev__btn {
+  font-family: var(--font-cute); font-size: 14px; font-weight: 700; cursor: pointer;
+  border: none; border-radius: 999px; padding: 12px 18px; color: #fff;
+  background: linear-gradient(135deg,var(--brand),var(--gn)); box-shadow: var(--shadow);
+  display: inline-flex; align-items: center; gap: 7px;
+}
+.quickrev__panel {
+  position: absolute; right: 0; bottom: 56px; width: 290px; max-width: 78vw;
+  background: var(--surface); border: 1px solid var(--line-strong); border-radius: 14px;
+  box-shadow: var(--shadow); padding: 16px 18px; display: none;
+}
+.quickrev__panel.show { display: block; animation: fadein .2s ease; }
+.quickrev__panel h5 { margin: 0 0 10px; font-size: 14px; }
+.quickrev__panel .qr-row {
+  display: flex; gap: 8px; padding: 6px 0; font-size: 13.5px;
+  border-bottom: 1px dashed var(--line);
+}
+.quickrev__panel .qr-row:last-child { border-bottom: none; }
+.quickrev__panel .qr-k { font-weight: 700; color: var(--brand-dark); flex: 0 0 92px; }
+
+/* =========================================================
    RESPONSIVE
    ========================================================= */
 @media (max-width: 860px) {
@@ -840,6 +870,7 @@ table.data td.cov { font-weight: 700; font-size: 16px; }
   .split2 { grid-template-columns: 1fr; }
   .bottomnav { display: grid; }
   .content .wrap { padding-bottom: 92px; } /* 하단 내비 공간 */
+  .quickrev { bottom: 72px; } /* 하단 내비 위로 */
 }
 @media (max-width: 480px) {
   .spectoggle__list { grid-template-columns: 1fr 1fr; }

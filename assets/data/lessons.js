@@ -21,6 +21,14 @@ window.ASP_LESSONS = [
   },
   {
     no: 3,
+    href: "lessons/lesson-03.html",
+    title: "Gram-negative 균 지도 ①: Enterobacterales",
+    desc: "E. coli · Klebsiella · Proteus · Enterobacter의 대표 감염과 내성(ESBL · AmpC · CRE). 균 이름이 곧 내성기전의 힌트가 된다.",
+    tags: ["Enterobacterales", "ESBL", "AmpC", "CRE"],
+    status: "ready"
+  },
+  {
+    no: 4,
     href: "#",
     title: "(준비 중)",
     desc: "다음 강의가 곧 추가됩니다.",

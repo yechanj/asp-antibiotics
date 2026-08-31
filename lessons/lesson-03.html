@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>3강 · Gram-negative 균 지도 ①: Enterobacterales</title>
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+</head>
+<body>
+  <div class="topbar">
+    <button class="hamburger" aria-label="목차 열기" aria-expanded="false"><span></span></button>
+    <div class="topbar__title">3강 · Enterobacterales</div>
+  </div>
+  <div class="scrim" aria-hidden="true"></div>
+
+  <div class="app">
+    <aside class="sidebar" aria-label="강의 목차">
+      <div class="sidebar__brand">
+        <div class="sidebar__logo">ASP</div>
+        <div class="sidebar__title">항생제 학습
+          <small>3강 · Enterobacterales</small>
+        </div>
+      </div>
+      <nav>
+        <ul class="toc">
+          <li><a href="#map"><span class="num">1</span> GN 전체 지도</a></li>
+          <li><a href="#four"><span class="num">2</span> 4대 균 & 균 선택기</a></li>
+          <li><a href="#ecoli"><span class="num">3</span> E. coli</a></li>
+          <li><a href="#kleb"><span class="num">4</span> Klebsiella & 내성</a></li>
+          <li><a href="#proteus"><span class="num">5</span> Proteus</a></li>
+          <li><a href="#entero"><span class="num">6</span> Enterobacter & AmpC</a></li>
+          <li><a href="#table"><span class="num">7</span> 비교표 & β-lactam</a></li>
+          <li><a href="#esbl"><span class="num">8</span> ESBL</a></li>
+          <li><a href="#cre"><span class="num">9</span> CRE & 내성 진행</a></li>
+          <li><a href="#cases"><span class="num">10</span> ASP Cases</a></li>
+          <li><a href="#quiz"><span class="num">11</span> 정리 & Quiz</a></li>
+          <li><a href="#tree"><span class="num">12</span> 통합 사고 흐름</a></li>
+        </ul>
+      </nav>
+      <a class="sidebar__back" href="../index.html">← 강의 목록으로</a>
+    </aside>
+
+    <div class="content">
+      <div class="wrap">
+
+        <header class="lesson-hero">
+          <div class="kicker">ASP 항생제 학습 · 3강</div>
+          <h1>Gram-negative 균 지도 ① · Enterobacterales</h1>
+          <p>E. coli · Klebsiella · Proteus · Enterobacter — 균 이름이 곧 내성기전의 힌트가 됩니다.</p>
+        </header>
+
+        <!-- ===== S1,2 · GN 전체 지도 ===== -->
+        <section id="map" class="section">
+          <h2><span class="sec-no">01</span> Gram-negative를 어떻게 나눌 것인가</h2>
+          <p>Gram-negative를 처음부터 수십 종씩 외우지 않는다. ASP 관점에서는 우선 크게 둘로 나눈다.</p>
+
+          <div class="figure">
+            <div class="figure__title">도식 1 · Gram-negative 전체 지도</div>
+            <div class="gpmap">
+              <div class="gpmap__root">Gram-negative bacilli</div>
+              <div class="gpmap__cols">
+                <div class="gpmap__col strep" style="border-top-color:var(--gn);">
+                  <h5>① Enterobacterales <span style="font-size:12px;color:var(--brand);">← 3강 집중</span></h5>
+                  <ul>
+                    <li>Escherichia coli</li>
+                    <li>Klebsiella pneumoniae</li>
+                    <li>Proteus mirabilis</li>
+                    <li>Enterobacter cloacae complex</li>
+                    <li>Citrobacter · Serratia</li>
+                  </ul>
+                </div>
+                <div class="gpmap__col entero" style="border-top-color:var(--pseudo);">
+                  <h5>② Non-fermenters <span style="font-size:12px;color:var(--ink-faint);">← 다음 강의</span></h5>
+                  <ul>
+                    <li>Pseudomonas aeruginosa</li>
+                    <li>Acinetobacter baumannii</li>
+                    <li>Stenotrophomonas maltophilia</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="figure__cap">모든 Gram-negative가 Pseudomonas는 아니다 — Enterobacterales와 Pseudomonas를 구분하는 것부터 spectrum 해석이 시작된다.</div>
+          </div>
+
+          <h3>Enterobacterales란?</h3>
+          <p>사람 장관에 흔히 존재하는 Gram-negative bacilli를 포함하는 큰 order로, 병원에서 매우 흔하게 접한다. 대표 감염:</p>
+          <ul class="clean">
+            <li>Urinary tract infection</li>
+            <li>Bacteremia</li>
+            <li>Intra-abdominal infection · Biliary tract infection</li>
+            <li>일부 Pneumonia · Surgical site infection</li>
+          </ul>
+          <p>ASP 업무에서 거의 매일 접할 가능성이 있는 균군이다.</p>
+        </section>
+
+        <!-- ===== S3 · 4대 균 + 균 선택기 ===== -->
+        <section id="four" class="section">
+          <h2><span class="sec-no">02</span> 가장 먼저 기억할 네 균</h2>
+
+          <div class="figure">
+            <div class="figure__title">도식 2 · Enterobacterales 4대 카드</div>
+            <div class="gpmap__cols" style="grid-template-columns:repeat(4,1fr);">
+              <div class="gpmap__col strep" style="border-top-color:var(--gn);"><h5>🚽 E. coli</h5><ul><li>UTI의 대표균</li></ul></div>
+              <div class="gpmap__col strep" style="border-top-color:var(--resist);"><h5>🫁🩸 Klebsiella</h5><ul><li>내성균 문제 중요</li></ul></div>
+              <div class="gpmap__col strep" style="border-top-color:#d99a12;"><h5>🪨 Proteus</h5><ul><li>UTI + urease</li></ul></div>
+              <div class="gpmap__col strep" style="border-top-color:var(--anaerobe);"><h5>🏥 Enterobacter</h5><ul><li>AmpC 주의</li></ul></div>
+            </div>
+          </div>
+
+          <h3>인터랙션 · 균을 눌러 특징 펼치기</h3>
+          <div class="figure" data-selector>
+            <div class="orgselect">
+              <div class="orgselect__btns">
+                <button class="sel-btn" data-target="ecoli">E. coli</button>
+                <button class="sel-btn" data-target="kleb">Klebsiella</button>
+                <button class="sel-btn" data-target="proteus">Proteus</button>
+                <button class="sel-btn" data-target="entero">Enterobacter</button>
+              </div>
+              <div class="sel-panel" data-panel="ecoli">
+                <div class="rowline"><div class="k">Most associated</div><div class="v"><b>UTI</b> / bacteremia / abdominal infection</div></div>
+                <div class="rowline"><div class="k">Key resistance</div><div class="v">ESBL 가능</div></div>
+                <div class="rowline"><div class="k">Antibiotic issue</div><div class="v">ESBL면 cephalosporin 어려움 → carbapenem 고려</div></div>
+                <div class="rowline"><div class="k">ASP pearl</div><div class="v">정말 UTI인가? (증상 vs asymptomatic bacteriuria)</div></div>
+              </div>
+              <div class="sel-panel" data-panel="kleb">
+                <div class="rowline"><div class="k">Most associated</div><div class="v">Pneumonia / UTI / bacteremia</div></div>
+                <div class="rowline"><div class="k">Key resistance</div><div class="v"><b>ESBL · CRE</b> 매우 중요</div></div>
+                <div class="rowline"><div class="k">Antibiotic issue</div><div class="v">carbapenemase(KPC/NDM/OXA-48) 연관</div></div>
+                <div class="rowline"><div class="k">ASP pearl</div><div class="v">이름의 pneumoniae ≠ 폐렴 전용 — 검체·부위가 더 중요</div></div>
+              </div>
+              <div class="sel-panel" data-panel="proteus">
+                <div class="rowline"><div class="k">Most associated</div><div class="v">UTI</div></div>
+                <div class="rowline"><div class="k">Key feature</div><div class="v"><b>Urease (+)</b> → struvite stone</div></div>
+                <div class="rowline"><div class="k">Antibiotic issue</div><div class="v">nitrofurantoin 신뢰성 있게 커버 못 함</div></div>
+                <div class="rowline"><div class="k">ASP pearl</div><div class="v">stone 있으면 source control 필요할 수 있음</div></div>
+              </div>
+              <div class="sel-panel" data-panel="entero">
+                <div class="rowline"><div class="k">Most associated</div><div class="v">Healthcare-associated infection</div></div>
+                <div class="rowline"><div class="k">Key resistance</div><div class="v"><b>Inducible AmpC</b></div></div>
+                <div class="rowline"><div class="k">Antibiotic issue</div><div class="v">ceftriaxone S여도 치료 중 resistance emergence 가능</div></div>
+                <div class="rowline"><div class="k">ASP pearl</div><div class="v">S/R 문자만 보지 말고 균종을 본다</div></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ===== S4,5 · E. coli ===== -->
+        <section id="ecoli" class="section">
+          <h2><span class="sec-no">03</span> Escherichia coli</h2>
+          <p>임상에서 가장 자주 보는 균 중 하나. 장내 정상균총의 일부이지만 다른 부위로 이동하면 감염을 일으킨다.
+            대표는 <b>UTI</b>이며 pyelonephritis · bacteremia · intra-abdominal · biliary infection도 흔하다.</p>
+
+          <div class="figure">
+            <div class="figure__title">연결 도식 · Gut → UTI → Sepsis</div>
+            <div class="vflow">
+              <div class="vflow__box">Gut flora</div>
+              <div class="vflow__arrow">↓ urinary tract로 이동</div>
+              <div class="vflow__box q">UTI</div>
+              <div class="vflow__arrow">↓ 심해지면</div>
+              <div class="vflow__box">Pyelonephritis</div>
+              <div class="vflow__arrow">↓ 혈류 침범</div>
+              <div class="vflow__box" style="background:var(--resist-soft);border-color:var(--resist);color:var(--resist);">Bacteremia / Sepsis</div>
+            </div>
+          </div>
+
+          <h3>E. coli를 봤을 때 ASP 약사가 생각할 것</h3>
+          <p>Urine culture에 <b>E. coli</b>가 나왔다고 바로 "E. coli니까 ceftriaxone"이라고 생각하면 부족하다. 다음 질문이 필요하다.</p>
+          <div class="orggrid">
+            <div class="orgcell cov-partial" style="opacity:1;"><span>① 정말 UTI인가? (증상 / ASB 아닌가)</span></div>
+            <div class="orgcell cov-partial" style="opacity:1;"><span>② Severity? (cystitis/pyelo/bacteremia)</span></div>
+            <div class="orgcell cov-partial" style="opacity:1;"><span>③ Susceptibility? (CTX/Cipro/TMP-SMX/ESBL)</span></div>
+            <div class="orgcell cov-partial" style="opacity:1;"><span>④ IV 계속 필요? (경구 전환 가능?)</span></div>
+          </div>
+
+          <div class="card card--asp">
+            <div class="card__label"><span class="dot"></span>ASP POINT</div>
+            <p>균의 이름만으로 치료를 결정하지 않는다. <b>Organism + Infection site + Severity + Susceptibility</b>를 함께 본다.</p>
+          </div>
+        </section>
+
+        <!-- ===== S6,7 · Klebsiella ===== -->
+        <section id="kleb" class="section">
+          <h2><span class="sec-no">04</span> Klebsiella pneumoniae &amp; 내성</h2>
+          <p>이름에 pneumoniae가 있지만 폐렴만 일으키는 균은 아니다. Pneumonia · UTI · bacteremia · intra-abdominal infection 등을 일으킨다.</p>
+
+          <div class="card card--caution">
+            <div class="card__label"><span class="dot"></span>CAUTION · 흔한 착각</div>
+            <p>"Klebsiella pneumoniae니까 폐렴 환자에서만 중요하다" → <b>아니다.</b> 이름보다 <b>어느 검체에서 분리되었는지와 실제 infection site</b>가 더 중요하다.</p>
+          </div>
+
+          <h3>Klebsiella와 내성</h3>
+          <p>Klebsiella는 내성 Gram-negative infection에서 자주 등장한다. 앞으로 <b>ESBL · CRE · Carbapenemase(KPC · NDM · OXA-48-like)</b> 개념과 연결된다. 지금은 상세 기전을 외우지 않는다.</p>
+
+          <div class="figure">
+            <div class="figure__title">도식 3 · Klebsiella 내성 진화 지도</div>
+            <div class="vflow">
+              <div class="vflow__box">Klebsiella pneumoniae (susceptible)</div>
+              <div class="vflow__arrow">↓</div>
+              <div class="vflow__box q">ESBL-producing</div>
+              <div class="vflow__arrow">↓ 일부 cephalosporin 사용 어려움</div>
+              <div class="vflow__box q">Carbapenem resistance → CRE</div>
+              <div class="vflow__arrow">↓ Carbapenemase?</div>
+              <div class="vflow__box" style="background:var(--resist-soft);border-color:var(--resist);color:var(--resist);">KPC · NDM · OXA-48-like 등</div>
+            </div>
+            <div class="figure__cap">이 내성기전들은 이후 별도 강의에서 상세히 학습한다.</div>
+          </div>
+        </section>
+
+        <!-- ===== S8,9 · Proteus ===== -->
+        <section id="proteus" class="section">
+          <h2><span class="sec-no">05</span> Proteus mirabilis</h2>
+          <p>Proteus는 특히 <b>UTI</b>와 연결한다. 대표 특징은 <b>Urease positive</b> — urea를 분해해 ammonia를 생성한다.</p>
+
+          <div class="figure">
+            <div class="figure__title">도식 4 · Proteus → Stone</div>
+            <div class="vflow">
+              <div class="vflow__box">Proteus</div>
+              <div class="vflow__arrow">↓ Urease</div>
+              <div class="vflow__box">Urea → Ammonia</div>
+              <div class="vflow__arrow">↓</div>
+              <div class="vflow__box">Urinary pH ↑ (알칼리성)</div>
+              <div class="vflow__arrow">↓</div>
+              <div class="vflow__box" style="background:#fdf6e7;border-color:#d99a12;color:#b8860b;">Struvite stone</div>
+            </div>
+          </div>
+          <div class="oneline">Proteus = UTI + urease + stone</div>
+
+          <div class="card card--pharm">
+            <div class="card__label"><span class="dot"></span>PHARMACIST POINT · Proteus & nitrofurantoin</div>
+            <p>일부 항생제는 Proteus에 적절하지 않다. 특히 <b>nitrofurantoin은 Proteus를 신뢰성 있게 커버하지 못한다.</b>
+              "UTI니까 nitrofurantoin"이라고 자동으로 생각하면 안 된다. Urine culture에서 <b>Proteus mirabilis</b>가 확인되면 현재 처방이 nitrofurantoin인지 확인하는 것이 좋은 검토 포인트다.</p>
+          </div>
+        </section>
+
+        <!-- ===== S10,11,12 · Enterobacter & AmpC ===== -->
+        <section id="entero" class="section">
+          <h2><span class="sec-no">06</span> Enterobacter cloacae complex &amp; AmpC</h2>
+          <p>조금 더 어려운 균. ASP에서 중요한 이유는 <b>AmpC β-lactamase</b>와 관련 있기 때문이다.</p>
+
+          <h3>AmpC 맛보기</h3>
+          <p>AmpC는 β-lactam을 분해할 수 있는 β-lactamase의 한 종류다. 일부 Enterobacterales에는 chromosomal ampC가 있고, 특정 β-lactam exposure에 의해 enzyme production이 증가할 수 있다.
+            즉 초기 susceptibility에서 ceftriaxone이 S처럼 보여도 → 치료 중 AmpC expression 증가 → resistance가 나타날 가능성을 걱정해야 하는 균들이 있다.</p>
+          <p>최신 IDSA guidance가 강조하는 임상적으로 중요한 inducible AmpC 위험 대표균:</p>
+          <div class="legend">
+            <span class="chip chip--resist"><span class="sw"></span>Enterobacter cloacae complex</span>
+            <span class="chip chip--resist"><span class="sw"></span>Klebsiella aerogenes</span>
+            <span class="chip chip--resist"><span class="sw"></span>Citrobacter freundii</span>
+          </div>
+
+          <div class="figure">
+            <div class="figure__title">도식 5 · AmpC induction 개념</div>
+            <div class="vflow">
+              <div class="vflow__box">Enterobacter cloacae — 초기 Ceftriaxone S</div>
+              <div class="vflow__arrow">↓ β-lactam exposure</div>
+              <div class="vflow__box q">AmpC expression ↑</div>
+              <div class="vflow__arrow">↓ β-lactam hydrolysis ↑</div>
+              <div class="vflow__box">MIC ↑</div>
+              <div class="vflow__arrow">↓</div>
+              <div class="vflow__box" style="background:var(--resist-soft);border-color:var(--resist);color:var(--resist);">Treatment failure 가능성</div>
+            </div>
+            <div class="figure__cap">이 그림은 개념 이해를 위해 단순화한 것이다.</div>
+          </div>
+
+          <div class="card card--key">
+            <div class="card__label"><span class="dot"></span>KEY POINT · 오늘 AmpC에서 딱 3개</div>
+            <p>① Enterobacter cloacae를 보면 <b>AmpC</b>를 떠올린다.<br/>
+              ② 초기 ceftriaxone S 결과만 보고 안심하면 안 되는 상황이 존재한다.<br/>
+              ③ 균종 자체가 resistance mechanism을 추론하는 단서가 된다.</p>
+            <p style="margin-bottom:0;">Microbiology report에서 균 이름은 단순한 이름표가 아니라 <b>intrinsic/inducible resistance · 예상 susceptibility pattern</b>의 힌트다.</p>
+          </div>
+        </section>
+
+        <!-- ===== S13,14,25 · 비교표 & β-lactam ===== -->
+        <section id="table" class="section">
+          <h2><span class="sec-no">07</span> 4균 비교표 &amp; β-lactam 지도</h2>
+
+          <div class="table-scroll">
+            <table class="data">
+              <thead><tr><th>Organism</th><th>가장 먼저 연상</th><th>대표 감염</th><th>중요한 내성/특징</th></tr></thead>
+              <tbody>
+                <tr><th>E. coli</th><td>UTI</td><td>UTI, bacteremia, abdominal</td><td>ESBL 가능</td></tr>
+                <tr><th>Klebsiella pneumoniae</th><td>내성 Gram-negative</td><td>Pneumonia, UTI, bacteremia</td><td class="cov cov-no-c">ESBL, CRE 중요</td></tr>
+                <tr><th>Proteus mirabilis</th><td>UTI + stone</td><td>UTI</td><td>Urease, struvite stone</td></tr>
+                <tr><th>Enterobacter cloacae</th><td>AmpC</td><td>Healthcare-associated</td><td class="cov cov-no-c">Inducible AmpC</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="figure">
+            <div class="figure__title">도식 6 · Spectrum ladder (좁음 → 넓음)</div>
+            <div class="vflow">
+              <div class="vflow__box" style="background:var(--gn-soft);border-color:var(--gn);color:#0c8a7c;">Ceftriaxone <span style="font-weight:500;">— susceptible Enterobacterales</span></div>
+              <div class="vflow__arrow">↑</div>
+              <div class="vflow__box">Cefepime / Pip-Tazo</div>
+              <div class="vflow__arrow">↑</div>
+              <div class="vflow__box" style="background:var(--resist-soft);border-color:var(--resist);">Carbapenem (Ertapenem / Meropenem)</div>
+            </div>
+            <div class="figure__cap">위로 갈수록 무조건 "더 좋은 치료"가 아니다. ASP 목표 = 가장 좁으면서도 충분히 효과적인 항생제.</div>
+          </div>
+
+          <div class="card card--key">
+            <div class="card__label"><span class="dot"></span>β-lactam 요약</div>
+            <ul class="clean" style="margin-bottom:0;">
+              <li><b>Ceftriaxone</b> — susceptible Enterobacterales에 중요. ESBL X 가능 · AmpC 문제 가능 · CRE X</li>
+              <li><b>Cefepime</b> — GN coverage ↑, Pseudomonas O, AmpC 상황에서 중요할 수 있음</li>
+              <li><b>Pip/Tazo</b> — GN + Pseudomonas + anaerobe, 단 resistant Enterobacterales에서 항상 최선은 아님</li>
+              <li><b>Ertapenem</b> — ESBL Enterobacterales에 중요, Pseudomonas X</li>
+              <li><b>Meropenem</b> — ESBL + Pseudomonas, 매우 broad, carbapenem stewardship 중요</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- ===== S15,16,17 · ESBL ===== -->
+        <section id="esbl" class="section">
+          <h2><span class="sec-no">08</span> ESBL (Extended-Spectrum β-Lactamase)</h2>
+          <p>일부 Gram-negative가 만드는 enzyme. 대표적으로 E. coli · K. pneumoniae · K. oxytoca · Proteus mirabilis에서 중요하다.
+            ESBL은 많은 <b>penicillins · cephalosporins · aztreonam</b>을 비활성화할 수 있다. 반면 <b>carbapenem은 일반적으로 ESBL 효소에 의해 분해되지 않는다.</b></p>
+
+          <div class="figure">
+            <div class="figure__title">도식 7 · ESBL</div>
+            <div class="twopanel">
+              <div class="panel panel--normal">
+                <h5>Normal organism</h5>
+                <ol><li>Ceftriaxone</li><li>PBP</li><li>Cell wall inhibition ✓</li></ol>
+              </div>
+              <div class="panel panel--drug">
+                <h5>ESBL producer</h5>
+                <ol><li>Ceftriaxone</li><li>ESBL이 antibiotic hydrolysis</li><li>Target에 도달하지 못함 ✕</li></ol>
+              </div>
+            </div>
+          </div>
+
+          <h3>ESBL의 기본 susceptibility pattern</h3>
+          <p>예를 들어 E. coli culture에서 아래 pattern이 보이면 <b>ESBL-producing Enterobacterales 가능성</b>을 생각할 수 있다.</p>
+          <div class="table-scroll">
+            <table class="data" style="min-width:360px;">
+              <thead><tr><th>Antibiotic</th><th>Result</th></tr></thead>
+              <tbody>
+                <tr><th>Ceftriaxone</th><td class="ast-r">R</td></tr>
+                <tr><th>Ceftazidime</th><td class="ast-r">R</td></tr>
+                <tr><th>Ertapenem</th><td class="ast-s">S</td></tr>
+                <tr><th>Meropenem</th><td class="ast-s">S</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p style="font-size:13.5px;color:var(--ink-faint);">실제 microbiology interpretation은 검사법과 기관 보고체계를 함께 확인해야 한다.</p>
+
+          <div class="card card--key">
+            <div class="card__label"><span class="dot"></span>MICROBIOLOGY POINT</div>
+            <p>ASP 약사는 susceptibility table을 보고 "어떤 약이 S인가?"뿐 아니라 <b>"이 pattern이 어떤 resistance mechanism을 암시하는가?"</b>를 생각한다.</p>
+          </div>
+
+          <h3>ESBL과 Carbapenem stewardship</h3>
+          <p>ESBL infection에서 carbapenem이 중요한 역할을 한다. 그러나 <b>"ESBL = 무조건 meropenem"</b>이라고 외우면 안 된다.
+            cystitis/pyelonephritis/bacteremia 여부 · source · TMP-SMX/FQ susceptibility · oral step-down · ertapenem으로 충분한지 · meropenem이 꼭 필요한지를 함께 배운다.</p>
+
+          <div class="card card--asp">
+            <div class="card__label"><span class="dot"></span>ASP POINT</div>
+            <p>Pseudomonas가 없는데 ESBL E. coli 때문에 meropenem을 쓰고 있다면? → <b>Ertapenem으로 spectrum을 좁힐 수 있는지</b> 검토하는 상황이 생긴다.</p>
+            <div class="legend" style="margin-bottom:0;">
+              <span class="chip chip--resist"><span class="sw"></span>Ertapenem → Pseudomonas X</span>
+              <span class="chip chip--pseudo"><span class="sw"></span>Meropenem → Pseudomonas O</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- ===== S18,19 · CRE + resistance progression ===== -->
+        <section id="cre" class="section">
+          <h2><span class="sec-no">09</span> CRE &amp; 내성 진행</h2>
+          <p><b>CRE (Carbapenem-Resistant Enterobacterales)</b> — carbapenem에 resistance를 가진 Enterobacterales. 매우 중요한 healthcare-associated resistant organism이다.
+            대표적으로 <b>carbapenemase-producing CRE (KPC · NDM · OXA-48-like)</b>가 있고, carbapenemase가 아닌 다른 mechanism으로도 나타날 수 있다. 오늘은 세부 치료는 배우지 않는다.</p>
+
+          <h3>인터랙션 · Resistance progression</h3>
+          <p style="font-size:13.5px;color:var(--ink-faint);">버튼을 누를 때마다 phenotype이 하나씩 나타납니다.</p>
+          <div class="figure" data-decision>
+            <div class="decision__log">
+              <div class="dstep"><span class="k">Phenotype 1</span> Susceptible Enterobacterales</div>
+              <div class="dstep"><span class="k">Phenotype 2</span> ESBL — penicillin·cephalosporin 비활성화</div>
+              <div class="dstep"><span class="k">Phenotype 3</span> AmpC — 특정 균의 inducible resistance</div>
+              <div class="dstep is-final"><span class="k">Phenotype 4</span> <b>CRE — carbapenem resistance (mechanism matters)</b></div>
+            </div>
+            <div style="margin-top:14px;display:flex;gap:10px;flex-wrap:wrap;">
+              <button class="btn" data-decision-next>다음 phenotype ▸</button>
+              <button class="btn btn--ghost" data-decision-reset>↺ 처음으로</button>
+            </div>
+          </div>
+          <div class="card card--caution">
+            <div class="card__label"><span class="dot"></span>CAUTION</div>
+            <p>이것들이 반드시 한 균에서 시간 순서로 순차 발생한다는 뜻이 아니다. <b>서로 다른 resistance phenotype을 이해하기 위한 개념적 지도</b>다.</p>
+          </div>
+
+          <h3>왜 내성기전을 알아야 할까?</h3>
+          <p>예전에는 "culture에서 S인 항생제를 고른다" 정도로 생각하기 쉽다. 하지만 resistant Gram-negative infection에서는 한 단계 더 들어간다.
+            같은 CRE라도 <b>KPC-producing</b>과 <b>NDM-producing</b>에서 효과적인 newer β-lactam이 서로 달라질 수 있다.</p>
+          <div class="oneline">Organism → susceptibility → resistance mechanism 순으로 생각한다 (자세히는 CRE 수업에서)</div>
+
+          <div class="figure">
+            <div class="figure__title">도식 8 · CRE로 가는 흐름</div>
+            <div class="vflow">
+              <div class="vflow__box">Enterobacterales</div>
+              <div class="vflow__arrow">↓ ESBL / AmpC 등 resistance accumulation</div>
+              <div class="vflow__box">Carbapenem susceptibility 감소</div>
+              <div class="vflow__arrow">↓</div>
+              <div class="vflow__box q">CRE</div>
+              <div class="vflow__arrow">↓ Mechanism?</div>
+              <div class="vflow__branch">
+                <div class="vflow__leaf neg"><h6>KPC</h6></div>
+                <div class="vflow__leaf neg"><h6>NDM</h6></div>
+              </div>
+              <div class="vflow__branch">
+                <div class="vflow__leaf neg"><h6>OXA-48-like</h6></div>
+                <div class="vflow__leaf"><h6>기타</h6></div>
+              </div>
+              <div class="vflow__arrow">↓</div>
+              <div class="vflow__box" style="font-weight:500;">항생제 선택이 resistance mechanism에 따라 달라질 수 있음</div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ===== S20,21,22,23,30 · Cases + AST 인터랙션 ===== -->
+        <section id="cases" class="section">
+          <h2><span class="sec-no">10</span> ASP Cases</h2>
+
+          <h3>인터랙션 · AST table 연습</h3>
+          <p style="font-size:13.5px;color:var(--ink-faint);">아래 결과에서 가장 먼저 어떤 resistance phenotype을 의심할까요? 버튼으로 확인하세요.</p>
+          <div class="qcard">
+            <div style="font-weight:700;margin-bottom:8px;">Isolate: E. coli</div>
+            <div class="table-scroll">
+              <table class="data" style="min-width:340px;">
+                <thead><tr><th>Antibiotic</th><th>Result</th></tr></thead>
+                <tbody>
+                  <tr><th>Ampicillin</th><td class="ast-r">R</td></tr>
+                  <tr><th>Ceftriaxone</th><td class="ast-r">R</td></tr>
+                  <tr><th>Cefepime</th><td class="ast-s">S</td></tr>
+                  <tr><th>Ertapenem</th><td class="ast-s">S</td></tr>
+                  <tr><th>Meropenem</th><td class="ast-s">S</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <button class="reveal-btn">가장 먼저 의심할 phenotype 보기</button>
+            <div class="answer">ESBL possibility
+              <div class="exp">3세대 cephalosporin(ceftriaxone) resistance + carbapenem susceptible pattern → ESBL-producing Enterobacterales 가능성. 실제 해석은 검사법·기관 기준을 함께 확인.</div>
+            </div>
+          </div>
+
+          <h3>Case A · Urine culture (증상 확인)</h3>
+          <div class="card card--case">
+            <div class="card__label"><span class="dot"></span>CLINICAL CASE</div>
+            <p>72세 여성. Urine culture: <b>E. coli ≥100,000 CFU/mL</b>. Susceptibility: Ceftriaxone S · Ciprofloxacin S · TMP/SMX S.</p>
+          </div>
+          <div class="qcard">
+            <div class="q"><span class="qn">Q</span> 바로 항생제를 선택하면 될까?</div>
+            <button class="reveal-btn">정답 보기</button>
+            <div class="answer">아니다 — 먼저 증상을 본다.
+              <div class="exp">Dysuria · frequency · urgency · suprapubic pain · fever · flank pain 등을 확인. <b>Culture positive ≠ Infection</b> — 증상이 없는 bacteriuria는 환자 상황에 따라 항생제가 필요 없을 수 있다 (UTI 강의에서 상세히).</div>
+            </div>
+          </div>
+
+          <h3>Case B · ESBL E. coli</h3>
+          <div class="card card--case">
+            <div class="card__label"><span class="dot"></span>CLINICAL CASE</div>
+            <p>65세 남성, fever·flank pain 입원. Blood·urine culture 모두 <b>E. coli</b>. Ceftriaxone R · Ciprofloxacin R · TMP/SMX R · Ertapenem S · Meropenem S.</p>
+          </div>
+          <div class="figure">
+            <div class="vflow">
+              <div class="vflow__box">① Organism · E. coli</div>
+              <div class="vflow__arrow">↓</div>
+              <div class="vflow__box">② Site · Urinary tract</div>
+              <div class="vflow__arrow">↓</div>
+              <div class="vflow__box">③ Severity · Pyelonephritis + bacteremia</div>
+              <div class="vflow__arrow">↓</div>
+              <div class="vflow__box q">④ 3rd-gen cephalosporin R → ESBL possibility</div>
+              <div class="vflow__arrow">↓ Ertapenem S / Meropenem S</div>
+              <div class="vflow__box" style="background:var(--gn-soft);border-color:var(--gn);color:#0c8a7c;">⑤ 필요한 carbapenem을 severity·상태 고려해 선택</div>
+            </div>
+          </div>
+          <div class="oneline">"Meropenem이 제일 넓으니까 meropenem"이 아니다 — 필요한 spectrum을 선택한다.</div>
+
+          <h3>Case C · Enterobacter (AmpC 함정)</h3>
+          <div class="card card--case">
+            <div class="card__label"><span class="dot"></span>CLINICAL CASE</div>
+            <p>Blood culture: <b>Enterobacter cloacae complex</b>, 초기 Ceftriaxone S 보고.</p>
+          </div>
+          <div class="split2">
+            <div class="splitcard is-mrsa">
+              <h4>초보 사고</h4>
+              <ul><li>"Ceftriaxone S네. Ceftriaxone 쓰자."</li></ul>
+            </div>
+            <div class="splitcard is-mssa">
+              <h4>ASP 사고</h4>
+              <ul><li>Inducible AmpC risk</li><li>ceftriaxone 중 resistance emergence 가능성 고려</li><li>다른 적절한 옵션 검토</li></ul>
+            </div>
+          </div>
+          <div class="oneline">S/R 문자만 보는 것으로 끝나지 않는다 — 균종이 중요하다.</div>
+
+          <h3>Case D · Proteus (source control)</h3>
+          <div class="card card--case">
+            <div class="card__label"><span class="dot"></span>CLINICAL CASE</div>
+            <p>78세, recurrent UTI. Urine culture: <b>Proteus mirabilis</b>. CT에서 renal stone 확인.</p>
+          </div>
+          <div class="card card--asp">
+            <div class="card__label"><span class="dot"></span>ASP POINT · Source control</div>
+            <p>Proteus → urease → urinary alkalinization → struvite stone 가능성 → stone 자체가 infection persistence에 관여. <b>항생제만 바꾸는 것으로 해결되지 않을 수 있다</b> — 감염을 지속시키는 구조적 문제(source control)를 평가한다.</p>
+          </div>
+        </section>
+
+        <!-- ===== S26,27,28,29 · 정리 & Quiz ===== -->
+        <section id="quiz" class="section">
+          <h2><span class="sec-no">11</span> 정리 &amp; Active Recall</h2>
+
+          <h3>핵심 카드 (옆으로 스와이프)</h3>
+          <div class="flashdeck">
+            <div class="flashcard"><div class="fc-n">CARD 1</div><div class="fc-term">E. coli</div><div class="fc-arrow">→</div><div class="fc-ans">UTI</div></div>
+            <div class="flashcard warn"><div class="fc-n">CARD 2</div><div class="fc-term">Klebsiella</div><div class="fc-arrow">→</div><div class="fc-ans">ESBL / CRE</div></div>
+            <div class="flashcard"><div class="fc-n">CARD 3</div><div class="fc-term">Proteus</div><div class="fc-arrow">→</div><div class="fc-ans">Urease → Stone</div></div>
+            <div class="flashcard warn"><div class="fc-n">CARD 4</div><div class="fc-term">Enterobacter</div><div class="fc-arrow">→</div><div class="fc-ans">AmpC</div></div>
+            <div class="flashcard warn"><div class="fc-n">CARD 5</div><div class="fc-term">ESBL</div><div class="fc-arrow">→</div><div class="fc-ans">Cephalosporin resistance</div></div>
+            <div class="flashcard warn"><div class="fc-n">CARD 6</div><div class="fc-term">CRE</div><div class="fc-arrow">→</div><div class="fc-ans">Carbapenem resistance</div></div>
+            <div class="flashcard"><div class="fc-n">CARD 7</div><div class="fc-term">Ceftriaxone</div><div class="fc-arrow">→</div><div class="fc-ans">Susceptible Enterobacterales</div></div>
+            <div class="flashcard"><div class="fc-n">CARD 8</div><div class="fc-term">Ertapenem</div><div class="fc-arrow">→</div><div class="fc-ans">ESBL O · Pseudomonas X</div></div>
+            <div class="flashcard"><div class="fc-n">CARD 9</div><div class="fc-term">Meropenem</div><div class="fc-arrow">→</div><div class="fc-ans">ESBL O · Pseudomonas O</div></div>
+          </div>
+          <div class="flashhint">← 좌우로 밀어서 넘기세요 →</div>
+
+          <h3 style="margin-top:34px;">반드시 기억할 10개</h3>
+          <div class="eightcards">
+            <div class="factcard"><span class="n">1</span><p>Enterobacterales는 흔한 Gram-negative pathogen group이다.</p></div>
+            <div class="factcard"><span class="n">2</span><p>E. coli는 UTI의 대표적인 원인균이다.</p></div>
+            <div class="factcard"><span class="n">3</span><p>Klebsiella는 ESBL과 CRE 문제에서 매우 중요하다.</p></div>
+            <div class="factcard"><span class="n">4</span><p>Proteus는 urease를 생성하고 urinary stone과 연결된다.</p></div>
+            <div class="factcard"><span class="n">5</span><p>Enterobacter cloacae complex를 보면 AmpC를 떠올린다.</p></div>
+            <div class="factcard"><span class="n">6</span><p>균 이름 자체가 예상 resistance mechanism의 단서가 된다.</p></div>
+            <div class="factcard"><span class="n">7</span><p>ESBL은 여러 penicillin과 cephalosporin을 비활성화할 수 있다.</p></div>
+            <div class="factcard"><span class="n">8</span><p>ESBL Enterobacterales에서 carbapenem은 중요한 치료군이다.</p></div>
+            <div class="factcard"><span class="n">9</span><p>CRE에서는 resistance mechanism까지 알아야 치료제가 달라질 수 있다.</p></div>
+            <div class="factcard"><span class="n">10</span><p>Culture에서 균이 나왔다고 반드시 infection은 아니다.</p></div>
+          </div>
+
+          <h3 style="margin-top:34px;">Active Recall (정답 보기 버튼)</h3>
+          <div class="quiz">
+            <div class="qcard"><div class="q"><span class="qn">Q1</span> UTI의 대표적인 Enterobacterales는?</div><button class="reveal-btn">정답 보기</button><div class="answer">E. coli.</div></div>
+            <div class="qcard"><div class="q"><span class="qn">Q2</span> Klebsiella pneumoniae라는 이름 때문에 폐렴에서만 중요하다고 생각해도 되는가?</div><button class="reveal-btn">정답 보기</button><div class="answer">아니다. UTI, bacteremia 등 다양한 감염을 일으킨다.</div></div>
+            <div class="qcard"><div class="q"><span class="qn">Q3</span> Proteus mirabilis의 대표적인 enzyme은?</div><button class="reveal-btn">정답 보기</button><div class="answer">Urease.</div></div>
+            <div class="qcard"><div class="q"><span class="qn">Q4</span> Proteus infection과 연관된 urinary stone은?</div><button class="reveal-btn">정답 보기</button><div class="answer">Struvite stone.</div></div>
+            <div class="qcard"><div class="q"><span class="qn">Q5</span> Enterobacter cloacae complex를 보면 가장 먼저 연상할 resistance mechanism은?</div><button class="reveal-btn">정답 보기</button><div class="answer">AmpC β-lactamase.</div></div>
+            <div class="qcard"><div class="q"><span class="qn">Q6</span> ESBL에서 흔히 문제가 되는 β-lactam 계열은?</div><button class="reveal-btn">정답 보기</button><div class="answer">여러 penicillin, cephalosporin 및 aztreonam.</div></div>
+            <div class="qcard"><div class="q"><span class="qn">Q7</span> ESBL-producing Enterobacterales에서 중요하게 사용되는 β-lactam 계열은?</div><button class="reveal-btn">정답 보기</button><div class="answer">Carbapenem.</div></div>
+            <div class="qcard"><div class="q"><span class="qn">Q8</span> Ertapenem과 meropenem 중 Pseudomonas coverage가 있는 것은?</div><button class="reveal-btn">정답 보기</button><div class="answer">Meropenem.</div></div>
+            <div class="qcard"><div class="q"><span class="qn">Q9</span> Carbapenem-resistant Enterobacterales의 약어는?</div><button class="reveal-btn">정답 보기</button><div class="answer">CRE.</div></div>
+            <div class="qcard"><div class="q"><span class="qn">Q10</span> Enterobacter cloacae가 ceftriaxone S로 나왔으면 S 결과만 보고 ceftriaxone을 선택하면 충분한가?</div><button class="reveal-btn">정답 보기</button><div class="answer">아니다. Inducible AmpC 가능성을 고려해야 한다.</div></div>
+          </div>
+
+          <h3 style="margin-top:34px;">Organism Challenge</h3>
+          <p style="font-size:13.5px;color:var(--ink-faint);">특징을 보고 균을 고르세요.</p>
+          <div class="quiz">
+            <div class="qcard">
+              <div class="q" style="display:block;"><b>Challenge 1</b> · Gram-negative · UTI · 가장 흔한 원인균 중 하나</div>
+              <ul class="mcq" data-answer="A">
+                <li data-opt="A"><span class="opt">A</span> E. coli</li>
+                <li data-opt="B"><span class="opt">B</span> Proteus mirabilis</li>
+                <li data-opt="C"><span class="opt">C</span> Enterobacter cloacae</li>
+              </ul>
+              <div class="answer mcq-exp" style="display:none;">정답: A — E. coli</div>
+            </div>
+            <div class="qcard">
+              <div class="q" style="display:block;"><b>Challenge 2</b> · Gram-negative · UTI · Urease · Struvite stone</div>
+              <ul class="mcq" data-answer="B">
+                <li data-opt="A"><span class="opt">A</span> Klebsiella pneumoniae</li>
+                <li data-opt="B"><span class="opt">B</span> Proteus mirabilis</li>
+                <li data-opt="C"><span class="opt">C</span> E. coli</li>
+              </ul>
+              <div class="answer mcq-exp" style="display:none;">정답: B — Proteus mirabilis</div>
+            </div>
+            <div class="qcard">
+              <div class="q" style="display:block;"><b>Challenge 3</b> · Gram-negative · Healthcare-associated · Inducible AmpC</div>
+              <ul class="mcq" data-answer="C">
+                <li data-opt="A"><span class="opt">A</span> E. coli</li>
+                <li data-opt="B"><span class="opt">B</span> Proteus mirabilis</li>
+                <li data-opt="C"><span class="opt">C</span> Enterobacter cloacae complex</li>
+              </ul>
+              <div class="answer mcq-exp" style="display:none;">정답: C — Enterobacter cloacae complex</div>
+            </div>
+            <div class="qcard">
+              <div class="q" style="display:block;"><b>Challenge 4</b> · Gram-negative · ESBL · CRE · KPC와 강한 연관</div>
+              <ul class="mcq" data-answer="A">
+                <li data-opt="A"><span class="opt">A</span> Klebsiella pneumoniae</li>
+                <li data-opt="B"><span class="opt">B</span> Proteus mirabilis</li>
+                <li data-opt="C"><span class="opt">C</span> E. coli</li>
+              </ul>
+              <div class="answer mcq-exp" style="display:none;">정답: A — Klebsiella pneumoniae</div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ===== S24,30,31 · Integrated case & 통합 도식 ===== -->
+        <section id="tree" class="section">
+          <h2><span class="sec-no">12</span> Integrated ASP Case &amp; 통합 사고 흐름</h2>
+
+          <div class="card card--case">
+            <div class="card__label"><span class="dot"></span>CLINICAL CASE · Integrated</div>
+            <p>72세 환자, septic shock 입원. Empirically <b>Piperacillin/Tazobactam</b> 투여. Blood culture: <b>E. coli</b>.
+              Ceftriaxone R · Pip/Tazo 해석 주의 · Ertapenem S · Meropenem S.</p>
+          </div>
+          <div class="figure">
+            <div class="vflow">
+              <div class="vflow__box">① Organism · E. coli</div>
+              <div class="vflow__arrow">↓</div>
+              <div class="vflow__box q">② Ceftriaxone R → ESBL 가능성</div>
+              <div class="vflow__arrow">↓</div>
+              <div class="vflow__box">③ Severity · Bacteremia + septic shock</div>
+              <div class="vflow__arrow">↓ Ertapenem S / Meropenem S</div>
+              <div class="vflow__box">④ severity·상태에 맞는 carbapenem 선택</div>
+              <div class="vflow__arrow">↓ 안정화 & Pseudomonas 문제 없음</div>
+              <div class="vflow__box" style="background:var(--gn-soft);border-color:var(--gn);color:#0c8a7c;">⑤ 계속 가장 broad한 carbapenem이 필요한가? → de-escalation 재평가</div>
+            </div>
+          </div>
+          <div class="card card--asp">
+            <div class="card__label"><span class="dot"></span>ASP 핵심 사고</div>
+            <p>Empiric therapy → Organism → Susceptibility → Resistance mechanism → Severity/Site → Targeted therapy → <b>추가 de-escalation 가능성 재평가</b></p>
+          </div>
+
+          <div class="figure">
+            <div class="figure__title">도식 10 · Gram-negative 사고 흐름 (통합)</div>
+            <div class="vflow">
+              <div class="vflow__box">Gram-negative organism detected</div>
+              <div class="vflow__arrow">↓</div>
+              <div class="vflow__box q">Enterobacterales인가?</div>
+              <div class="vflow__arrow">↓ 어떤 균?</div>
+              <div class="vflow__branch">
+                <div class="vflow__leaf pos"><h6>E. coli</h6><div>UTI / ESBL</div></div>
+                <div class="vflow__leaf neg"><h6>Klebsiella</h6><div>ESBL / CRE</div></div>
+              </div>
+              <div class="vflow__branch">
+                <div class="vflow__leaf"><h6>Proteus</h6><div>Urease / Stone</div></div>
+                <div class="vflow__leaf neg"><h6>Enterobacter</h6><div>AmpC</div></div>
+              </div>
+              <div class="vflow__arrow">↓ Susceptibility pattern</div>
+              <div class="vflow__box q">Resistant phenotype? (ESBL / AmpC / CRE)</div>
+              <div class="vflow__arrow">↓ Infection site (urine/blood/abdomen/lung)</div>
+              <div class="vflow__box">Severity (stable / sepsis / shock)</div>
+              <div class="vflow__arrow">↓ Antibiotic selection</div>
+              <div class="vflow__box q">Narrower option possible?</div>
+              <div class="vflow__arrow">↓</div>
+              <div class="vflow__box" style="background:var(--gn-soft);border-color:var(--gn);color:#0c8a7c;">ASP intervention</div>
+            </div>
+          </div>
+        </section>
+
+        <section class="closing">
+          <h3>오늘의 한 문장</h3>
+          <p class="big">Gram-negative 감염에서는 "어떤 항생제가 S인가?"에서 한 단계 더 나아가,
+            어떤 Enterobacterales인지와 어떤 resistance mechanism을 가질 가능성이 있는지를 함께 생각한다.</p>
+          <p>ASP에서는 마지막으로 항상 묻는다.</p>
+          <p class="big">이 환자의 감염 부위와 중증도에 비해 현재 항생제가 너무 넓지는 않은가?</p>
+          <p style="margin-top:22px;"><a href="lesson-02.html" style="color:#fff;text-decoration:underline;">← 2강 다시 보기</a> · <a href="../index.html" style="color:#fff;text-decoration:underline;">강의 목록</a></p>
+        </section>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- 모바일 하단 내비 -->
+  <nav class="bottomnav" aria-label="강의 이동">
+    <a href="lesson-02.html"><span class="bn-ico">←</span>이전 강의</a>
+    <a href="#" data-open-toc><span class="bn-ico">☰</span>목차</a>
+    <a href="#" aria-disabled="true"><span class="bn-ico">→</span>다음 강의</a>
+  </nav>
+
+  <!-- Quick Review 플로팅 -->
+  <div class="quickrev">
+    <div class="quickrev__panel">
+      <h5>⚡ Quick Review</h5>
+      <div class="qr-row"><span class="qr-k">E. coli</span><span>UTI</span></div>
+      <div class="qr-row"><span class="qr-k">Klebsiella</span><span>ESBL / CRE</span></div>
+      <div class="qr-row"><span class="qr-k">Proteus</span><span>Urease / Stone</span></div>
+      <div class="qr-row"><span class="qr-k">Enterobacter</span><span>AmpC</span></div>
+      <div class="qr-row"><span class="qr-k">ESBL</span><span>Carbapenem 연상</span></div>
+      <div class="qr-row"><span class="qr-k">CRE</span><span>Mechanism matters</span></div>
+    </div>
+    <button class="quickrev__btn" aria-label="Quick Review 열기">⚡ Quick Review</button>
+  </div>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>
