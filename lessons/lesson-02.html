@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>2강 · Gram-positive 균 지도: Staphylococcus · Streptococcus · Enterococcus</title>
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+</head>
+<body>
+  <!-- 모바일 상단바 -->
+  <div class="topbar">
+    <button class="hamburger" aria-label="목차 열기" aria-expanded="false"><span></span></button>
+    <div class="topbar__title">2강 · Gram-positive 균 지도</div>
+  </div>
+  <div class="scrim" aria-hidden="true"></div>
+
+  <div class="app">
+    <!-- 사이드바 -->
+    <aside class="sidebar" aria-label="강의 목차">
+      <div class="sidebar__brand">
+        <div class="sidebar__logo">ASP</div>
+        <div class="sidebar__title">항생제 학습
+          <small>2강 · Gram-positive</small>
+        </div>
+      </div>
+      <nav>
+        <ul class="toc">
+          <li><a href="#map"><span class="num">1</span> GPC 전체 지도</a></li>
+          <li><a href="#staph"><span class="num">2</span> Staphylococcus</a></li>
+          <li><a href="#mrsa"><span class="num">3</span> MRSA 치료약 · Vancomycin</a></li>
+          <li><a href="#dapto"><span class="num">4</span> Daptomycin · Linezolid</a></li>
+          <li><a href="#cons"><span class="num">5</span> CoNS</a></li>
+          <li><a href="#strep"><span class="num">6</span> Streptococcus</a></li>
+          <li><a href="#entero"><span class="num">7</span> Enterococcus</a></li>
+          <li><a href="#table"><span class="num">8</span> 핵심 비교표</a></li>
+          <li><a href="#reverse"><span class="num">9</span> Drug → Organism</a></li>
+          <li><a href="#cases"><span class="num">10</span> ASP Cases</a></li>
+          <li><a href="#quiz"><span class="num">11</span> 정리 & Quiz</a></li>
+          <li><a href="#tree"><span class="num">12</span> 통합 결정 도식</a></li>
+        </ul>
+      </nav>
+      <a class="sidebar__back" href="../index.html">← 강의 목록으로</a>
+    </aside>
+
+    <!-- 본문 -->
+    <div class="content">
+      <div class="wrap">
+
+        <header class="lesson-hero">
+          <div class="kicker">ASP 항생제 학습 · 2강</div>
+          <h1>Gram-positive 균 지도</h1>
+          <p>Staphylococcus · Streptococcus · Enterococcus — 세 그룹으로 나누고, 내성과 감염 부위로 좁혀가며 항생제를 선택합니다.</p>
+        </header>
+
+        <!-- ============ SECTION 1 · GPC 전체 지도 ============ -->
+        <section id="map" class="section">
+          <h2><span class="sec-no">01</span> Gram-positive cocci의 큰 지도</h2>
+          <p>Gram-positive cocci를 처음 접했을 때 모든 균을 개별적으로 외우지 않는다. ASP 실무에서는 먼저 <b>세 그룹</b>으로 나눈다.</p>
+
+          <div class="figure">
+            <div class="figure__title">도식 1 · Gram-positive cocci 전체 지도</div>
+            <div class="gpmap">
+              <div class="gpmap__root">Gram-positive cocci</div>
+              <div class="gpmap__cols">
+                <div class="gpmap__col staph">
+                  <h5>Staphylococcus</h5>
+                  <ul>
+                    <li>S. aureus</li>
+                    <li>MSSA / <span class="hl">MRSA</span></li>
+                    <li>CoNS (S. epidermidis)</li>
+                  </ul>
+                </div>
+                <div class="gpmap__col strep">
+                  <h5>Streptococcus</h5>
+                  <ul>
+                    <li>S. pneumoniae</li>
+                    <li>S. pyogenes (Group A)</li>
+                    <li>S. agalactiae (Group B)</li>
+                    <li>Viridans group</li>
+                  </ul>
+                </div>
+                <div class="gpmap__col entero">
+                  <h5>Enterococcus</h5>
+                  <ul>
+                    <li>E. faecalis</li>
+                    <li>E. faecium</li>
+                    <li><span class="hl">VRE</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="figure__cap">Gram-positive라고 모두 같은 항생제를 쓰는 것이 아니다.</div>
+          </div>
+        </section>
+
+        <!-- ============ SECTION 2~5 · Staphylococcus ============ -->
+        <section id="staph" class="section">
+          <h2><span class="sec-no">02</span> Staphylococcus aureus</h2>
+          <p>S. aureus를 확인했을 때 가장 먼저 해야 할 질문:</p>
+          <div class="oneline">MSSA인가, MRSA인가?</div>
+          <p>이 구분에 따라 치료 전략이 크게 달라진다.</p>
+
+          <div class="figure">
+            <div class="figure__title">도식 2 · S. aureus 분기 (2강에서 가장 중요한 그림)</div>
+            <div class="split2">
+              <div class="splitcard is-mssa">
+                <h4>MSSA</h4>
+                <div class="sub">Methicillin-susceptible</div>
+                <div class="drug">Cefazolin</div>
+                <ul><li>antistaphylococcal penicillin (nafcillin, oxacillin)도 가능</li></ul>
+              </div>
+              <div class="splitcard is-mrsa">
+                <h4>MRSA</h4>
+                <div class="sub">Methicillin-resistant</div>
+                <div class="drug">Vancomycin</div>
+                <ul><li>추가 옵션: Linezolid · Daptomycin · Ceftaroline</li></ul>
+              </div>
+            </div>
+          </div>
+
+          <h3>MSSA → Cefazolin</h3>
+          <div class="card card--key">
+            <div class="card__label"><span class="dot"></span>KEY POINT</div>
+            <p>MSSA(Methicillin-Susceptible S. aureus)에서 가장 먼저 연결할 항생제는 <b>Cefazolin</b>.
+              상황에 따라 antistaphylococcal penicillin인 nafcillin, oxacillin도 사용될 수 있다. 이 연결은 강하게 기억한다.</p>
+          </div>
+
+          <h3>MSSA인데 Vancomycin을 계속 써야 할까?</h3>
+          <div class="card card--case">
+            <div class="card__label"><span class="dot"></span>CLINICAL CASE</div>
+            <p>환자가 severe sepsis로 입원. 원인균을 모르는 상태에서 <b>Vancomycin + Cefepime</b>으로 empiric therapy 시작.
+              이후 blood culture에서 <b>Staphylococcus aureus</b> 확인, 최종 susceptibility에서 <b>MSSA</b>로 확인.</p>
+          </div>
+
+          <div class="figure">
+            <div class="figure__title">도식 3 · De-escalation</div>
+            <div class="vflow">
+              <div class="vflow__box">Vancomycin + Cefepime</div>
+              <div class="vflow__arrow">↓ Blood culture</div>
+              <div class="vflow__box q">MSSA 확인</div>
+              <div class="vflow__arrow">↓ MRSA coverage 필요 없음 · broad GN도 근거 없으면 재평가</div>
+              <div class="vflow__box" style="background:var(--gn-soft);border-color:var(--gn);color:#0c8a7c;">Cefazolin 등 MSSA-targeted β-lactam</div>
+            </div>
+          </div>
+
+          <div class="card card--asp">
+            <div class="card__label"><span class="dot"></span>ASP POINT</div>
+            <p>Vancomycin이 더 "강한 항생제"이기 때문에 계속 사용하는 것이 좋은 치료가 아니다. 균과 감염에 가장 적절한 항생제를 선택한다.</p>
+            <div class="legend" style="margin-bottom:0;">
+              <span class="chip chip--gp"><span class="sw"></span>Broad empiric therapy</span>
+              <span class="chip chip--gn"><span class="sw"></span>Organism identification</span>
+              <span class="chip chip--pseudo"><span class="sw"></span>Targeted therapy</span>
+            </div>
+          </div>
+
+          <h3>MRSA 내성기전</h3>
+          <p>MRSA(Methicillin-Resistant S. aureus)에서는 일반적인 β-lactam이 효과적이지 않다.
+            대표 기전: <b>mecA → 변형된 PBP2a → β-lactam에 대한 낮은 친화도 → methicillin resistance.</b></p>
+
+          <div class="figure">
+            <div class="figure__title">도식 4 · MRSA 내성기전</div>
+            <div class="twopanel">
+              <div class="panel panel--normal">
+                <h5>MSSA</h5>
+                <ol><li>Normal PBP</li><li>β-lactam binding</li><li>cell wall synthesis inhibition</li></ol>
+              </div>
+              <div class="panel panel--drug">
+                <h5>MRSA</h5>
+                <ol><li>mecA</li><li>PBP2a</li><li>β-lactam이 충분히 결합하지 못함</li><li>cell wall synthesis 지속</li></ol>
+              </div>
+            </div>
+            <div class="figure__cap">일반적인 β-lactam에 해당하는 개념이며, ceftaroline 같은 MRSA-active β-lactam은 예외로 이후 학습한다.</div>
+          </div>
+        </section>
+
+        <!-- ============ SECTION 6~7 · MRSA 치료약 · Vancomycin ============ -->
+        <section id="mrsa" class="section">
+          <h2><span class="sec-no">03</span> MRSA 치료약 지도 &amp; Vancomycin</h2>
+          <p>MRSA에서 가장 먼저 떠올릴 항생제는 <b>Vancomycin</b>. 하지만 감염 부위에 따라 다른 항생제가 중요해진다.</p>
+
+          <div class="figure">
+            <div class="figure__title">도식 5 · MRSA 감염 부위별 대표 약</div>
+            <div class="gpmap__cols">
+              <div class="gpmap__col staph">
+                <h5>Bacteremia / Endocarditis</h5>
+                <ul><li>Vancomycin</li><li>Daptomycin</li></ul>
+              </div>
+              <div class="gpmap__col strep">
+                <h5>Pneumonia</h5>
+                <ul><li>Vancomycin</li><li>Linezolid</li></ul>
+              </div>
+              <div class="gpmap__col entero">
+                <h5>일부 기타 감염</h5>
+                <ul><li>Linezolid</li><li>Ceftaroline 등</li></ul>
+              </div>
+            </div>
+            <div class="figure__cap">같은 MRSA라도 infection site가 항생제 선택을 바꾼다.</div>
+          </div>
+
+          <h3>Vancomycin</h3>
+          <p>ASP 약사에게 매우 중요한 항생제. 대표 연결: <b>MRSA → Vancomycin</b>. 앞으로 별도 수업에서
+            loading/maintenance dose · renal function · TDM · nephrotoxicity · AUC/MIC를 깊게 다룬다.
+            현재는 <b>Vancomycin → MRSA → PK monitoring 중요 → AUC/MIC</b> 연결만 기억한다.</p>
+
+          <div class="card card--pharm">
+            <div class="card__label"><span class="dot"></span>PHARMACIST POINT</div>
+            <p>Vancomycin 처방을 볼 때 ASP 약사는 "MRSA를 잡는 약이다"에서 끝나지 않고 다음으로 확장한다.</p>
+            <ul class="clean" style="margin-bottom:0;">
+              <li>현재 dose가 적절한가?</li>
+              <li>renal function은?</li>
+              <li>drug exposure가 충분한가?</li>
+              <li>nephrotoxicity 위험은?</li>
+              <li>언제 de-escalation 또는 중단 가능한가?</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- ============ SECTION 8~9 · Daptomycin · Linezolid ============ -->
+        <section id="dapto" class="section">
+          <h2><span class="sec-no">04</span> Daptomycin &amp; Linezolid</h2>
+
+          <h3>Daptomycin</h3>
+          <p>Resistant Gram-positive infection에서 중요한 항생제. 대표적으로 MRSA bacteremia, 일부 infective endocarditis,
+            VRE infection 등에서 사용할 수 있다. 그러나 매우 중요한 예외가 있다.</p>
+
+          <div class="card card--caution">
+            <div class="card__label"><span class="dot"></span>CAUTION · Daptomycin ≠ Pneumonia</div>
+            <p>Daptomycin은 폐의 surfactant에 의해 활성이 억제되기 때문에 <b>pneumonia 치료에 사용하지 않는다.</b></p>
+          </div>
+
+          <div class="figure">
+            <div class="figure__title">도식 6 · Daptomycin — 부위에 따른 사용</div>
+            <div class="split2">
+              <div class="splitcard is-mssa">
+                <h4>🩸 Bloodstream</h4>
+                <div class="sub">MRSA bacteremia</div>
+                <div class="drug">Daptomycin ✓</div>
+              </div>
+              <div class="splitcard is-mrsa">
+                <h4>🫁 Lung</h4>
+                <div class="sub">MRSA pneumonia</div>
+                <div class="drug">Daptomycin ✕</div>
+                <ul><li>Pulmonary surfactant inactivation</li></ul>
+              </div>
+            </div>
+          </div>
+          <div class="oneline">Daptomycin = bloodstream O / pneumonia X</div>
+
+          <h3>Linezolid</h3>
+          <p>중요한 Gram-positive 항생제. <b>MRSA</b>(특히 pneumonia에서 중요한 선택지)와 <b>VRE</b> 치료에서 모두 중요하다.
+            처음에는 이렇게 기억한다.</p>
+          <div class="oneline">Linezolid = MRSA + VRE</div>
+
+          <div class="card card--pharm">
+            <div class="card__label"><span class="dot"></span>PHARMACIST POINT · Linezolid</div>
+            <p>추후 확인해야 할 주요 문제:</p>
+            <ul class="clean" style="margin-bottom:0;">
+              <li>Thrombocytopenia</li>
+              <li>Myelosuppression</li>
+              <li>Peripheral neuropathy</li>
+              <li>Optic neuropathy</li>
+              <li>Serotonergic drug interaction</li>
+            </ul>
+            <p style="margin-bottom:0;">특히 치료기간이 길어지면 toxicity monitoring의 중요성이 커진다.</p>
+          </div>
+        </section>
+
+        <!-- ============ SECTION 10 · CoNS ============ -->
+        <section id="cons" class="section">
+          <h2><span class="sec-no">05</span> Coagulase-negative Staphylococci</h2>
+          <p>대표: <b>Staphylococcus epidermidis</b>. CoNS는 피부 정상균총에 포함되어 blood culture에서 흔히 발견될 수 있다.
+            하지만 <b>blood culture positive = 반드시 bloodstream infection은 아니다.</b></p>
+
+          <div class="figure">
+            <div class="figure__title">도식 7 · Infection vs Contamination</div>
+            <div class="vflow">
+              <div class="vflow__box">Blood culture: S. epidermidis</div>
+              <div class="vflow__arrow">↓ 다음을 확인</div>
+            </div>
+            <div class="orggrid" style="margin-top:12px;">
+              <div class="orgcell cov-partial" style="opacity:1;"><span>몇 개 bottle에서 자랐나?</span></div>
+              <div class="orgcell cov-partial" style="opacity:1;"><span>반복 culture에서도 같은 균?</span></div>
+              <div class="orgcell cov-partial" style="opacity:1;"><span>Central venous catheter?</span></div>
+              <div class="orgcell cov-partial" style="opacity:1;"><span>Prosthetic material?</span></div>
+              <div class="orgcell cov-partial" style="opacity:1;"><span>Fever/hypotension 등 근거?</span></div>
+            </div>
+            <div class="split2" style="margin-top:12px;">
+              <div class="splitcard is-mssa"><h4>True infection?</h4></div>
+              <div class="splitcard is-mrsa"><h4>Contamination?</h4></div>
+            </div>
+          </div>
+
+          <div class="card card--asp">
+            <div class="card__label"><span class="dot"></span>ASP POINT</div>
+            <p>항생제 적정사용은 "어떤 항생제를 선택할 것인가?"뿐 아니라 <b>"항생제를 아예 사용해야 하는가?"</b>를 판단하는 것부터 시작한다.</p>
+            <div class="oneline" style="margin:6px 0 0;">Culture positive ≠ Infection</div>
+          </div>
+        </section>
+
+        <!-- ============ SECTION 11~15 · Streptococcus ============ -->
+        <section id="strep" class="section">
+          <h2><span class="sec-no">06</span> Streptococcus</h2>
+          <div class="oneline">Streptococcus → β-lactam 을 먼저 연상</div>
+
+          <div class="figure">
+            <div class="figure__title">도식 8 · Streptococcus family</div>
+            <div class="gpmap__cols">
+              <div class="gpmap__col strep"><h5>S. pneumoniae</h5><ul><li>Pneumonia</li><li>Meningitis</li></ul></div>
+              <div class="gpmap__col strep"><h5>S. pyogenes (Group A)</h5><ul><li>Pharyngitis</li><li>Cellulitis</li><li>Necrotizing fasciitis</li></ul></div>
+              <div class="gpmap__col strep"><h5>S. agalactiae (Group B)</h5><ul><li>신생아·산모 관련</li></ul></div>
+              <div class="gpmap__col strep"><h5>Viridans group</h5><ul><li>Oral flora</li><li>Infective endocarditis</li></ul></div>
+            </div>
+          </div>
+
+          <h3>Streptococcus pneumoniae</h3>
+          <p>매우 중요한 community-acquired pathogen. 대표 감염: Pneumonia · Meningitis · Otitis media · Sinusitis · Bacteremia.
+            임상 상황과 susceptibility에 따라 다르지만 초기에 <b>Ceftriaxone</b>을 자주 연결해서 생각할 수 있다.</p>
+          <div class="oneline">CAP → S. pneumoniae → Ceftriaxone</div>
+          <p style="font-size:13.5px;color:var(--ink-faint);">단, CAP의 empiric therapy가 항상 ceftriaxone 단독이라는 의미는 아니다.</p>
+
+          <h3>Streptococcus pyogenes (Group A)</h3>
+          <p>대표 감염: Pharyngitis · Cellulitis · Erysipelas · Necrotizing fasciitis. 기본적으로 β-lactam에 매우 중요한 감수성을 가진다.
+            대표 연상: <b>Penicillin</b>.</p>
+
+          <div class="card card--case">
+            <div class="card__label"><span class="dot"></span>CLINICAL CASE · Severe invasive GAS</div>
+            <p>Necrotizing fasciitis 같은 severe invasive infection에서는 <b>Penicillin + Clindamycin</b> 조합이 중요하다.</p>
+          </div>
+
+          <div class="figure">
+            <div class="figure__title">도식 9 · Penicillin + Clindamycin</div>
+            <div class="split2">
+              <div class="splitcard is-mssa"><h4>Penicillin</h4><ul><li>균 자체에 대한 항균 작용</li></ul></div>
+              <div class="splitcard is-mrsa" style="background:var(--anaerobe-soft);border-color:var(--anaerobe);">
+                <h4 style="color:var(--anaerobe);">Clindamycin</h4>
+                <ul><li>Protein synthesis inhibition</li><li>→ Toxin production 억제 등 임상적 이점</li></ul>
+              </div>
+            </div>
+          </div>
+          <div class="oneline">Severe invasive GAS → Penicillin + Clindamycin (자세한 내용은 SSTI 수업에서)</div>
+
+          <h3>Viridans Streptococci</h3>
+          <p>구강 내 정상균총과 연결되는 중요한 균군. 초기 학습에서 가장 중요한 연결:</p>
+          <div class="oneline">Viridans Streptococcus → Infective Endocarditis</div>
+          <p style="font-size:13.5px;color:var(--ink-faint);">치료는 susceptibility·상황에 따라 β-lactam 등을 고려. 자세한 regimen은 endocarditis 수업에서 학습한다.</p>
+        </section>
+
+        <!-- ============ SECTION 16~21 · Enterococcus ============ -->
+        <section id="entero" class="section">
+          <h2><span class="sec-no">07</span> Enterococcus</h2>
+          <p>대표적으로 중요한 두 종: <b>E. faecalis</b>, <b>E. faecium</b>. Streptococcus와 비슷한 GPC처럼 보이지만
+            항생제 spectrum 관점에서는 독특한 특징이 많다.</p>
+
+          <h3>가장 중요한 특징 · Cephalosporin이 안 듣는다</h3>
+          <p>Enterococcus는 cephalosporin에 <b>intrinsic resistance</b>를 갖는다.
+            따라서 Cefazolin ✕ · Ceftriaxone ✕ · Cefepime ✕.</p>
+
+          <div class="figure">
+            <div class="figure__title">도식 10 · Cephalosporin의 큰 구멍</div>
+            <div class="cephhole">
+              <div class="cephhole__ring">
+                <div class="title">Cephalosporins</div>
+                <div class="cephhole__center"><span class="x">✕</span>ENTEROCOCCUS</div>
+              </div>
+              <div class="legend" style="justify-content:center;margin-top:16px;">
+                <span class="chip chip--gp"><span class="sw"></span>MSSA</span>
+                <span class="chip chip--gp"><span class="sw"></span>Streptococcus</span>
+                <span class="chip chip--gn"><span class="sw"></span>Enterobacterales</span>
+                <span class="chip chip--pseudo"><span class="sw"></span>(Ceftaz/Cefepime) Pseudomonas</span>
+              </div>
+              <div class="figure__cap">바깥은 커버 가능 — 그러나 가운데 Enterococcus는 뚫린다.</div>
+            </div>
+          </div>
+          <div class="oneline">Broad-spectrum cephalosporin이라고 Enterococcus까지 커버하는 것은 아니다.</div>
+
+          <h3>E. faecalis vs E. faecium</h3>
+          <p><b>E. faecalis</b>에서는 <b>Ampicillin</b>이 중요한 치료제가 될 수 있다 → 초기 mental map: <b>E. faecalis → Ampicillin</b>.
+            <b>E. faecium</b>은 내성 문제가 훨씬 크고 특히 <b>VRE</b>와 강하게 연결된다.</p>
+
+          <div class="figure">
+            <div class="figure__title">비교 카드 · faecalis vs faecium</div>
+            <div class="table-scroll">
+              <table class="data">
+                <thead><tr><th></th><th>E. faecalis</th><th>E. faecium</th></tr></thead>
+                <tbody>
+                  <tr><th>Ampicillin susceptibility</th><td>상대적으로 흔함</td><td>내성이 흔함</td></tr>
+                  <tr><th>다제내성 문제</th><td>상대적으로 낮음</td><td>높음</td></tr>
+                  <tr><th>VRE 연상</th><td>가능</td><td class="cov cov-no-c">특히 중요</td></tr>
+                  <tr><th>초기 mental map</th><td>Ampicillin</td><td>Resistance 확인</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="figure__cap">실제 치료에서는 반드시 각 isolate의 susceptibility를 확인한다.</div>
+          </div>
+
+          <h3>VRE (Vancomycin-Resistant Enterococcus)</h3>
+          <p>특히 E. faecium에서 중요한 문제. 대표 내성기전: <b>VanA · VanB</b>. 현재는 세부 mechanism보다
+            "vancomycin resistant Enterococcus가 존재한다"는 사실과 치료 옵션을 먼저 익힌다.
+            대표 치료: <b>Linezolid · Daptomycin</b>.</p>
+
+          <div class="figure">
+            <div class="figure__title">도식 11 · VRE 치료 지도</div>
+            <div class="vflow">
+              <div class="vflow__box">Enterococcus</div>
+              <div class="vflow__arrow">↓</div>
+              <div class="vflow__box q">Vancomycin resistant?</div>
+              <div class="vflow__branch">
+                <div class="vflow__leaf pos"><h6>No</h6><div>Ampicillin / vancomycin 등<br/>→ susceptibility에 따라 결정</div></div>
+                <div class="vflow__leaf neg"><h6>Yes → VRE</h6><div class="d">Linezolid / Daptomycin</div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 인터랙션 2 · Spectrum Challenge -->
+          <h3>인터랙션 · Spectrum Challenge</h3>
+          <div class="qcard">
+            <div class="q" style="display:block;">
+              <b>Ceftriaxone</b> — 다음 중 ceftriaxone이 <b>커버하지 못하는</b> Gram-positive organism은?
+            </div>
+            <ul class="mcq" data-answer="C">
+              <li data-opt="A"><span class="opt">A</span> MSSA</li>
+              <li data-opt="B"><span class="opt">B</span> Streptococcus</li>
+              <li data-opt="C"><span class="opt">C</span> Enterococcus</li>
+            </ul>
+            <div class="answer mcq-exp" style="display:none;">
+              정답: C — Enterococcus
+              <div class="exp">Enterococcus는 cephalosporin에 intrinsic resistance가 있다.</div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============ SECTION 22 · 핵심 비교표 ============ -->
+        <section id="table" class="section">
+          <h2><span class="sec-no">08</span> Gram-positive 핵심 비교표</h2>
+          <div class="table-scroll">
+            <table class="data">
+              <thead>
+                <tr><th>Organism</th><th>핵심 분류</th><th>먼저 떠올릴 항생제</th><th>중요한 포인트</th></tr>
+              </thead>
+              <tbody>
+                <tr><th>MSSA</th><td>S. aureus</td><td>Cefazolin</td><td>Vancomycin보다 targeted β-lactam 검토</td></tr>
+                <tr><th>MRSA</th><td>S. aureus</td><td>Vancomycin</td><td>mecA / PBP2a</td></tr>
+                <tr><th>MRSA bacteremia</th><td>MRSA</td><td>Vancomycin / Daptomycin</td><td>Daptomycin 사용 가능</td></tr>
+                <tr><th>MRSA pneumonia</th><td>MRSA</td><td>Vancomycin / Linezolid</td><td class="cov cov-no-c">Daptomycin X</td></tr>
+                <tr><th>S. pneumoniae</th><td>Streptococcus</td><td>Ceftriaxone 등</td><td>CAP / meningitis</td></tr>
+                <tr><th>S. pyogenes</th><td>Group A Strep</td><td>Penicillin</td><td>Severe invasive → clindamycin 연상</td></tr>
+                <tr><th>Viridans Strep</th><td>Streptococcus</td><td>β-lactam 등</td><td>Endocarditis 연상</td></tr>
+                <tr><th>E. faecalis</th><td>Enterococcus</td><td>Ampicillin</td><td class="cov cov-no-c">Cephalosporin X</td></tr>
+                <tr><th>E. faecium</th><td>Enterococcus</td><td>Susceptibility 확인</td><td>내성 빈도가 높음</td></tr>
+                <tr><th>VRE</th><td>Enterococcus</td><td>Linezolid / Daptomycin</td><td>특히 E. faecium 중요</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="card card--caution">
+            <div class="card__label"><span class="dot"></span>CAUTION · 표 사용 주의</div>
+            <p>이 표는 초기 mental map을 위한 것이다. 실제 환자 치료에서는 infection site · susceptibility · MIC · source ·
+              renal function · severity · source control 등을 함께 고려한다.</p>
+          </div>
+        </section>
+
+        <!-- ============ SECTION 23 · Drug → Organism ============ -->
+        <section id="reverse" class="section">
+          <h2><span class="sec-no">09</span> 항생제 관점에서 다시 보기</h2>
+          <p>이번에는 균이 아니라 <b>약에서 출발</b>한다. 1강(항생제)과 2강(미생물)을 연결하는 도식이다.</p>
+
+          <div class="figure">
+            <div class="figure__title">도식 12 · Drug → Organism 역방향 지도</div>
+            <div class="revmap">
+              <div class="revcard"><div class="drug">Cefazolin</div><div class="arrow">→</div><div class="org">MSSA</div></div>
+              <div class="revcard"><div class="drug">Vancomycin</div><div class="arrow">→</div><div class="org">MRSA</div></div>
+              <div class="revcard"><div class="drug">Ampicillin</div><div class="arrow">→</div><div class="org">E. faecalis</div></div>
+              <div class="revcard"><div class="drug">Linezolid</div><div class="arrow">→</div><div class="org">MRSA / VRE</div></div>
+              <div class="revcard"><div class="drug">Daptomycin</div><div class="arrow">→</div><div class="org">MRSA bacteremia / VRE</div><div class="warn">Pneumonia X</div></div>
+              <div class="revcard"><div class="drug">Ceftriaxone</div><div class="arrow">→</div><div class="org">Streptococcus 포함 여러 감염</div><div class="warn">Enterococcus X</div></div>
+            </div>
+          </div>
+
+          <!-- 인터랙션 1 · 균 선택기 -->
+          <h3>인터랙션 · 균을 선택하세요</h3>
+          <div class="figure" data-selector>
+            <div class="orgselect">
+              <div class="orgselect__btns">
+                <button class="sel-btn" data-target="MSSA">MSSA</button>
+                <button class="sel-btn" data-target="MRSA">MRSA</button>
+                <button class="sel-btn" data-target="Spn">S. pneumoniae</button>
+                <button class="sel-btn" data-target="Efs">E. faecalis</button>
+                <button class="sel-btn" data-target="Efm">E. faecium</button>
+                <button class="sel-btn" data-target="VRE">VRE</button>
+              </div>
+              <div class="sel-panel" data-panel="MSSA">
+                <div class="rowline"><div class="k">First association</div><div class="v"><b>Cefazolin</b></div></div>
+                <div class="rowline"><div class="k">Note</div><div class="v">Vancomycin보다 targeted β-lactam 검토</div></div>
+                <div class="rowline"><div class="k">Resistance</div><div class="v">Methicillin susceptible</div></div>
+              </div>
+              <div class="sel-panel" data-panel="MRSA">
+                <div class="rowline"><div class="k">First association</div><div class="v"><b>Vancomycin</b></div></div>
+                <div class="rowline"><div class="k">Site matters</div><div class="v">Bacteremia → Daptomycin possible<br/>Pneumonia → <b style="color:var(--resist)">Daptomycin X</b> (Vanco/Linezolid)</div></div>
+                <div class="rowline"><div class="k">Resistance</div><div class="v">mecA → PBP2a</div></div>
+              </div>
+              <div class="sel-panel" data-panel="Spn">
+                <div class="rowline"><div class="k">First association</div><div class="v"><b>Ceftriaxone</b> (β-lactam 먼저)</div></div>
+                <div class="rowline"><div class="k">Sites</div><div class="v">CAP · Meningitis · Otitis media 등</div></div>
+              </div>
+              <div class="sel-panel" data-panel="Efs">
+                <div class="rowline"><div class="k">First association</div><div class="v"><b>Ampicillin</b></div></div>
+                <div class="rowline"><div class="k">Note</div><div class="v"><b style="color:var(--resist)">Cephalosporin X</b> (intrinsic resistance)</div></div>
+              </div>
+              <div class="sel-panel" data-panel="Efm">
+                <div class="rowline"><div class="k">First association</div><div class="v"><b>Susceptibility 확인</b></div></div>
+                <div class="rowline"><div class="k">Note</div><div class="v">내성 빈도 ↑ · VRE 강하게 연상</div></div>
+              </div>
+              <div class="sel-panel" data-panel="VRE">
+                <div class="rowline"><div class="k">First association</div><div class="v"><b>Linezolid / Daptomycin</b></div></div>
+                <div class="rowline"><div class="k">Note</div><div class="v">특히 E. faecium · source control 함께 판단</div></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============ SECTION 24~26 · ASP Cases ============ -->
+        <section id="cases" class="section">
+          <h2><span class="sec-no">10</span> ASP Cases</h2>
+
+          <!-- 인터랙션 3 · Clinical Decision (Case 1 MSSA) -->
+          <h3>Case 1 · MSSA — Clinical Decision</h3>
+          <p style="font-size:13.5px;color:var(--ink-faint);">75세 남성, fever·hypotension. 버튼을 눌러 정보를 한 줄씩 공개하고 마지막에 ASP 판단을 확인하세요.</p>
+          <div class="figure" data-decision>
+            <div class="decision__log">
+              <div class="dstep"><span class="k">Blood culture</span> Staphylococcus aureus</div>
+              <div class="dstep"><span class="k">Susceptibility</span> MSSA</div>
+              <div class="dstep"><span class="k">Current antibiotic</span> Vancomycin + Cefepime</div>
+              <div class="dstep"><span class="k">생각 순서</span> MRSA? → No · Broad GN coverage 다른 근거? → 없으면 재평가</div>
+              <div class="dstep is-final"><span class="k">ASP intervention</span> <b>Cefazolin 등 MSSA-targeted β-lactam으로 변경 검토</b></div>
+            </div>
+            <div style="margin-top:14px;display:flex;gap:10px;flex-wrap:wrap;">
+              <button class="btn" data-decision-next>환자 정보 공개 ▸</button>
+              <button class="btn btn--ghost" data-decision-reset>↺ 처음으로</button>
+            </div>
+          </div>
+
+          <h3>Case 2 · Enterococcus faecalis</h3>
+          <div class="card card--case">
+            <div class="card__label"><span class="dot"></span>CLINICAL CASE</div>
+            <p>Blood culture: <b>Enterococcus faecalis</b>. Susceptibility: Ampicillin S, Vancomycin S. 현재 Vancomycin 투여 중.</p>
+          </div>
+          <div class="qcard">
+            <div class="q"><span class="qn">Q</span> Vancomycin이 S이므로 그대로 사용하면 되는가?</div>
+            <button class="reveal-btn">정답 보기</button>
+            <div class="answer">Vancomycin이 효과가 있다고 해서 반드시 최적의 선택은 아니다.
+              <div class="exp">Ampicillin susceptible E. faecalis라면 <b>Ampicillin 기반 targeted therapy</b> 가능성을 검토한다.</div>
+            </div>
+          </div>
+
+          <h3>Case 3 · VRE</h3>
+          <div class="card card--case">
+            <div class="card__label"><span class="dot"></span>CLINICAL CASE</div>
+            <p>Blood culture: <b>Enterococcus faecium</b>. Susceptibility: Vancomycin R.</p>
+          </div>
+          <div class="figure">
+            <div class="vflow">
+              <div class="vflow__box">E. faecium</div>
+              <div class="vflow__arrow">↓ Vancomycin resistant</div>
+              <div class="vflow__box q">VRE</div>
+              <div class="vflow__arrow">↓ 다음 검토</div>
+              <div class="vflow__box" style="max-width:520px;font-weight:500;">실제 infection인가? · bacteremia인가? · source는? · catheter? · source control 가능? · Linezolid/Daptomycin 중 무엇? · MIC와 infection site?</div>
+            </div>
+          </div>
+          <div class="card card--asp">
+            <div class="card__label"><span class="dot"></span>ASP POINT</div>
+            <p>ASP는 "VRE → Linezolid"처럼 단순한 약물 매칭으로 끝나지 않는다. 균, 감염 부위, 환자 상태, source control까지 함께 판단한다.</p>
+          </div>
+        </section>
+
+        <!-- ============ SECTION 27~29 · 정리 & Quiz ============ -->
+        <section id="quiz" class="section">
+          <h2><span class="sec-no">11</span> 정리 &amp; Active Recall</h2>
+
+          <h3>오늘의 핵심 카드 (옆으로 스와이프)</h3>
+          <div class="flashdeck">
+            <div class="flashcard"><div class="fc-n">CARD 1</div><div class="fc-term">MSSA</div><div class="fc-arrow">→</div><div class="fc-ans">Cefazolin</div></div>
+            <div class="flashcard"><div class="fc-n">CARD 2</div><div class="fc-term">MRSA</div><div class="fc-arrow">→</div><div class="fc-ans">Vancomycin</div></div>
+            <div class="flashcard"><div class="fc-n">CARD 3</div><div class="fc-term">MRSA resistance</div><div class="fc-arrow">→</div><div class="fc-ans">mecA · PBP2a</div></div>
+            <div class="flashcard warn"><div class="fc-n">CARD 4</div><div class="fc-term">Daptomycin</div><div class="fc-arrow">→</div><div class="fc-ans">Bacteremia O · Pneumonia X</div></div>
+            <div class="flashcard"><div class="fc-n">CARD 5</div><div class="fc-term">Linezolid</div><div class="fc-arrow">→</div><div class="fc-ans">MRSA + VRE</div></div>
+            <div class="flashcard"><div class="fc-n">CARD 6</div><div class="fc-term">Streptococcus</div><div class="fc-arrow">→</div><div class="fc-ans">β-lactam 먼저</div></div>
+            <div class="flashcard"><div class="fc-n">CARD 7</div><div class="fc-term">S. pneumoniae</div><div class="fc-arrow">→</div><div class="fc-ans">Pneumonia / Meningitis</div></div>
+            <div class="flashcard warn"><div class="fc-n">CARD 8</div><div class="fc-term">Enterococcus</div><div class="fc-arrow">→</div><div class="fc-ans">Cephalosporin X</div></div>
+            <div class="flashcard"><div class="fc-n">CARD 9</div><div class="fc-term">E. faecalis</div><div class="fc-arrow">→</div><div class="fc-ans">Ampicillin</div></div>
+            <div class="flashcard warn"><div class="fc-n">CARD 10</div><div class="fc-term">E. faecium</div><div class="fc-arrow">→</div><div class="fc-ans">Resistance / VRE 주의</div></div>
+          </div>
+          <div class="flashhint">← 좌우로 밀어서 넘기세요 →</div>
+
+          <h3 style="margin-top:34px;">Active Recall (정답 보기 버튼)</h3>
+          <div class="quiz">
+            <div class="qcard"><div class="q"><span class="qn">Q1</span> S. aureus가 확인되면 항생제 선택을 위해 가장 먼저 구분해야 하는 것은?</div><button class="reveal-btn">정답 보기</button><div class="answer">MSSA인지 MRSA인지.</div></div>
+            <div class="qcard"><div class="q"><span class="qn">Q2</span> MSSA에서 가장 먼저 연상할 cephalosporin은?</div><button class="reveal-btn">정답 보기</button><div class="answer">Cefazolin.</div></div>
+            <div class="qcard"><div class="q"><span class="qn">Q3</span> MRSA의 대표적인 β-lactam resistance와 관련된 protein은?</div><button class="reveal-btn">정답 보기</button><div class="answer">PBP2a.</div></div>
+            <div class="qcard"><div class="q"><span class="qn">Q4</span> MRSA pneumonia에서 daptomycin을 사용하지 않는 중요한 이유는?</div><button class="reveal-btn">정답 보기</button><div class="answer">Pulmonary surfactant가 daptomycin의 활성을 억제하기 때문이다.</div></div>
+            <div class="qcard"><div class="q"><span class="qn">Q5</span> MRSA와 VRE 모두에서 중요한 항생제는?</div><button class="reveal-btn">정답 보기</button><div class="answer">Linezolid.</div></div>
+            <div class="qcard"><div class="q"><span class="qn">Q6</span> Enterococcus에 일반적인 cephalosporin을 사용할 수 있는가?</div><button class="reveal-btn">정답 보기</button><div class="answer">아니다. Enterococcus는 cephalosporin에 intrinsic resistance를 가진다.</div></div>
+            <div class="qcard"><div class="q"><span class="qn">Q7</span> Ampicillin과 가장 강하게 연결해서 기억할 Enterococcus species는?</div><button class="reveal-btn">정답 보기</button><div class="answer">E. faecalis.</div></div>
+            <div class="qcard"><div class="q"><span class="qn">Q8</span> E. faecalis와 E. faecium 중 VRE 및 다제내성 문제를 더 강하게 연상해야 하는 것은?</div><button class="reveal-btn">정답 보기</button><div class="answer">E. faecium.</div></div>
+            <div class="qcard"><div class="q"><span class="qn">Q9</span> Blood culture에서 S. epidermidis가 검출되었다. 즉시 항생제 치료를 시작해야 하는가?</div><button class="reveal-btn">정답 보기</button><div class="answer">반드시 그렇지는 않다. Contamination 여부와 true infection 가능성을 평가해야 한다.</div></div>
+            <div class="qcard"><div class="q"><span class="qn">Q10</span> "Culture positive = infection"이라는 명제는 맞는가?</div><button class="reveal-btn">정답 보기</button><div class="answer">아니다.</div></div>
+          </div>
+
+          <h3 style="margin-top:34px;">Integrated Mini Case</h3>
+          <div class="card card--case">
+            <div class="card__label"><span class="dot"></span>CLINICAL CASE</div>
+            <p>68세 환자, pneumonia와 sepsis로 입원. Empiric therapy: <b>Vancomycin + Cefepime</b>.
+              Blood culture와 sputum 모두에서 <b>MRSA</b> 확인. 다른 Gram-negative pathogen은 검출되지 않음.</p>
+          </div>
+          <div class="quiz">
+            <div class="qcard"><div class="q"><span class="qn">Q1</span> Cefepime을 계속 사용할 이유가 있는지 검토해야 하는가?</div><button class="reveal-btn">정답 보기</button><div class="answer">그렇다. Gram-negative coverage가 계속 필요한 다른 근거가 없다면 중단을 검토할 수 있다.</div></div>
+            <div class="qcard"><div class="q"><span class="qn">Q2</span> Daptomycin으로 변경하면 적절한가?</div><button class="reveal-btn">정답 보기</button><div class="answer">Pneumonia가 있기 때문에 daptomycin은 부적절하다.</div></div>
+            <div class="qcard"><div class="q"><span class="qn">Q3</span> 대표적으로 고려할 수 있는 MRSA pneumonia 치료제는?</div><button class="reveal-btn">정답 보기</button><div class="answer">Vancomycin 또는 linezolid 등.</div></div>
+          </div>
+
+          <div class="figure" style="margin-top:18px;">
+            <div class="figure__title">핵심 사고 과정</div>
+            <div class="vflow">
+              <div class="vflow__box q">Organism · MRSA</div>
+              <div class="vflow__arrow">↓</div>
+              <div class="vflow__box">Site · Lung</div>
+              <div class="vflow__arrow">↓ 추가 GN coverage 필요?</div>
+              <div class="vflow__box">Drug property · Daptomycin은 lung X</div>
+              <div class="vflow__arrow">↓</div>
+              <div class="vflow__box" style="background:var(--gn-soft);border-color:var(--gn);color:#0c8a7c;">Targeted therapy · Vancomycin / Linezolid 검토</div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============ SECTION 30 · 통합 결정 도식 ============ -->
+        <section id="tree" class="section">
+          <h2><span class="sec-no">12</span> 통합 결정 도식</h2>
+          <div class="figure">
+            <div class="figure__title">도식 13 · Gram-positive decision tree</div>
+            <div class="vflow">
+              <div class="vflow__box">Gram-positive cocci</div>
+              <div class="vflow__arrow">↓ 어느 그룹?</div>
+
+              <div class="vflow__box q">Staphylococcus?</div>
+              <div class="vflow__arrow">↓ S. aureus</div>
+              <div class="vflow__branch">
+                <div class="vflow__leaf pos"><h6>MSSA</h6><div class="d">Cefazolin</div></div>
+                <div class="vflow__leaf neg"><h6>MRSA</h6><div class="d">Vancomycin</div></div>
+              </div>
+              <div class="vflow__arrow">↓ MRSA는 부위로 다시 분기</div>
+              <div class="vflow__branch">
+                <div class="vflow__leaf pos"><h6>+ Bacteremia</h6><div>Daptomycin 가능</div></div>
+                <div class="vflow__leaf neg"><h6>+ Pneumonia</h6><div>Daptomycin X<br/><span class="d">Vancomycin / Linezolid</span></div></div>
+              </div>
+
+              <div class="vflow__arrow">━━━</div>
+              <div class="vflow__box q">Streptococcus?</div>
+              <div class="vflow__branch" style="grid-template-columns:1fr;">
+                <div class="vflow__leaf pos">
+                  <div>S. pneumoniae → Pneumonia / meningitis</div>
+                  <div>S. pyogenes → <span class="d">Penicillin</span> (severe invasive → Clindamycin 병용)</div>
+                  <div>Viridans → Endocarditis</div>
+                </div>
+              </div>
+
+              <div class="vflow__arrow">━━━</div>
+              <div class="vflow__box q">Enterococcus?</div>
+              <div class="vflow__arrow">↓ Cephalosporin X</div>
+              <div class="vflow__branch">
+                <div class="vflow__leaf pos"><h6>E. faecalis</h6><div>Ampicillin susceptibility 확인</div></div>
+                <div class="vflow__leaf neg"><h6>E. faecium</h6><div>Resistance 주의</div></div>
+              </div>
+              <div class="vflow__arrow">↓ Vancomycin R?</div>
+              <div class="vflow__box" style="background:var(--resist-soft);border-color:var(--resist);color:var(--resist);">VRE → Linezolid / Daptomycin</div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============ 마지막 ============ -->
+        <section class="closing">
+          <h3>오늘의 한 문장</h3>
+          <p class="big">Gram-positive 균을 보면 먼저 Staphylococcus · Streptococcus · Enterococcus 중 어디에 속하는지 판단하고,
+            그 다음 내성과 infection site를 좁혀가며 항생제를 선택한다.</p>
+          <p>ASP에서는 여기에 한 가지 질문을 더한다.</p>
+          <p class="big">현재 사용 중인 더 넓은 항생제를 이제 좁힐 수 있는가?</p>
+          <p style="margin-top:22px;"><a href="lesson-01.html" style="color:#fff;text-decoration:underline;">← 1강 다시 보기</a> · <a href="../index.html" style="color:#fff;text-decoration:underline;">강의 목록</a></p>
+        </section>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- 모바일 하단 내비 -->
+  <nav class="bottomnav" aria-label="강의 이동">
+    <a href="lesson-01.html"><span class="bn-ico">←</span>이전 강의</a>
+    <a href="#" data-open-toc><span class="bn-ico">☰</span>목차</a>
+    <a href="#" aria-disabled="true"><span class="bn-ico">→</span>다음 강의</a>
+  </nav>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

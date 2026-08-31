@@ -25,6 +25,13 @@
       sidebar.classList.contains("open") ? close() : open();
     });
     if (scrim) scrim.addEventListener("click", close);
+    // 하단 내비 등에서 목차 열기
+    document.querySelectorAll("[data-open-toc]").forEach(function (el) {
+      el.addEventListener("click", function (e) {
+        e.preventDefault();
+        sidebar.classList.contains("open") ? close() : open();
+      });
+    });
     // 목차 클릭 시 모바일에서 닫기
     sidebar.querySelectorAll(".toc a").forEach(function (a) {
       a.addEventListener("click", function () {
@@ -309,6 +316,44 @@
     window.addEventListener("scroll", hide, { passive: true });
   }
 
+  /* ---------- 9. 균 선택기 / 일반 selector ---------- */
+  function initSelectors() {
+    document.querySelectorAll("[data-selector]").forEach(function (root) {
+      var btns = root.querySelectorAll(".sel-btn");
+      var panels = root.querySelectorAll(".sel-panel");
+      function show(target) {
+        btns.forEach(function (b) { b.classList.toggle("active", b.getAttribute("data-target") === target); });
+        panels.forEach(function (p) { p.classList.toggle("active", p.getAttribute("data-panel") === target); });
+      }
+      btns.forEach(function (b) {
+        b.addEventListener("click", function () { show(b.getAttribute("data-target")); });
+      });
+      if (btns.length) show(btns[0].getAttribute("data-target"));
+    });
+  }
+
+  /* ---------- 10. Clinical Decision (단계별 공개) ---------- */
+  function initDecisions() {
+    document.querySelectorAll("[data-decision]").forEach(function (root) {
+      var steps = Array.prototype.slice.call(root.querySelectorAll(".dstep"));
+      var btn = root.querySelector("[data-decision-next]");
+      var resetBtn = root.querySelector("[data-decision-reset]");
+      var i = 0;
+      function update() {
+        steps.forEach(function (s, idx) { s.classList.toggle("show", idx < i); });
+        if (btn) {
+          if (i >= steps.length) { btn.disabled = true; btn.textContent = "완료"; }
+          else { btn.disabled = false; btn.textContent = i === 0 ? "환자 정보 공개 ▸" : "다음 단계 ▸"; }
+        }
+      }
+      function next() { if (i < steps.length) { i++; update(); } }
+      function reset() { i = 0; update(); }
+      if (btn) btn.addEventListener("click", next);
+      if (resetBtn) resetBtn.addEventListener("click", reset);
+      reset();
+    });
+  }
+
   /* ---------- init ---------- */
   document.addEventListener("DOMContentLoaded", function () {
     initSidebar();
@@ -319,5 +364,7 @@
     initQuiz();
     initMCQ();
     initTablePopup();
+    initSelectors();
+    initDecisions();
   });
 })();

@@ -651,6 +651,174 @@ table.data td.cov { font-weight: 700; font-size: 16px; }
 .lesson-card.disabled .lc-status { color: var(--pseudo); }
 
 /* =========================================================
+   LESSON 2 · Gram-positive branching map (3-way)
+   ========================================================= */
+.gpmap { display: grid; gap: 14px; }
+.gpmap__root {
+  justify-self: center; background: linear-gradient(135deg,var(--brand),var(--brand-dark));
+  color: #fff; font-weight: 700; padding: 12px 26px; border-radius: 12px; font-size: 17px;
+}
+.gpmap__cols { display: grid; grid-template-columns: repeat(3,1fr); gap: 12px; }
+.gpmap__col {
+  border-radius: 12px; padding: 14px; border: 1px solid var(--line); background: var(--surface);
+  border-top: 4px solid var(--gp);
+}
+.gpmap__col h5 { margin: 0 0 10px; font-size: 15px; }
+.gpmap__col.staph { border-top-color: #e5484d; }
+.gpmap__col.strep { border-top-color: var(--gp); }
+.gpmap__col.entero { border-top-color: var(--anaerobe); }
+.gpmap__col ul { margin: 0; padding-left: 18px; font-size: 13.5px; color: var(--ink-soft); }
+.gpmap__col ul li { padding: 2px 0; }
+.gpmap__col .hl { color: var(--resist); font-weight: 700; }
+
+/* MSSA vs MRSA split */
+.split2 { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.splitcard { border-radius: 14px; padding: 18px; border: 1.5px solid var(--line); }
+.splitcard h4 { margin: 0 0 4px; font-size: 17px; }
+.splitcard .sub { font-size: 12.5px; color: var(--ink-faint); }
+.splitcard .drug { font-size: 20px; font-weight: 700; margin: 10px 0 6px; }
+.splitcard ul { margin: 6px 0 0; padding-left: 18px; font-size: 13.5px; color: var(--ink-soft); }
+.splitcard.is-mssa { background: var(--gn-soft); border-color: var(--gn); }
+.splitcard.is-mssa .drug { color: #0c8a7c; }
+.splitcard.is-mrsa { background: var(--resist-soft); border-color: var(--resist); }
+.splitcard.is-mrsa .drug { color: var(--resist); }
+
+/* =========================================================
+   INTERACTION · 균 선택기 (organism selector)
+   ========================================================= */
+.orgselect__btns { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 14px; }
+.orgselect__btns .sel-btn {
+  font-family: inherit; font-weight: 700; font-size: 14px; cursor: pointer;
+  padding: 10px 16px; border-radius: 999px; border: 1px solid var(--line);
+  background: var(--surface); color: var(--ink); transition: all .15s;
+}
+.orgselect__btns .sel-btn:hover { border-color: var(--brand); }
+.orgselect__btns .sel-btn.active { background: var(--brand); color: #fff; border-color: var(--brand); }
+.sel-panel { display: none; }
+.sel-panel.active { display: block; animation: fadein .25s ease; }
+.sel-panel .rowline {
+  display: flex; gap: 12px; align-items: flex-start; padding: 10px 0;
+  border-bottom: 1px dashed var(--line); font-size: 14.5px;
+}
+.sel-panel .rowline:last-child { border-bottom: none; }
+.sel-panel .rowline .k {
+  flex: 0 0 128px; font-weight: 700; color: var(--brand-dark); font-size: 13px;
+}
+.sel-panel .rowline .v b { color: var(--ink); }
+
+/* =========================================================
+   INTERACTION · Clinical Decision (progressive reveal)
+   ========================================================= */
+.decision__log { display: grid; gap: 8px; }
+.dstep {
+  display: none; padding: 11px 14px; border-radius: 10px;
+  background: var(--surface-2); border: 1px solid var(--line);
+  font-size: 14px; animation: fadein .3s ease;
+}
+.dstep.show { display: block; }
+.dstep .k { font-weight: 700; color: var(--ink-faint); font-size: 12.5px; display: block; }
+.dstep.is-final { background: #eef9f1; border-color: var(--cov-yes); }
+.dstep.is-final .k { color: #147a49; }
+
+/* =========================================================
+   Enterococcus = Cephalosporin X  (big warning)
+   ========================================================= */
+.cephhole {
+  position: relative; text-align: center; padding: 26px 18px;
+  background: radial-gradient(circle at center, #fff 45%, var(--brand-soft));
+  border: 1.5px solid var(--brand); border-radius: 16px;
+}
+.cephhole__ring {
+  display: inline-grid; place-items: center; width: 220px; height: 220px;
+  border-radius: 50%; border: 3px solid var(--brand); position: relative; max-width: 100%;
+}
+.cephhole__ring .title { font-weight: 700; color: var(--brand-dark); font-size: 15px; position: absolute; top: 16px; }
+.cephhole__center {
+  background: var(--resist-soft); border: 2px solid var(--resist); color: var(--resist);
+  font-weight: 700; padding: 12px 16px; border-radius: 12px; font-size: 15px; line-height: 1.3;
+}
+.cephhole__center .x { display: block; font-size: 30px; }
+.cephhole__orbits { position: absolute; inset: 0; }
+.cephhole__orbits span {
+  position: absolute; font-size: 12px; background: #fff; border: 1px solid var(--line);
+  border-radius: 999px; padding: 2px 9px; color: var(--ink-soft); white-space: nowrap;
+}
+
+/* =========================================================
+   Reverse map (Drug → Organism)
+   ========================================================= */
+.revmap { display: grid; grid-template-columns: repeat(auto-fill,minmax(220px,1fr)); gap: 12px; }
+.revcard {
+  border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px;
+  background: var(--surface); box-shadow: var(--shadow-sm); border-left: 4px solid var(--brand);
+}
+.revcard .drug { font-weight: 700; font-size: 15.5px; }
+.revcard .arrow { color: var(--ink-faint); margin: 6px 0 2px; font-size: 13px; }
+.revcard .org { font-weight: 700; color: var(--brand-dark); }
+.revcard .warn { color: var(--resist); font-weight: 700; font-size: 13px; margin-top: 4px; }
+
+/* =========================================================
+   FLASHCARDS (horizontal swipe · scroll-snap)
+   ========================================================= */
+.flashdeck {
+  display: flex; gap: 14px; overflow-x: auto; scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch; padding: 6px 4px 16px; margin: 6px -4px 0;
+  scrollbar-width: thin;
+}
+.flashcard {
+  scroll-snap-align: center; flex: 0 0 82%; max-width: 340px;
+  border-radius: 16px; padding: 26px 22px; min-height: 168px;
+  background: linear-gradient(135deg,#163a6b,#12a594); color: #fff;
+  display: flex; flex-direction: column; justify-content: center; box-shadow: var(--shadow);
+}
+.flashcard .fc-n {
+  font-family: var(--font-cute); font-size: 14px; opacity: .85; margin-bottom: 8px;
+}
+.flashcard .fc-term { font-size: 24px; font-weight: 700; }
+.flashcard .fc-arrow { font-size: 15px; opacity: .8; margin: 8px 0 2px; }
+.flashcard .fc-ans { font-size: 18px; font-weight: 700; }
+.flashcard.warn { background: linear-gradient(135deg,#8a1c2b,#e5484d); }
+.flashhint { text-align: center; font-size: 12.5px; color: var(--ink-faint); margin-top: -6px; }
+
+/* =========================================================
+   VERTICAL FLOW (decision tree · 도식 13)
+   ========================================================= */
+.vflow { display: grid; gap: 8px; justify-items: center; text-align: center; }
+.vflow__box {
+  background: var(--surface); border: 1px solid var(--line-strong); border-radius: 12px;
+  padding: 11px 18px; font-weight: 700; font-size: 14.5px; max-width: 100%;
+}
+.vflow__box.q { background: var(--brand-soft); border-color: var(--brand); color: var(--brand-dark); }
+.vflow__arrow { color: var(--ink-faint); font-size: 20px; line-height: 1; }
+.vflow__branch { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; width: 100%; }
+.vflow__leaf {
+  border-radius: 12px; padding: 12px 14px; font-size: 13.5px; border: 1px solid var(--line);
+  background: var(--surface);
+}
+.vflow__leaf h6 { margin: 0 0 4px; font-size: 14px; }
+.vflow__leaf.pos { background: var(--gn-soft); border-color: var(--gn); }
+.vflow__leaf.neg { background: var(--resist-soft); border-color: var(--resist); }
+.vflow__leaf .d { font-weight: 700; color: var(--brand-dark); }
+
+/* =========================================================
+   BOTTOM NAV (모바일 강의 이동)
+   ========================================================= */
+.bottomnav {
+  display: none; position: fixed; left: 0; right: 0; bottom: 0; z-index: 44;
+  background: rgba(255,255,255,.95); backdrop-filter: blur(8px);
+  border-top: 1px solid var(--line);
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.bottomnav a, .bottomnav button {
+  font-family: inherit; background: none; border: none; cursor: pointer;
+  padding: 12px 6px; font-size: 12.5px; font-weight: 700; color: var(--ink-soft);
+  display: flex; flex-direction: column; align-items: center; gap: 3px; text-decoration: none;
+}
+.bottomnav a[aria-disabled="true"] { color: var(--line-strong); pointer-events: none; }
+.bottomnav .bn-ico { font-size: 17px; }
+.bottomnav > * + * { border-left: 1px solid var(--line); }
+
+/* =========================================================
    RESPONSIVE
    ========================================================= */
 @media (max-width: 860px) {
@@ -668,11 +836,19 @@ table.data td.cov { font-weight: 700; font-size: 16px; }
   .spectoggle__list { grid-template-columns: repeat(auto-fill,minmax(130px,1fr)); }
   .lesson-hero { padding: 24px 20px; border-radius: 16px; }
   .figure { padding: 16px; }
+  .gpmap__cols { grid-template-columns: 1fr; }
+  .split2 { grid-template-columns: 1fr; }
+  .bottomnav { display: grid; }
+  .content .wrap { padding-bottom: 92px; } /* 하단 내비 공간 */
 }
 @media (max-width: 480px) {
   .spectoggle__list { grid-template-columns: 1fr 1fr; }
   .orggrid { grid-template-columns: 1fr; }
   .card { padding: 15px 16px; }
+  .sel-panel .rowline { flex-direction: column; gap: 2px; }
+  .sel-panel .rowline .k { flex-basis: auto; }
+  .vflow__branch { grid-template-columns: 1fr; }
+  .flashcard { flex-basis: 88%; }
 }
 
 @media (prefers-reduced-motion: reduce) {

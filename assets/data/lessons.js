@@ -13,6 +13,14 @@ window.ASP_LESSONS = [
   },
   {
     no: 2,
+    href: "lessons/lesson-02.html",
+    title: "Gram-positive 균 지도: Staphylococcus · Streptococcus · Enterococcus",
+    desc: "세 그룹으로 나눠 보는 GPC, MSSA vs MRSA 분기, 감염 부위별 치료(Daptomycin은 폐 X), Enterococcus의 cephalosporin 저항, VRE까지.",
+    tags: ["MSSA/MRSA", "Vancomycin", "Enterococcus", "VRE"],
+    status: "ready"
+  },
+  {
+    no: 3,
     href: "#",
     title: "(준비 중)",
     desc: "다음 강의가 곧 추가됩니다.",
