@@ -819,6 +819,47 @@ table.data td.cov { font-weight: 700; font-size: 16px; }
 .bottomnav > * + * { border-left: 1px solid var(--line); }
 
 /* =========================================================
+   LESSON 4 · 3-균 히어로 카드
+   ========================================================= */
+.orgbig { display: grid; grid-template-columns: repeat(3,1fr); gap: 14px; }
+.orgbig__card {
+  border-radius: 16px; padding: 20px; border: 1.5px solid var(--line);
+  background: var(--surface); box-shadow: var(--shadow-sm); border-top: 5px solid var(--brand);
+}
+.orgbig__card.is-pseudo { border-top-color: var(--pseudo); }
+.orgbig__card.is-acineto { border-top-color: var(--resist); }
+.orgbig__card.is-steno { border-top-color: var(--anaerobe); }
+.orgbig__card h4 { margin: 0 0 4px; font-size: 17px; }
+.orgbig__card .tagline { font-size: 13px; color: var(--ink-soft); font-weight: 700; }
+
+/* =========================================================
+   INTERACTION · Pseudomonas Spectrum Game (O/X)
+   ========================================================= */
+.specgame { text-align: center; }
+.specgame__card {
+  font-size: 26px; font-weight: 700; padding: 22px; border-radius: 14px;
+  background: linear-gradient(135deg,#163a6b,#1f6fbf); color: #fff; margin-bottom: 14px;
+  letter-spacing: .02em;
+}
+.specgame__q { font-size: 14px; color: var(--ink-soft); margin-bottom: 10px; }
+.specgame__btns { display: flex; gap: 12px; justify-content: center; }
+.specgame__btns button {
+  font-family: inherit; font-weight: 700; font-size: 20px; cursor: pointer;
+  width: 84px; height: 56px; border-radius: 12px; border: 2px solid var(--line-strong);
+  background: var(--surface); transition: all .12s;
+}
+.specgame__btns .sg-o { color: var(--cov-yes); }
+.specgame__btns .sg-x { color: var(--cov-no); }
+.specgame__btns button:hover { transform: translateY(-2px); }
+.specgame__fb {
+  margin-top: 14px; min-height: 26px; font-weight: 700; font-size: 15px;
+}
+.specgame__fb.ok { color: var(--cov-yes); }
+.specgame__fb.no { color: var(--cov-no); }
+.specgame__prog { margin-top: 8px; font-size: 13px; color: var(--ink-faint); }
+.specgame__done { font-weight: 700; color: var(--brand-dark); }
+
+/* =========================================================
    AST (감수성 표) — 결과 강조
    ========================================================= */
 table.data td.ast-r { color: var(--cov-no); font-weight: 700; }
@@ -868,6 +909,7 @@ table.data td.ast-s { color: var(--cov-yes); font-weight: 700; }
   .figure { padding: 16px; }
   .gpmap__cols { grid-template-columns: 1fr; }
   .split2 { grid-template-columns: 1fr; }
+  .orgbig { grid-template-columns: 1fr; }
   .bottomnav { display: grid; }
   .content .wrap { padding-bottom: 92px; } /* 하단 내비 공간 */
   .quickrev { bottom: 72px; } /* 하단 내비 위로 */

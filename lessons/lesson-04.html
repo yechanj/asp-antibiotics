@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>4강 · Gram-negative 균 지도 ②: Pseudomonas · Acinetobacter · Stenotrophomonas</title>
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+</head>
+<body>
+  <div class="topbar">
+    <button class="hamburger" aria-label="목차 열기" aria-expanded="false"><span></span></button>
+    <div class="topbar__title">4강 · Non-fermenters</div>
+  </div>
+  <div class="scrim" aria-hidden="true"></div>
+
+  <div class="app">
+    <aside class="sidebar" aria-label="강의 목차">
+      <div class="sidebar__brand">
+        <div class="sidebar__logo">ASP</div>
+        <div class="sidebar__title">항생제 학습
+          <small>4강 · Non-fermenters</small>
+        </div>
+      </div>
+      <nav>
+        <ul class="toc">
+          <li><a href="#map"><span class="num">1</span> 3대 균 지도</a></li>
+          <li><a href="#pseudo"><span class="num">2</span> Pseudomonas 기본</a></li>
+          <li><a href="#pseudo-drug"><span class="num">3</span> Antipseudomonal β-lactam</a></li>
+          <li><a href="#pseudo-resist"><span class="num">4</span> 내성 · PK/PD · MDR</a></li>
+          <li><a href="#acineto"><span class="num">5</span> Acinetobacter</a></li>
+          <li><a href="#steno"><span class="num">6</span> Stenotrophomonas</a></li>
+          <li><a href="#compare"><span class="num">7</span> 세 균 비교 · Drug map</a></li>
+          <li><a href="#cases"><span class="num">8</span> ASP Cases</a></li>
+          <li><a href="#flow"><span class="num">9</span> AST 보는 순서</a></li>
+          <li><a href="#quiz"><span class="num">10</span> 정리 & Quiz</a></li>
+          <li><a href="#tree"><span class="num">11</span> 통합 지도</a></li>
+        </ul>
+      </nav>
+      <a class="sidebar__back" href="../index.html">← 강의 목록으로</a>
+    </aside>
+
+    <div class="content">
+      <div class="wrap">
+
+        <header class="lesson-hero">
+          <div class="kicker">ASP 항생제 학습 · 4강</div>
+          <h1>Gram-negative 균 지도 ② · Non-fermenters</h1>
+          <p>Pseudomonas · Acinetobacter · Stenotrophomonas — 균마다 쓸 수 있는 항생제 범위가 크게 다릅니다.</p>
+        </header>
+
+        <!-- ===== S1 · 3대 균 지도 ===== -->
+        <section id="map" class="section">
+          <h2><span class="sec-no">01</span> 왜 이 세 균을 따로 배우는가</h2>
+          <p>Gram-negative bacilli 중에서도 <b>Pseudomonas aeruginosa · Acinetobacter baumannii complex · Stenotrophomonas maltophilia</b>는
+            일반 Enterobacterales와 다르게 취급하는 경우가 많다. 병원획득감염 · 중환자실 · 기저질환 · 장기 항생제 노출 환자에서 특히 중요하다.</p>
+          <p>ASP 관점에서 세 균은 공통적으로 — 내성이 많을 수 있고, 경험적 치료가 복잡하며, 감수성 결과에 따라 빠르게 좁혀야 하고, 불필요한 광범위 항생제 노출을 줄이는 것이 중요하다.</p>
+
+          <div class="figure">
+            <div class="figure__title">도식 1 · Non-fermenter 3대 지도</div>
+            <div class="orgbig">
+              <div class="orgbig__card is-pseudo">
+                <h4>Pseudomonas aeruginosa</h4>
+                <div class="tagline">→ Antipseudomonal β-lactam</div>
+                <ul class="clean" style="margin-bottom:0;"><li>가장 먼저 익힐 핵심균</li><li>여러 antipseudomonal β-lactam 존재</li></ul>
+              </div>
+              <div class="orgbig__card is-acineto">
+                <h4>Acinetobacter baumannii</h4>
+                <div class="tagline">→ CRAB / Sulbactam</div>
+                <ul class="clean" style="margin-bottom:0;"><li>병원획득감염</li><li>Carbapenem resistance 문제</li></ul>
+              </div>
+              <div class="orgbig__card is-steno">
+                <h4>Stenotrophomonas maltophilia</h4>
+                <div class="tagline">→ TMP/SMX · Carbapenem X</div>
+                <ul class="clean" style="margin-bottom:0;"><li>독특한 intrinsic resistance</li><li>TMP/SMX 연상</li></ul>
+              </div>
+            </div>
+            <div class="figure__cap">같은 Gram-negative라도 균에 따라 사용할 수 있는 항생제의 범위가 크게 달라진다.</div>
+          </div>
+        </section>
+
+        <!-- ===== S2,3 · Pseudomonas 기본 ===== -->
+        <section id="pseudo" class="section">
+          <h2><span class="sec-no">02</span> Pseudomonas aeruginosa</h2>
+          <p>가장 먼저 깊게 익혀야 할 균. 병원 ASP에서 매우 자주 등장한다. 대표 감염:</p>
+          <ul class="clean">
+            <li>Hospital-acquired pneumonia (HAP) · Ventilator-associated pneumonia (VAP)</li>
+            <li>Complicated UTI · Bacteremia</li>
+            <li>일부 intra-abdominal infection · Neutropenic fever · Burn/wound infection</li>
+          </ul>
+          <p>특히 중환자실과 의료관련 감염에서 중요하다. Pseudomonas를 보면 <b>두 가지</b>를 동시에 떠올린다.</p>
+          <div class="split2">
+            <div class="splitcard is-mssa"><h4>① 어떤 항생제가?</h4><ul><li>antipseudomonal activity를 갖는 약 확인</li></ul></div>
+            <div class="splitcard is-mrsa"><h4>② 빠른 내성</h4><ul><li>이 균은 빠르게 resistance를 획득할 수 있다</li></ul></div>
+          </div>
+          <div class="card card--key">
+            <div class="card__label"><span class="dot"></span>KEY POINT</div>
+            <p>Pseudomonas를 보는 순간 <b>"Pseudomonas coverage가 있는 약인가?"</b>를 확인한다.</p>
+          </div>
+        </section>
+
+        <!-- ===== S4 · Antipseudomonal β-lactam ===== -->
+        <section id="pseudo-drug" class="section">
+          <h2><span class="sec-no">03</span> Pseudomonas를 커버하는 β-lactam</h2>
+
+          <div class="figure">
+            <div class="figure__title">도식 2 · Antipseudomonal β-lactam map</div>
+            <div class="radial">
+              <div class="center">Pseudomonas</div>
+              <div class="item yes"><span class="m">✓</span> Piperacillin/Tazobactam</div>
+              <div class="item yes"><span class="m">✓</span> Ceftazidime</div>
+              <div class="item yes"><span class="m">✓</span> Cefepime</div>
+              <div class="item yes"><span class="m">✓</span> Meropenem</div>
+              <div class="item yes"><span class="m">✓</span> Imipenem/Cilastatin</div>
+              <div class="item no"><span class="m">✕</span> Ceftriaxone</div>
+              <div class="item no"><span class="m">✕</span> Ertapenem</div>
+              <div class="item no"><span class="m">✕</span> Ampicillin/Sulbactam</div>
+            </div>
+          </div>
+          <div class="card card--key">
+            <div class="card__label"><span class="dot"></span>가장 중요한 암기</div>
+            <p style="font-size:1.05em;"><b>Cefepime O · Ceftriaxone X · Meropenem O · Ertapenem X</b></p>
+          </div>
+
+          <h3>인터랙션 · Pseudomonas Spectrum Game</h3>
+          <p style="font-size:13.5px;color:var(--ink-faint);">약이 나오면 Pseudomonas를 커버하는지 O/X로 맞혀보세요. 1강 내용 자동 복습.</p>
+          <div class="figure" data-specgame>
+            <div class="specgame">
+              <div class="specgame__card"></div>
+              <div class="specgame__q">이 약은 Pseudomonas를 커버하나요?</div>
+              <div class="specgame__btns">
+                <button class="sg-o" aria-label="커버함">O</button>
+                <button class="sg-x" aria-label="커버 안 함">X</button>
+              </div>
+              <div class="specgame__fb"></div>
+              <div class="specgame__prog"></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ===== S5,9,10 · 내성 · PK/PD · MDR ===== -->
+        <section id="pseudo-resist" class="section">
+          <h2><span class="sec-no">04</span> 내성 · PK/PD · MDR</h2>
+          <p>Pseudomonas는 여러 내성기전을 <b>동시에</b> 가질 수 있다.</p>
+
+          <div class="figure">
+            <div class="figure__title">도식 3 · Pseudomonas 방어 시스템</div>
+            <div class="gpmap__cols" style="grid-template-columns:repeat(5,1fr);">
+              <div class="gpmap__col" style="border-top-color:var(--pseudo);"><h5>🛡 Porin loss</h5><ul><li>항생제가 세포 안으로 잘 못 들어옴</li></ul></div>
+              <div class="gpmap__col" style="border-top-color:var(--pseudo);"><h5>🛡 Efflux pump</h5><ul><li>들어온 항생제를 밖으로 배출</li></ul></div>
+              <div class="gpmap__col" style="border-top-color:var(--pseudo);"><h5>🛡 β-lactamase</h5><ul><li>β-lactam 분해</li></ul></div>
+              <div class="gpmap__col" style="border-top-color:var(--pseudo);"><h5>🛡 Target change</h5><ul><li>약물 결합 감소</li></ul></div>
+              <div class="gpmap__col" style="border-top-color:var(--pseudo);"><h5>🛡 Biofilm</h5><ul><li>접근·제거 어려움</li></ul></div>
+            </div>
+            <div class="figure__cap">Pseudomonas는 "원래 센 균"이라기보다 여러 내성 메커니즘을 조합할 수 있는 균이다.</div>
+          </div>
+
+          <h3>Empiric Pseudomonas coverage는 언제?</h3>
+          <p>모든 pneumonia 환자에게 주는 것은 아니다. 다음 상황에서 risk가 높아질 수 있다: 최근 광범위 항생제 노출 · 이전 Pseudomonas colonization/infection · 장기 입원 · 중환자실 · 구조적 폐질환 · 의료관련 기구 · 중증 감염.
+            정확한 risk factor는 감염질환별 가이드라인과 병원 antibiogram을 함께 본다.</p>
+          <div class="card card--asp">
+            <div class="card__label"><span class="dot"></span>ASP POINT</div>
+            <p>광범위 antipseudomonal therapy를 시작했다면 이후 반드시 묻는다.</p>
+            <div class="oneline" style="margin:6px 0 0;">Pseudomonas가 실제로 확인되었는가? 아직 coverage가 필요한가?</div>
+          </div>
+
+          <h3>Dual coverage & 단순화</h3>
+          <p>중증 감염에서 경험적으로 Pseudomonas를 걱정할 때 β-lactam + 다른 antipseudomonal class를 함께 시작할 수 있다 (예: Cefepime + amikacin, Pip/Tazo + ciprofloxacin). 그러나 susceptibility가 확인되면 병용을 계속할지 다시 평가한다.</p>
+          <div class="figure">
+            <div class="vflow">
+              <div class="vflow__box">Empiric combination therapy</div>
+              <div class="vflow__arrow">↓ Culture result 확인</div>
+              <div class="vflow__box">Susceptible organism 확인</div>
+              <div class="vflow__arrow">↓ 필요하다면</div>
+              <div class="vflow__box" style="background:var(--gn-soft);border-color:var(--gn);color:#0c8a7c;">Single active agent로 단순화 검토</div>
+            </div>
+          </div>
+
+          <h3>AST 읽는 기본 틀</h3>
+          <div class="table-scroll">
+            <table class="data" style="min-width:360px;">
+              <thead><tr><th>Antibiotic (P. aeruginosa)</th><th>Result</th></tr></thead>
+              <tbody>
+                <tr><th>Piperacillin/Tazobactam</th><td class="ast-s">S</td></tr>
+                <tr><th>Ceftazidime</th><td class="ast-s">S</td></tr>
+                <tr><th>Cefepime</th><td class="ast-s">S</td></tr>
+                <tr><th>Meropenem</th><td class="ast-s">S</td></tr>
+                <tr><th>Ciprofloxacin</th><td class="ast-r">R</td></tr>
+                <tr><th>Amikacin</th><td class="ast-s">S</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="split2">
+            <div class="splitcard is-mrsa"><h4>초보 사고</h4><ul><li>"S가 많네, 아무거나 쓰면 되겠네."</li></ul></div>
+            <div class="splitcard is-mssa"><h4>ASP 사고</h4><ul><li>감염 부위 · severity · renal function</li><li>더 좁힐 수 있는가? 경구 전환?</li><li>MIC가 높은가? prolonged infusion 도움?</li></ul></div>
+          </div>
+
+          <h3>β-lactam PK/PD</h3>
+          <p>β-lactam은 time-dependent killing. Pseudomonas처럼 MIC가 상대적으로 높은 균에서는 <b>extended/prolonged infusion</b>이 중요해질 수 있다 (예: Meropenem 30분 vs 3시간 infusion).</p>
+          <div class="figure">
+            <div class="figure__title">도식 4 · MIC 위 체류시간 (fT &gt; MIC)</div>
+            <svg viewBox="0 0 640 300" width="100%" role="img" aria-label="표준 vs extended infusion 곡선과 Pseudomonas MIC">
+              <line x1="60" y1="250" x2="610" y2="250" stroke="#c7d2df" stroke-width="2"/>
+              <line x1="60" y1="26" x2="60" y2="250" stroke="#c7d2df" stroke-width="2"/>
+              <text x="330" y="284" text-anchor="middle" fill="#7b8aa0" font-size="14">Time</text>
+              <text x="20" y="140" text-anchor="middle" fill="#7b8aa0" font-size="13" transform="rotate(-90 20 140)">Drug concentration</text>
+              <line x1="60" y1="180" x2="610" y2="180" stroke="#e5484d" stroke-width="2" stroke-dasharray="6 5"/>
+              <text x="602" y="173" text-anchor="end" fill="#e5484d" font-size="13" font-weight="700">Pseudomonas MIC (높음)</text>
+              <path d="M110,180 C170,80 260,90 360,120 C430,143 470,168 500,180 Z" fill="#f08a24" opacity="0.16"/>
+              <path d="M60,250 C90,70 110,55 130,55 C170,60 210,190 250,238 C280,248 320,250 360,250" fill="none" stroke="#2f6fed" stroke-width="3"/>
+              <path d="M60,250 C110,222 130,180 170,150 C230,100 300,112 360,120 C430,130 470,160 500,190 C530,214 560,242 590,248" fill="none" stroke="#12a594" stroke-width="3"/>
+              <rect x="80" y="36" width="16" height="4" fill="#2f6fed"/><text x="102" y="41" font-size="13" fill="#1f2b3a">Standard infusion</text>
+              <rect x="240" y="36" width="16" height="4" fill="#12a594"/><text x="262" y="41" font-size="13" fill="#1f2b3a">Extended infusion</text>
+            </svg>
+            <div class="figure__cap">MIC가 높을수록 fT &gt; MIC 확보가 더 어려워질 수 있다. (자세한 PK/PD는 별도 강의에서)</div>
+          </div>
+
+          <h3>MDR Pseudomonas</h3>
+          <p>여러 기존 항생제에 resistance를 보이면 <b>Ceftolozane/Tazobactam · Ceftazidime/Avibactam · Imipenem/Cilastatin/Relebactam · Cefiderocol</b> 같은 newer agent가 중요해질 수 있다. 지금은 약물을 외우지 않는다.</p>
+          <div class="card card--key">
+            <div class="card__label"><span class="dot"></span>KEY POINT</div>
+            <p>Resistant Pseudomonas에서는 "가장 broad한 기존 항생제"가 답이 아닐 수 있다. Resistance mechanism과 susceptibility에 따라 newer β-lactam을 선택하는 시대다.</p>
+          </div>
+        </section>
+
+        <!-- ===== S11~15 · Acinetobacter ===== -->
+        <section id="acineto" class="section">
+          <h2><span class="sec-no">05</span> Acinetobacter baumannii complex</h2>
+          <p>대표적으로 병원획득감염에서 중요하다. ICU · ventilator · 장기 입원 · 중증 환자 · 이전 항생제 노출과 관련되어 자주 문제가 된다.
+            대표 감염: VAP/HAP · Bacteremia · Wound infection · Catheter-associated infection.</p>
+
+          <h3>가장 중요한 문제 · Carbapenem resistance (CRAB)</h3>
+          <div class="figure">
+            <div class="figure__title">도식 5 · Acinetobacter → CRAB</div>
+            <div class="vflow">
+              <div class="vflow__box">Acinetobacter</div>
+              <div class="vflow__arrow">↓</div>
+              <div class="vflow__branch">
+                <div class="vflow__leaf pos"><h6>Carbapenem susceptible</h6></div>
+                <div class="vflow__leaf neg"><h6>Carbapenem resistant → CRAB</h6><div>치료 옵션 매우 제한될 수 있음</div></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card card--key">
+            <div class="card__label"><span class="dot"></span>KEY POINT · Sulbactam</div>
+            <p>1강에서 "Ampicillin/Sulbactam은 Pseudomonas를 커버하지 않는다"고 배웠다. 그런데 Acinetobacter에서는
+              <b>sulbactam 자체가 Acinetobacter에 intrinsic antibacterial activity</b>를 가진다. sulbactam은 단순한 β-lactamase inhibitor만이 아니다.</p>
+          </div>
+
+          <h3>CRAB 치료 맛보기</h3>
+          <p>CRAB 감염은 매우 복잡하다. 최근 치료에서는 <b>sulbactam 기반 전략</b>이 특히 중요하다 (예: Sulbactam/Durlobactam, high-dose Ampicillin/Sulbactam 기반 regimen). 정확한 regimen은 별도 CRAB 강의에서 다룬다.</p>
+          <div class="card card--asp">
+            <div class="card__label"><span class="dot"></span>ASP POINT</div>
+            <p>CRAB가 보고되었다고 "Colistin 쓰면 되겠지"로 바로 가면 안 된다. 최근에는 newer sulbactam-based therapy를 포함한 여러 옵션을 환자 상태와 susceptibility에 따라 평가한다.</p>
+          </div>
+
+          <div class="card card--caution">
+            <div class="card__label"><span class="dot"></span>CAUTION · Colonization</div>
+            <p>ICU 환자의 respiratory specimen · wound · device-associated specimen에서 검출될 수 있다. 하지만 <b>검출 = 항상 감염이 아니다.</b>
+              Respiratory culture에서 Acinetobacter → 무조건 VAP? <b>아니다.</b> Fever · WBC · oxygen requirement · new infiltrate · purulent secretion · clinical deterioration을 함께 본다.</p>
+          </div>
+          <div class="oneline">특히 non-fermenter는 colonization과 true infection을 구분하는 능력이 중요하다.</div>
+        </section>
+
+        <!-- ===== S16~19 · Stenotrophomonas ===== -->
+        <section id="steno" class="section">
+          <h2><span class="sec-no">06</span> Stenotrophomonas maltophilia</h2>
+          <p>병원 환경에서 중요하며 장기 입원 · 중환자실 · 광범위 항생제 노출 · 면역저하 · 의료기구와 연결된다.
+            이 균은 여러 β-lactam에 intrinsic resistance를 가진다 — 특히 <b>carbapenem이 듣지 않는다.</b></p>
+
+          <div class="card card--caution">
+            <div class="card__label"><span class="dot"></span>CAUTION · Stenotrophomonas ≠ Meropenem</div>
+            <p>Meropenem을 쓰고 있는데 Stenotrophomonas가 나왔다고 "더 강한 carbapenem으로 가자"라고 하면 <b>안 된다.</b> Carbapenem은 intrinsic resistance다.</p>
+          </div>
+
+          <h3>Stenotrophomonas 하면 떠올릴 약 · TMP/SMX</h3>
+          <p>가장 먼저 <b>TMP/SMX</b>를 떠올린다. 과거부터 대표 치료제로 사용되어 왔다. 최근에는 Minocycline · Levofloxacin · Cefiderocol · Ceftazidime/Avibactam + Aztreonam 등도 고려된다. 치료는 infection severity와 susceptibility에 따라 달라진다.</p>
+          <div class="oneline">Stenotrophomonas → TMP/SMX</div>
+
+          <h3>Carbapenem exposure & selection pressure</h3>
+          <div class="figure">
+            <div class="figure__title">도식 6 · Selection pressure</div>
+            <div class="vflow">
+              <div class="vflow__box">Broad-spectrum carbapenem exposure</div>
+              <div class="vflow__arrow">↓</div>
+              <div class="vflow__box">Sensitive bacteria 감소</div>
+              <div class="vflow__arrow">↓</div>
+              <div class="vflow__box">Carbapenem-resistant organisms 상대적으로 생존</div>
+              <div class="vflow__arrow">↓</div>
+              <div class="vflow__box" style="background:var(--anaerobe-soft);border-color:var(--anaerobe);color:var(--anaerobe);">Stenotrophomonas selection 가능</div>
+            </div>
+          </div>
+          <div class="card card--asp">
+            <div class="card__label"><span class="dot"></span>ASP POINT</div>
+            <p>항생제를 넓게 쓰는 것은 단순히 부작용을 늘리는 문제가 아니다. 환자의 microbiome과 병원 환경에서 <b>어떤 균이 선택되는지</b>에도 영향을 준다.</p>
+          </div>
+        </section>
+
+        <!-- ===== S20,21 · 비교 + Drug map ===== -->
+        <section id="compare" class="section">
+          <h2><span class="sec-no">07</span> 세 균 비교 &amp; Drug → Organism</h2>
+          <div class="table-scroll">
+            <table class="data">
+              <thead><tr><th>Organism</th><th>가장 먼저 연상</th><th>대표 환경</th><th>핵심 항생제 포인트</th></tr></thead>
+              <tbody>
+                <tr><th>Pseudomonas aeruginosa</th><td>Antipseudomonal β-lactam</td><td>ICU, HAP/VAP, UTI, bacteremia</td><td>Cefepime/Pip-Tazo/Meropenem 등</td></tr>
+                <tr><th>Acinetobacter baumannii</th><td>CRAB</td><td>ICU, ventilator, HAI</td><td class="cov cov-no-c">Sulbactam 중요</td></tr>
+                <tr><th>Stenotrophomonas maltophilia</th><td>TMP/SMX</td><td>Broad antibiotic exposure, 면역저하</td><td class="cov cov-no-c">Carbapenem intrinsic resistance</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h3>인터랙션 · Drug Spectrum Toggle</h3>
+          <p style="font-size:13.5px;color:var(--ink-faint);">약을 누르면 세 non-fermenter에 대한 핵심 coverage가 나타납니다.</p>
+          <div class="figure" data-selector>
+            <div class="orgselect">
+              <div class="orgselect__btns">
+                <button class="sel-btn" data-target="ctx">Ceftriaxone</button>
+                <button class="sel-btn" data-target="fep">Cefepime</button>
+                <button class="sel-btn" data-target="etp">Ertapenem</button>
+                <button class="sel-btn" data-target="mem">Meropenem</button>
+                <button class="sel-btn" data-target="sam">Amp/Sulbactam</button>
+                <button class="sel-btn" data-target="sxt">TMP/SMX</button>
+              </div>
+              <div class="sel-panel" data-panel="ctx">
+                <div class="rowline"><div class="k">Pseudomonas</div><div class="v"><b style="color:var(--resist)">✕</b></div></div>
+                <div class="rowline"><div class="k">Acinetobacter</div><div class="v"><b style="color:var(--resist)">✕</b> (신뢰 어려움)</div></div>
+                <div class="rowline"><div class="k">Stenotrophomonas</div><div class="v"><b style="color:var(--resist)">✕</b></div></div>
+              </div>
+              <div class="sel-panel" data-panel="fep">
+                <div class="rowline"><div class="k">Pseudomonas</div><div class="v"><b style="color:var(--cov-yes)">O</b></div></div>
+                <div class="rowline"><div class="k">Acinetobacter</div><div class="v">신뢰 어려움</div></div>
+                <div class="rowline"><div class="k">Stenotrophomonas</div><div class="v"><b style="color:var(--resist)">✕</b></div></div>
+              </div>
+              <div class="sel-panel" data-panel="etp">
+                <div class="rowline"><div class="k">Pseudomonas</div><div class="v"><b style="color:var(--resist)">✕</b></div></div>
+                <div class="rowline"><div class="k">Acinetobacter</div><div class="v">CRAB 문제</div></div>
+                <div class="rowline"><div class="k">Stenotrophomonas</div><div class="v"><b style="color:var(--resist)">✕</b></div></div>
+              </div>
+              <div class="sel-panel" data-panel="mem">
+                <div class="rowline"><div class="k">Pseudomonas</div><div class="v"><b style="color:var(--cov-yes)">O</b></div></div>
+                <div class="rowline"><div class="k">Acinetobacter</div><div class="v">일부 가능하나 CRAB 문제</div></div>
+                <div class="rowline"><div class="k">Stenotrophomonas</div><div class="v"><b style="color:var(--resist)">✕</b> (intrinsic resistance)</div></div>
+              </div>
+              <div class="sel-panel" data-panel="sam">
+                <div class="rowline"><div class="k">Pseudomonas</div><div class="v"><b style="color:var(--resist)">✕</b></div></div>
+                <div class="rowline"><div class="k">Acinetobacter</div><div class="v"><b style="color:var(--cov-yes)">sulbactam이 중요</b></div></div>
+                <div class="rowline"><div class="k">Stenotrophomonas</div><div class="v">대표 연상 아님</div></div>
+              </div>
+              <div class="sel-panel" data-panel="sxt">
+                <div class="rowline"><div class="k">Pseudomonas</div><div class="v">대표 연상 아님</div></div>
+                <div class="rowline"><div class="k">Acinetobacter</div><div class="v">일부 상황</div></div>
+                <div class="rowline"><div class="k">Stenotrophomonas</div><div class="v"><b style="color:var(--cov-yes)">대표 연상</b></div></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ===== S22~25 · Cases ===== -->
+        <section id="cases" class="section">
+          <h2><span class="sec-no">08</span> ASP Cases</h2>
+
+          <h3>Case 1 · Pseudomonas (Vancomycin 중단)</h3>
+          <div class="card card--case">
+            <div class="card__label"><span class="dot"></span>CLINICAL CASE</div>
+            <p>68세 남성 VAP 치료 중. Empiric <b>Vancomycin + Cefepime</b>. Respiratory culture: <b>Pseudomonas aeruginosa</b> (Cefepime S · Pip/Tazo S · Meropenem S). MRSA culture negative.</p>
+          </div>
+          <div class="qcard">
+            <div class="q"><span class="qn">Q</span> Vancomycin을 계속 사용할 이유가 있는가?</div>
+            <button class="reveal-btn">정답 보기</button>
+            <div class="answer">MRSA evidence 없음 → Vancomycin 중단 가능성 검토
+              <div class="exp">Pseudomonas 확인 → active antipseudomonal agent로 targeted therapy.</div>
+            </div>
+          </div>
+
+          <h3>Case 2 · Pseudomonas de-escalation</h3>
+          <div class="card card--case">
+            <div class="card__label"><span class="dot"></span>CLINICAL CASE</div>
+            <p>현재 <b>Meropenem</b>. Culture: <b>Pseudomonas aeruginosa</b> (Cefepime S · Meropenem S). 환자 안정.</p>
+          </div>
+          <div class="qcard">
+            <div class="q"><span class="qn">Q</span> Meropenem을 반드시 계속 사용해야 할까?</div>
+            <button class="reveal-btn">정답 보기</button>
+            <div class="answer">아니다 — carbapenem이 꼭 필요한 resistance pattern인지 확인.
+              <div class="exp">Cefepime으로 충분하다면 carbapenem-sparing 전략을 고려할 수 있다. <b>Pseudomonas = 무조건 meropenem이 아니다.</b></div>
+            </div>
+          </div>
+
+          <h3>Case 3 · Acinetobacter (colonization?)</h3>
+          <p style="font-size:13.5px;color:var(--ink-faint);">임상 정보를 하나씩 공개한 뒤 판단하세요.</p>
+          <div class="figure" data-decision>
+            <div class="decision__log">
+              <div class="dstep"><span class="k">Culture</span> ICU respiratory culture: Acinetobacter baumannii</div>
+              <div class="dstep"><span class="k">Vital</span> Fever 없음</div>
+              <div class="dstep"><span class="k">Lab</span> WBC stable</div>
+              <div class="dstep"><span class="k">Resp</span> Oxygen requirement 변화 없음 · Chest X-ray 변화 없음</div>
+              <div class="dstep is-final"><span class="k">판단</span> <b>Likely colonization — 바로 CRAB 치료를 시작하지 않는다</b> (colonization vs true pneumonia 평가 먼저)</div>
+            </div>
+            <div style="margin-top:14px;display:flex;gap:10px;flex-wrap:wrap;">
+              <button class="btn" data-decision-next>임상 정보 공개 ▸</button>
+              <button class="btn btn--ghost" data-decision-reset>↺ 처음으로</button>
+            </div>
+          </div>
+          <div class="card card--asp">
+            <div class="card__label"><span class="dot"></span>ASP POINT</div>
+            <p>가장 강한 ASP intervention 중 하나는 <b>불필요한 항생제를 시작하지 않는 것</b>이다.</p>
+          </div>
+
+          <h3>Case 4 · Stenotrophomonas</h3>
+          <div class="card card--case">
+            <div class="card__label"><span class="dot"></span>CLINICAL CASE</div>
+            <p>환자가 장기간 <b>Meropenem</b> 사용 중. Respiratory culture: <b>Stenotrophomonas maltophilia</b>.</p>
+          </div>
+          <div class="split2">
+            <div class="splitcard is-mrsa"><h4>초보 사고</h4><ul><li>"Meropenem을 더 오래 써야 하나?"</li></ul></div>
+            <div class="splitcard is-mssa"><h4>ASP 사고</h4><ul><li>Stenotrophomonas는 carbapenem intrinsic resistance</li><li>진짜 infection인지 평가</li><li>필요하면 susceptibility 따라 <b>TMP/SMX 등</b> 검토</li></ul></div>
+          </div>
+        </section>
+
+        <!-- ===== S26 · AST 보는 순서 ===== -->
+        <section id="flow" class="section">
+          <h2><span class="sec-no">09</span> Non-fermenter에서 AST 보는 순서</h2>
+          <div class="figure">
+            <div class="figure__title">도식 8 · Non-fermenter ASP flow</div>
+            <div class="vflow">
+              <div class="vflow__box">Culture positive</div>
+              <div class="vflow__arrow">↓</div>
+              <div class="vflow__box q">True infection?</div>
+              <div class="vflow__branch">
+                <div class="vflow__leaf neg"><h6>No</h6><div>항생제 불필요 가능</div></div>
+                <div class="vflow__leaf pos"><h6>Yes</h6><div>계속 진행 ↓</div></div>
+              </div>
+              <div class="vflow__arrow">↓ Organism? (Pseudomonas / Acinetobacter / Stenotrophomonas)</div>
+              <div class="vflow__box">AST 확인</div>
+              <div class="vflow__arrow">↓</div>
+              <div class="vflow__box">Active agent 확인</div>
+              <div class="vflow__arrow">↓</div>
+              <div class="vflow__box">Narrowest effective option</div>
+              <div class="vflow__arrow">↓</div>
+              <div class="vflow__box">Dose / PK optimization</div>
+              <div class="vflow__arrow">↓</div>
+              <div class="vflow__box" style="background:var(--gn-soft);border-color:var(--gn);color:#0c8a7c;">Duration / source control</div>
+            </div>
+            <div class="figure__cap">Step 1 organism → 2 infection/colonization → 3 susceptibility → 4 현재약 active? → 5 가장 좁은 active agent → 6 PK/PD → 7 source control</div>
+          </div>
+        </section>
+
+        <!-- ===== S27,28,29 · 정리 & Quiz ===== -->
+        <section id="quiz" class="section">
+          <h2><span class="sec-no">10</span> 정리 &amp; Active Recall</h2>
+
+          <h3>핵심 카드 (옆으로 스와이프)</h3>
+          <div class="flashdeck">
+            <div class="flashcard warn"><div class="fc-n">CARD 1</div><div class="fc-term">Pseudomonas</div><div class="fc-arrow">→</div><div class="fc-ans">Cefepime/Pip-Tazo/Meropenem</div></div>
+            <div class="flashcard"><div class="fc-n">CARD 2</div><div class="fc-term">Ceftriaxone · Ertapenem</div><div class="fc-arrow">→</div><div class="fc-ans">Pseudomonas X</div></div>
+            <div class="flashcard"><div class="fc-n">CARD 3</div><div class="fc-term">Pseudomonas PK/PD</div><div class="fc-arrow">→</div><div class="fc-ans">Extended/prolonged infusion</div></div>
+            <div class="flashcard warn"><div class="fc-n">CARD 4</div><div class="fc-term">Acinetobacter</div><div class="fc-arrow">→</div><div class="fc-ans">CRAB</div></div>
+            <div class="flashcard"><div class="fc-n">CARD 5</div><div class="fc-term">Acinetobacter</div><div class="fc-arrow">→</div><div class="fc-ans">Sulbactam 자체 활성</div></div>
+            <div class="flashcard warn"><div class="fc-n">CARD 6</div><div class="fc-term">Stenotrophomonas</div><div class="fc-arrow">→</div><div class="fc-ans">Carbapenem X</div></div>
+            <div class="flashcard"><div class="fc-n">CARD 7</div><div class="fc-term">Stenotrophomonas</div><div class="fc-arrow">→</div><div class="fc-ans">TMP/SMX</div></div>
+            <div class="flashcard warn"><div class="fc-n">CARD 8</div><div class="fc-term">Non-fermenter</div><div class="fc-arrow">→</div><div class="fc-ans">Colonization ≠ Infection</div></div>
+          </div>
+          <div class="flashhint">← 좌우로 밀어서 넘기세요 →</div>
+
+          <h3 style="margin-top:34px;">반드시 기억할 10개</h3>
+          <div class="eightcards">
+            <div class="factcard"><span class="n">1</span><p>Pseudomonas는 대표적인 hospital-associated Gram-negative pathogen이다.</p></div>
+            <div class="factcard"><span class="n">2</span><p>Cefepime · ceftazidime · Pip/Tazo · meropenem은 Pseudomonas activity가 있다.</p></div>
+            <div class="factcard"><span class="n">3</span><p>Ceftriaxone과 ertapenem은 Pseudomonas를 커버하지 않는다.</p></div>
+            <div class="factcard"><span class="n">4</span><p>Pseudomonas는 여러 resistance mechanism을 조합할 수 있다.</p></div>
+            <div class="factcard"><span class="n">5</span><p>Pseudomonas에서 β-lactam PK/PD optimization이 중요할 수 있다.</p></div>
+            <div class="factcard"><span class="n">6</span><p>Acinetobacter에서는 carbapenem resistance, 즉 CRAB가 중요하다.</p></div>
+            <div class="factcard"><span class="n">7</span><p>Sulbactam은 Acinetobacter에 직접적인 항균 활성이 있다.</p></div>
+            <div class="factcard"><span class="n">8</span><p>Stenotrophomonas는 carbapenem에 intrinsic resistance가 있다.</p></div>
+            <div class="factcard"><span class="n">9</span><p>Stenotrophomonas를 보면 TMP/SMX를 먼저 연상한다.</p></div>
+            <div class="factcard"><span class="n">10</span><p>Non-fermenter가 culture에서 나왔다고 반드시 infection은 아니다.</p></div>
+          </div>
+
+          <h3 style="margin-top:34px;">Active Recall</h3>
+          <div class="quiz">
+            <div class="qcard">
+              <div class="q" style="display:block;"><span class="qn">Q1</span> 다음 중 Pseudomonas를 커버하지 <b>않는</b> 약은?</div>
+              <ul class="mcq" data-answer="C">
+                <li data-opt="A"><span class="opt">A</span> Cefepime</li>
+                <li data-opt="B"><span class="opt">B</span> Piperacillin/Tazobactam</li>
+                <li data-opt="C"><span class="opt">C</span> Ceftriaxone</li>
+                <li data-opt="D"><span class="opt">D</span> Meropenem</li>
+              </ul>
+              <div class="answer mcq-exp" style="display:none;">정답: C — Ceftriaxone</div>
+            </div>
+            <div class="qcard"><div class="q"><span class="qn">Q2</span> Ertapenem은 Pseudomonas를 커버하는가?</div><button class="reveal-btn">정답 보기</button><div class="answer">아니다.</div></div>
+            <div class="qcard"><div class="q"><span class="qn">Q3</span> Pseudomonas에서 중요할 수 있는 β-lactam 투여 전략은?</div><button class="reveal-btn">정답 보기</button><div class="answer">Extended/prolonged infusion을 통한 PK/PD optimization.</div></div>
+            <div class="qcard"><div class="q"><span class="qn">Q4</span> Carbapenem-resistant Acinetobacter baumannii의 약어는?</div><button class="reveal-btn">정답 보기</button><div class="answer">CRAB.</div></div>
+            <div class="qcard"><div class="q"><span class="qn">Q5</span> Acinetobacter에서 특별히 중요한 β-lactamase inhibitor는?</div><button class="reveal-btn">정답 보기</button><div class="answer">Sulbactam.</div></div>
+            <div class="qcard"><div class="q"><span class="qn">Q6</span> Stenotrophomonas의 대표적인 intrinsic resistance는?</div><button class="reveal-btn">정답 보기</button><div class="answer">Carbapenem resistance.</div></div>
+            <div class="qcard"><div class="q"><span class="qn">Q7</span> Stenotrophomonas를 보면 가장 먼저 연상할 항생제는?</div><button class="reveal-btn">정답 보기</button><div class="answer">TMP/SMX.</div></div>
+            <div class="qcard"><div class="q"><span class="qn">Q8</span> Respiratory culture에서 Acinetobacter가 나왔다면 즉시 치료해야 하는가?</div><button class="reveal-btn">정답 보기</button><div class="answer">아니다. Colonization과 true infection을 먼저 구분해야 한다.</div></div>
+            <div class="qcard"><div class="q"><span class="qn">Q9</span> Pseudomonas가 cefepime S, meropenem S인데 환자가 안정적이라면 meropenem만 가능한가?</div><button class="reveal-btn">정답 보기</button><div class="answer">아니다. 감염 상황이 허용한다면 cefepime 같은 carbapenem-sparing option을 검토할 수 있다.</div></div>
+            <div class="qcard"><div class="q"><span class="qn">Q10</span> Broad-spectrum carbapenem 사용이 Stenotrophomonas 같은 균의 selection pressure에 영향을 줄 수 있는가?</div><button class="reveal-btn">정답 보기</button><div class="answer">그렇다.</div></div>
+          </div>
+
+          <h3 style="margin-top:34px;">Organism Challenge</h3>
+          <p style="font-size:13.5px;color:var(--ink-faint);">특징을 보고 균을 고르세요.</p>
+          <div class="quiz">
+            <div class="qcard">
+              <div class="q" style="display:block;"><b>Challenge 1</b> · HAP/VAP · Cefepime O · Meropenem O · Ertapenem X</div>
+              <ul class="mcq" data-answer="A">
+                <li data-opt="A"><span class="opt">A</span> Pseudomonas aeruginosa</li>
+                <li data-opt="B"><span class="opt">B</span> Acinetobacter baumannii</li>
+                <li data-opt="C"><span class="opt">C</span> Stenotrophomonas maltophilia</li>
+              </ul>
+              <div class="answer mcq-exp" style="display:none;">정답: A — Pseudomonas aeruginosa</div>
+            </div>
+            <div class="qcard">
+              <div class="q" style="display:block;"><b>Challenge 2</b> · ICU · Carbapenem resistance 문제 · Sulbactam이 중요</div>
+              <ul class="mcq" data-answer="B">
+                <li data-opt="A"><span class="opt">A</span> Pseudomonas aeruginosa</li>
+                <li data-opt="B"><span class="opt">B</span> Acinetobacter baumannii</li>
+                <li data-opt="C"><span class="opt">C</span> Stenotrophomonas maltophilia</li>
+              </ul>
+              <div class="answer mcq-exp" style="display:none;">정답: B — Acinetobacter baumannii</div>
+            </div>
+            <div class="qcard">
+              <div class="q" style="display:block;"><b>Challenge 3</b> · Broad-spectrum antibiotic exposure · Carbapenem intrinsic resistance · TMP/SMX</div>
+              <ul class="mcq" data-answer="C">
+                <li data-opt="A"><span class="opt">A</span> Pseudomonas aeruginosa</li>
+                <li data-opt="B"><span class="opt">B</span> Acinetobacter baumannii</li>
+                <li data-opt="C"><span class="opt">C</span> Stenotrophomonas maltophilia</li>
+              </ul>
+              <div class="answer mcq-exp" style="display:none;">정답: C — Stenotrophomonas maltophilia</div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ===== S30,31 · Integrated case & 통합 지도 ===== -->
+        <section id="tree" class="section">
+          <h2><span class="sec-no">11</span> Integrated ASP Case &amp; 통합 지도</h2>
+
+          <div class="card card--case">
+            <div class="card__label"><span class="dot"></span>CLINICAL CASE · Integrated</div>
+            <p>70세 남성, ICU septic shock. Empiric <b>Vancomycin + Meropenem</b>. Blood culture: <b>Pseudomonas aeruginosa</b>
+              (Cefepime S · Pip/Tazo S · Meropenem S · Ciprofloxacin R). MRSA evidence 없음. 환자는 hemodynamically stable해짐.</p>
+          </div>
+          <div class="figure">
+            <div class="vflow">
+              <div class="vflow__box">① Organism · Pseudomonas aeruginosa</div>
+              <div class="vflow__arrow">↓</div>
+              <div class="vflow__box q">② MRSA? No → Vancomycin 지속 필요성 재평가</div>
+              <div class="vflow__arrow">↓</div>
+              <div class="vflow__box">③ Cefepime S · Pip/Tazo S · Meropenem S</div>
+              <div class="vflow__arrow">↓</div>
+              <div class="vflow__box q">④ Carbapenem이 반드시 필요한가? (no resistance reason)</div>
+              <div class="vflow__arrow">↓</div>
+              <div class="vflow__box" style="background:var(--gn-soft);border-color:var(--gn);color:#0c8a7c;">⑤ Vancomycin 중단 · narrower antipseudomonal β-lactam · renal dose · prolonged infusion · duration</div>
+            </div>
+          </div>
+
+          <div class="figure">
+            <div class="figure__title">도식 9 · Non-fermenter decision tree</div>
+            <div class="vflow">
+              <div class="vflow__box">Non-fermenting Gram-negative bacillus</div>
+              <div class="vflow__arrow">↓ 어떤 균?</div>
+              <div class="vflow__branch" style="grid-template-columns:1fr 1fr 1fr;">
+                <div class="vflow__leaf" style="border-top:3px solid var(--pseudo);"><h6>Pseudomonas?</h6><div>Cefepime/Pip-Tazo/Ceftaz/Meropenem<br/>Resistance + PK/PD 중요</div></div>
+                <div class="vflow__leaf neg"><h6>Acinetobacter?</h6><div>CRAB 여부<br/>Sulbactam 중요</div></div>
+                <div class="vflow__leaf" style="border-top:3px solid var(--anaerobe);"><h6>Stenotrophomonas?</h6><div>Carbapenem X<br/>TMP/SMX 연상</div></div>
+              </div>
+              <div class="vflow__arrow">↓ 공통 질문</div>
+              <div class="vflow__box q">True infection인가?</div>
+              <div class="vflow__arrow">↓ AST 결과는?</div>
+              <div class="vflow__box q">현재 약보다 좁힐 수 있는가?</div>
+              <div class="vflow__arrow">↓ Dose optimization 가능한가?</div>
+              <div class="vflow__box" style="background:var(--gn-soft);border-color:var(--gn);color:#0c8a7c;">Source control은?</div>
+            </div>
+          </div>
+        </section>
+
+        <section class="closing">
+          <h3>오늘의 한 문장</h3>
+          <p class="big">Non-fermenter를 보면 "Gram-negative니까 broad β-lactam을 쓰자"가 아니라,
+            먼저 어떤 균인지 확인하고 그 균의 고유한 resistance pattern을 생각한다.</p>
+          <p>ASP에서는 이어서 묻는다.</p>
+          <p class="big">이 균이 실제 감염의 원인인가, 그리고 현재 사용하는 광범위 항생제를 더 좁힐 수 있는가?</p>
+          <p style="margin-top:22px;"><a href="lesson-03.html" style="color:#fff;text-decoration:underline;">← 3강 다시 보기</a> · <a href="../index.html" style="color:#fff;text-decoration:underline;">강의 목록</a></p>
+        </section>
+
+      </div>
+    </div>
+  </div>
+
+  <nav class="bottomnav" aria-label="강의 이동">
+    <a href="lesson-03.html"><span class="bn-ico">←</span>이전 강의</a>
+    <a href="#" data-open-toc><span class="bn-ico">☰</span>목차</a>
+    <a href="#" aria-disabled="true"><span class="bn-ico">→</span>다음 강의</a>
+  </nav>
+
+  <div class="quickrev">
+    <div class="quickrev__panel">
+      <h5>⚡ Quick Review</h5>
+      <div class="qr-row"><span class="qr-k">Pseudomonas</span><span>Cefepime/Pip-Tazo/Meropenem · CTX X/ETP X</span></div>
+      <div class="qr-row"><span class="qr-k">Acinetobacter</span><span>CRAB · Sulbactam</span></div>
+      <div class="qr-row"><span class="qr-k">Stenotroph.</span><span>Carbapenem X · TMP/SMX</span></div>
+      <div class="qr-row"><span class="qr-k">공통</span><span>Colonization ≠ Infection</span></div>
+    </div>
+    <button class="quickrev__btn" aria-label="Quick Review 열기">⚡ Quick Review</button>
+  </div>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

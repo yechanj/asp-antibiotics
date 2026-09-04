@@ -370,6 +370,59 @@
     });
   }
 
+  /* ---------- 12. Pseudomonas Spectrum Game (O/X) ---------- */
+  var SPECGAME = [
+    { drug: "CEFTRIAXONE", cover: false },
+    { drug: "CEFEPIME", cover: true },
+    { drug: "ERTAPENEM", cover: false },
+    { drug: "MEROPENEM", cover: true },
+    { drug: "PIPERACILLIN/TAZOBACTAM", cover: true },
+    { drug: "CEFTAZIDIME", cover: true },
+    { drug: "AMPICILLIN/SULBACTAM", cover: false }
+  ];
+  function initSpecGame() {
+    var root = document.querySelector("[data-specgame]");
+    if (!root) return;
+    var cardEl = root.querySelector(".specgame__card");
+    var fbEl = root.querySelector(".specgame__fb");
+    var progEl = root.querySelector(".specgame__prog");
+    var btns = root.querySelector(".specgame__btns");
+    var i = 0, score = 0, locked = false;
+
+    function render() {
+      if (i >= SPECGAME.length) {
+        cardEl.innerHTML = "<span class='specgame__done'>완료!</span>";
+        fbEl.className = "specgame__fb ok";
+        fbEl.textContent = "점수 " + score + " / " + SPECGAME.length;
+        progEl.innerHTML = "<button class='btn btn--ghost' data-sg-restart>↺ 다시 하기</button>";
+        var rb = progEl.querySelector("[data-sg-restart]");
+        if (rb) rb.addEventListener("click", function () { i = 0; score = 0; fbEl.textContent = ""; fbEl.className = "specgame__fb"; render(); });
+        return;
+      }
+      cardEl.textContent = SPECGAME[i].drug;
+      fbEl.textContent = ""; fbEl.className = "specgame__fb";
+      progEl.textContent = (i + 1) + " / " + SPECGAME.length;
+      locked = false;
+    }
+    function answer(said) {
+      if (locked || i >= SPECGAME.length) return;
+      locked = true;
+      var correct = SPECGAME[i].cover;
+      var right = (said === correct);
+      if (right) score++;
+      fbEl.className = "specgame__fb " + (right ? "ok" : "no");
+      fbEl.textContent = (right ? "정답! " : "오답! ") + "Pseudomonas coverage " + (correct ? "O" : "X");
+      setTimeout(function () { i++; render(); }, 1100);
+    }
+    btns.addEventListener("click", function (e) {
+      var b = e.target.closest("button");
+      if (!b) return;
+      if (b.classList.contains("sg-o")) answer(true);
+      else if (b.classList.contains("sg-x")) answer(false);
+    });
+    render();
+  }
+
   /* ---------- init ---------- */
   document.addEventListener("DOMContentLoaded", function () {
     initSidebar();
@@ -383,5 +436,6 @@
     initSelectors();
     initDecisions();
     initQuickReview();
+    initSpecGame();
   });
 })();

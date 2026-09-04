@@ -29,6 +29,14 @@ window.ASP_LESSONS = [
   },
   {
     no: 4,
+    href: "lessons/lesson-04.html",
+    title: "Gram-negative 균 지도 ②: Pseudomonas · Acinetobacter · Stenotrophomonas",
+    desc: "Non-fermenter 3대 균. Antipseudomonal β-lactam, CRAB와 sulbactam, Stenotrophomonas의 carbapenem intrinsic resistance와 TMP/SMX까지.",
+    tags: ["Pseudomonas", "CRAB", "Sulbactam", "TMP/SMX"],
+    status: "ready"
+  },
+  {
+    no: 5,
     href: "#",
     title: "(준비 중)",
     desc: "다음 강의가 곧 추가됩니다.",
