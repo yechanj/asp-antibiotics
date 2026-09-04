@@ -819,6 +819,45 @@ table.data td.cov { font-weight: 700; font-size: 16px; }
 .bottomnav > * + * { border-left: 1px solid var(--line); }
 
 /* =========================================================
+   LESSON 6 · Daptomycin Lung Trap
+   ========================================================= */
+.lungtrap { text-align: center; }
+.lungtrap__scene {
+  font-size: 20px; font-weight: 700; padding: 16px; border-radius: 12px;
+  background: linear-gradient(135deg,#163a6b,#8b1c2b); color: #fff; margin-bottom: 14px;
+}
+.lungtrap__btns { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
+.lungtrap__btns button {
+  font-family: inherit; font-weight: 700; font-size: 15px; cursor: pointer;
+  padding: 12px 20px; border-radius: 12px; border: 2px solid var(--line-strong);
+  background: var(--surface); transition: all .12s;
+}
+.lungtrap__btns button:hover { border-color: var(--brand); }
+.lungtrap__btns button.ok { border-color: var(--cov-yes); background: #eef9f1; color: #147a49; }
+.lungtrap__btns button.trap { border-color: var(--resist); background: var(--resist-soft); color: var(--resist); }
+.lungtrap__fb { margin-top: 14px; min-height: 26px; font-weight: 700; font-size: 15px; }
+.lungtrap__fb.ok { color: var(--cov-yes); }
+.lungtrap__fb.trap {
+  color: var(--resist); font-size: 17px;
+  animation: shake .45s ease;
+}
+@keyframes shake {
+  0%,100% { transform: translateX(0); }
+  20% { transform: translateX(-8px); }
+  40% { transform: translateX(8px); }
+  60% { transform: translateX(-5px); }
+  80% { transform: translateX(5px); }
+}
+
+/* 두 약 캐릭터 카드 */
+.charcards { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.charcard { border-radius: 16px; padding: 18px; color: #fff; }
+.charcard.linez { background: linear-gradient(135deg,#12766a,#12a594); }
+.charcard.dapto { background: linear-gradient(135deg,#8a1c2b,#e5484d); }
+.charcard h4 { color: #fff; margin: 0 0 10px; font-size: 18px; }
+.charcard .row { display: flex; align-items: center; gap: 8px; padding: 4px 0; font-size: 14px; font-weight: 700; }
+
+/* =========================================================
    LESSON 5 · AUC Therapeutic Window (슬라이더 + 게이지)
    ========================================================= */
 .aucslider input[type=range] { width: 100%; accent-color: var(--brand); height: 30px; }
@@ -981,6 +1020,7 @@ table.data td.ast-s { color: var(--cov-yes); font-weight: 700; }
   .split2 { grid-template-columns: 1fr; }
   .orgbig { grid-template-columns: 1fr; }
   .scrtrend .bar { width: 38px; }
+  .charcards { grid-template-columns: 1fr; }
   .bottomnav { display: grid; }
   .content .wrap { padding-bottom: 92px; } /* 하단 내비 공간 */
   .quickrev { bottom: 72px; } /* 하단 내비 위로 */

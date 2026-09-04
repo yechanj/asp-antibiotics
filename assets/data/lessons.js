@@ -45,6 +45,14 @@ window.ASP_LESSONS = [
   },
   {
     no: 6,
+    href: "lessons/lesson-06.html",
+    title: "Linezolid와 Daptomycin: MRSA·VRE를 어떻게 다르게 치료하는가",
+    desc: "둘 다 MRSA/VRE를 커버하지만 대체 불가. Linezolid=Lung·PO·platelet·serotonin, Daptomycin=Blood·Lung X(surfactant)·CPK·statin. Site가 선택을 바꾼다.",
+    tags: ["Linezolid", "Daptomycin", "Site", "Monitoring"],
+    status: "ready"
+  },
+  {
+    no: 7,
     href: "#",
     title: "(준비 중)",
     desc: "다음 강의가 곧 추가됩니다.",

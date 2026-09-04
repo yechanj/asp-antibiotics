@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>6강 · Linezolid와 Daptomycin: MRSA·VRE를 어떻게 다르게 치료하는가</title>
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+</head>
+<body>
+  <div class="topbar">
+    <button class="hamburger" aria-label="목차 열기" aria-expanded="false"><span></span></button>
+    <div class="topbar__title">6강 · Linezolid & Daptomycin</div>
+  </div>
+  <div class="scrim" aria-hidden="true"></div>
+
+  <div class="app">
+    <aside class="sidebar" aria-label="강의 목차">
+      <div class="sidebar__brand">
+        <div class="sidebar__logo">ASP</div>
+        <div class="sidebar__title">항생제 학습
+          <small>6강 · Linezolid/Dapto</small>
+        </div>
+      </div>
+      <nav>
+        <ul class="toc">
+          <li><a href="#map"><span class="num">1</span> 큰 그림 · Site가 결정</a></li>
+          <li><a href="#linez"><span class="num">2</span> Linezolid 기전·Lung</a></li>
+          <li><a href="#linez-po"><span class="num">3</span> 경구흡수 & IV-to-PO</a></li>
+          <li><a href="#linez-tox"><span class="num">4</span> Linezolid 독성</a></li>
+          <li><a href="#dapto"><span class="num">5</span> Daptomycin 기전·Blood</a></li>
+          <li><a href="#dapto-trap"><span class="num">6</span> Lung Trap & 독성</a></li>
+          <li><a href="#dapto-vre"><span class="num">7</span> Daptomycin & VRE</a></li>
+          <li><a href="#compare"><span class="num">8</span> 두 약 비교</a></li>
+          <li><a href="#cases"><span class="num">9</span> ASP Cases</a></li>
+          <li><a href="#monitor"><span class="num">10</span> 모니터링 카드</a></li>
+          <li><a href="#quiz"><span class="num">11</span> 정리 & Quiz</a></li>
+          <li><a href="#tree"><span class="num">12</span> 통합 Decision Map</a></li>
+        </ul>
+      </nav>
+      <a class="sidebar__back" href="../index.html">← 강의 목록으로</a>
+    </aside>
+
+    <div class="content">
+      <div class="wrap">
+
+        <header class="lesson-hero">
+          <div class="kicker">ASP 항생제 학습 · 6강</div>
+          <h1>Linezolid와 Daptomycin</h1>
+          <p>둘 다 MRSA·VRE를 커버하지만 대체 가능한 같은 약이 아니다 — infection site가 선택을 바꿉니다.</p>
+        </header>
+
+        <!-- ===== S1 · 큰 그림 ===== -->
+        <section id="map" class="section">
+          <h2><span class="sec-no">01</span> 먼저 큰 그림 · Site가 결정한다</h2>
+          <p>앞에서 MRSA→Vancomycin, VRE→Linezolid/Daptomycin으로 연결했다. 하지만 실제로는 "VRE니까 linezolid"로 끝나지 않는다.
+            특히 <b>감염 부위가 어디인가?</b>가 중요하다 — 같은 MRSA라도 pneumonia/bacteremia/endocarditis에서 쓸 수 있는 약이 달라진다.</p>
+
+          <div class="figure">
+            <div class="figure__title">도식 1 · MRSA/VRE 약물 지도</div>
+            <div class="gpmap__cols">
+              <div class="gpmap__col" style="border-top-color:var(--brand);"><h5>Vancomycin</h5><ul><li>MRSA O</li><li>VRE <b class="hl">X</b></li></ul></div>
+              <div class="gpmap__col" style="border-top-color:var(--gn);"><h5>Linezolid</h5><ul><li>MRSA · VRE O</li><li><b>Lung O</b></li></ul></div>
+              <div class="gpmap__col" style="border-top-color:var(--resist);"><h5>Daptomycin</h5><ul><li>MRSA · VRE O</li><li><b>Bloodstream O · Lung X</b></li></ul></div>
+            </div>
+            <div class="figure__cap">Organism은 약의 후보를 정하고, infection site는 그 후보를 다시 걸러낸다.</div>
+          </div>
+
+          <div class="figure">
+            <div class="figure__title">첫 화면 · 두 약의 캐릭터</div>
+            <div class="charcards">
+              <div class="charcard linez">
+                <h4>LINEZOLID</h4>
+                <div class="row">🫁 Lung O</div>
+                <div class="row">💊 PO 가능 (≈ IV)</div>
+                <div class="row">🩸 Platelet 주의</div>
+                <div class="row">🧠 Serotonin interaction</div>
+              </div>
+              <div class="charcard dapto">
+                <h4>DAPTOMYCIN</h4>
+                <div class="row">🩸 Bloodstream</div>
+                <div class="row">🚫 Lung X (surfactant)</div>
+                <div class="row">💪 CPK / Myopathy</div>
+                <div class="row">💊 Statin 확인</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ===== S2,3,4,5 · Linezolid 기전·Lung ===== -->
+        <section id="linez" class="section">
+          <h2><span class="sec-no">02</span> Linezolid — 기전과 Lung</h2>
+          <p>Linezolid는 <b>oxazolidinone</b>으로 주로 Gram-positive(MRSA · VRE · Streptococcus 등)에 활성이 있다. Gram-negative infection 치료 약이 아니다.
+            작용은 <b>protein synthesis 억제</b> — 50S ribosomal subunit에 작용해 translation initiation complex 형성을 방해한다.</p>
+
+          <div class="figure">
+            <div class="figure__title">도식 2 · Linezolid mechanism</div>
+            <div class="twopanel">
+              <div class="panel panel--normal">
+                <h5>정상 translation</h5>
+                <ol><li>mRNA + Ribosome (30S + 50S)</li><li>Protein synthesis ✓</li></ol>
+              </div>
+              <div class="panel panel--drug" style="background:var(--gn-soft);">
+                <h5>Linezolid</h5>
+                <ol><li><b>50S</b>에 작용</li><li>Initiation complex 형성 ✕</li><li>Protein synthesis ✕ → growth 억제</li></ol>
+              </div>
+            </div>
+            <div class="mech-flow">β-lactam / vancomycin = Cell wall · Linezolid = Protein synthesis</div>
+          </div>
+
+          <div class="card card--key">
+            <div class="card__label"><span class="dot"></span>KEY POINT · Bacteriostatic</div>
+            <p>많은 Gram-positive에 대해 linezolid는 일반적으로 <b>bacteriostatic</b>(증식 억제)으로 이해한다. 이 특징 때문에 bloodstream/endovascular infection에서는 "MRSA에 듣는다"만으로 선택하지 않는다.
+              Linezolid는 MRSA O · VRE O 이지만 <b>감염 부위가 중요</b>하다.</p>
+          </div>
+
+          <div class="figure">
+            <div class="figure__title">도식 3 · MRSA Pneumonia에서 Linezolid</div>
+            <div class="vflow">
+              <div class="vflow__box">MRSA</div>
+              <div class="vflow__arrow">↓ Infection site = Lung</div>
+              <div class="vflow__branch" style="grid-template-columns:1fr 1fr 1fr;">
+                <div class="vflow__leaf pos"><h6>Vancomycin</h6><div class="d">O</div></div>
+                <div class="vflow__leaf pos"><h6>Linezolid</h6><div class="d">O</div></div>
+                <div class="vflow__leaf neg"><h6>Daptomycin</h6><div class="d">X</div></div>
+              </div>
+            </div>
+            <div class="figure__cap">HAP/VAP guideline도 MRSA HAP/VAP 치료제로 vancomycin 또는 linezolid를 권고한다.</div>
+          </div>
+        </section>
+
+        <!-- ===== S6,7 · 경구흡수 & IV-to-PO ===== -->
+        <section id="linez-po" class="section">
+          <h2><span class="sec-no">03</span> 경구 흡수 &amp; IV-to-PO Stewardship</h2>
+          <p>Linezolid는 경구 투여해도 <b>absolute bioavailability ≈ 100%</b>. 따라서 일반적으로 <b>IV → PO 전환 시 동일 용량으로 전환 가능</b>이라는 큰 장점이 있다.</p>
+          <div class="figure">
+            <div class="figure__title">도식 4 · IV → PO Linezolid</div>
+            <div class="split2">
+              <div class="splitcard is-mssa"><h4>💉 IV Linezolid</h4><ul><li>Blood concentration</li></ul></div>
+              <div class="splitcard is-mssa" style="background:var(--gn-soft);border-color:var(--gn);"><h4>💊 PO Linezolid</h4><ul><li>Blood concentration ≈ 동일</li></ul></div>
+            </div>
+            <div class="mech-flow">Bioavailability ≈ 100% → Excellent IV-to-PO candidate</div>
+          </div>
+          <div class="card card--asp">
+            <div class="card__label"><span class="dot"></span>ASP POINT · IV → PO conversion</div>
+            <p>환자가 hemodynamically stable · GI absorption 가능 · oral medication 가능하면 "IV linezolid를 계속 쓸 이유가 있는가?"를 검토한다.
+              목적은 단순히 주사제를 줄이는 것이 아니라 — <b>IV catheter complication 감소 · 환자 편의 · 비용 감소 · 퇴원 전환 용이.</b></p>
+          </div>
+
+          <h3>인터랙션 · IV-to-PO 버튼</h3>
+          <div class="qcard">
+            <div class="q" style="display:block;">Linezolid IV 사용 중, 환자 안정화 · PO intake 가능 · GI 흡수 문제 없음.</div>
+            <button class="reveal-btn">Can we switch to PO?</button>
+            <div class="answer">YES — Bioavailability ≈ 100%이므로 동일 용량 PO 전환 검토.</div>
+          </div>
+        </section>
+
+        <!-- ===== S8~15 · Linezolid 독성 ===== -->
+        <section id="linez-tox" class="section">
+          <h2><span class="sec-no">04</span> Linezolid 독성</h2>
+          <p>약사가 반드시 기억할 것: <b>Myelosuppression</b>, 특히 <b>Thrombocytopenia</b>. 허가사항은 치료 중 CBC 매주 모니터링을 권고한다.</p>
+
+          <div class="card card--pharm">
+            <div class="card__label"><span class="dot"></span>PHARMACIST POINT · Platelet trend</div>
+            <p>Linezolid 처방을 보면 <b>CBC (특히 Platelet)</b>를 확인한다.</p>
+            <div class="scrtrend">
+              <div class="bar" style="height:80%"><span>220</span><small>Day1</small></div>
+              <div class="bar" style="height:66%"><span>180</span><small>Day5</small></div>
+              <div class="bar warn" style="height:42%"><span>110</span><small>Day10</small></div>
+              <div class="bar warn" style="height:28%"><span>70</span><small>Day14</small></div>
+            </div>
+            <p style="margin-bottom:0;">Linezolid-related thrombocytopenia 가능성을 포함해 원인을 평가한다. 위험 ↑: 긴 치료기간 · renal dysfunction · baseline low platelet · 중증 · 다른 골수억제 요인.</p>
+          </div>
+
+          <div class="card card--caution">
+            <div class="card__label"><span class="dot"></span>CAUTION · Long-term Linezolid</div>
+            <p>장기간(특히 <b>28일 초과</b>) 사용에서 <b>Peripheral neuropathy · Optic neuropathy</b>가 중요해진다. 확인: 손발 저림? 감각 이상? 시야 변화? 시력 저하? 색각 변화? → neuropathy 평가.</p>
+          </div>
+
+          <h3>Serotonin — Linezolid는 항생제인데 MAOI?</h3>
+          <p>Linezolid는 <b>reversible monoamine oxidase inhibition</b>을 가진다. serotonergic drugs(SSRI · SNRI · TCA · buspirone · 일부 opioid · triptan 등)와 함께 쓰면 <b>Serotonin syndrome</b> 가능성을 고려한다.</p>
+          <div class="figure">
+            <div class="figure__title">도식 6 · Serotonin interaction</div>
+            <div class="vflow">
+              <div class="vflow__box">Linezolid + Serotonergic drug</div>
+              <div class="vflow__arrow">↓ Serotonergic activity ↑</div>
+              <div class="vflow__box" style="background:var(--resist-soft);border-color:var(--resist);color:var(--resist);">Serotonin syndrome 가능성</div>
+            </div>
+            <div class="figure__cap">증상: agitation · hyperthermia · sweating · tremor · hyperreflexia · clonus · rigidity · autonomic instability.</div>
+          </div>
+          <div class="card card--pharm">
+            <div class="card__label"><span class="dot"></span>PHARMACIST POINT</div>
+            <p>"항우울제 먹는가?"만 확인하고 끝내지 않는다. <b>전체 병용약</b>에서 serotonergic activity를 확인한다.
+              단, "SSRI + Linezolid = 무조건 금기"로 외우지 않는다 — 감염 severity·대체 가능성을 고려한 <b>risk-benefit assessment</b>가 필요하며, 필요 시 serotonergic med 조정·monitoring 강화를 고려한다.</p>
+          </div>
+
+          <div class="oneline">Linezolid → MRSA·VRE → Lung O → PO≈100% → Platelet↓ → 장기: Neuropathy → Serotonin syndrome</div>
+        </section>
+
+        <!-- ===== S16,17,18 · Daptomycin 기전·Blood ===== -->
+        <section id="dapto" class="section">
+          <h2><span class="sec-no">05</span> Daptomycin — 기전과 Bloodstream</h2>
+          <p>Daptomycin은 <b>cyclic lipopeptide</b>로 Gram-positive(MRSA · VRE 등)에 작용한다. bacterial cell membrane에 <b>calcium-dependent</b>로 삽입된다.</p>
+          <div class="figure">
+            <div class="figure__title">도식 7 · Daptomycin mechanism</div>
+            <div class="vflow">
+              <div class="vflow__box">Daptomycin + Ca²⁺ → Gram-positive membrane 삽입</div>
+              <div class="vflow__arrow">↓</div>
+              <div class="vflow__box q">Membrane depolarization → ion gradient 붕괴</div>
+              <div class="vflow__arrow">↓ protein/DNA/RNA synthesis 장애</div>
+              <div class="vflow__box" style="background:var(--resist-soft);border-color:var(--resist);color:var(--resist);">Bacterial death (rapid bactericidal)</div>
+            </div>
+          </div>
+          <div class="card card--key">
+            <div class="card__label"><span class="dot"></span>KEY POINT · Mental Map</div>
+            <p>Daptomycin은 <b>rapid bactericidal</b> → resistant Gram-positive <b>bacteremia · endovascular infection</b>에서 중요. 먼저 <b>Daptomycin = Bloodstream</b>으로 연결한다.</p>
+          </div>
+        </section>
+
+        <!-- ===== S19,20,21,22,23,24 · Lung Trap & 독성 ===== -->
+        <section id="dapto-trap" class="section">
+          <h2><span class="sec-no">06</span> Lung Trap &amp; Daptomycin 독성</h2>
+          <p>가장 중요한 함정: <b>Pneumonia에 사용하지 않는다.</b> 이유 — 폐의 <b>pulmonary surfactant</b>가 daptomycin의 antibacterial activity를 억제한다.</p>
+
+          <div class="figure">
+            <div class="figure__title">도식 8 · Blood O / Lung X</div>
+            <div class="split2">
+              <div class="splitcard is-mssa"><h4>🩸 Bloodstream</h4><ul><li>Daptomycin → MRSA → <b>✓ ACTIVE</b></li></ul></div>
+              <div class="splitcard is-mrsa"><h4>🫁 Lung</h4><ul><li>Daptomycin → pulmonary surfactant → activity inhibited</li><li><b>✕ PNEUMONIA</b></li></ul></div>
+            </div>
+          </div>
+          <div class="oneline">Daptomycin = Blood O / Lung X</div>
+
+          <h3>인터랙션 · Daptomycin Lung Trap</h3>
+          <p style="font-size:13.5px;color:var(--ink-faint);">MRSA + 폐렴 환자. 어떤 약을 고를까요? (함정을 눌러보세요)</p>
+          <div class="figure" data-lungtrap>
+            <div class="lungtrap">
+              <div class="lungtrap__scene">MRSA + LUNG 🫁</div>
+              <div class="lungtrap__btns">
+                <button>Vancomycin</button>
+                <button>Linezolid</button>
+                <button data-trap="1">Daptomycin</button>
+              </div>
+              <div class="lungtrap__fb"></div>
+            </div>
+          </div>
+
+          <div class="card card--caution">
+            <div class="card__label"><span class="dot"></span>CAUTION · Eosinophilic pneumonia (반대 함정)</div>
+            <p>Daptomycin은 bacterial pneumonia 치료엔 안 쓰지만, 약물 부작용으로 <b>eosinophilic pneumonia</b>를 일으킬 수 있다. 사용 중 fever · dyspnea · hypoxia · new pulmonary infiltrates가 나타나면 daptomycin-induced eosinophilic pneumonia 가능성 고려 (보통 투여 2–4주 무렵 보고).</p>
+          </div>
+
+          <h3>대표 부작용 · Myopathy & CPK</h3>
+          <div class="card card--pharm">
+            <div class="card__label"><span class="dot"></span>PHARMACIST POINT · CPK</div>
+            <p>Daptomycin 환자에서 <b>CPK/CK</b>를 모니터링한다 (허가사항: 최소 주 1회, renal impairment·statin 병용 등 위험요인 시 더 자주).</p>
+            <div class="scrtrend">
+              <div class="bar" style="height:20%"><span>80</span><small>base</small></div>
+              <div class="bar" style="height:24%"><span>90</span><small>D3</small></div>
+              <div class="bar warn" style="height:60%"><span>450</span><small>D5</small></div>
+              <div class="bar warn" style="height:92%"><span>900</span><small>D7</small></div>
+            </div>
+          </div>
+          <div class="figure">
+            <div class="figure__title">도식 9 · Daptomycin + Statin</div>
+            <div class="vflow">
+              <div class="vflow__box">Daptomycin (myopathy risk) + Statin (myopathy risk)</div>
+              <div class="vflow__arrow">↓</div>
+              <div class="vflow__box q">CPK monitoring 강화</div>
+              <div class="vflow__arrow">↓</div>
+              <div class="vflow__box">필요 시 statin 일시 중단 여부 검토</div>
+            </div>
+            <div class="figure__cap">허가사항도 rhabdomyolysis 관련 약물, 특히 HMG-CoA reductase inhibitor의 일시 중단 고려를 제시한다.</div>
+          </div>
+          <div class="card card--pharm">
+            <div class="card__label"><span class="dot"></span>PHARMACIST POINT · Renal</div>
+            <p>Daptomycin도 renal elimination이 중요 — renal impairment에서 dosing interval·exposure·toxicity를 재평가한다. Daptomycin 처방을 보면 <b>Renal function + CPK</b>를 같이 떠올린다.</p>
+          </div>
+        </section>
+
+        <!-- ===== S25,26 · Daptomycin & VRE ===== -->
+        <section id="dapto-vre" class="section">
+          <h2><span class="sec-no">07</span> Daptomycin &amp; VRE</h2>
+          <p>Daptomycin은 <b>VRE bloodstream infection</b>에서 중요한 옵션. 하지만 여기서 중요한 것이 <b>MIC</b>다. Enterococcus에서 daptomycin susceptibility 해석은 단순 S/R보다 MIC와 충분한 exposure 확보가 중요할 수 있다.</p>
+          <div class="card card--key">
+            <div class="card__label"><span class="dot"></span>KEY POINT</div>
+            <p>VRE에서 "Daptomycin을 쓴다"가 끝이 아니다: <b>Organism(E. faecium?) → MIC → Infection site → Dose/exposure → Source control</b>까지 연결.</p>
+          </div>
+          <p><b>High-dose daptomycin</b>: MRSA/VRE serious bloodstream infection(endocarditis · persistent bacteremia · VRE bacteremia · 높은 MIC)에서는 충분한 pharmacodynamic exposure가 중요해 higher-dose strategy를 고려하는 상황이 있다. 정확한 mg/kg regimen은 MRSA/VRE bacteremia 치료 강의에서 다룬다.</p>
+        </section>
+
+        <!-- ===== S27,28 · 비교 ===== -->
+        <section id="compare" class="section">
+          <h2><span class="sec-no">08</span> Linezolid vs Daptomycin</h2>
+          <div class="table-scroll">
+            <table class="data">
+              <thead><tr><th>특징</th><th>Linezolid</th><th>Daptomycin</th></tr></thead>
+              <tbody>
+                <tr><th>계열</th><td>Oxazolidinone</td><td>Lipopeptide</td></tr>
+                <tr><th>주요 작용</th><td>Protein synthesis 억제</td><td>Cell membrane depolarization</td></tr>
+                <tr><th>MRSA</th><td class="ast-s">O</td><td class="ast-s">O</td></tr>
+                <tr><th>VRE</th><td class="ast-s">O</td><td class="ast-s">O</td></tr>
+                <tr><th>Pneumonia</th><td class="ast-s">O</td><td class="ast-r">X</td></tr>
+                <tr><th>Bacteremia</th><td>상황에 따라</td><td class="ast-s">중요한 역할</td></tr>
+                <tr><th>PO 제형</th><td class="ast-s">O (≈100%)</td><td class="ast-r">X</td></tr>
+                <tr><th>대표 monitoring</th><td>CBC / platelet</td><td>CPK</td></tr>
+                <tr><th>장기간 주요 문제</th><td>Neuropathy</td><td>Myopathy</td></tr>
+                <tr><th>주요 interaction</th><td>Serotonergic drugs</td><td>Statin 등</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h3>인터랙션 · Toxicity Match (어느 약?)</h3>
+          <p style="font-size:13.5px;color:var(--ink-faint);">각 항목이 어느 약과 연결되는지 고르세요.</p>
+          <div class="quiz">
+            <div class="qcard"><div class="q" style="display:block;">🩸 Platelet 감소 / Thrombocytopenia</div>
+              <ul class="mcq" data-answer="L"><li data-opt="L"><span class="opt">L</span> Linezolid</li><li data-opt="D"><span class="opt">D</span> Daptomycin</li></ul>
+              <div class="answer mcq-exp" style="display:none;">정답: L — Linezolid (CBC/platelet)</div></div>
+            <div class="qcard"><div class="q" style="display:block;">💪 CPK 상승 / Myopathy</div>
+              <ul class="mcq" data-answer="D"><li data-opt="L"><span class="opt">L</span> Linezolid</li><li data-opt="D"><span class="opt">D</span> Daptomycin</li></ul>
+              <div class="answer mcq-exp" style="display:none;">정답: D — Daptomycin (CPK)</div></div>
+            <div class="qcard"><div class="q" style="display:block;">🧠 Serotonin syndrome</div>
+              <ul class="mcq" data-answer="L"><li data-opt="L"><span class="opt">L</span> Linezolid</li><li data-opt="D"><span class="opt">D</span> Daptomycin</li></ul>
+              <div class="answer mcq-exp" style="display:none;">정답: L — Linezolid (serotonergic drugs)</div></div>
+            <div class="qcard"><div class="q" style="display:block;">💊 Statin 병용 주의</div>
+              <ul class="mcq" data-answer="D"><li data-opt="L"><span class="opt">L</span> Linezolid</li><li data-opt="D"><span class="opt">D</span> Daptomycin</li></ul>
+              <div class="answer mcq-exp" style="display:none;">정답: D — Daptomycin</div></div>
+            <div class="qcard"><div class="q" style="display:block;">🦶 Peripheral / Optic neuropathy (장기)</div>
+              <ul class="mcq" data-answer="L"><li data-opt="L"><span class="opt">L</span> Linezolid</li><li data-opt="D"><span class="opt">D</span> Daptomycin</li></ul>
+              <div class="answer mcq-exp" style="display:none;">정답: L — Linezolid</div></div>
+          </div>
+
+          <div class="figure">
+            <div class="figure__title">도식 10 · 두 약 캐릭터 카드</div>
+            <div class="charcards">
+              <div class="charcard linez">
+                <h4>🫁 LINEZOLID = LUNG</h4>
+                <div class="row">MRSA / VRE · PO = IV exposure</div>
+                <div class="row">Watch: Platelet · Serotonin · Neuropathy</div>
+              </div>
+              <div class="charcard dapto">
+                <h4>🩸 DAPTOMYCIN = BLOOD</h4>
+                <div class="row">MRSA / VRE · LUNG X</div>
+                <div class="row">Watch: CPK · Muscle · Renal function</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ===== S29~35 · Cases + 게임 ===== -->
+        <section id="cases" class="section">
+          <h2><span class="sec-no">09</span> ASP Cases</h2>
+
+          <h3>인터랙션 · "Where is the infection?" 게임</h3>
+          <div class="quiz">
+            <div class="qcard">
+              <div class="q" style="display:block;"><b>MRSA Pneumonia</b> — 두 약 중 특성상 적절한 것은?</div>
+              <ul class="mcq" data-answer="L"><li data-opt="L"><span class="opt">L</span> Linezolid</li><li data-opt="D"><span class="opt">D</span> Daptomycin</li></ul>
+              <div class="answer mcq-exp" style="display:none;">정답: L — Linezolid (Daptomycin은 폐 X). Vancomycin도 주요 옵션.</div>
+            </div>
+            <div class="qcard">
+              <div class="q" style="display:block;"><b>MRSA Bacteremia</b> — 두 약 특성 비교상 강조되는 것은?</div>
+              <ul class="mcq" data-answer="D"><li data-opt="L"><span class="opt">L</span> Linezolid</li><li data-opt="D"><span class="opt">D</span> Daptomycin</li></ul>
+              <div class="answer mcq-exp" style="display:none;">정답: D — Daptomycin (bactericidal, bloodstream). 단 Vancomycin 등 다른 주요 옵션도 존재하며 이 문제는 두 약 특성 비교용.</div>
+            </div>
+          </div>
+
+          <h3>Case 1 · MRSA Pneumonia</h3>
+          <div class="card card--case">
+            <div class="card__label"><span class="dot"></span>CLINICAL CASE</div>
+            <p>70세. Sputum culture <b>MRSA</b>, 현재 vancomycin 중. Renal function 악화 중. 대안으로 Daptomycin?</p>
+          </div>
+          <div class="qcard">
+            <div class="q"><span class="qn">A</span> Daptomycin이 대안이 되는가?</div>
+            <button class="reveal-btn">정답 보기</button>
+            <div class="answer">No — pulmonary surfactant가 daptomycin activity를 억제. 가능한 대안 중 하나는 <b>Linezolid</b>.
+              <div class="exp">MRSA라는 균 이름만 보고 고르지 않는다 — Site=Lung 정보가 선택을 바꾼다.</div>
+            </div>
+          </div>
+
+          <h3>Case 2 · MRSA Bacteremia (persistent)</h3>
+          <div class="card card--case">
+            <div class="card__label"><span class="dot"></span>CLINICAL CASE</div>
+            <p>Blood culture <b>MRSA</b>, vancomycin 중. 적절 exposure에도 bacteremia 지속 → 대체 치료 검토 상황.</p>
+          </div>
+          <div class="qcard">
+            <div class="q"><span class="qn">A</span> Daptomycin으로 바꾸면 끝인가?</div>
+            <button class="reveal-btn">정답 보기</button>
+            <div class="answer">Daptomycin은 bloodstream/endovascular에서 중요하지만, persistent MRSA bacteremia에서는 <b>Source(endocarditis·catheter·abscess·prosthetic·osteomyelitis)</b>를 찾아야 한다.
+              <div class="exp">항생제 교체만으로 persistent bacteremia가 해결되지 않을 수 있다 — source control이 핵심일 수 있다. (2026 IDSA/ESCMID SAB guideline도 follow-up culture·심초음파 강조)</div>
+            </div>
+          </div>
+
+          <h3>Case 3 · VRE Bacteremia</h3>
+          <div class="card card--case">
+            <div class="card__label"><span class="dot"></span>CLINICAL CASE</div>
+            <p>Blood culture <b>E. faecium</b>, Vancomycin R → VRE. 치료 후보: Linezolid 또는 Daptomycin.</p>
+          </div>
+          <div class="qcard">
+            <div class="q"><span class="qn">A</span> 둘 중 아무거나?</div>
+            <button class="reveal-btn">정답 보기</button>
+            <div class="answer">아니다 — bacteremia severity · endovascular source · daptomycin MIC · renal function · platelet · 병용약 · 장기치료 가능성 · source control을 확인한다.</div>
+          </div>
+
+          <h3>Case 4 · Platelet 감소 (Linezolid 12일째)</h3>
+          <div class="card card--case">
+            <div class="card__label"><span class="dot"></span>CLINICAL CASE</div>
+            <p>VRE 환자, Linezolid 12일째. PLT 240k(D1) → 160k(D7) → 78k(D12).</p>
+          </div>
+          <div class="qcard">
+            <div class="q"><span class="qn">A</span> 가장 먼저 생각할 것은?</div>
+            <button class="reveal-btn">정답 보기</button>
+            <div class="answer">Linezolid-associated thrombocytopenia 가능성 → 다른 원인도 함께 평가 → 지속 필요성·대체 치료 검토.
+              <div class="exp">약물 부작용은 숫자 하나보다 trend가 중요하다.</div>
+            </div>
+          </div>
+
+          <h3>Case 5 · SSRI 병용</h3>
+          <div class="card card--case">
+            <div class="card__label"><span class="dot"></span>CLINICAL CASE</div>
+            <p>환자 약: <b>Sertraline</b>. 새 처방: <b>Linezolid</b>.</p>
+          </div>
+          <div class="qcard">
+            <div class="q"><span class="qn">A</span> 무조건 처방 불가?</div>
+            <button class="reveal-btn">정답 보기</button>
+            <div class="answer">단정하지 않는다 — Linezolid가 정말 필요한가 → 대체 항생제 → serotonergic interaction risk → 병용약 조정 가능? → monitoring plan을 평가.</div>
+          </div>
+
+          <h3>Case 6 · Daptomycin + Statin</h3>
+          <div class="card card--case">
+            <div class="card__label"><span class="dot"></span>CLINICAL CASE</div>
+            <p>Daptomycin 중, <b>Atorvastatin</b> 병용. CPK baseline 80 → Day7 620 U/L, 근육통.</p>
+          </div>
+          <div class="qcard">
+            <div class="q"><span class="qn">A</span> 약사 사고는?</div>
+            <button class="reveal-btn">정답 보기</button>
+            <div class="answer">Daptomycin-associated myopathy? → CPK trend 평가 → statin 병용 재평가 → daptomycin 지속/중단 기준 → renal function 확인.</div>
+          </div>
+
+          <h3>Case 7 · IV-to-PO</h3>
+          <div class="card card--case">
+            <div class="card__label"><span class="dot"></span>CLINICAL CASE</div>
+            <p>MRSA pneumonia, Linezolid IV 중. Stable · PO intake 가능 · GI 흡수 OK.</p>
+          </div>
+          <div class="qcard">
+            <div class="q"><span class="qn">A</span> 계속 IV가 필요한가?</div>
+            <button class="reveal-btn">정답 보기</button>
+            <div class="answer">ASP intervention: <b>PO linezolid 전환 검토</b> (oral bioavailability ≈ 100%).</div>
+          </div>
+        </section>
+
+        <!-- ===== S37,40 · 모니터링 카드 & Drug Challenge ===== -->
+        <section id="monitor" class="section">
+          <h2><span class="sec-no">10</span> 약사 모니터링 카드 &amp; Drug Challenge</h2>
+          <div class="split2">
+            <div class="splitcard is-mssa" style="background:var(--gn-soft);border-color:var(--gn);">
+              <h4>LINEZOLID CHECK</h4>
+              <ul>
+                <li>CBC (특히 Platelet)</li>
+                <li>Duration (장기 투여?)</li>
+                <li>Neurologic (peripheral neuropathy?)</li>
+                <li>Eye (visual symptoms?)</li>
+                <li>Drug interaction (serotonergic?)</li>
+                <li>Route (PO 전환 가능?)</li>
+              </ul>
+            </div>
+            <div class="splitcard is-mrsa">
+              <h4>DAPTOMYCIN CHECK</h4>
+              <ul>
+                <li>CPK (baseline + follow-up)</li>
+                <li>Muscle symptoms (pain/weakness?)</li>
+                <li>Statin (병용 중?)</li>
+                <li>Renal function (dose/interval)</li>
+                <li>Lung? (pneumonia면 사용 X)</li>
+                <li>Respiratory (eosinophilic pneumonia?)</li>
+              </ul>
+            </div>
+          </div>
+
+          <h3>Drug Challenge (해당되는 것 모두 확인)</h3>
+          <div class="qcard">
+            <div class="q" style="display:block;"><b>LINEZOLID</b> — 해당되는 특징은?</div>
+            <button class="reveal-btn">정답 보기</button>
+            <div class="answer">✓ MRSA · ✓ VRE · ✓ Pneumonia 사용 가능 · ✓ Platelet monitoring · ✓ PO 전환 용이
+              <div class="exp">✗ CPK monitoring이 핵심 (그건 daptomycin)</div>
+            </div>
+          </div>
+          <div class="qcard">
+            <div class="q" style="display:block;"><b>DAPTOMYCIN</b> — 해당되는 특징은?</div>
+            <button class="reveal-btn">정답 보기</button>
+            <div class="answer">✓ MRSA · ✓ VRE · ✓ CPK monitoring · ✓ Statin 확인 · ✓ Bloodstream infection
+              <div class="exp">✗ Pneumonia 사용 가능 (Daptomycin은 폐 X)</div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ===== S38,39 · 정리 & Quiz ===== -->
+        <section id="quiz" class="section">
+          <h2><span class="sec-no">11</span> 정리 &amp; Active Recall</h2>
+
+          <h3>핵심 카드 (스와이프)</h3>
+          <div class="flashdeck">
+            <div class="flashcard"><div class="fc-n">Linezolid</div><div class="fc-term">🫁 Lung</div><div class="fc-arrow">→</div><div class="fc-ans">MRSA/VRE · PO≈100%</div></div>
+            <div class="flashcard warn"><div class="fc-n">Linezolid</div><div class="fc-term">Toxicity</div><div class="fc-arrow">→</div><div class="fc-ans">Platelet · Serotonin · Neuropathy</div></div>
+            <div class="flashcard"><div class="fc-n">Daptomycin</div><div class="fc-term">🩸 Blood</div><div class="fc-arrow">→</div><div class="fc-ans">MRSA/VRE bactericidal</div></div>
+            <div class="flashcard warn"><div class="fc-n">Daptomycin</div><div class="fc-term">🫁 Lung X</div><div class="fc-arrow">→</div><div class="fc-ans">Pulmonary surfactant</div></div>
+            <div class="flashcard warn"><div class="fc-n">Daptomycin</div><div class="fc-term">Toxicity</div><div class="fc-arrow">→</div><div class="fc-ans">CPK / Myopathy · Statin</div></div>
+            <div class="flashcard"><div class="fc-n">공통</div><div class="fc-term">선택 기준</div><div class="fc-arrow">→</div><div class="fc-ans">Organism + Site + Property + Toxicity</div></div>
+          </div>
+          <div class="flashhint">← 좌우로 밀어서 넘기세요 →</div>
+
+          <h3 style="margin-top:34px;">반드시 기억할 10개</h3>
+          <div class="eightcards">
+            <div class="factcard"><span class="n">1</span><p>Linezolid는 oxazolidinone이다.</p></div>
+            <div class="factcard"><span class="n">2</span><p>Linezolid는 protein synthesis(50S)를 억제한다.</p></div>
+            <div class="factcard"><span class="n">3</span><p>Linezolid는 MRSA와 VRE에 활성이 있다.</p></div>
+            <div class="factcard"><span class="n">4</span><p>Linezolid는 MRSA pneumonia에서 중요한 옵션이다.</p></div>
+            <div class="factcard"><span class="n">5</span><p>Linezolid의 oral bioavailability는 약 100%다.</p></div>
+            <div class="factcard"><span class="n">6</span><p>Linezolid에서는 thrombocytopenia와 CBC monitoring이 중요하다.</p></div>
+            <div class="factcard"><span class="n">7</span><p>Linezolid와 serotonergic drugs의 interaction을 확인한다.</p></div>
+            <div class="factcard"><span class="n">8</span><p>Daptomycin은 MRSA/VRE bloodstream infection에서 중요하다.</p></div>
+            <div class="factcard"><span class="n">9</span><p>Daptomycin은 pneumonia 치료에 사용하지 않는다.</p></div>
+            <div class="factcard"><span class="n">10</span><p>Daptomycin에서는 CPK와 myopathy를 확인한다.</p></div>
+          </div>
+
+          <h3 style="margin-top:34px;">Active Recall</h3>
+          <div class="quiz">
+            <div class="qcard"><div class="q"><span class="qn">Q1</span> Linezolid의 항생제 계열은?</div><button class="reveal-btn">정답 보기</button><div class="answer">Oxazolidinone.</div></div>
+            <div class="qcard"><div class="q"><span class="qn">Q2</span> Linezolid가 주로 작용하는 ribosomal subunit은?</div><button class="reveal-btn">정답 보기</button><div class="answer">50S.</div></div>
+            <div class="qcard"><div class="q"><span class="qn">Q3</span> Linezolid의 매우 중요한 혈액학적 toxicity는?</div><button class="reveal-btn">정답 보기</button><div class="answer">Thrombocytopenia를 포함한 myelosuppression.</div></div>
+            <div class="qcard"><div class="q"><span class="qn">Q4</span> Linezolid 사용 환자에서 정기적으로 확인할 대표 검사는?</div><button class="reveal-btn">정답 보기</button><div class="answer">CBC, 특히 platelet.</div></div>
+            <div class="qcard"><div class="q"><span class="qn">Q5</span> Linezolid PO가 IV-to-PO 전환에 적합한 이유는?</div><button class="reveal-btn">정답 보기</button><div class="answer">경구 bioavailability가 약 100%이기 때문이다.</div></div>
+            <div class="qcard"><div class="q"><span class="qn">Q6</span> Linezolid와 병용 시 serotonin syndrome 위험을 확인할 대표 약물군은?</div><button class="reveal-btn">정답 보기</button><div class="answer">SSRI/SNRI 등 serotonergic drugs.</div></div>
+            <div class="qcard"><div class="q"><span class="qn">Q7</span> Daptomycin의 대표적인 작용 부위는?</div><button class="reveal-btn">정답 보기</button><div class="answer">Bacterial cell membrane.</div></div>
+            <div class="qcard"><div class="q"><span class="qn">Q8</span> Daptomycin이 pneumonia에 사용되지 않는 이유는?</div><button class="reveal-btn">정답 보기</button><div class="answer">Pulmonary surfactant가 daptomycin의 antibacterial activity를 억제하기 때문이다.</div></div>
+            <div class="qcard"><div class="q"><span class="qn">Q9</span> Daptomycin 사용 중 대표적으로 monitor하는 검사는?</div><button class="reveal-btn">정답 보기</button><div class="answer">CPK.</div></div>
+            <div class="qcard"><div class="q"><span class="qn">Q10</span> Daptomycin과 병용 시 myopathy 위험 때문에 특히 확인할 약물군은?</div><button class="reveal-btn">정답 보기</button><div class="answer">Statin.</div></div>
+            <div class="qcard"><div class="q"><span class="qn">Q11</span> MRSA pneumonia 환자에게 linezolid와 daptomycin 중 고려할 수 있는 약은?</div><button class="reveal-btn">정답 보기</button><div class="answer">Linezolid. Daptomycin은 pneumonia에는 사용하지 않는다.</div></div>
+            <div class="qcard"><div class="q"><span class="qn">Q12</span> VRE bacteremia에서 두 약 선택 시 균 이름만 보면 충분한가?</div><button class="reveal-btn">정답 보기</button><div class="answer">아니다. Infection site·severity·MIC·platelet·renal function·drug interactions·source control을 함께 고려한다.</div></div>
+          </div>
+        </section>
+
+        <!-- ===== S41,42 · Integrated & Decision Map ===== -->
+        <section id="tree" class="section">
+          <h2><span class="sec-no">12</span> Integrated Case &amp; 통합 Decision Map</h2>
+
+          <div class="card card--case">
+            <div class="card__label"><span class="dot"></span>CLINICAL CASE · Integrated</div>
+            <p>65세, MRSA pneumonia로 <b>Vancomycin</b> 중. Day4 SCr 빠르게 상승, MRSA 외 병원체 없음.</p>
+          </div>
+          <div class="figure">
+            <div class="vflow">
+              <div class="vflow__box">① Vancomycin nephrotoxicity 가능성 & exposure 평가</div>
+              <div class="vflow__arrow">↓ MRSA therapy 계속 필요</div>
+              <div class="vflow__box q">② Site = Lung</div>
+              <div class="vflow__arrow">↓ Alternative?</div>
+              <div class="vflow__branch">
+                <div class="vflow__leaf neg"><h6>Daptomycin?</h6><div class="d">X (lung)</div></div>
+                <div class="vflow__leaf pos"><h6>Linezolid?</h6><div class="d">O</div></div>
+              </div>
+              <div class="vflow__arrow">↓ Linezolid 시작 전</div>
+              <div class="vflow__box">CBC · Platelet · Serotonergic drugs · Duration · PO 가능?</div>
+              <div class="vflow__arrow">↓ 이후 platelet 크게 감소 시</div>
+              <div class="vflow__box" style="background:var(--resist-soft);border-color:var(--resist);color:var(--resist);">Linezolid toxicity 재평가 → 대체 전략</div>
+            </div>
+            <div class="figure__cap">Organism → Site → Drug properties → Patient toxicity risk → Antibiotic selection</div>
+          </div>
+
+          <div class="figure">
+            <div class="figure__title">도식 11 · Linezolid vs Daptomycin Decision Map</div>
+            <div class="vflow">
+              <div class="vflow__box">MRSA / VRE</div>
+              <div class="vflow__arrow">↓ 감염 부위?</div>
+              <div class="vflow__branch">
+                <div class="vflow__leaf pos"><h6>🫁 LUNG</h6><div class="d">LINEZOLID</div><div>Daptomycin X<br/>Check: Platelet·Serotonin·Duration·PO</div></div>
+                <div class="vflow__leaf neg"><h6>🩸 BLOODSTREAM</h6><div class="d">DAPTOMYCIN 중요</div><div>Check: CPK·Statin·Renal·MIC</div></div>
+              </div>
+              <div class="vflow__arrow">↓ Persistent bacteremia?</div>
+              <div class="vflow__box" style="background:var(--gn-soft);border-color:var(--gn);color:#0c8a7c;">SOURCE CONTROL</div>
+            </div>
+          </div>
+        </section>
+
+        <section class="closing">
+          <h3>오늘의 한 문장</h3>
+          <p class="big">Linezolid와 daptomycin은 모두 MRSA·VRE를 커버할 수 있지만 서로 대체 가능한 동일한 약은 아니다.</p>
+          <p>선택의 핵심:</p>
+          <p class="big">Organism → Infection site → Drug penetration/property → Patient toxicity risk → Monitoring</p>
+          <p>그리고 약사는 마지막으로 묻는다 — <b>이 환자에서 이 약을 안전하게 계속 사용할 수 있는가?</b></p>
+          <p style="margin-top:22px;"><a href="lesson-05.html" style="color:#fff;text-decoration:underline;">← 5강 다시 보기</a> · <a href="../index.html" style="color:#fff;text-decoration:underline;">강의 목록</a></p>
+        </section>
+
+      </div>
+    </div>
+  </div>
+
+  <nav class="bottomnav" aria-label="강의 이동">
+    <a href="lesson-05.html"><span class="bn-ico">←</span>이전 강의</a>
+    <a href="#" data-open-toc><span class="bn-ico">☰</span>목차</a>
+    <a href="#" aria-disabled="true"><span class="bn-ico">→</span>다음 강의</a>
+  </nav>
+
+  <div class="quickrev">
+    <div class="quickrev__panel">
+      <h5>⚡ Quick Review</h5>
+      <div class="qr-row"><span class="qr-k">Linezolid</span><span>MRSA/VRE · 🫁Lung O · PO≈IV · Platelet↓ · Serotonin · 장기 Neuropathy</span></div>
+      <div class="qr-row"><span class="qr-k">Daptomycin</span><span>MRSA/VRE · 🩸Blood · 🫁Lung X · CPK · Statin · Renal</span></div>
+      <div class="qr-row"><span class="qr-k">공통</span><span>Organism → Site → Property → Toxicity → Monitoring</span></div>
+    </div>
+    <button class="quickrev__btn" aria-label="Quick Review 열기">⚡ Quick Review</button>
+  </div>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>
