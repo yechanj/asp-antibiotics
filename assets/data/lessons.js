@@ -37,6 +37,14 @@ window.ASP_LESSONS = [
   },
   {
     no: 5,
+    href: "lessons/lesson-05.html",
+    title: "Gram-positive 항생제 지도: Vancomycin과 Teicoplanin",
+    desc: "Glycopeptide 집중. 작용기전(D-Ala-D-Ala), AUC/MIC 400–600 target window, 신독성·TDM, PO vs IV, loading, teicoplanin과 glycopeptide 내성.",
+    tags: ["Vancomycin", "AUC/MIC", "TDM", "Teicoplanin"],
+    status: "ready"
+  },
+  {
+    no: 6,
     href: "#",
     title: "(준비 중)",
     desc: "다음 강의가 곧 추가됩니다.",

@@ -819,6 +819,76 @@ table.data td.cov { font-weight: 700; font-size: 16px; }
 .bottomnav > * + * { border-left: 1px solid var(--line); }
 
 /* =========================================================
+   LESSON 5 · AUC Therapeutic Window (슬라이더 + 게이지)
+   ========================================================= */
+.aucslider input[type=range] { width: 100%; accent-color: var(--brand); height: 30px; }
+.aucgauge {
+  position: relative; height: 46px; border-radius: 10px; overflow: hidden;
+  display: grid; grid-template-columns: 1fr 1fr 1fr; margin: 10px 0 6px;
+  border: 1px solid var(--line);
+}
+.aucgauge .zone { display: grid; place-items: center; font-size: 12px; font-weight: 700; color: #fff; }
+.aucgauge .zone.low { background: #e6a23c; }
+.aucgauge .zone.target { background: #2f9e57; }
+.aucgauge .zone.high { background: #e5484d; }
+.aucgauge .marker {
+  position: absolute; top: -4px; bottom: -4px; width: 4px; background: #10233b;
+  border-radius: 3px; transition: left .15s ease; box-shadow: 0 0 0 2px #fff;
+}
+.aucgauge__labels { display: grid; grid-template-columns: 1fr 1fr 1fr; font-size: 11.5px; color: var(--ink-faint); }
+.aucgauge__labels span { text-align: center; }
+.auc-readout {
+  text-align: center; margin: 14px 0 4px; font-size: 15px; font-weight: 700;
+}
+.auc-readout .val { font-size: 30px; color: var(--brand-dark); }
+.auc-interp {
+  text-align: center; font-weight: 700; border-radius: 10px; padding: 10px 14px; font-size: 14px;
+}
+.auc-interp.low { background: #fdf6e7; color: #b8860b; }
+.auc-interp.target { background: #eef9f1; color: #147a49; }
+.auc-interp.high { background: #fdedee; color: var(--resist); }
+
+/* =========================================================
+   LESSON 5 · Loading vs Maintenance 물탱크
+   ========================================================= */
+.tanks { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.tankcard { text-align: center; border: 1px solid var(--line); border-radius: 14px; padding: 16px; background: var(--surface); }
+.tankcard h5 { margin: 0 0 12px; font-size: 14.5px; }
+.tank {
+  position: relative; width: 92px; height: 130px; margin: 0 auto 10px;
+  border: 3px solid var(--line-strong); border-top: none;
+  border-radius: 0 0 14px 14px; overflow: hidden; background: #f4f8fc;
+}
+.tank__fill {
+  position: absolute; left: 0; right: 0; bottom: 0;
+  background: linear-gradient(180deg,#4aa3f0,#1f7ae0);
+}
+.tank--slow .tank__fill { height: 20%; animation: fillslow 5s ease-in-out infinite; }
+.tank--fast .tank__fill { height: 20%; animation: fillfast 5s ease-in-out infinite; }
+@keyframes fillslow {
+  0% { height: 12%; } 100% { height: 78%; }
+}
+@keyframes fillfast {
+  0% { height: 12%; } 18% { height: 88%; } 100% { height: 82%; }
+}
+.tank__target {
+  position: absolute; left: 0; right: 0; bottom: 82%; height: 2px;
+  background: var(--resist); z-index: 2;
+}
+.tank__target::after {
+  content: "target"; position: absolute; right: 2px; top: -14px; font-size: 9px; color: var(--resist); font-weight: 700;
+}
+.tankcard .lbl { font-size: 12.5px; color: var(--ink-soft); font-weight: 700; }
+.tankcard .conn { font-size: 12px; color: var(--brand-dark); margin-top: 6px; }
+
+/* SCr trend mini */
+.scrtrend { display: flex; gap: 6px; align-items: flex-end; justify-content: center; height: 120px; margin: 8px 0; }
+.scrtrend .bar { width: 46px; background: linear-gradient(180deg,var(--brand),var(--brand-dark)); border-radius: 6px 6px 0 0; position: relative; }
+.scrtrend .bar.warn { background: linear-gradient(180deg,#f0794a,var(--resist)); }
+.scrtrend .bar span { position: absolute; top: -20px; left: 0; right: 0; text-align: center; font-size: 12px; font-weight: 700; }
+.scrtrend .bar small { position: absolute; bottom: -20px; left: 0; right: 0; text-align: center; font-size: 11px; color: var(--ink-faint); }
+
+/* =========================================================
    LESSON 4 · 3-균 히어로 카드
    ========================================================= */
 .orgbig { display: grid; grid-template-columns: repeat(3,1fr); gap: 14px; }
@@ -910,6 +980,7 @@ table.data td.ast-s { color: var(--cov-yes); font-weight: 700; }
   .gpmap__cols { grid-template-columns: 1fr; }
   .split2 { grid-template-columns: 1fr; }
   .orgbig { grid-template-columns: 1fr; }
+  .scrtrend .bar { width: 38px; }
   .bottomnav { display: grid; }
   .content .wrap { padding-bottom: 92px; } /* 하단 내비 공간 */
   .quickrev { bottom: 72px; } /* 하단 내비 위로 */

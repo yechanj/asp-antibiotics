@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>5강 · Gram-positive 항생제 지도: Vancomycin과 Teicoplanin</title>
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+</head>
+<body>
+  <div class="topbar">
+    <button class="hamburger" aria-label="목차 열기" aria-expanded="false"><span></span></button>
+    <div class="topbar__title">5강 · Vancomycin</div>
+  </div>
+  <div class="scrim" aria-hidden="true"></div>
+
+  <div class="app">
+    <aside class="sidebar" aria-label="강의 목차">
+      <div class="sidebar__brand">
+        <div class="sidebar__logo">ASP</div>
+        <div class="sidebar__title">항생제 학습
+          <small>5강 · Glycopeptide</small>
+        </div>
+      </div>
+      <nav>
+        <ul class="toc">
+          <li><a href="#map"><span class="num">1</span> GP 항생제 지도</a></li>
+          <li><a href="#mech"><span class="num">2</span> 작용기전 & Spectrum</a></li>
+          <li><a href="#auc"><span class="num">3</span> AUC/MIC & Window</a></li>
+          <li><a href="#trough"><span class="num">4</span> Trough→AUC & TDM</a></li>
+          <li><a href="#kidney"><span class="num">5</span> 신장 & Nephrotoxicity</a></li>
+          <li><a href="#dosing"><span class="num">6</span> Loading vs Maintenance</a></li>
+          <li><a href="#route"><span class="num">7</span> PO vs IV</a></li>
+          <li><a href="#needed"><span class="num">8</span> 아직 필요한가?</a></li>
+          <li><a href="#teico"><span class="num">9</span> Teicoplanin & Resistance</a></li>
+          <li><a href="#checklist"><span class="num">10</span> 처방 체크리스트</a></li>
+          <li><a href="#cases"><span class="num">11</span> ASP Cases</a></li>
+          <li><a href="#quiz"><span class="num">12</span> 정리 & Quiz</a></li>
+        </ul>
+      </nav>
+      <a class="sidebar__back" href="../index.html">← 강의 목록으로</a>
+    </aside>
+
+    <div class="content">
+      <div class="wrap">
+
+        <header class="lesson-hero">
+          <div class="kicker">ASP 항생제 학습 · 5강</div>
+          <h1>Gram-positive 항생제 지도 · Vancomycin & Teicoplanin</h1>
+          <p>"필요한가 → 최선인가 → exposure는 적절한가 → toxicity는 → 언제 중단하나" 순으로 생각합니다.</p>
+        </header>
+
+        <!-- ===== S1 · GP 항생제 지도 ===== -->
+        <section id="map" class="section">
+          <h2><span class="sec-no">01</span> Gram-positive 항생제의 큰 지도</h2>
+          <p>앞선 강의에서 MSSA→Cefazolin, MRSA→Vancomycin, E. faecalis→Ampicillin, VRE→Linezolid/Daptomycin을 배웠다.
+            이번 강의는 병원에서 매우 중요한 <b>Glycopeptide (Vancomycin · Teicoplanin)</b>를 집중적으로 다룬다.</p>
+
+          <div class="figure">
+            <div class="figure__title">도식 1 · Gram-positive antibiotic map</div>
+            <div class="gpmap__cols" style="grid-template-columns:repeat(4,1fr);">
+              <div class="gpmap__col" style="border-top-color:var(--gn);"><h5>MSSA</h5><ul><li>Cefazolin 등 β-lactam</li></ul></div>
+              <div class="gpmap__col" style="border-top-color:var(--resist);"><h5>MRSA</h5><ul><li>Vancomycin · Teicoplanin</li><li>Linezolid · Daptomycin</li></ul></div>
+              <div class="gpmap__col" style="border-top-color:var(--gp);"><h5>Enterococcus</h5><ul><li>Ampicillin S면 ampicillin</li></ul></div>
+              <div class="gpmap__col" style="border-top-color:var(--anaerobe);"><h5>VRE</h5><ul><li>Vancomycin X</li><li>Teicoplanin도 신뢰 불가</li><li>Linezolid / Daptomycin</li></ul></div>
+            </div>
+          </div>
+          <div class="card card--key">
+            <div class="card__label"><span class="dot"></span>KEY POINT</div>
+            <p>Vancomycin은 "Gram-positive라면 무조건 쓰는 가장 강한 항생제"가 아니다. <b>어떤 Gram-positive인지에 따라 더 좋은 항생제가 존재한다.</b></p>
+          </div>
+        </section>
+
+        <!-- ===== S2,3,4,5,6 · 작용기전 & Spectrum ===== -->
+        <section id="mech" class="section">
+          <h2><span class="sec-no">02</span> 작용기전 &amp; Spectrum</h2>
+          <p>Vancomycin은 대표적인 <b>glycopeptide antibiotic</b>으로 세균의 cell wall synthesis를 억제한다. 단, β-lactam과 작용 부위가 다르다.</p>
+
+          <div class="figure">
+            <div class="figure__title">도식 2 · β-lactam vs Vancomycin</div>
+            <div class="twopanel">
+              <div class="panel panel--normal">
+                <h5>β-lactam</h5>
+                <ol><li>PBP에 결합</li><li>peptidoglycan cross-linking 방해</li></ol>
+              </div>
+              <div class="panel panel--drug" style="background:var(--brand-soft);">
+                <h5>Vancomycin</h5>
+                <ol><li>precursor의 <b>D-Ala-D-Ala</b> 말단에 결합</li><li>peptidoglycan synthesis 억제 → death</li></ol>
+              </div>
+            </div>
+            <div class="mech-flow">둘 다 cell wall synthesis를 억제하지만 표적이 다르다.</div>
+          </div>
+
+          <div class="figure">
+            <div class="figure__title">도식 3 · Vancomycin Spectrum</div>
+            <div class="radial">
+              <div class="center">Vancomycin</div>
+              <div class="item yes"><span class="m">✓</span> MRSA</div>
+              <div class="item yes"><span class="m">✓</span> MSSA</div>
+              <div class="item yes"><span class="m">✓</span> Streptococcus</div>
+              <div class="item yes"><span class="m">✓</span> 일부 Enterococcus</div>
+              <div class="item no"><span class="m">✕</span> VRE</div>
+              <div class="item no"><span class="m">✕</span> Enterobacterales</div>
+              <div class="item no"><span class="m">✕</span> Pseudomonas</div>
+              <div class="item no"><span class="m">✕</span> Gram-negative 전반</div>
+            </div>
+            <div class="figure__cap">Gram-negative는 outer membrane 때문에 vancomycin이 표적에 접근하지 못한다.</div>
+          </div>
+
+          <h3>MSSA에도 Vancomycin이 듣는데? · Susceptible ≠ Optimal</h3>
+          <p>MSSA는 vancomycin susceptible일 수 있다. 그렇다고 MSSA bacteremia에서 vancomycin을 계속 쓰는 것이 최선일까? <b>아니다</b> — 일반적으로 <b>Cefazolin</b> 또는 antistaphylococcal β-lactam이 더 적절한 targeted therapy다.</p>
+          <div class="card card--asp">
+            <div class="card__label"><span class="dot"></span>ASP POINT · Susceptible ≠ Optimal</div>
+            <p>감수성검사에서 <b>S</b>라고 나온다고 그 약이 최선이라는 의미는 아니다. Blood culture MSSA + 현재 Vancomycin이면 (Vancomycin S여도) <b>Cefazolin 등으로 변경 검토.</b></p>
+            <div class="oneline" style="margin:6px 0 0;">"효과가 있는가?"에서 한 단계 더 — "가장 적절한 약인가?"를 묻는다.</div>
+          </div>
+          <p>Vancomycin을 보면 가장 먼저 <b>MRSA</b>를 떠올린다 — bacteremia · endocarditis · pneumonia · osteomyelitis · deep-seated infection 등 serious MRSA infection에서 중요하다.</p>
+        </section>
+
+        <!-- ===== S7,8,9 · AUC/MIC + 인터랙션 ===== -->
+        <section id="auc" class="section">
+          <h2><span class="sec-no">03</span> PK/PD · AUC / MIC</h2>
+          <p><b>MIC</b> (Minimum Inhibitory Concentration) = 세균 성장을 억제하는 최소 농도.
+            <b>AUC</b> (Area Under the Concentration-Time Curve) = 일정 시간 환자가 경험한 전체 약물 노출량.</p>
+
+          <div class="figure">
+            <div class="figure__title">도식 4 · AUC (곡선 아래 면적)</div>
+            <svg viewBox="0 0 640 280" width="100%" role="img" aria-label="Vancomycin 농도곡선의 AUC 면적과 MIC">
+              <line x1="60" y1="230" x2="610" y2="230" stroke="#c7d2df" stroke-width="2"/>
+              <line x1="60" y1="24" x2="60" y2="230" stroke="#c7d2df" stroke-width="2"/>
+              <text x="330" y="264" text-anchor="middle" fill="#7b8aa0" font-size="14">Time</text>
+              <text x="20" y="130" text-anchor="middle" fill="#7b8aa0" font-size="12" transform="rotate(-90 20 130)">Vancomycin concentration</text>
+              <path d="M60,230 C120,60 200,60 300,120 C400,175 500,205 610,220 L610,230 L60,230 Z" fill="#1f7ae0" opacity="0.18"/>
+              <path d="M60,230 C120,60 200,60 300,120 C400,175 500,205 610,220" fill="none" stroke="#1f7ae0" stroke-width="3"/>
+              <line x1="60" y1="185" x2="610" y2="185" stroke="#e5484d" stroke-width="2" stroke-dasharray="6 5"/>
+              <text x="602" y="178" text-anchor="end" fill="#e5484d" font-size="13" font-weight="700">MIC</text>
+              <text x="300" y="200" text-anchor="middle" fill="#145bb0" font-size="15" font-weight="700">AUC</text>
+            </svg>
+            <div class="figure__cap">AUC/MIC = 환자가 경험한 노출량(AUC)과 균의 민감도(MIC)를 함께 보는 지표. MIC가 높을수록 같은 AUC에서 AUC/MIC는 낮아진다.</div>
+          </div>
+
+          <h3>Vancomycin AUC target · Therapeutic Window</h3>
+          <p>Serious MRSA infection에서는 consensus guideline에 따라 <b>AUC₂₄/MIC 400–600</b>을 목표로 하는 전략이 권고된다 (보통 MIC 1 mg/L 가정).</p>
+
+          <h4>인터랙션 · 슬라이더를 움직여 노출량을 바꿔보세요</h4>
+          <div class="figure" data-aucslider>
+            <div class="aucslider">
+              <div class="auc-readout">AUC₂₄ = <span class="val">500</span> mg·h/L</div>
+              <div class="aucgauge">
+                <div class="zone low">&lt;400</div>
+                <div class="zone target">400–600</div>
+                <div class="zone high">&gt;600</div>
+                <div class="marker"></div>
+              </div>
+              <div class="aucgauge__labels"><span>LOW · efficacy 우려</span><span>TARGET</span><span>HIGH · toxicity</span></div>
+              <input type="range" min="200" max="800" step="10" value="500" aria-label="AUC 노출량 조절" />
+              <div class="auc-interp target"></div>
+            </div>
+            <div class="figure__cap">Exposure가 너무 낮아도(efficacy) 너무 높아도(nephrotoxicity) 문제 — 목적은 계산이 아니라 이 균형 개념의 직관적 이해.</div>
+          </div>
+          <div class="card card--caution">
+            <div class="card__label"><span class="dot"></span>CAUTION</div>
+            <p>이 target은 주로 <b>serious invasive MRSA infection</b> 자료 기반의 학습용 개념이다. 모든 경증 감염·모든 vancomycin 사용에 기계적으로 적용하는 숫자가 아니다.</p>
+          </div>
+        </section>
+
+        <!-- ===== S10,11,12 · Trough→AUC & TDM ===== -->
+        <section id="trough" class="section">
+          <h2><span class="sec-no">04</span> Trough → AUC 시대 변화 &amp; TDM</h2>
+          <p>과거에는 serious MRSA infection에서 <b>trough 15–20 mg/L</b> target으로 AUC를 간접 확보했다. 그러나 높은 trough를 맞추려다 과도한 exposure → nephrotoxicity 증가 문제가 나타났고, 현재는 <b>AUC-guided dosing</b>이 선호된다.</p>
+
+          <div class="figure">
+            <div class="figure__title">도식 6 · Trough → AUC 시대 변화</div>
+            <div class="twopanel">
+              <div class="panel panel--drug">
+                <h5>과거</h5>
+                <ol><li>Trough concentration</li><li>AUC 간접 추정</li><li>높은 trough 요구 → overexposure 가능</li></ol>
+              </div>
+              <div class="panel panel--normal">
+                <h5>현재</h5>
+                <ol><li>AUC-guided monitoring</li><li>전체 exposure 평가</li><li>효과 + toxicity 균형</li></ol>
+              </div>
+            </div>
+          </div>
+          <p>단, trough가 무의미해진 것은 아니다. <b>"trough 15–20 숫자 하나만 목표로 조절하는 방식"</b>이 더 이상 최적으로 간주되지 않는 것이다.</p>
+          <div class="card card--pharm">
+            <div class="card__label"><span class="dot"></span>PHARMACIST POINT · 사고 변화</div>
+            <p>과거: "Vancomycin trough가 몇이지?" → 현재: <b>"이 환자의 AUC가 적절한가?"</b></p>
+          </div>
+
+          <h3>AUC를 어떻게 구하는가?</h3>
+          <div class="split2">
+            <div class="splitcard is-mssa"><h4>① Bayesian approach</h4><ul><li>용량·투여시간·혈중농도·신기능 + population PK model로 개인 PK 추정</li></ul></div>
+            <div class="splitcard is-mssa" style="background:var(--brand-soft);border-color:var(--brand);"><h4>② PK equation approach</h4><ul><li>적절한 시점의 두 농도 등으로 elimination rate·AUC 계산</li></ul></div>
+          </div>
+          <div class="figure">
+            <div class="figure__title">도식 7 · Bayesian TDM</div>
+            <div class="vflow">
+              <div class="vflow__box">Population PK model + 환자정보(Age·Weight·Renal·Dose) + Measured concentration</div>
+              <div class="vflow__arrow">↓ Bayesian estimation</div>
+              <div class="vflow__box q">Individual PK → Estimated AUC</div>
+              <div class="vflow__arrow">↓</div>
+              <div class="vflow__box" style="background:var(--gn-soft);border-color:var(--gn);color:#0c8a7c;">Dose adjustment</div>
+            </div>
+            <div class="figure__cap">TDM 약사에게는 <b>채혈 시점이 언제인지</b>도 매우 중요해진다. 잘못된 시간의 농도를 무조건 "trough"라고 생각하면 안 된다.</div>
+          </div>
+        </section>
+
+        <!-- ===== S13,14 · 신장 & Nephrotoxicity ===== -->
+        <section id="kidney" class="section">
+          <h2><span class="sec-no">05</span> 신장 &amp; Nephrotoxicity</h2>
+          <p>Vancomycin은 <b>renal elimination</b>이 중요하다. Renal function이 변하면 clearance도 변한다.</p>
+          <div class="figure">
+            <div class="figure__title">도식 8 · Kidney ↔ Vancomycin</div>
+            <div class="vflow">
+              <div class="vflow__box">Renal function ↓</div>
+              <div class="vflow__arrow">↓ Vancomycin clearance ↓</div>
+              <div class="vflow__box">Drug accumulation → Concentration ↑</div>
+              <div class="vflow__arrow">↓ AUC ↑</div>
+              <div class="vflow__box" style="background:var(--resist-soft);border-color:var(--resist);color:var(--resist);">Nephrotoxicity 위험 ↑</div>
+            </div>
+          </div>
+
+          <p>가장 중요한 adverse effect 중 하나는 <b>Acute kidney injury</b>. 위험 평가 시 과도한 exposure · 치료기간 · 중환자 상태 · 기존 renal dysfunction · 다른 nephrotoxic drugs · hemodynamic instability를 함께 본다.</p>
+          <div class="card card--pharm">
+            <div class="card__label"><span class="dot"></span>PHARMACIST POINT · SCr trend</div>
+            <p>Serum creatinine을 <b>숫자 하나가 아니라 시간에 따른 변화</b>로 보는 습관이 중요하다.</p>
+            <div class="scrtrend">
+              <div class="bar" style="height:44%"><span>0.8</span><small>Day1</small></div>
+              <div class="bar" style="height:50%"><span>0.9</span><small>Day2</small></div>
+              <div class="bar warn" style="height:66%"><span>1.2</span><small>Day3</small></div>
+              <div class="bar warn" style="height:88%"><span>1.6</span><small>Day4</small></div>
+            </div>
+            <p style="margin-bottom:0;">"현재 vancomycin exposure와 다른 nephrotoxic factor를 다시 확인해야 한다."</p>
+          </div>
+        </section>
+
+        <!-- ===== S15,16 · Loading vs Maintenance ===== -->
+        <section id="dosing" class="section">
+          <h2><span class="sec-no">06</span> Loading vs Maintenance</h2>
+          <p>Severe infection에서 maintenance dose만 반복하면 충분한 exposure에 도달하기까지 시간이 걸릴 수 있다. 그래서 일부 중증 환자에서 <b>loading dose</b>로 초기 therapeutic exposure를 빠르게 확보한다.</p>
+
+          <div class="figure">
+            <div class="figure__title">도식 11 · Loading vs Maintenance (물탱크)</div>
+            <div class="tanks">
+              <div class="tankcard">
+                <h5>No loading — 천천히 상승</h5>
+                <div class="tank tank--slow"><div class="tank__target"></div><div class="tank__fill"></div></div>
+                <div class="lbl">Target까지 시간 ↑</div>
+              </div>
+              <div class="tankcard">
+                <h5>Loading — 빠르게 도달</h5>
+                <div class="tank tank--fast"><div class="tank__target"></div><div class="tank__fill"></div></div>
+                <div class="lbl">빠르게 target 근접 후 maintenance</div>
+              </div>
+            </div>
+            <div class="split2" style="margin-top:14px;">
+              <div class="splitcard is-mssa"><h4>LOADING = "Tank를 채우는 것"</h4><ul><li>주로 <b>Volume of distribution</b>과 연결</li><li>원하는 exposure에 빠르게 도달</li></ul></div>
+              <div class="splitcard is-mssa" style="background:var(--gn-soft);border-color:var(--gn);"><h4>MAINTENANCE = "빠지는 만큼 보충"</h4><ul><li>주로 <b>Clearance</b>와 연결</li><li>제거되는 약물만큼 계속 보충</li></ul></div>
+            </div>
+          </div>
+          <div class="card card--key">
+            <div class="card__label"><span class="dot"></span>KEY POINT</div>
+            <p>Loading은 "신기능 좋으니 주고 나쁘니 안 준다"처럼 단순 생각하지 않는다. Loading과 maintenance의 목적은 다르다.
+              <b>Renal dysfunction에서는 특히 maintenance dose/interval 조절이 중요하다.</b> (자세히는 dosing 강의에서)</p>
+          </div>
+        </section>
+
+        <!-- ===== S17,18 · PO vs IV + 인터랙션 ===== -->
+        <section id="route" class="section">
+          <h2><span class="sec-no">07</span> Oral vs IV Vancomycin</h2>
+          <div class="figure">
+            <div class="figure__title">도식 12 · IV vs PO</div>
+            <div class="twopanel">
+              <div class="panel panel--normal">
+                <h5>💉 IV Vancomycin</h5>
+                <ol><li>혈액으로 투여 → systemic circulation</li><li>MRSA bacteremia · pneumonia 등 systemic infection 치료</li></ol>
+              </div>
+              <div class="panel panel--drug" style="background:var(--anaerobe-soft);">
+                <h5>💊 PO Vancomycin</h5>
+                <ol><li>systemic absorption 매우 낮음</li><li>장 안에서 높은 농도 → <b>C. difficile infection</b> 치료</li></ol>
+              </div>
+            </div>
+          </div>
+          <div class="card card--caution">
+            <div class="card__label"><span class="dot"></span>CAUTION · 아주 중요한 함정</div>
+            <p>MRSA bacteremia인데 <b>Vancomycin PO</b> → <b>✕</b> systemic infection 치료 안 됨.
+              반대로 C. difficile colitis에 <b>Vancomycin IV</b>만 → 장 내강에 필요한 농도 확보 못 함.</p>
+          </div>
+          <div class="oneline">Vancomycin은 같은 약이어도 투여경로에 따라 치료하는 공간이 완전히 다르다.</div>
+
+          <h3>인터랙션 · 올바른 route 고르기</h3>
+          <div class="quiz">
+            <div class="qcard">
+              <div class="q" style="display:block;"><b>MRSA bacteremia</b> — 올바른 vancomycin 투여경로는?</div>
+              <ul class="mcq" data-answer="A">
+                <li data-opt="A"><span class="opt">A</span> IV</li>
+                <li data-opt="B"><span class="opt">B</span> PO</li>
+              </ul>
+              <div class="answer mcq-exp" style="display:none;">정답: A — IV (systemic infection이므로 systemic circulation 필요)</div>
+            </div>
+            <div class="qcard">
+              <div class="q" style="display:block;"><b>C. difficile infection</b> — 올바른 vancomycin 투여경로는?</div>
+              <ul class="mcq" data-answer="B">
+                <li data-opt="A"><span class="opt">A</span> IV</li>
+                <li data-opt="B"><span class="opt">B</span> PO</li>
+              </ul>
+              <div class="answer mcq-exp" style="display:none;">정답: B — PO (장 내강에서 작용)</div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ===== S19 · 아직 필요한가 ===== -->
+        <section id="needed" class="section">
+          <h2><span class="sec-no">08</span> Vancomycin이 필요 없어진 순간</h2>
+          <div class="split2">
+            <div class="splitcard is-mssa">
+              <h4>예 1</h4>
+              <ul><li>Empiric: Vancomycin + Cefepime</li><li>Culture: MSSA</li><li>→ Vancomycin 중단 검토, Cefazolin 등 targeted therapy</li></ul>
+            </div>
+            <div class="splitcard is-mssa">
+              <h4>예 2</h4>
+              <ul><li>Empiric: Vancomycin + Pip/Tazo</li><li>Culture: E. coli only (MRSA evidence 없음)</li><li>→ Vancomycin 중단 검토</li></ul>
+            </div>
+          </div>
+          <div class="card card--asp">
+            <div class="card__label"><span class="dot"></span>ASP POINT</div>
+            <p>Vancomycin stewardship에서 가장 중요한 중재가 항상 "용량을 잘 맞추는 것"만은 아니다. 더 먼저 물어야 할 질문:</p>
+            <div class="oneline" style="margin:6px 0 0;">Vancomycin 자체가 아직 필요한가?</div>
+          </div>
+        </section>
+
+        <!-- ===== S20~27 · Teicoplanin & Resistance ===== -->
+        <section id="teico" class="section">
+          <h2><span class="sec-no">09</span> Teicoplanin &amp; Glycopeptide Resistance</h2>
+          <p>Teicoplanin도 glycopeptide로 Gram-positive(MRSA · MSSA · Streptococcus · 일부 Enterococcus)에 활성이 있다. Vancomycin과 PK 특성이 다른데, 특히 <b>매우 긴 half-life</b> 때문에 초기 <b>loading regimen</b>이 특히 중요하다.</p>
+
+          <div class="figure">
+            <div class="figure__title">비교 도식 13 · Vancomycin vs Teicoplanin</div>
+            <div class="table-scroll">
+              <table class="data">
+                <thead><tr><th>특징</th><th>Vancomycin</th><th>Teicoplanin</th></tr></thead>
+                <tbody>
+                  <tr><th>계열</th><td>Glycopeptide</td><td>Glycopeptide</td></tr>
+                  <tr><th>대표 연상</th><td>MRSA</td><td>MRSA</td></tr>
+                  <tr><th>주요 제거</th><td>Renal</td><td>Renal</td></tr>
+                  <tr><th>대표 PK monitoring</th><td>AUC 중심</td><td>Trough 중심</td></tr>
+                  <tr><th>Half-life</th><td>상대적으로 짧음</td><td class="cov cov-no-c">매우 김</td></tr>
+                  <tr><th>Loading</th><td>중증 감염에서 중요</td><td class="cov cov-no-c">특히 중요</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="figure">
+            <div class="figure__title">도식 14 · 왜 Teicoplanin loading이 중요한가</div>
+            <div class="tanks">
+              <div class="tankcard">
+                <h5>No loading — 천천히</h5>
+                <div class="tank tank--slow"><div class="tank__target"></div><div class="tank__fill"></div></div>
+                <div class="lbl">긴 half-life → target 도달 오래</div>
+              </div>
+              <div class="tankcard">
+                <h5>Loading regimen — 빠르게</h5>
+                <div class="tank tank--fast"><div class="tank__target"></div><div class="tank__fill"></div></div>
+                <div class="lbl">빠르게 target 후 maintenance</div>
+              </div>
+            </div>
+            <div class="figure__cap">Half-life가 긴 약일수록 loading strategy의 의미를 이해하는 것이 중요하다.</div>
+          </div>
+
+          <div class="card card--caution">
+            <div class="card__label"><span class="dot"></span>CAUTION · Teicoplanin TDM target</div>
+            <p>흔히 <b>trough</b>로 exposure 평가. 일부 guideline은 비복잡 MRSA 감염에서 약 15–30 mg/L, deep-seated/complicated에서는 더 높은 exposure(일부 consensus 20–40 mg/L)를 제시한다.
+              이 숫자를 모든 환자에게 무조건 적용하지 않는다 — infection site · severity · patient population · 기관 protocol · 사용 guideline에 따라 달라진다.</p>
+          </div>
+          <p>Teicoplanin도 renal elimination이 중요해 maintenance regimen에 영향을 준다. 사고 순서: <b>Loading(초기 exposure) → Maintenance(renal 조정) → TDM(실제 exposure 확인) → 필요 시 dose adjustment.</b></p>
+
+          <h3>Glycopeptide resistance · VRE</h3>
+          <p>Vancomycin은 <b>D-Ala-D-Ala</b>에 결합한다. 일부 VRE에서는 target이 <b>D-Ala-D-Lac</b>으로 변화 → vancomycin binding 크게 감소 → resistance (대표 기전 VanA / VanB).</p>
+          <div class="figure">
+            <div class="figure__title">도식 15 · VRE mechanism</div>
+            <div class="twopanel">
+              <div class="panel panel--normal">
+                <h5>Susceptible Enterococcus</h5>
+                <ol><li>D-Ala-<b>D-Ala</b></li><li>Vancomycin strong binding ✓</li></ol>
+              </div>
+              <div class="panel panel--drug">
+                <h5>VRE</h5>
+                <ol><li>D-Ala-<b>D-Lac</b></li><li>Vancomycin poor binding → resistance ✕</li></ol>
+              </div>
+            </div>
+          </div>
+          <div class="card card--caution">
+            <div class="card__label"><span class="dot"></span>CAUTION · VanA와 Teicoplanin</div>
+            <p>VRE라고 vancomycin resistance만 생각하면 안 된다. 특히 <b>VanA phenotype</b>에서는 Vancomycin R + Teicoplanin R이 나타날 수 있다.
+              "Vancomycin이 안 들으니 같은 glycopeptide인 teicoplanin으로 바꾸자"라고 단순 접근하면 안 된다.</p>
+          </div>
+
+          <h3>MRSA에서 Vancomycin의 대안 · Site matters</h3>
+          <div class="figure">
+            <div class="figure__title">도식 16 · Site matters</div>
+            <div class="split2">
+              <div class="splitcard is-mrsa">
+                <h4>🫁 Lung</h4>
+                <ul><li>Vancomycin · <b>Linezolid</b></li><li>Daptomycin <b style="color:var(--resist)">X</b></li></ul>
+              </div>
+              <div class="splitcard is-mssa">
+                <h4>🩸 Bloodstream</h4>
+                <ul><li>Vancomycin · <b>Daptomycin</b> 등</li><li>endovascular infection에서 daptomycin 중요</li></ul>
+              </div>
+            </div>
+            <div class="figure__cap">Ceftaroline 같은 MRSA-active β-lactam도 존재. Organism만이 아니라 infection site가 약물 선택을 바꾼다.</div>
+          </div>
+        </section>
+
+        <!-- ===== S28 · 처방 체크리스트 ===== -->
+        <section id="checklist" class="section">
+          <h2><span class="sec-no">10</span> Vancomycin 처방 체크리스트</h2>
+          <div class="orggrid">
+            <div class="orgcell cov-partial" style="opacity:1;"><span>① 왜 쓰는가? (MRSA concern?)</span></div>
+            <div class="orgcell cov-partial" style="opacity:1;"><span>② Culture? (MSSA→β-lactam / 아니면 중단?)</span></div>
+            <div class="orgcell cov-partial" style="opacity:1;"><span>③ Infection site? (Blood/Lung/Bone/CNS)</span></div>
+            <div class="orgcell cov-partial" style="opacity:1;"><span>④ Renal function? (SCr·CrCl trend·UO·RRT)</span></div>
+            <div class="orgcell cov-partial" style="opacity:1;"><span>⑤ Dose 적절? (Loading/Maintenance/Interval)</span></div>
+            <div class="orgcell cov-partial" style="opacity:1;"><span>⑥ Exposure? (AUC·측정농도)</span></div>
+            <div class="orgcell cov-partial" style="opacity:1;"><span>⑦ Toxicity? (renal 변화·다른 신독성 약물)</span></div>
+            <div class="orgcell cov-partial" style="opacity:1;"><span>⑧ Duration? (계속 필요한가?)</span></div>
+          </div>
+        </section>
+
+        <!-- ===== S29~32,36,37 · Cases ===== -->
+        <section id="cases" class="section">
+          <h2><span class="sec-no">11</span> ASP Cases</h2>
+
+          <h3>Case 1 · MSSA</h3>
+          <div class="card card--case">
+            <div class="card__label"><span class="dot"></span>CLINICAL CASE</div>
+            <p>66세. Empiric Vancomycin + Cefepime. Blood culture <b>MSSA</b> (Oxacillin S).</p>
+          </div>
+          <div class="qcard">
+            <div class="q"><span class="qn">Q</span> Vancomycin을 계속?</div>
+            <button class="reveal-btn">정답 보기</button>
+            <div class="answer">활성은 있으나 최적 targeted therapy 아님 → Cefazolin 등 β-lactam으로 변경 검토.
+              <div class="exp">S라고 계속 쓰는 것이 ASP가 아니다.</div>
+            </div>
+          </div>
+
+          <h3>Case 2 · MRSA (exposure 부족)</h3>
+          <div class="card card--case">
+            <div class="card__label"><span class="dot"></span>CLINICAL CASE</div>
+            <p>75세. Blood culture <b>MRSA</b>, Vancomycin 투여 중. Renal function stable이나 exposure가 낮게 평가됨.</p>
+          </div>
+          <div class="qcard">
+            <div class="q"><span class="qn">Q</span> 혈중농도 숫자만 보고 바로 증량하면 되는가?</div>
+            <button class="reveal-btn">정답 보기</button>
+            <div class="answer">아니다 — regimen·투여시간·채혈시간 확인 → AUC 추정 → dose/interval 조절 → 재평가.
+              <div class="exp"><b>언제 투여했고 언제 채혈했는지</b>가 반드시 필요하다.</div>
+            </div>
+          </div>
+
+          <h3>Case 3 · AKI</h3>
+          <div class="card card--case">
+            <div class="card__label"><span class="dot"></span>CLINICAL CASE</div>
+            <p>Vancomycin 5일째. SCr Day1 0.9 → Day3 1.1 → Day5 1.7.</p>
+          </div>
+          <div class="qcard">
+            <div class="q"><span class="qn">Q</span> 단순히 다음 dose만 줄이면 될까?</div>
+            <button class="reveal-btn">정답 보기</button>
+            <div class="answer">아니다 — exposure·hemodynamics·다른 신독성 약물·contrast·infection status·지속 필요성·대체 항생제 전체 평가.
+              <div class="exp">AKI 발생 시 "얼마로 줄이지?"보다 먼저 <b>"Vancomycin이 아직 필요한가?"</b>를 확인한다.</div>
+            </div>
+          </div>
+
+          <h3>Concentration Challenge</h3>
+          <div class="quiz">
+            <div class="qcard">
+              <div class="q"><span class="qn">S1</span> Vancomycin trough 18 mg/L — 이 숫자만으로 dose가 적절하다고 결론?</div>
+              <button class="reveal-btn">정답 보기</button>
+              <div class="answer">No — 투여시각·채혈시각·AUC·renal function·indication 확인 필요.</div>
+            </div>
+            <div class="qcard">
+              <div class="q"><span class="qn">S2</span> Serious MRSA infection, Vancomycin AUC 520 — 해석은?</div>
+              <button class="reveal-btn">정답 보기</button>
+              <div class="answer">일반적으로 목표범위(400–600) 내. 단, 전체 clinical context를 함께 평가.</div>
+            </div>
+            <div class="qcard">
+              <div class="q"><span class="qn">S3</span> AUC 720 — 무엇을 걱정?</div>
+              <button class="reveal-btn">정답 보기</button>
+              <div class="answer">과도한 exposure와 nephrotoxicity 가능성을 재평가한다.</div>
+            </div>
+          </div>
+
+          <h3>Integrated ASP Case</h3>
+          <div class="card card--case">
+            <div class="card__label"><span class="dot"></span>CLINICAL CASE · Integrated</div>
+            <p>72세, septic shock. Empiric <b>Vancomycin + Pip/Tazo</b> → Blood culture <b>MRSA</b> → Pip/Tazo 중단 가능, Vancomycin 지속.
+              Day2 AUC 350(부족 가능→조정) · Day4 AUC 510(target) · Day6 culture clearance·stable·renal stable.</p>
+          </div>
+          <div class="figure">
+            <div class="vflow">
+              <div class="vflow__box">Correct drug</div>
+              <div class="vflow__arrow">↓</div>
+              <div class="vflow__box">Correct exposure (AUC 400–600)</div>
+              <div class="vflow__arrow">↓</div>
+              <div class="vflow__box">Source control (endocarditis 가능성·source는?)</div>
+              <div class="vflow__arrow">↓</div>
+              <div class="vflow__box">Correct duration</div>
+              <div class="vflow__arrow">↓</div>
+              <div class="vflow__box" style="background:var(--gn-soft);border-color:var(--gn);color:#0c8a7c;">Successful antimicrobial therapy</div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ===== S33,34,35,38 · 정리 & Quiz ===== -->
+        <section id="quiz" class="section">
+          <h2><span class="sec-no">12</span> 정리 &amp; Active Recall</h2>
+
+          <h3>Mental Map (스와이프)</h3>
+          <div class="flashdeck">
+            <div class="flashcard"><div class="fc-n">Vancomycin</div><div class="fc-term">MRSA</div><div class="fc-arrow">→</div><div class="fc-ans">D-Ala-D-Ala · AUC · Kidney</div></div>
+            <div class="flashcard"><div class="fc-n">Vancomycin</div><div class="fc-term">AUC₂₄/MIC</div><div class="fc-arrow">→</div><div class="fc-ans">400–600</div></div>
+            <div class="flashcard warn"><div class="fc-n">Vancomycin</div><div class="fc-term">Toxicity</div><div class="fc-arrow">→</div><div class="fc-ans">Nephrotoxicity (AKI)</div></div>
+            <div class="flashcard"><div class="fc-n">MSSA</div><div class="fc-term">Susceptible ≠ Optimal</div><div class="fc-arrow">→</div><div class="fc-ans">Cefazolin 등 β-lactam</div></div>
+            <div class="flashcard"><div class="fc-n">PO Vancomycin</div><div class="fc-term">Gut</div><div class="fc-arrow">→</div><div class="fc-ans">C. difficile</div></div>
+            <div class="flashcard"><div class="fc-n">Teicoplanin</div><div class="fc-term">Long half-life</div><div class="fc-arrow">→</div><div class="fc-ans">Loading · Trough TDM</div></div>
+            <div class="flashcard warn"><div class="fc-n">VanA VRE</div><div class="fc-term">Glycopeptide R</div><div class="fc-arrow">→</div><div class="fc-ans">Teicoplanin도 R 가능</div></div>
+          </div>
+          <div class="flashhint">← 좌우로 밀어서 넘기세요 →</div>
+
+          <h3 style="margin-top:34px;">반드시 기억할 10개</h3>
+          <div class="eightcards">
+            <div class="factcard"><span class="n">1</span><p>Vancomycin은 glycopeptide antibiotic이다.</p></div>
+            <div class="factcard"><span class="n">2</span><p>Vancomycin은 D-Ala-D-Ala에 결합해 cell wall synthesis를 억제한다.</p></div>
+            <div class="factcard"><span class="n">3</span><p>Vancomycin은 주로 Gram-positive에 작용한다.</p></div>
+            <div class="factcard"><span class="n">4</span><p>MRSA를 보면 vancomycin을 먼저 연상한다.</p></div>
+            <div class="factcard"><span class="n">5</span><p>MSSA에서는 vancomycin보다 appropriate β-lactam을 우선 고려한다.</p></div>
+            <div class="factcard"><span class="n">6</span><p>Serious MRSA infection에서 AUC-guided monitoring이 중요하다.</p></div>
+            <div class="factcard"><span class="n">7</span><p>대표적 AUC₂₄/MIC target은 400–600이다.</p></div>
+            <div class="factcard"><span class="n">8</span><p>Vancomycin은 renal function·nephrotoxicity monitoring이 중요하다.</p></div>
+            <div class="factcard"><span class="n">9</span><p>Teicoplanin은 half-life가 길어 loading regimen이 중요하다.</p></div>
+            <div class="factcard"><span class="n">10</span><p>VRE에서 vancomycin이 안 들으며 teicoplanin으로 단순 변경하면 안 된다.</p></div>
+          </div>
+
+          <h3 style="margin-top:34px;">Active Recall</h3>
+          <div class="quiz">
+            <div class="qcard"><div class="q"><span class="qn">Q1</span> Vancomycin이 결합하는 cell wall precursor 말단 구조는?</div><button class="reveal-btn">정답 보기</button><div class="answer">D-Ala-D-Ala.</div></div>
+            <div class="qcard"><div class="q"><span class="qn">Q2</span> Vancomycin을 보면 가장 먼저 연상할 resistant organism은?</div><button class="reveal-btn">정답 보기</button><div class="answer">MRSA.</div></div>
+            <div class="qcard"><div class="q"><span class="qn">Q3</span> MSSA bacteremia에서 vancomycin S라면 계속 vancomycin이 최선인가?</div><button class="reveal-btn">정답 보기</button><div class="answer">아니다. Cefazolin 등 appropriate β-lactam을 우선 고려한다.</div></div>
+            <div class="qcard"><div class="q"><span class="qn">Q4</span> Serious MRSA infection에서 대표 PK/PD monitoring target은?</div><button class="reveal-btn">정답 보기</button><div class="answer">AUC24/MIC.</div></div>
+            <div class="qcard"><div class="q"><span class="qn">Q5</span> 대표적으로 사용하는 AUC24/MIC target 범위는?</div><button class="reveal-btn">정답 보기</button><div class="answer">400–600.</div></div>
+            <div class="qcard"><div class="q"><span class="qn">Q6</span> Vancomycin의 중요한 toxicity는?</div><button class="reveal-btn">정답 보기</button><div class="answer">Nephrotoxicity.</div></div>
+            <div class="qcard"><div class="q"><span class="qn">Q7</span> Vancomycin systemic clearance와 밀접한 기관은?</div><button class="reveal-btn">정답 보기</button><div class="answer">Kidney.</div></div>
+            <div class="qcard"><div class="q"><span class="qn">Q8</span> Vancomycin PO가 MRSA bacteremia 치료에 적합한가?</div><button class="reveal-btn">정답 보기</button><div class="answer">아니다.</div></div>
+            <div class="qcard"><div class="q"><span class="qn">Q9</span> Teicoplanin에서 초기 loading regimen이 특히 중요한 이유는?</div><button class="reveal-btn">정답 보기</button><div class="answer">Half-life가 길어 loading 없이 maintenance만 쓰면 target exposure 도달에 오래 걸리기 때문.</div></div>
+            <div class="qcard"><div class="q"><span class="qn">Q10</span> VRE에서 vancomycin 대신 teicoplanin을 무조건 쓸 수 있는가?</div><button class="reveal-btn">정답 보기</button><div class="answer">아니다. 특히 VanA phenotype 등에서는 teicoplanin에도 resistance가 나타날 수 있다.</div></div>
+          </div>
+
+          <div class="figure" style="margin-top:28px;">
+            <div class="figure__title">도식 17 · Vancomycin ASP Decision Tree</div>
+            <div class="vflow">
+              <div class="vflow__box">Vancomycin prescribed</div>
+              <div class="vflow__arrow">↓ Why? MRSA suspected? · Culture available?</div>
+              <div class="vflow__branch" style="grid-template-columns:1fr 1fr 1fr;">
+                <div class="vflow__leaf pos"><h6>MSSA</h6><div>β-lactam 전환 검토</div></div>
+                <div class="vflow__leaf neg"><h6>MRSA</h6><div>적절성 평가·지속</div></div>
+                <div class="vflow__leaf"><h6>No resistant GP</h6><div>중단 가능성 평가</div></div>
+              </div>
+              <div class="vflow__arrow">↓ MRSA + 지속 시</div>
+              <div class="vflow__box">Site · Renal function · Dose history · 채혈 시점</div>
+              <div class="vflow__arrow">↓ AUC</div>
+              <div class="vflow__branch" style="grid-template-columns:1fr 1fr 1fr;">
+                <div class="vflow__leaf" style="border-top:3px solid #e6a23c;"><h6>&lt;400 Low</h6><div>exposure 증가 검토</div></div>
+                <div class="vflow__leaf pos"><h6>400–600</h6><div>유지 / monitor</div></div>
+                <div class="vflow__leaf neg"><h6>&gt;600 High</h6><div>감소·toxicity 평가</div></div>
+              </div>
+              <div class="vflow__arrow">↓ Renal trend · culture clearance · response</div>
+              <div class="vflow__box" style="background:var(--gn-soft);border-color:var(--gn);color:#0c8a7c;">Duration / Source control</div>
+            </div>
+          </div>
+        </section>
+
+        <section class="closing">
+          <h3>오늘의 한 문장</h3>
+          <p class="big">Vancomycin 처방을 잘 관리한다는 것은 단순히 혈중농도를 맞추는 일이 아니다.</p>
+          <p>ASP 약사의 사고 순서:</p>
+          <p class="big">이 약이 필요한가 → 최선인가 → exposure가 적절한가 → toxicity는 없는가 → 언제 중단할 수 있는가</p>
+          <p style="margin-top:22px;"><a href="lesson-04.html" style="color:#fff;text-decoration:underline;">← 4강 다시 보기</a> · <a href="../index.html" style="color:#fff;text-decoration:underline;">강의 목록</a></p>
+        </section>
+
+      </div>
+    </div>
+  </div>
+
+  <nav class="bottomnav" aria-label="강의 이동">
+    <a href="lesson-04.html"><span class="bn-ico">←</span>이전 강의</a>
+    <a href="#" data-open-toc><span class="bn-ico">☰</span>목차</a>
+    <a href="#" aria-disabled="true"><span class="bn-ico">→</span>다음 강의</a>
+  </nav>
+
+  <div class="quickrev">
+    <div class="quickrev__panel">
+      <h5>⚡ Quick Review</h5>
+      <div class="qr-row"><span class="qr-k">Vancomycin</span><span>MRSA · D-Ala-D-Ala · AUC 400–600 · Kidney · 신독성</span></div>
+      <div class="qr-row"><span class="qr-k">MSSA</span><span>Cefazolin 등 β-lactam</span></div>
+      <div class="qr-row"><span class="qr-k">PO Vanco</span><span>Gut / C. difficile</span></div>
+      <div class="qr-row"><span class="qr-k">Teicoplanin</span><span>Long half-life · Loading · TDM</span></div>
+      <div class="qr-row"><span class="qr-k">VRE</span><span>Glycopeptide resistance</span></div>
+    </div>
+    <button class="quickrev__btn" aria-label="Quick Review 열기">⚡ Quick Review</button>
+  </div>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

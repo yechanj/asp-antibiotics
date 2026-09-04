@@ -423,6 +423,33 @@
     render();
   }
 
+  /* ---------- 13. Vancomycin AUC Therapeutic Window 슬라이더 ---------- */
+  function initAucSlider() {
+    var root = document.querySelector("[data-aucslider]");
+    if (!root) return;
+    var input = root.querySelector("input[type=range]");
+    var marker = root.querySelector(".aucgauge .marker");
+    var valEl = root.querySelector(".auc-readout .val");
+    var interp = root.querySelector(".auc-interp");
+    var AUC_MIN = 200, AUC_MAX = 800; // 게이지 스케일
+
+    function render() {
+      var auc = parseInt(input.value, 10);
+      var pct = (auc - AUC_MIN) / (AUC_MAX - AUC_MIN) * 100;
+      pct = Math.max(0, Math.min(100, pct));
+      marker.style.left = pct + "%";
+      valEl.textContent = auc;
+      var cls, txt;
+      if (auc < 400) { cls = "low"; txt = "Exposure 부족 가능성 → efficacy 우려 (증량 검토)"; }
+      else if (auc <= 600) { cls = "target"; txt = "Target Zone (400–600) · 효과와 안전성의 균형"; }
+      else { cls = "high"; txt = "Exposure 과다 → nephrotoxicity 위험 ↑ (감량·재평가)"; }
+      interp.className = "auc-interp " + cls;
+      interp.textContent = txt;
+    }
+    input.addEventListener("input", render);
+    render();
+  }
+
   /* ---------- init ---------- */
   document.addEventListener("DOMContentLoaded", function () {
     initSidebar();
@@ -437,5 +464,6 @@
     initDecisions();
     initQuickReview();
     initSpecGame();
+    initAucSlider();
   });
 })();
