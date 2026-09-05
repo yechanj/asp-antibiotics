@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>7강 · Fluoroquinolone: Ciprofloxacin · Levofloxacin · Moxifloxacin</title>
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+</head>
+<body>
+  <div class="topbar">
+    <button class="hamburger" aria-label="목차 열기" aria-expanded="false"><span></span></button>
+    <div class="topbar__title">7강 · Fluoroquinolone</div>
+  </div>
+  <div class="scrim" aria-hidden="true"></div>
+
+  <div class="app">
+    <aside class="sidebar" aria-label="강의 목차">
+      <div class="sidebar__brand">
+        <div class="sidebar__logo">ASP</div>
+        <div class="sidebar__title">항생제 학습
+          <small>7강 · Fluoroquinolone</small>
+        </div>
+      </div>
+      <nav>
+        <ul class="toc">
+          <li><a href="#map"><span class="num">1</span> FQ 3대 지도</a></li>
+          <li><a href="#mech"><span class="num">2</span> 기전 & PK/PD</a></li>
+          <li><a href="#cipro"><span class="num">3</span> Ciprofloxacin</a></li>
+          <li><a href="#levo"><span class="num">4</span> Levofloxacin · Respiratory</a></li>
+          <li><a href="#moxi"><span class="num">5</span> Moxifloxacin</a></li>
+          <li><a href="#compare"><span class="num">6</span> 세 약 비교 · Slider</a></li>
+          <li><a href="#po"><span class="num">7</span> 경구흡수 & Chelation</a></li>
+          <li><a href="#renal"><span class="num">8</span> Renal adjustment</a></li>
+          <li><a href="#tox"><span class="num">9</span> 부작용 (Boxed warning)</a></li>
+          <li><a href="#resist"><span class="num">10</span> 내성 & Antibiogram</a></li>
+          <li><a href="#cases"><span class="num">11</span> ASP Cases</a></li>
+          <li><a href="#quiz"><span class="num">12</span> 정리 & Quiz</a></li>
+        </ul>
+      </nav>
+      <a class="sidebar__back" href="../index.html">← 강의 목록으로</a>
+    </aside>
+
+    <div class="content">
+      <div class="wrap">
+
+        <header class="lesson-hero">
+          <div class="kicker">ASP 항생제 학습 · 7강</div>
+          <h1>Fluoroquinolone · Cipro · Levo · Moxi</h1>
+          <p>경구로 쓸 수 있는 강력하고 편리한 항생제 — 그것이 장점이자 함정입니다.</p>
+        </header>
+
+        <!-- ===== S1 · FQ 3대 지도 ===== -->
+        <section id="map" class="section">
+          <h2><span class="sec-no">01</span> Fluoroquinolone의 큰 그림</h2>
+          <p>대표 세 약 — Ciprofloxacin · Levofloxacin · Moxifloxacin. 같은 계열이지만 spectrum과 임상 역할이 꽤 다르다.</p>
+
+          <div class="figure">
+            <div class="figure__title">도식 1 · Fluoroquinolone 3대 지도</div>
+            <div class="orgbig">
+              <div class="orgbig__card is-acineto">
+                <h4>CIPROFLOXACIN</h4>
+                <div class="tagline">🦠 Gram-negative / Pseudomonas / 🚽 UTI</div>
+                <ul class="clean" style="margin-bottom:0;"><li>Gram-negative activity 강함</li></ul>
+              </div>
+              <div class="orgbig__card is-pseudo">
+                <h4>LEVOFLOXACIN</h4>
+                <div class="tagline">🫁 Respiratory / Pseudomonas / 🚽 UTI</div>
+                <ul class="clean" style="margin-bottom:0;"><li>Respiratory + Pseudomonas 동시</li></ul>
+              </div>
+              <div class="orgbig__card is-steno">
+                <h4>MOXIFLOXACIN</h4>
+                <div class="tagline">🫁 Respiratory / Anaerobe 일부 / 🚫 Urine X</div>
+                <ul class="clean" style="margin-bottom:0;"><li>Pseudomonas X · UTI X</li></ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ===== S2,3 · 기전 & PK/PD ===== -->
+        <section id="mech" class="section">
+          <h2><span class="sec-no">02</span> 작용기전 &amp; PK/PD</h2>
+          <p>Fluoroquinolone은 bacterial DNA replication을 방해한다. 주요 표적: <b>DNA gyrase</b>(주로 Gram-negative), <b>Topoisomerase IV</b>(Gram-positive). 이 효소들이 DNA 꼬임·분리를 조절한다.</p>
+          <div class="figure">
+            <div class="figure__title">도식 2 · DNA replication</div>
+            <div class="twopanel">
+              <div class="panel panel--normal">
+                <h5>정상</h5>
+                <ol><li>Circular bacterial DNA</li><li>DNA gyrase / Topoisomerase IV</li><li>DNA unwinding & replication ✓</li></ol>
+              </div>
+              <div class="panel panel--drug">
+                <h5>Fluoroquinolone</h5>
+                <ol><li>gyrase / topoisomerase IV inhibition</li><li>DNA replication ✕</li><li>Cell death</li></ol>
+              </div>
+            </div>
+          </div>
+
+          <h3>PK/PD 성격 · Concentration-dependent</h3>
+          <div class="legend">
+            <span class="chip chip--gp"><span class="sw"></span>β-lactam = fT &gt; MIC</span>
+            <span class="chip chip--gn"><span class="sw"></span>Vancomycin = AUC/MIC</span>
+            <span class="chip chip--pseudo"><span class="sw"></span>Fluoroquinolone = AUC/MIC</span>
+          </div>
+          <p style="font-size:13.5px;color:var(--ink-faint);">항생제마다 효과를 결정하는 PK/PD 지표가 다르다. FQ는 concentration-dependent activity와 exposure(AUC/MIC)가 중요하다.</p>
+        </section>
+
+        <!-- ===== S4,5,6 · Ciprofloxacin ===== -->
+        <section id="cipro" class="section">
+          <h2><span class="sec-no">03</span> Ciprofloxacin</h2>
+          <div class="oneline">Cipro = Gram-negative + Pseudomonas</div>
+          <p>Gram-negative activity가 강하다 (Enterobacterales · Pseudomonas aeruginosa 등). 세 FQ 중 <b>Pseudomonas를 가장 강하게 연상</b>하는 약이다.</p>
+          <div class="card card--key">
+            <div class="card__label"><span class="dot"></span>KEY POINT</div>
+            <p>Ciprofloxacin = Pseudomonas O. 그러나 Pseudomonas가 나왔다고 무조건 ciprofloxacin을 쓴다는 의미는 아니다 — 실제 susceptibility를 확인한다.</p>
+          </div>
+          <div class="card card--caution">
+            <div class="card__label"><span class="dot"></span>CAUTION · Ciprofloxacin의 약점</div>
+            <p>Gram-positive respiratory pathogen, 특히 <b>Streptococcus pneumoniae</b> coverage가 상대적으로 좋지 않다(△). CAP에서 "quinolone이면 다 똑같겠지"라고 생각하면 안 된다.
+              Ciprofloxacin은 보통 <b>respiratory fluoroquinolone으로 분류하지 않는다.</b></p>
+          </div>
+        </section>
+
+        <!-- ===== S7,8,9,10 · Levofloxacin ===== -->
+        <section id="levo" class="section">
+          <h2><span class="sec-no">04</span> Levofloxacin &amp; Respiratory FQ</h2>
+          <p>Levofloxacin은 ciprofloxacin보다 <b>Gram-positive respiratory coverage</b>가 강화되어 있고, 동시에 <b>Pseudomonas activity</b>도 가진다.</p>
+          <div class="oneline">Levo = Respiratory + Pseudomonas</div>
+
+          <div class="card card--key">
+            <div class="card__label"><span class="dot"></span>KEY POINT · Respiratory fluoroquinolone</div>
+            <p><b>Levofloxacin · Moxifloxacin</b>을 respiratory fluoroquinolone이라 부른다 (S. pneumoniae 등 respiratory pathogen activity가 cipro보다 좋음). 대표 respiratory pathogen: S. pneumoniae · H. influenzae · Moraxella · Mycoplasma · Chlamydophila · Legionella.</p>
+          </div>
+
+          <div class="figure">
+            <div class="figure__title">도식 5 · Atypical coverage 차이</div>
+            <div class="twopanel">
+              <div class="panel panel--drug">
+                <h5>Ceftriaxone (β-lactam)</h5>
+                <ol><li>Typical respiratory bacteria O</li><li>Atypical <b>✕</b></li></ol>
+              </div>
+              <div class="panel panel--normal">
+                <h5>Levofloxacin</h5>
+                <ol><li>Typical O</li><li>Atypical(Mycoplasma·Chlamydophila·Legionella) <b>O</b></li></ol>
+              </div>
+            </div>
+            <div class="figure__cap">이 차이가 pneumonia 치료 regimen에서 중요하다.</div>
+          </div>
+
+          <p>Levofloxacin은 urinary concentration도 확보되어 complicated UTI · pyelonephritis에서 사용할 수 있다. 단, fluoroquinolone resistance가 흔할 수 있어 susceptibility와 local antibiogram이 중요하다.</p>
+          <div class="card card--asp">
+            <div class="card__label"><span class="dot"></span>ASP POINT</div>
+            <p>"Levofloxacin이 UTI 약이다"보다 중요한 질문: <b>"우리 병원 E. coli의 levofloxacin susceptibility가 충분한가?"</b> — 이것이 antibiogram이 필요한 이유다.</p>
+          </div>
+        </section>
+
+        <!-- ===== S11,12,13 · Moxifloxacin ===== -->
+        <section id="moxi" class="section">
+          <h2><span class="sec-no">05</span> Moxifloxacin</h2>
+          <div class="oneline">Moxi = Respiratory (Lung O / Urine X)</div>
+          <p>Levofloxacin과 함께 respiratory fluoroquinolone. 특징: Gram-positive respiratory coverage · atypical coverage · 일부 anaerobic activity. 그러나 <b>Pseudomonas coverage는 신뢰하지 않는다</b> → Moxi를 Pseudomonas drug로 생각하지 않는다.</p>
+
+          <div class="card card--caution">
+            <div class="card__label"><span class="dot"></span>CAUTION · Moxifloxacin과 UTI</div>
+            <p><b>Moxifloxacin은 UTI 치료제로 적절하지 않다.</b> 이유: urinary excretion이 충분하지 않아 urine에 충분한 active drug concentration을 만들지 못한다. (혈중·조직에서는 작용)</p>
+          </div>
+
+          <div class="figure">
+            <div class="figure__title">경고 카드 · MOXIFLOXACIN</div>
+            <div class="warncards">
+              <div class="warncard" style="border-color:var(--gn);background:var(--gn-soft);"><h5 style="color:#0c8a7c;">🫁 Lung</h5><ul><li>O</li></ul></div>
+              <div class="warncard" style="border-color:var(--anaerobe);background:var(--anaerobe-soft);"><h5 style="color:var(--anaerobe);">🦠 Atypical</h5><ul><li>O</li></ul></div>
+              <div class="warncard"><h5>🚽 UTI</h5><ul><li><span class="x">✕</span></li></ul></div>
+            </div>
+          </div>
+          <div class="oneline">Moxi = Lung O / Urine X</div>
+        </section>
+
+        <!-- ===== S14,15 · 비교 + Slider ===== -->
+        <section id="compare" class="section">
+          <h2><span class="sec-no">06</span> 세 약 비교</h2>
+          <div class="table-scroll">
+            <table class="data">
+              <thead><tr><th>특징</th><th>Ciprofloxacin</th><th>Levofloxacin</th><th>Moxifloxacin</th></tr></thead>
+              <tbody>
+                <tr><th>Gram-negative</th><td class="cov cov-strong-c">◎</td><td class="cov cov-yes-c">O</td><td class="cov cov-yes-c">O</td></tr>
+                <tr><th>Pseudomonas</th><td class="cov cov-yes-c">O</td><td class="cov cov-yes-c">O</td><td class="cov cov-no-c">X</td></tr>
+                <tr><th>S. pneumoniae</th><td class="cov cov-partial-c">△</td><td class="cov cov-yes-c">O</td><td class="cov cov-yes-c">O</td></tr>
+                <tr><th>Atypical</th><td class="cov cov-yes-c">O</td><td class="cov cov-yes-c">O</td><td class="cov cov-yes-c">O</td></tr>
+                <tr><th>Respiratory FQ</th><td class="cov cov-no-c">X</td><td class="cov cov-yes-c">O</td><td class="cov cov-yes-c">O</td></tr>
+                <tr><th>UTI</th><td class="cov cov-yes-c">O</td><td class="cov cov-yes-c">O</td><td class="cov cov-no-c">X</td></tr>
+                <tr><th>Anaerobic activity</th><td>약함</td><td>약함</td><td>상대적으로 있음</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="split2">
+            <div class="splitcard is-acineto"><h4>CIPRO</h4><ul><li>Pseudomonas + Urine</li></ul></div>
+            <div class="splitcard is-mssa" style="background:var(--gn-soft);border-color:var(--gn);"><h4>LEVO / MOXI</h4><ul><li>Levo: Lung + Pseudomonas + Urine</li><li>Moxi: Lung + No Urine</li></ul></div>
+          </div>
+
+          <h3>인터랙션 · Spectrum Slider (약을 눌러 coverage 비교)</h3>
+          <div class="figure" data-selector>
+            <div class="orgselect">
+              <div class="orgselect__btns">
+                <button class="sel-btn" data-target="cipro">Ciprofloxacin</button>
+                <button class="sel-btn" data-target="levo">Levofloxacin</button>
+                <button class="sel-btn" data-target="moxi">Moxifloxacin</button>
+              </div>
+              <div class="sel-panel" data-panel="cipro">
+                <div class="rowline"><div class="k">Pneumococcus</div><div class="v"><b style="color:var(--cov-partial)">△</b></div></div>
+                <div class="rowline"><div class="k">Pseudomonas</div><div class="v"><b style="color:var(--cov-yes)">O</b></div></div>
+                <div class="rowline"><div class="k">Enterobacterales</div><div class="v"><b style="color:var(--cov-strong)">◎</b></div></div>
+                <div class="rowline"><div class="k">Atypical</div><div class="v"><b style="color:var(--cov-yes)">O</b></div></div>
+                <div class="rowline"><div class="k">UTI</div><div class="v"><b style="color:var(--cov-yes)">O</b></div></div>
+              </div>
+              <div class="sel-panel" data-panel="levo">
+                <div class="rowline"><div class="k">Pneumococcus</div><div class="v"><b style="color:var(--cov-yes)">O</b></div></div>
+                <div class="rowline"><div class="k">Pseudomonas</div><div class="v"><b style="color:var(--cov-yes)">O</b></div></div>
+                <div class="rowline"><div class="k">Enterobacterales</div><div class="v"><b style="color:var(--cov-yes)">O</b></div></div>
+                <div class="rowline"><div class="k">Atypical</div><div class="v"><b style="color:var(--cov-yes)">O</b></div></div>
+                <div class="rowline"><div class="k">UTI</div><div class="v"><b style="color:var(--cov-yes)">O</b></div></div>
+              </div>
+              <div class="sel-panel" data-panel="moxi">
+                <div class="rowline"><div class="k">Pneumococcus</div><div class="v"><b style="color:var(--cov-yes)">O</b></div></div>
+                <div class="rowline"><div class="k">Pseudomonas</div><div class="v"><b style="color:var(--resist)">✕</b></div></div>
+                <div class="rowline"><div class="k">Enterobacterales</div><div class="v"><b style="color:var(--cov-yes)">O</b></div></div>
+                <div class="rowline"><div class="k">Atypical</div><div class="v"><b style="color:var(--cov-yes)">O</b></div></div>
+                <div class="rowline"><div class="k">Anaerobe 일부</div><div class="v"><b style="color:var(--cov-yes)">O</b></div></div>
+                <div class="rowline"><div class="k">UTI</div><div class="v"><b style="color:var(--resist)">✕</b> (urinary exposure 부족)</div></div>
+              </div>
+            </div>
+          </div>
+
+          <h3>인터랙션 · "어느 약을 UTI에?" (함정 주의)</h3>
+          <div class="figure" data-lungtrap data-ok-msg="✓ OK — UTI에 적절한 fluoroquinolone" data-trap-msg="🚨 LOW URINARY EXPOSURE! — Moxifloxacin은 UTI에 부적합">
+            <div class="lungtrap">
+              <div class="lungtrap__scene" style="background:linear-gradient(135deg,#163a6b,#145bb0);">UTI 🚽</div>
+              <div class="lungtrap__btns">
+                <button>Ciprofloxacin</button>
+                <button>Levofloxacin</button>
+                <button data-trap="1">Moxifloxacin</button>
+              </div>
+              <div class="lungtrap__fb"></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ===== S16,17,18 · 경구흡수 & Chelation ===== -->
+        <section id="po" class="section">
+          <h2><span class="sec-no">07</span> 경구 흡수 &amp; Chelation</h2>
+          <p>Fluoroquinolone은 대체로 oral bioavailability가 높아 <b>IV → PO conversion</b>의 좋은 후보다. (예: Levofloxacin IV → 안정·PO 가능 → PO 전환)</p>
+          <div class="card card--asp">
+            <div class="card__label"><span class="dot"></span>ASP POINT</div>
+            <p>Linezolid와 마찬가지로 fluoroquinolone에서도 "IV가 계속 필요한가?"를 확인한다.</p>
+          </div>
+
+          <div class="card card--caution">
+            <div class="card__label"><span class="dot"></span>CAUTION · Metal cation chelation</div>
+            <p>FQ는 <b>metal cation</b>(Calcium · Magnesium · Aluminum · Iron · Zinc)과 chelation을 형성한다 → complex 형성 → GI absorption ↓ → drug exposure ↓.</p>
+          </div>
+          <div class="figure">
+            <div class="figure__title">도식 7 · Chelation</div>
+            <div class="vflow">
+              <div class="vflow__box">Fluoroquinolone + Ca²⁺/Mg²⁺/Fe²⁺/Zn²⁺</div>
+              <div class="vflow__arrow">↓ Complex formation</div>
+              <div class="vflow__box">GI absorption ↓</div>
+              <div class="vflow__arrow">↓</div>
+              <div class="vflow__box" style="background:var(--resist-soft);border-color:var(--resist);color:var(--resist);">Drug exposure ↓</div>
+            </div>
+          </div>
+          <div class="card card--pharm">
+            <div class="card__label"><span class="dot"></span>PHARMACIST POINT</div>
+            <p>복용시간 분리가 필요할 수 있는 대표 약: antacid · iron · calcium · magnesium 제품 · zinc · sucralfate. PO FQ 처방을 보면 <b>"환자가 철분·제산제를 먹고 있지 않은가?"</b>를 확인한다. (권장 간격은 제품 허가사항 확인)</p>
+          </div>
+        </section>
+
+        <!-- ===== S19 · Renal adjustment ===== -->
+        <section id="renal" class="section">
+          <h2><span class="sec-no">08</span> Renal adjustment</h2>
+          <p>Ciprofloxacin · Levofloxacin은 <b>renal elimination</b>이 중요해 renal dysfunction에서 dose/interval 조절이 필요할 수 있다. 특히 levofloxacin은 <b>CrCl &lt;50 mL/min</b>에서 축적을 피하기 위한 조절이 필요하다고 명시된다.</p>
+          <p>반면 <b>Moxifloxacin</b>은 renal elimination 의존도가 낮아 <b>일반적으로 routine renal dose adjustment가 필요하지 않다.</b></p>
+          <div class="figure">
+            <div class="figure__title">도식 8 · Renal adjustment</div>
+            <div class="orgbig">
+              <div class="orgbig__card is-acineto"><h4>Cipro</h4><div class="tagline">Kidney → Dose check</div></div>
+              <div class="orgbig__card is-pseudo"><h4>Levo</h4><div class="tagline">Kidney → Dose check (CrCl&lt;50)</div></div>
+              <div class="orgbig__card is-steno"><h4>Moxi</h4><div class="tagline">Renal adjustment 보통 X</div></div>
+            </div>
+          </div>
+
+          <h3>인터랙션 · Renal Dose Challenge</h3>
+          <div class="quiz">
+            <div class="qcard">
+              <div class="q" style="display:block;">CrCl 25 mL/min 환자에 <b>Levofloxacin</b> — dose adjustment 필요?</div>
+              <ul class="mcq" data-answer="Y"><li data-opt="Y"><span class="opt">Y</span> YES</li><li data-opt="N"><span class="opt">N</span> NO</li></ul>
+              <div class="answer mcq-exp" style="display:none;">정답: YES — CrCl &lt;50이므로 dose/interval 조절 필요.</div>
+            </div>
+            <div class="qcard">
+              <div class="q" style="display:block;">CrCl 25 mL/min 환자에 <b>Moxifloxacin</b> — routine renal adjustment 필요?</div>
+              <ul class="mcq" data-answer="N"><li data-opt="Y"><span class="opt">Y</span> YES</li><li data-opt="N"><span class="opt">N</span> NO</li></ul>
+              <div class="answer mcq-exp" style="display:none;">정답: NO — Moxifloxacin은 보통 routine renal adjustment가 필요하지 않다.</div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ===== S20~29 · 부작용 ===== -->
+        <section id="tox" class="section">
+          <h2><span class="sec-no">09</span> 부작용 (FDA Boxed Warning)</h2>
+          <p>Fluoroquinolone은 편리하지만 <b>serious adverse effects</b> 때문에 무분별하게 쓰는 계열이 아니다. Boxed warning에는 장애가 지속되거나 비가역적일 수 있는 이상반응이 포함된다.</p>
+
+          <div class="warncards">
+            <div class="warncard"><h5>⚠ Tendinitis / Rupture</h5><ul><li>대표: Achilles tendon</li><li>위험↑: older age · corticosteroid · transplant · renal dysfunction</li></ul></div>
+            <div class="warncard"><h5>⚠ Peripheral neuropathy</h5><ul><li>Burning · tingling · numbness · weakness</li><li>지속 가능 → 중요한 safety issue</li></ul></div>
+            <div class="warncard"><h5>⚠ CNS effects</h5><ul><li>Confusion · agitation · insomnia · tremor · hallucination · seizure</li></ul></div>
+            <div class="warncard"><h5>⚠ Myasthenia gravis 악화</h5><ul><li>Muscle weakness 악화 가능 → avoid/strong caution</li></ul></div>
+          </div>
+
+          <h3>QT prolongation</h3>
+          <p>FQ는 <b>QT interval prolongation</b>을 일으킬 수 있다 — 특히 <b>moxifloxacin</b>이 강하게 연상된다. Torsades de pointes 위험.</p>
+          <div class="figure">
+            <div class="figure__title">도식 10 · QT prolongation</div>
+            <div class="vflow">
+              <div class="vflow__box">Fluoroquinolone (특히 Moxifloxacin)</div>
+              <div class="vflow__arrow">↓ QT ↑</div>
+              <div class="vflow__box" style="background:var(--resist-soft);border-color:var(--resist);color:var(--resist);">Torsades de pointes 위험</div>
+            </div>
+            <div class="figure__cap">확인: baseline QTc · hypokalemia · hypomagnesemia · bradycardia · structural heart disease · 다른 QT-prolonging drugs.</div>
+          </div>
+          <div class="card card--pharm">
+            <div class="card__label"><span class="dot"></span>PHARMACIST POINT</div>
+            <p>Moxifloxacin 처방을 볼 때 <b>"QT-prolonging drug가 여러 개 겹치지 않는가?"</b>를 확인한다.</p>
+          </div>
+
+          <div class="split2">
+            <div class="splitcard is-mrsa"><h4>Dysglycemia</h4><ul><li>Hypo/Hyperglycemia 가능</li><li>주의: diabetes · glucose-lowering med · older</li></ul></div>
+            <div class="splitcard is-mrsa"><h4>C. difficile / Microbiome</h4><ul><li>Broad-spectrum → microbiome 변화 → CDI 위험</li></ul></div>
+          </div>
+          <div class="card card--caution">
+            <div class="card__label"><span class="dot"></span>CAUTION · Aortic aneurysm/dissection</div>
+            <p>FQ와 aortic aneurysm/dissection 위험 증가 가능성이 보고되어 왔다. 위험요인이 높은 환자에서는 불필요한 사용을 피하고 대체 항생제가 가능한지 평가한다.</p>
+          </div>
+
+          <div class="card card--asp">
+            <div class="card__label"><span class="dot"></span>ASP POINT · 그래서 나쁜 약인가?</div>
+            <p>아니다. 장점(높은 oral bioavailability · 좋은 tissue penetration · Gram-negative·atypical·일부 Pseudomonas activity · IV-to-PO 용이)이 분명하다. 문제는 <b>편리하다는 이유로 필요 이상으로 쓰는 것</b>. FQ는 매우 유용하지만 부작용 + 내성 선택압력이 큰 계열로 이해한다.</p>
+          </div>
+        </section>
+
+        <!-- ===== S31,32 · 내성 & Antibiogram ===== -->
+        <section id="resist" class="section">
+          <h2><span class="sec-no">10</span> 내성 &amp; Antibiogram</h2>
+          <p>대표 resistance mechanism: <b>Target mutation</b>(gyrase/topoisomerase) · <b>Efflux pump</b> · <b>Reduced permeability</b> · <b>Plasmid-mediated resistance</b>.</p>
+          <div class="card card--asp">
+            <div class="card__label"><span class="dot"></span>ASP POINT · Local antibiogram</div>
+            <p>특히 <b>E. coli</b> 같은 Enterobacterales에서 fluoroquinolone resistance가 높을 수 있다. empiric UTI therapy에서 "무조건 ciprofloxacin"으로 접근하면 안 된다.
+              우리 병원 E. coli의 ciprofloxacin susceptibility가 60%인지 90%인지에 따라 empiric therapy 신뢰도가 달라진다 → <b>local antibiogram</b>이 필요하다.</p>
+          </div>
+        </section>
+
+        <!-- ===== S33~39,44 · Cases + game ===== -->
+        <section id="cases" class="section">
+          <h2><span class="sec-no">11</span> ASP Cases</h2>
+
+          <h3>Drug Identification Game</h3>
+          <div class="quiz">
+            <div class="qcard">
+              <div class="q" style="display:block;"><b>CASE A</b> · Pseudomonas O · UTI O · Pneumococcus 상대적 약점</div>
+              <ul class="mcq" data-answer="A"><li data-opt="A"><span class="opt">A</span> Ciprofloxacin</li><li data-opt="B"><span class="opt">B</span> Levofloxacin</li><li data-opt="C"><span class="opt">C</span> Moxifloxacin</li></ul>
+              <div class="answer mcq-exp" style="display:none;">정답: A — Ciprofloxacin</div>
+            </div>
+            <div class="qcard">
+              <div class="q" style="display:block;"><b>CASE B</b> · Respiratory O · Pseudomonas O · UTI O · Renal adjustment</div>
+              <ul class="mcq" data-answer="B"><li data-opt="A"><span class="opt">A</span> Ciprofloxacin</li><li data-opt="B"><span class="opt">B</span> Levofloxacin</li><li data-opt="C"><span class="opt">C</span> Moxifloxacin</li></ul>
+              <div class="answer mcq-exp" style="display:none;">정답: B — Levofloxacin</div>
+            </div>
+            <div class="qcard">
+              <div class="q" style="display:block;"><b>CASE C</b> · Respiratory O · Pseudomonas X · UTI X · QT 주의</div>
+              <ul class="mcq" data-answer="C"><li data-opt="A"><span class="opt">A</span> Ciprofloxacin</li><li data-opt="B"><span class="opt">B</span> Levofloxacin</li><li data-opt="C"><span class="opt">C</span> Moxifloxacin</li></ul>
+              <div class="answer mcq-exp" style="display:none;">정답: C — Moxifloxacin</div>
+            </div>
+          </div>
+
+          <h3>Case 1 · Pseudomonas (IV→PO step-down)</h3>
+          <div class="card card--case">
+            <div class="card__label"><span class="dot"></span>CLINICAL CASE</div>
+            <p>Urine culture <b>Pseudomonas aeruginosa</b> (Cipro S · Levo S · Cefepime S). 환자 안정, 경구 복용 가능. 현재 Cefepime IV.</p>
+          </div>
+          <div class="qcard">
+            <div class="q"><span class="qn">A</span> ASP 사고는?</div>
+            <button class="reveal-btn">정답 보기</button>
+            <div class="answer">Active oral option(cipro/levo) 있음 → IV cefepime 계속 필요한가? → severity·source control·response 고려해 <b>IV → PO step-down</b> 검토.</div>
+          </div>
+
+          <h3>Case 2 · CAP</h3>
+          <div class="card card--case">
+            <div class="card__label"><span class="dot"></span>CLINICAL CASE</div>
+            <p>Community-acquired pneumonia, 원인균 불명.</p>
+          </div>
+          <div class="qcard">
+            <div class="q"><span class="qn">A</span> 세 FQ 중 적합한 것은?</div>
+            <button class="reveal-btn">정답 보기</button>
+            <div class="answer">Ciprofloxacin ✕ (pneumococcus coverage 부족) · Levofloxacin O · Moxifloxacin O.
+              <div class="exp">Quinolone이라고 모두 CAP에서 같은 역할을 하지 않는다.</div>
+            </div>
+          </div>
+
+          <h3>Case 3 · UTI (Susceptible ≠ Optimal)</h3>
+          <div class="card card--case">
+            <div class="card__label"><span class="dot"></span>CLINICAL CASE</div>
+            <p>Urine culture <b>E. coli</b> (Levo S · Moxi S로 표시되었다고 가정). Moxifloxacin을 UTI에 쓸까?</p>
+          </div>
+          <div class="qcard">
+            <div class="q"><span class="qn">A</span> Moxifloxacin?</div>
+            <button class="reveal-btn">정답 보기</button>
+            <div class="answer">No — urinary concentration이 충분하지 않다.
+              <div class="exp">In vitro susceptibility가 있어도 감염 부위에서 임상적으로 좋은 약은 아니다 → <b>Susceptible ≠ Optimal.</b></div>
+            </div>
+          </div>
+
+          <h3>Case 4 · Renal impairment</h3>
+          <div class="card card--case">
+            <div class="card__label"><span class="dot"></span>CLINICAL CASE</div>
+            <p>CrCl 25 mL/min 환자에 Levofloxacin 750 mg q24h 처방.</p>
+          </div>
+          <div class="qcard">
+            <div class="q"><span class="qn">A</span> regimen이 renal function에 맞는가?</div>
+            <button class="reveal-btn">정답 보기</button>
+            <div class="answer">CrCl &lt;50 → dose/interval adjustment 필요. (levofloxacin 허가정보도 CrCl &lt;50에서 조절 명시)</div>
+          </div>
+
+          <h3>Case 5 · Tendon risk</h3>
+          <div class="card card--case">
+            <div class="card__label"><span class="dot"></span>CLINICAL CASE</div>
+            <p>72세, <b>Prednisolone</b> 복용 중. 새 처방 Levofloxacin.</p>
+          </div>
+          <div class="qcard">
+            <div class="q"><span class="qn">A</span> 약사 사고는?</div>
+            <button class="reveal-btn">정답 보기</button>
+            <div class="answer">FQ + corticosteroid + older age → tendon injury risk ↑ → 다른 적절한 대안 평가 → 환자에게 tendon pain 등 이상반응 교육.</div>
+          </div>
+
+          <h3>Case 6 · QT</h3>
+          <div class="card card--case">
+            <div class="card__label"><span class="dot"></span>CLINICAL CASE</div>
+            <p>병용약 Amiodarone · antipsychotic. K 3.0 mEq/L. 새 처방 <b>Moxifloxacin</b>.</p>
+          </div>
+          <div class="qcard">
+            <div class="q"><span class="qn">A</span> 무엇을 확인?</div>
+            <button class="reveal-btn">정답 보기</button>
+            <div class="answer">QT prolongation risk → baseline ECG·QTc · potassium correction · 다른 QT drugs · 대체 항생제.</div>
+          </div>
+
+          <h3>Case 7 · PO interaction</h3>
+          <div class="card card--case">
+            <div class="card__label"><span class="dot"></span>CLINICAL CASE</div>
+            <p>Ciprofloxacin PO + Iron supplement 동시 복용.</p>
+          </div>
+          <div class="qcard">
+            <div class="q"><span class="qn">A</span> 문제와 intervention은?</div>
+            <button class="reveal-btn">정답 보기</button>
+            <div class="answer">Metal cation chelation → cipro absorption ↓ → exposure 감소. Intervention: 복용시간 분리 및 복약지도.</div>
+          </div>
+
+          <h3>Integrated ASP Case</h3>
+          <div class="card card--case">
+            <div class="card__label"><span class="dot"></span>CLINICAL CASE · Integrated</div>
+            <p>73세, complicated UTI + bacteremia, 현재 <b>Cefepime IV</b>. Culture <b>Pseudomonas</b> (Cefepime S · Cipro S · Levo S). Stable · fever resolved · PO 가능 · 흡수 OK · renal stable.</p>
+          </div>
+          <div class="figure">
+            <div class="vflow">
+              <div class="vflow__box">① Organism · Pseudomonas</div>
+              <div class="vflow__arrow">↓</div>
+              <div class="vflow__box q">② Active oral option? (Cipro/Levo S)</div>
+              <div class="vflow__arrow">↓ IV 계속 필요한 절대 이유 없음</div>
+              <div class="vflow__box">③ severity·source control·response 고려</div>
+              <div class="vflow__arrow">↓</div>
+              <div class="vflow__box" style="background:var(--gn-soft);border-color:var(--gn);color:#0c8a7c;">④ IV → PO conversion 검토 (+ duration·QT·tendon·renal·cation 확인)</div>
+            </div>
+            <div class="figure__cap">FQ의 높은 oral bioavailability는 ASP에서 큰 장점이지만, 그 편리함 때문에 불필요하게 쓰면 안 된다.</div>
+          </div>
+        </section>
+
+        <!-- ===== S41,42,43,46 · 정리 & Quiz ===== -->
+        <section id="quiz" class="section">
+          <h2><span class="sec-no">12</span> 정리 &amp; Active Recall</h2>
+
+          <h3>핵심 카드 (스와이프)</h3>
+          <div class="flashdeck">
+            <div class="flashcard"><div class="fc-n">Cipro</div><div class="fc-term">🦠 Pseudomonas</div><div class="fc-arrow">→</div><div class="fc-ans">+ UTI · Pneumococcus △</div></div>
+            <div class="flashcard"><div class="fc-n">Levo</div><div class="fc-term">🫁 Respiratory</div><div class="fc-arrow">→</div><div class="fc-ans">+ Pseudomonas + UTI</div></div>
+            <div class="flashcard warn"><div class="fc-n">Moxi</div><div class="fc-term">🫁 Lung O / 🚽 Urine X</div><div class="fc-arrow">→</div><div class="fc-ans">Pseudomonas X · QT</div></div>
+            <div class="flashcard"><div class="fc-n">Class</div><div class="fc-term">PK/PD</div><div class="fc-arrow">→</div><div class="fc-ans">AUC/MIC · PO≈좋음</div></div>
+            <div class="flashcard warn"><div class="fc-n">Class</div><div class="fc-term">Toxicity</div><div class="fc-arrow">→</div><div class="fc-ans">Tendon·Neuropathy·CNS·QT</div></div>
+            <div class="flashcard warn"><div class="fc-n">PO</div><div class="fc-term">Chelation</div><div class="fc-arrow">→</div><div class="fc-ans">Cation과 분리 복용</div></div>
+          </div>
+          <div class="flashhint">← 좌우로 밀어서 넘기세요 →</div>
+
+          <h3 style="margin-top:34px;">반드시 기억할 10개</h3>
+          <div class="eightcards">
+            <div class="factcard"><span class="n">1</span><p>FQ는 DNA gyrase와 topoisomerase를 억제한다.</p></div>
+            <div class="factcard"><span class="n">2</span><p>FQ의 중요한 PK/PD 지표는 AUC/MIC이다.</p></div>
+            <div class="factcard"><span class="n">3</span><p>Ciprofloxacin은 Gram-negative와 Pseudomonas를 강하게 연상한다.</p></div>
+            <div class="factcard"><span class="n">4</span><p>Levofloxacin은 respiratory coverage와 Pseudomonas activity를 함께 갖는다.</p></div>
+            <div class="factcard"><span class="n">5</span><p>Levofloxacin과 moxifloxacin은 respiratory fluoroquinolone이다.</p></div>
+            <div class="factcard"><span class="n">6</span><p>Moxifloxacin은 Pseudomonas 치료제로 생각하지 않는다.</p></div>
+            <div class="factcard"><span class="n">7</span><p>Moxifloxacin은 UTI 치료에 적합하지 않다.</p></div>
+            <div class="factcard"><span class="n">8</span><p>Cipro·Levo는 renal dose adjustment가 중요하다.</p></div>
+            <div class="factcard"><span class="n">9</span><p>FQ는 tendon injury·neuropathy·CNS·QT 등 중요한 이상반응이 있다.</p></div>
+            <div class="factcard"><span class="n">10</span><p>높은 경구 생체이용률로 IV→PO stewardship에서 유용하다.</p></div>
+          </div>
+
+          <h3 style="margin-top:34px;">Active Recall</h3>
+          <div class="quiz">
+            <div class="qcard"><div class="q"><span class="qn">Q1</span> FQ의 대표적 bacterial target 두 가지는?</div><button class="reveal-btn">정답 보기</button><div class="answer">DNA gyrase와 topoisomerase IV.</div></div>
+            <div class="qcard"><div class="q"><span class="qn">Q2</span> Pseudomonas를 가장 강하게 연상할 FQ는?</div><button class="reveal-btn">정답 보기</button><div class="answer">Ciprofloxacin.</div></div>
+            <div class="qcard"><div class="q"><span class="qn">Q3</span> Respiratory fluoroquinolone 두 가지는?</div><button class="reveal-btn">정답 보기</button><div class="answer">Levofloxacin과 moxifloxacin.</div></div>
+            <div class="qcard"><div class="q"><span class="qn">Q4</span> Ciprofloxacin은 respiratory FQ로 보통 분류되는가?</div><button class="reveal-btn">정답 보기</button><div class="answer">아니다.</div></div>
+            <div class="qcard"><div class="q"><span class="qn">Q5</span> Moxifloxacin은 Pseudomonas를 신뢰성 있게 커버하는가?</div><button class="reveal-btn">정답 보기</button><div class="answer">아니다.</div></div>
+            <div class="qcard"><div class="q"><span class="qn">Q6</span> Moxifloxacin은 UTI 치료에 적합한가?</div><button class="reveal-btn">정답 보기</button><div class="answer">아니다. 충분한 urinary concentration을 확보하지 못한다.</div></div>
+            <div class="qcard"><div class="q"><span class="qn">Q7</span> Ciprofloxacin 흡수를 감소시킬 수 있는 물질은?</div><button class="reveal-btn">정답 보기</button><div class="answer">Calcium·magnesium·aluminum·iron·zinc 등 metal cation.</div></div>
+            <div class="qcard"><div class="q"><span class="qn">Q8</span> FQ와 함께 쓸 때 tendon rupture 위험 때문에 주의할 약물군은?</div><button class="reveal-btn">정답 보기</button><div class="answer">Corticosteroid.</div></div>
+            <div class="qcard"><div class="q"><span class="qn">Q9</span> Moxifloxacin에서 특히 연상할 cardiac toxicity는?</div><button class="reveal-btn">정답 보기</button><div class="answer">QT prolongation.</div></div>
+            <div class="qcard"><div class="q"><span class="qn">Q10</span> Levofloxacin 사용 환자에서 CrCl이 크게 감소했다면 확인할 것은?</div><button class="reveal-btn">정답 보기</button><div class="answer">Dose와 dosing interval의 renal adjustment.</div></div>
+          </div>
+
+          <div class="figure" style="margin-top:28px;">
+            <div class="figure__title">도식 12 · Fluoroquinolone Decision Tree</div>
+            <div class="vflow">
+              <div class="vflow__box">Fluoroquinolone considered</div>
+              <div class="vflow__arrow">↓ Infection site?</div>
+              <div class="vflow__branch" style="grid-template-columns:1fr 1fr 1fr;">
+                <div class="vflow__leaf pos"><h6>Respiratory</h6><div>Levo / Moxi<br/>(Pseudomonas도면 Levo)</div></div>
+                <div class="vflow__leaf"><h6>UTI</h6><div>Cipro / Levo<br/><span class="d">Moxi X</span></div></div>
+                <div class="vflow__leaf neg"><h6>Pseudomonas</h6><div>Cipro / Levo<br/><span class="d">Moxi X</span> · AST 확인</div></div>
+              </div>
+              <div class="vflow__arrow">↓ 약 선택 후</div>
+              <div class="vflow__box">Renal · QT · Tendon · CNS/neuropathy · Cation interaction · IV→PO?</div>
+              <div class="vflow__arrow">↓</div>
+              <div class="vflow__box" style="background:var(--gn-soft);border-color:var(--gn);color:#0c8a7c;">ASP optimization</div>
+            </div>
+          </div>
+        </section>
+
+        <section class="closing">
+          <h3>오늘의 한 문장</h3>
+          <p class="big">Fluoroquinolone은 "경구로 쓸 수 있는 강력하고 편리한 항생제"라는 것이 장점이자 함정이다.</p>
+          <p>ASP 약사는 처방을 볼 때:</p>
+          <p class="big">이 균에 듣는가 → 이 감염 부위에 도달하는가 → 더 안전한 대안이 있는가 → 경구 전환에 활용할 가치가 있는가 → 부작용 위험이 감수할 만한가</p>
+          <p style="margin-top:22px;"><a href="lesson-06.html" style="color:#fff;text-decoration:underline;">← 6강 다시 보기</a> · <a href="../index.html" style="color:#fff;text-decoration:underline;">강의 목록</a></p>
+        </section>
+
+      </div>
+    </div>
+  </div>
+
+  <nav class="bottomnav" aria-label="강의 이동">
+    <a href="lesson-06.html"><span class="bn-ico">←</span>이전 강의</a>
+    <a href="#" data-open-toc><span class="bn-ico">☰</span>목차</a>
+    <a href="#" aria-disabled="true"><span class="bn-ico">→</span>다음 강의</a>
+  </nav>
+
+  <div class="quickrev">
+    <div class="quickrev__panel">
+      <h5>⚡ Quick Review</h5>
+      <div class="qr-row"><span class="qr-k">Cipro</span><span>Pseudomonas · UTI · Pneumococcus △</span></div>
+      <div class="qr-row"><span class="qr-k">Levo</span><span>Respiratory · Pseudomonas · UTI · Renal</span></div>
+      <div class="qr-row"><span class="qr-k">Moxi</span><span>Respiratory · Pseudomonas X · UTI X · QT</span></div>
+      <div class="qr-row"><span class="qr-k">Class</span><span>AUC/MIC · PO good · Tendon·Neuropathy·CNS·QT·Cation</span></div>
+    </div>
+    <button class="quickrev__btn" aria-label="Quick Review 열기">⚡ Quick Review</button>
+  </div>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

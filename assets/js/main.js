@@ -450,25 +450,28 @@
     render();
   }
 
-  /* ---------- 14. Daptomycin Lung Trap ---------- */
+  /* ---------- 14. Trap game (Daptomycin Lung Trap 등, 재사용) ---------- */
   function initLungTrap() {
-    var root = document.querySelector("[data-lungtrap]");
-    if (!root) return;
-    var btns = root.querySelector(".lungtrap__btns");
-    var fb = root.querySelector(".lungtrap__fb");
-    btns.addEventListener("click", function (e) {
-      var b = e.target.closest("button");
-      if (!b) return;
-      root.querySelectorAll(".lungtrap__btns button").forEach(function (x) { x.classList.remove("ok", "trap"); });
-      if (b.getAttribute("data-trap") === "1") {
-        b.classList.add("trap");
-        fb.className = "lungtrap__fb trap";
-        fb.textContent = "🚨 SURFACTANT! — Not for pneumonia (Daptomycin은 폐에서 억제됨)";
-      } else {
-        b.classList.add("ok");
-        fb.className = "lungtrap__fb ok";
-        fb.textContent = "✓ OK — MRSA pneumonia에 적절한 선택";
-      }
+    document.querySelectorAll("[data-lungtrap]").forEach(function (root) {
+      var btns = root.querySelector(".lungtrap__btns");
+      var fb = root.querySelector(".lungtrap__fb");
+      if (!btns || !fb) return;
+      var okMsg = root.getAttribute("data-ok-msg") || "✓ OK — MRSA pneumonia에 적절한 선택";
+      var trapMsg = root.getAttribute("data-trap-msg") || "🚨 SURFACTANT! — Not for pneumonia (Daptomycin은 폐에서 억제됨)";
+      btns.addEventListener("click", function (e) {
+        var b = e.target.closest("button");
+        if (!b) return;
+        btns.querySelectorAll("button").forEach(function (x) { x.classList.remove("ok", "trap"); });
+        if (b.getAttribute("data-trap") === "1") {
+          b.classList.add("trap");
+          fb.className = "lungtrap__fb trap";
+          fb.textContent = trapMsg;
+        } else {
+          b.classList.add("ok");
+          fb.className = "lungtrap__fb ok";
+          fb.textContent = okMsg;
+        }
+      });
     });
   }
 

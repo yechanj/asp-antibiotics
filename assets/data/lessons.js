@@ -53,6 +53,14 @@ window.ASP_LESSONS = [
   },
   {
     no: 7,
+    href: "lessons/lesson-07.html",
+    title: "Fluoroquinolone: Ciprofloxacin · Levofloxacin · Moxifloxacin",
+    desc: "Cipro=Pseudomonas/UTI, Levo=Respiratory+Pseudomonas+UTI, Moxi=Lung O/Urine X. AUC/MIC, chelation, renal, tendon·QT·CNS 등 boxed warning과 IV-to-PO.",
+    tags: ["Ciprofloxacin", "Levofloxacin", "Moxifloxacin", "IV-to-PO"],
+    status: "ready"
+  },
+  {
+    no: 8,
     href: "#",
     title: "(준비 중)",
     desc: "다음 강의가 곧 추가됩니다.",
