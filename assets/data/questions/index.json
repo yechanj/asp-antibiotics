@@ -1,0 +1,12 @@
+{
+  "updated": "2026-09-07",
+  "files": [
+    { "file": "lesson-01.json", "lessonNo": 1, "lesson": "β-lactam 기본 구조", "lessonRef": "lesson-01.html", "status": "ready" },
+    { "file": "lesson-02.json", "lessonNo": 2, "lesson": "Gram-positive 균 지도", "lessonRef": "lesson-02.html", "status": "pending" },
+    { "file": "lesson-03.json", "lessonNo": 3, "lesson": "Enterobacterales", "lessonRef": "lesson-03.html", "status": "pending" },
+    { "file": "lesson-04.json", "lessonNo": 4, "lesson": "Non-fermenters", "lessonRef": "lesson-04.html", "status": "pending" },
+    { "file": "lesson-05.json", "lessonNo": 5, "lesson": "Vancomycin & Teicoplanin", "lessonRef": "lesson-05.html", "status": "pending" },
+    { "file": "lesson-06.json", "lessonNo": 6, "lesson": "Linezolid & Daptomycin", "lessonRef": "lesson-06.html", "status": "pending" },
+    { "file": "lesson-07.json", "lessonNo": 7, "lesson": "Fluoroquinolone", "lessonRef": "lesson-07.html", "status": "pending" }
+  ]
+}

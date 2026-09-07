@@ -1,0 +1,962 @@
+[
+  {
+    "id": "asp-01-001",
+    "lessonNo": 1,
+    "lesson": "β-lactam 기본 구조",
+    "lessonRef": "lesson-01.html",
+    "level": 1,
+    "concept": "Mechanism of Action",
+    "source_type": "material",
+    "question": "β-lactam 항생제가 항균 효과를 내기 위해 결합하는 표적은?",
+    "options": [
+      "Penicillin-Binding Protein(PBP)",
+      "DNA gyrase(topoisomerase)",
+      "30S ribosomal subunit",
+      "RNA polymerase"
+    ],
+    "answer": 0,
+    "explanation": "β-lactam은 세균의 PBP에 결합하여 peptidoglycan의 cross-linking(transpeptidation)을 방해한다. 그 결과 세포벽이 불안정해지고 세균이 사멸한다(대부분 bactericidal). 나머지는 다른 계열의 표적이다.",
+    "choice_explanations": [
+      "정답. PBP는 세포벽 cross-linking을 담당하는 효소로 β-lactam의 표적이다.",
+      "DNA gyrase는 fluoroquinolone의 표적이다.",
+      "30S ribosome은 aminoglycoside·tetracycline의 표적이다.",
+      "RNA polymerase는 rifampin의 표적이다."
+    ]
+  },
+  {
+    "id": "asp-01-002",
+    "lessonNo": 1,
+    "lesson": "β-lactam 기본 구조",
+    "lessonRef": "lesson-01.html",
+    "level": 1,
+    "concept": "PK/PD",
+    "source_type": "material",
+    "question": "β-lactam의 대표적인 PK/PD 특성으로 옳은 것은?",
+    "options": [
+      "Concentration-dependent killing이며 목표는 Cmax/MIC이다",
+      "Time-dependent killing이며 목표는 fT>MIC이다",
+      "살균력이 없고 정균 작용만 한다",
+      "오직 post-antibiotic effect에만 의존한다"
+    ],
+    "answer": 1,
+    "explanation": "β-lactam은 농도가 아주 높이 올라가는 것보다 free drug 농도가 MIC 위에 머무는 시간(fT>MIC)이 얼마나 긴가가 중요한 time-dependent 항생제다. 그래서 투여 간격을 좁히거나 extended infusion을 고려한다.",
+    "choice_explanations": [
+      "Cmax/MIC는 aminoglycoside 같은 concentration-dependent 약물의 지표다.",
+      "정답. β-lactam은 fT>MIC가 핵심이다.",
+      "β-lactam은 대부분 bactericidal이다.",
+      "PAE에만 의존한다는 설명은 옳지 않다."
+    ]
+  },
+  {
+    "id": "asp-01-003",
+    "lessonNo": 1,
+    "lesson": "β-lactam 기본 구조",
+    "lessonRef": "lesson-01.html",
+    "level": 1,
+    "concept": "Antibiotic Spectrum",
+    "source_type": "material",
+    "question": "Cefazolin(1세대 cephalosporin)이 가장 강하게 연상되는 균은?",
+    "options": [
+      "MRSA",
+      "Pseudomonas aeruginosa",
+      "MSSA",
+      "Enterococcus"
+    ],
+    "answer": 2,
+    "explanation": "Cefazolin의 핵심 연결은 MSSA이며 surgical prophylaxis에도 널리 쓰인다. MRSA·Enterococcus·Pseudomonas는 커버하지 못한다.",
+    "choice_explanations": [
+      "MRSA는 일반 β-lactam(cefazolin 포함)으로 치료할 수 없다.",
+      "Cefazolin은 Pseudomonas를 커버하지 못한다.",
+      "정답. Cefazolin = MSSA.",
+      "Enterococcus는 cephalosporin에 intrinsic resistance를 보인다."
+    ]
+  },
+  {
+    "id": "asp-01-004",
+    "lessonNo": 1,
+    "lesson": "β-lactam 기본 구조",
+    "lessonRef": "lesson-01.html",
+    "level": 1,
+    "concept": "Cephalosporins",
+    "source_type": "material",
+    "question": "Ceftriaxone이 신뢰성 있게 커버하지 못하는 균들로 올바르게 묶인 것은?",
+    "options": [
+      "Streptococcus pneumoniae, E. coli",
+      "Klebsiella, Proteus",
+      "Neisseria, Streptococcus",
+      "MRSA, Enterococcus, Pseudomonas"
+    ],
+    "answer": 3,
+    "explanation": "Ceftriaxone은 CAP·pyelonephritis·bacteremia·meningitis 등에 널리 쓰이는 3세대이지만 '광범위=모두 잡는다'는 착각이다. 특히 MRSA·Enterococcus·Pseudomonas는 커버하지 못한다.",
+    "choice_explanations": [
+      "S. pneumoniae와 대부분의 E. coli는 ceftriaxone으로 잘 커버된다.",
+      "Klebsiella·Proteus 등 Enterobacterales는 ceftriaxone이 강하게 커버한다.",
+      "Neisseria·Streptococcus는 ceftriaxone의 좋은 적응증이다.",
+      "정답. 이 세 가지가 ceftriaxone의 대표적 사각지대다."
+    ]
+  },
+  {
+    "id": "asp-01-005",
+    "lessonNo": 1,
+    "lesson": "β-lactam 기본 구조",
+    "lessonRef": "lesson-01.html",
+    "level": 1,
+    "concept": "Penicillins",
+    "source_type": "material",
+    "question": "Piperacillin/Tazobactam(Pip/Tazo)의 spectrum으로 옳은 것은?",
+    "options": [
+      "Gram-positive 일부·Enterobacterales·Pseudomonas·anaerobe를 커버하지만 MRSA는 못 잡는다",
+      "MRSA를 포함해 사실상 모든 균을 커버한다",
+      "오직 Gram-positive만 커버한다",
+      "atypical 병원체 전용이다"
+    ],
+    "answer": 0,
+    "explanation": "Pip/Tazo는 ASP에서 매우 중요한 광범위 β-lactam으로 Gram-positive 일부, Enterobacterales, Pseudomonas, anaerobe를 커버한다. 그러나 MRSA는 커버하지 못해 중증 감염에서 흔히 vancomycin과 병용한다.",
+    "choice_explanations": [
+      "정답. 넓지만 MRSA는 사각지대라는 점이 핵심이다.",
+      "'모든 균'은 과장이며 MRSA·atypical 등을 못 잡는다.",
+      "Gram-negative와 anaerobe까지 커버하므로 틀리다.",
+      "β-lactam은 atypical을 커버하지 못한다."
+    ]
+  },
+  {
+    "id": "asp-01-006",
+    "lessonNo": 1,
+    "lesson": "β-lactam 기본 구조",
+    "lessonRef": "lesson-01.html",
+    "level": 1,
+    "concept": "Penicillins",
+    "source_type": "material",
+    "question": "Ampicillin을 볼 때 대표적으로 함께 떠올려야 할 두 균은?",
+    "options": [
+      "Pseudomonas와 Acinetobacter",
+      "Enterococcus와 Listeria",
+      "MRSA와 VRE",
+      "Mycoplasma와 Legionella"
+    ],
+    "answer": 1,
+    "explanation": "Aminopenicillin인 ampicillin의 핵심 연상은 Enterococcus(특히 E. faecalis)와 Listeria monocytogenes다. 이 때문에 Listeria가 우려되는 meningitis에서 cephalosporin에 ampicillin을 추가한다.",
+    "choice_explanations": [
+      "Pseudomonas·Acinetobacter는 ampicillin으로 커버되지 않는다.",
+      "정답. Ampicillin = Enterococcus + Listeria.",
+      "MRSA·VRE는 ampicillin이 커버하지 못한다.",
+      "atypical인 Mycoplasma·Legionella는 β-lactam이 커버하지 못한다."
+    ]
+  },
+  {
+    "id": "asp-01-007",
+    "lessonNo": 1,
+    "lesson": "β-lactam 기본 구조",
+    "lessonRef": "lesson-01.html",
+    "level": 1,
+    "concept": "Carbapenems",
+    "source_type": "material",
+    "question": "Ertapenem과 meropenem의 대표적 차이로 옳은 것은?",
+    "options": [
+      "둘 다 MRSA를 커버한다",
+      "Ertapenem이 meropenem보다 spectrum이 더 넓다",
+      "Ertapenem은 Pseudomonas를 못 잡고 meropenem은 잡는다",
+      "Meropenem은 anaerobe를 커버하지 못한다"
+    ],
+    "answer": 2,
+    "explanation": "Ertapenem은 carbapenem이지만 Pseudomonas와 Acinetobacter를 신뢰성 있게 커버하지 못한다. 반면 meropenem은 Pseudomonas를 커버한다. 두 약 모두 MRSA·VRE는 커버하지 못한다.",
+    "choice_explanations": [
+      "carbapenem은 MRSA를 커버하지 못한다.",
+      "Ertapenem은 meropenem보다 좁다(Pseudomonas·Acinetobacter 미커버).",
+      "정답. Pseudomonas coverage 유무가 핵심 차이다.",
+      "Meropenem은 anaerobe를 잘 커버한다."
+    ]
+  },
+  {
+    "id": "asp-01-008",
+    "lessonNo": 1,
+    "lesson": "β-lactam 기본 구조",
+    "lessonRef": "lesson-01.html",
+    "level": 1,
+    "concept": "Resistance / Gaps",
+    "source_type": "material",
+    "question": "일반적인 β-lactam이 잘 커버하지 못하는 대상으로 올바르게 묶인 것은?",
+    "options": [
+      "E. coli, Klebsiella",
+      "Streptococcus, MSSA",
+      "Proteus, Enterobacter",
+      "MRSA, VRE, atypical pathogens"
+    ],
+    "answer": 3,
+    "explanation": "'Broad-spectrum β-lactam'도 모든 균을 잡는다는 뜻이 아니다. 대표적 사각지대는 MRSA, VRE, 그리고 Mycoplasma·Chlamydophila·Legionella 같은 atypical 병원체다.",
+    "choice_explanations": [
+      "E. coli·Klebsiella는 대부분의 β-lactam으로 커버 가능하다.",
+      "Streptococcus·MSSA는 여러 β-lactam이 잘 커버한다.",
+      "Proteus·Enterobacter도 β-lactam 커버 범위 안에 있다.",
+      "정답. MRSA·VRE·atypical이 β-lactam의 대표 사각지대다."
+    ]
+  },
+  {
+    "id": "asp-01-009",
+    "lessonNo": 1,
+    "lesson": "β-lactam 기본 구조",
+    "lessonRef": "lesson-01.html",
+    "level": 1,
+    "concept": "De-escalation",
+    "source_type": "material",
+    "question": "배양·감수성 결과가 나온 뒤 환자에게 필요한 spectrum만 남기고 불필요한 광범위 coverage를 줄이는 ASP 전략은?",
+    "options": [
+      "De-escalation",
+      "Escalation",
+      "Surgical prophylaxis",
+      "Combination therapy"
+    ],
+    "answer": 0,
+    "explanation": "De-escalation은 broad empiric therapy로 시작한 뒤 미생물학적 진단에 따라 더 좁은 targeted therapy로 전환하는 ASP의 핵심 전략이다. 목표는 필요한 spectrum만 사용하는 것이다.",
+    "choice_explanations": [
+      "정답. 필요한 spectrum만 남기는 것이 de-escalation이다.",
+      "Escalation은 오히려 coverage를 넓히는 것이다.",
+      "Surgical prophylaxis는 수술 감염 예방 목적이다.",
+      "Combination therapy는 두 약을 함께 쓰는 전략으로 개념이 다르다."
+    ]
+  },
+  {
+    "id": "asp-01-010",
+    "lessonNo": 1,
+    "lesson": "β-lactam 기본 구조",
+    "lessonRef": "lesson-01.html",
+    "level": 1,
+    "concept": "Cephalosporins",
+    "source_type": "material",
+    "question": "Cefepime(4세대 cephalosporin)의 특징으로 옳은 것은?",
+    "options": [
+      "MRSA를 신뢰성 있게 커버한다",
+      "Pseudomonas를 커버하며 신기능 저하 시 neurotoxicity를 주의해야 한다",
+      "anaerobe coverage가 우수하다",
+      "Enterococcus에 강력하게 작용한다"
+    ],
+    "answer": 1,
+    "explanation": "Cefepime은 Gram-positive 일부와 많은 Gram-negative, 그리고 Pseudomonas를 커버한다. 신장으로 배설되므로 신기능 저하 시 용량조절이 부족하면 confusion·myoclonus·seizure 등 neurotoxicity 위험이 커진다. MRSA·Enterococcus·anaerobe는 약점이다.",
+    "choice_explanations": [
+      "일반 β-lactam인 cefepime은 MRSA를 커버하지 못한다.",
+      "정답. Pseudomonas 커버 + 신기능 관련 neurotoxicity가 핵심이다.",
+      "Cefepime은 anaerobe coverage가 부족하다.",
+      "Enterococcus는 cephalosporin으로 치료되지 않는다."
+    ]
+  },
+  {
+    "id": "asp-01-011",
+    "lessonNo": 1,
+    "lesson": "β-lactam 기본 구조",
+    "lessonRef": "lesson-01.html",
+    "level": 2,
+    "concept": "Mechanism of Action",
+    "source_type": "material",
+    "question": "β-lactam이 세균 세포벽을 약화시키는 구체적 기전은?",
+    "options": [
+      "세포막 인지질을 직접 용해한다",
+      "DNA 복제를 차단한다",
+      "peptidoglycan의 cross-linking(transpeptidation)을 억제한다",
+      "단백질 합성 개시를 억제한다"
+    ],
+    "answer": 2,
+    "explanation": "β-lactam은 PBP(transpeptidase)에 결합해 peptidoglycan 사슬 간 cross-linking을 막는다. 그 결과 세포벽 구조가 불안정해지고 삼투압을 견디지 못한 세균이 lysis된다.",
+    "choice_explanations": [
+      "세포막 인지질 용해는 daptomycin·polymyxin 계열의 기전에 가깝다.",
+      "DNA 복제 차단은 fluoroquinolone의 기전이다.",
+      "정답. cross-linking(transpeptidation) 억제가 β-lactam의 기전이다.",
+      "단백질 합성 억제는 aminoglycoside·macrolide 등의 기전이다."
+    ]
+  },
+  {
+    "id": "asp-01-012",
+    "lessonNo": 1,
+    "lesson": "β-lactam 기본 구조",
+    "lessonRef": "lesson-01.html",
+    "level": 2,
+    "concept": "Mechanism of Action",
+    "source_type": "material",
+    "question": "β-lactam이 Mycoplasma에 효과가 없는 근본적인 이유는?",
+    "options": [
+      "Mycoplasma가 β-lactamase를 대량 생산하기 때문",
+      "Mycoplasma의 세포벽이 지질로만 이루어져 있기 때문",
+      "Mycoplasma가 세포 내에서만 기생하기 때문",
+      "Mycoplasma는 세포벽이 없어 β-lactam의 표적(PBP/peptidoglycan)이 존재하지 않기 때문"
+    ],
+    "answer": 3,
+    "explanation": "Mycoplasma는 세포벽 자체가 없다. β-lactam은 세포벽 합성(PBP/peptidoglycan)을 표적으로 하므로 표적이 없는 Mycoplasma에는 무력하다. 이런 atypical은 macrolide·fluoroquinolone·tetracycline으로 접근한다.",
+    "choice_explanations": [
+      "β-lactamase 문제라기보다 표적 자체가 없는 것이 핵심이다.",
+      "Mycoplasma는 세포벽이 없는 것이지 지질 세포벽을 가진 것이 아니다.",
+      "세포 내 기생 여부가 아니라 표적 부재가 핵심 이유다.",
+      "정답. 세포벽이 없어 표적이 없다."
+    ]
+  },
+  {
+    "id": "asp-01-013",
+    "lessonNo": 1,
+    "lesson": "β-lactam 기본 구조",
+    "lessonRef": "lesson-01.html",
+    "level": 2,
+    "concept": "Beta-lactamase",
+    "source_type": "material",
+    "question": "Ampicillin/sulbactam에서 sulbactam의 역할로 옳은 것은?",
+    "options": [
+      "세균의 β-lactamase를 억제하여 ampicillin이 분해되지 않도록 보호한다",
+      "ampicillin의 신장 배설을 늦춘다",
+      "ampicillin의 조직 침투를 높인다",
+      "독립적으로 Pseudomonas를 사멸시킨다"
+    ],
+    "answer": 0,
+    "explanation": "Sulbactam은 β-lactamase inhibitor로, 세균이 만드는 일부 β-lactamase를 억제해 ampicillin이 가수분해되지 않도록 보호한다. 그 결과 GP 일부·GN 일부·anaerobe로 spectrum이 넓어지지만 Pseudomonas는 여전히 커버하지 못한다.",
+    "choice_explanations": [
+      "정답. β-lactamase를 억제해 ampicillin을 보호한다.",
+      "배설을 늦추는 것은 probenecid 같은 약의 작용이다.",
+      "sulbactam의 역할은 침투 증가가 아니다.",
+      "sulbactam 자체가 Pseudomonas를 죽이지는 않는다."
+    ]
+  },
+  {
+    "id": "asp-01-014",
+    "lessonNo": 1,
+    "lesson": "β-lactam 기본 구조",
+    "lessonRef": "lesson-01.html",
+    "level": 2,
+    "concept": "PK/PD",
+    "source_type": "extended",
+    "question": "β-lactam(time-dependent)과 대비되는 concentration-dependent killing을 보이는 대표 계열은?",
+    "options": [
+      "Glycopeptide",
+      "Aminoglycoside와 fluoroquinolone",
+      "다른 β-lactam 계열",
+      "Macrolide"
+    ],
+    "answer": 1,
+    "explanation": "Aminoglycoside는 Cmax/MIC, fluoroquinolone은 AUC/MIC(및 Cmax/MIC)처럼 농도가 높을수록 살균력이 커지는 concentration-dependent 특성을 보인다. 그래서 aminoglycoside는 흔히 1일 1회 고용량으로 투여한다. β-lactam은 반대로 fT>MIC가 중요하다.",
+    "choice_explanations": [
+      "Vancomycin(glycopeptide)은 AUC/MIC가 중요한 별도 특성을 가진다.",
+      "정답. aminoglycoside·fluoroquinolone이 대표적 concentration-dependent 약물이다.",
+      "다른 β-lactam도 time-dependent이므로 대비 대상이 아니다.",
+      "Macrolide는 concentration-dependent의 대표 예가 아니다."
+    ]
+  },
+  {
+    "id": "asp-01-015",
+    "lessonNo": 1,
+    "lesson": "β-lactam 기본 구조",
+    "lessonRef": "lesson-01.html",
+    "level": 2,
+    "concept": "PK/PD",
+    "source_type": "material",
+    "question": "Pip/tazo, cefepime, meropenem에서 extended(prolonged) infusion을 고려하는 이유는?",
+    "options": [
+      "Cmax를 최대한 높이기 위해",
+      "신독성을 줄이기 위해",
+      "fT>MIC 시간을 늘려 time-dependent killing을 최적화하기 위해",
+      "투여 횟수를 늘리기 위해"
+    ],
+    "answer": 2,
+    "explanation": "β-lactam은 MIC 위에 머무는 시간(fT>MIC)이 효과를 좌우한다. Extended infusion은 완만하지만 농도를 MIC 위에 더 오래 유지시켜, 특히 MIC가 높은 Pseudomonas 등에서 노출을 최적화할 수 있다.",
+    "choice_explanations": [
+      "Cmax 극대화는 concentration-dependent 약물의 전략이다.",
+      "신독성 감소가 extended infusion의 주 목적은 아니다.",
+      "정답. fT>MIC 연장이 목적이다.",
+      "오히려 한 번의 주입 시간을 늘리는 것이지 횟수를 늘리는 것이 아니다."
+    ]
+  },
+  {
+    "id": "asp-01-016",
+    "lessonNo": 1,
+    "lesson": "β-lactam 기본 구조",
+    "lessonRef": "lesson-01.html",
+    "level": 2,
+    "concept": "Resistance Mechanism",
+    "source_type": "extended",
+    "question": "Cephalosporin이 Enterococcus를 신뢰성 있게 치료하지 못하는 기전적 이유는?",
+    "options": [
+      "Enterococcus가 세포벽이 없어서",
+      "Enterococcus가 능동적으로 약물을 배출하기 때문만으로",
+      "Enterococcus가 항상 ESBL을 생산하기 때문",
+      "Enterococcus의 PBP가 cephalosporin에 대한 친화도가 낮아서(intrinsic resistance)"
+    ],
+    "answer": 3,
+    "explanation": "Enterococcus는 cephalosporin에 대한 친화도가 낮은 PBP(대표적으로 PBP5)를 가지고 있어 내재적(intrinsic)으로 cephalosporin에 반응하지 않는다. 그래서 Enterococcus가 우려되면 ampicillin/vancomycin 같은 약을 고려한다.",
+    "choice_explanations": [
+      "Enterococcus는 Gram-positive 세균으로 세포벽이 있다.",
+      "능동 배출이 주된 이유는 아니다.",
+      "ESBL은 Gram-negative 관련 기전이며 Enterococcus의 cephalosporin 내성 설명이 아니다.",
+      "정답. 저친화도 PBP로 인한 intrinsic resistance가 핵심이다."
+    ]
+  },
+  {
+    "id": "asp-01-017",
+    "lessonNo": 1,
+    "lesson": "β-lactam 기본 구조",
+    "lessonRef": "lesson-01.html",
+    "level": 2,
+    "concept": "Beta-lactamase",
+    "source_type": "extended",
+    "question": "ESBL-producing Enterobacterales 중증 감염에서 carbapenem이 신뢰받는 이유로 가장 적절한 것은?",
+    "options": [
+      "Carbapenem은 대부분의 ESBL 효소에 의해 가수분해되지 않아 안정적이기 때문",
+      "Carbapenem이 MRSA도 함께 잡기 때문",
+      "ESBL 균은 carbapenem에 대한 내성이 원리적으로 불가능하기 때문",
+      "Carbapenem이 ceftriaxone보다 반감기가 짧기 때문"
+    ],
+    "answer": 0,
+    "explanation": "ESBL은 여러 cephalosporin을 가수분해하지만 carbapenem은 이들 효소에 안정적이어서 ESBL 중증 감염의 신뢰 옵션이다. 다만 carbapenemase(예: KPC)를 가진 CRE는 carbapenem에도 내성을 보일 수 있어 감수성 확인이 필요하다.",
+    "choice_explanations": [
+      "정답. carbapenem이 ESBL에 안정적이라는 점이 핵심이다.",
+      "carbapenem은 MRSA를 커버하지 못한다.",
+      "carbapenemase를 통한 내성(CRE)이 실제로 존재한다.",
+      "반감기가 이유가 아니며 사실과도 다르다."
+    ]
+  },
+  {
+    "id": "asp-01-018",
+    "lessonNo": 1,
+    "lesson": "β-lactam 기본 구조",
+    "lessonRef": "lesson-01.html",
+    "level": 2,
+    "concept": "Cephalosporins",
+    "source_type": "material",
+    "question": "Ceftazidime(3세대)의 특징으로 옳은 것은?",
+    "options": [
+      "Gram-positive에 매우 강력하고 Pseudomonas는 못 잡는다",
+      "Pseudomonas를 커버하지만 Gram-positive coverage는 상대적으로 약하다",
+      "anaerobe 전용 약물이다",
+      "MRSA를 커버한다"
+    ],
+    "answer": 1,
+    "explanation": "Ceftazidime은 3세대 중 특징적으로 Pseudomonas를 커버하는 antipseudomonal cephalosporin이다. 대신 Gram-positive coverage는 상대적으로 약하다.",
+    "choice_explanations": [
+      "Gram-positive에 매우 강력한 것은 아니며 Pseudomonas는 오히려 커버한다.",
+      "정답. Pseudomonas 커버, GP는 상대적으로 약함.",
+      "anaerobe 전용이 아니며 anaerobe는 약점이다.",
+      "일반 β-lactam인 ceftazidime은 MRSA를 커버하지 못한다."
+    ]
+  },
+  {
+    "id": "asp-01-019",
+    "lessonNo": 1,
+    "lesson": "β-lactam 기본 구조",
+    "lessonRef": "lesson-01.html",
+    "level": 2,
+    "concept": "Adverse Effects",
+    "source_type": "extended",
+    "question": "Cefepime neurotoxicity가 신기능 저하 환자에서 특히 문제가 되는 이유로 가장 적절한 것은?",
+    "options": [
+      "간 대사가 급격히 증가하기 때문",
+      "혈장 단백결합이 사라지기 때문",
+      "약물이 주로 신장으로 배설되므로 신기능 저하 시 축적되어 CNS 노출이 증가하기 때문",
+      "위장관 흡수가 증가하기 때문"
+    ],
+    "answer": 2,
+    "explanation": "Cefepime은 주로 신장으로 배설된다. 신기능이 저하되면 용량조절이 충분하지 않을 때 약물이 축적되어 CNS 노출이 증가하고 confusion·myoclonus·seizure 같은 neurotoxicity 위험이 커진다. ASP 약사는 신기능에 맞는 용량인지 확인해야 한다.",
+    "choice_explanations": [
+      "cefepime은 간 대사 의존 약물이 아니다.",
+      "단백결합 소실이 기전이 아니다.",
+      "정답. 신배설 약물의 축적이 핵심이다.",
+      "위장관 흡수 증가는 관련 기전이 아니다(주로 IV 투여)."
+    ]
+  },
+  {
+    "id": "asp-01-020",
+    "lessonNo": 1,
+    "lesson": "β-lactam 기본 구조",
+    "lessonRef": "lesson-01.html",
+    "level": 2,
+    "concept": "Carbapenems",
+    "source_type": "extended",
+    "question": "\"Carbapenem이면 무조건 Pseudomonas를 커버한다\"는 설명이 틀린 이유로 옳은 것은?",
+    "options": [
+      "모든 carbapenem은 실제로 Pseudomonas를 커버하기 때문에 틀리지 않다",
+      "Meropenem이 Pseudomonas를 커버하지 못하기 때문",
+      "Carbapenem은 Gram-negative 자체를 커버하지 못하기 때문",
+      "Ertapenem은 carbapenem이지만 Pseudomonas·Acinetobacter를 신뢰성 있게 커버하지 못하기 때문"
+    ],
+    "answer": 3,
+    "explanation": "Carbapenem 계열이라도 ertapenem은 Pseudomonas와 Acinetobacter를 신뢰성 있게 커버하지 못한다. 따라서 '계열=Pseudomonas 커버'라는 일반화는 틀리며, 약물별 spectrum을 구분해야 한다.",
+    "choice_explanations": [
+      "ertapenem이라는 예외가 있으므로 '무조건'은 성립하지 않는다.",
+      "Meropenem은 오히려 Pseudomonas를 커버한다.",
+      "carbapenem은 Gram-negative를 광범위하게 커버한다.",
+      "정답. ertapenem이 대표적 예외다."
+    ]
+  },
+  {
+    "id": "asp-01-021",
+    "lessonNo": 1,
+    "lesson": "β-lactam 기본 구조",
+    "lessonRef": "lesson-01.html",
+    "level": 2,
+    "concept": "Antibiotic Classes",
+    "source_type": "extended",
+    "question": "Monobactam인 aztreonam의 spectrum 특징으로 옳은 것은?",
+    "options": [
+      "Gram-negative(Pseudomonas 포함)에 작용하지만 Gram-positive·anaerobe는 커버하지 않는다",
+      "MRSA를 포함한 Gram-positive에 강력하다",
+      "anaerobe 전용이다",
+      "atypical 병원체 전용이다"
+    ],
+    "answer": 0,
+    "explanation": "Aztreonam은 Gram-negative 호기성균(Pseudomonas 포함)에 작용하고 Gram-positive와 anaerobe에는 활성이 없다. 다른 β-lactam과 교차반응이 적어 중증 penicillin allergy 환자에서 Gram-negative coverage 대안으로 고려된다(단 ceftazidime과 side chain을 공유).",
+    "choice_explanations": [
+      "정답. GN(Pseudomonas 포함)에만 작용하고 GP·anaerobe는 미커버.",
+      "aztreonam은 Gram-positive를 커버하지 못한다.",
+      "anaerobe는 aztreonam의 표적이 아니다.",
+      "atypical 전용이라는 설명은 옳지 않다."
+    ]
+  },
+  {
+    "id": "asp-01-022",
+    "lessonNo": 1,
+    "lesson": "β-lactam 기본 구조",
+    "lessonRef": "lesson-01.html",
+    "level": 2,
+    "concept": "Mechanism of Action",
+    "source_type": "material",
+    "question": "β-lactam의 살균 방식에 대한 설명으로 옳은 것은?",
+    "options": [
+      "항상 bacteriostatic이다",
+      "대부분 bactericidal이며 세포벽 합성이 활발한 분열기 세균에 효과적이다",
+      "세포벽과 무관하게 작용한다",
+      "휴지기(비분열) 세균에서 가장 강력하다"
+    ],
+    "answer": 1,
+    "explanation": "β-lactam은 세포벽 합성을 방해해 세균을 죽이는 bactericidal 약물이며, 세포벽 합성이 활발한 분열기 세균에서 효과가 크다. 세포벽 표적에 의존하므로 세포벽과 무관하다는 설명은 틀리다.",
+    "choice_explanations": [
+      "β-lactam은 대부분 bactericidal이다.",
+      "정답. bactericidal이며 분열기 세균에 효과적이다.",
+      "β-lactam은 세포벽(PBP/peptidoglycan)에 작용한다.",
+      "휴지기 세균에서는 오히려 효과가 떨어진다."
+    ]
+  },
+  {
+    "id": "asp-01-023",
+    "lessonNo": 1,
+    "lesson": "β-lactam 기본 구조",
+    "lessonRef": "lesson-01.html",
+    "level": 2,
+    "concept": "Resistance Mechanism",
+    "source_type": "extended",
+    "question": "MRSA가 대부분의 β-lactam에 내성을 보이는 기전은?",
+    "options": [
+      "penicillinase(β-lactamase) 과생산만으로 설명된다",
+      "세포벽이 사라졌기 때문이다",
+      "mecA 유전자가 만드는 변형 PBP2a가 β-lactam에 낮은 친화도를 가지기 때문이다",
+      "약물 유입 통로가 완전히 막혔기 때문이다"
+    ],
+    "answer": 2,
+    "explanation": "MRSA는 mecA 유전자가 코딩하는 PBP2a를 발현한다. PBP2a는 대부분의 β-lactam에 친화도가 낮아, 약물이 있어도 세포벽 합성을 계속할 수 있다. 예외적으로 ceftaroline(5세대)은 PBP2a에 결합해 MRSA를 커버한다.",
+    "choice_explanations": [
+      "단순 penicillinase 과생산이 아니라 PBP2a가 핵심이다.",
+      "MRSA도 세포벽을 가진 세균이다.",
+      "정답. mecA에 의한 PBP2a가 β-lactam 내성의 기전이다.",
+      "유입 통로 차단은 MRSA의 β-lactam 내성 주 기전이 아니다."
+    ]
+  },
+  {
+    "id": "asp-01-024",
+    "lessonNo": 1,
+    "lesson": "β-lactam 기본 구조",
+    "lessonRef": "lesson-01.html",
+    "level": 2,
+    "concept": "Carbapenems",
+    "source_type": "extended",
+    "question": "중추신경계 감염에서 imipenem보다 meropenem이 선호되는 주된 이유는?",
+    "options": [
+      "imipenem이 Gram-negative를 커버하지 못하기 때문",
+      "meropenem이 정균제이기 때문",
+      "imipenem이 경구제이기 때문",
+      "meropenem이 imipenem보다 seizure를 유발하는 경향이 낮기 때문"
+    ],
+    "answer": 3,
+    "explanation": "Imipenem은 상대적으로 seizure 역치를 낮추는 경향이 있어 CNS 감염이나 seizure 위험이 높은 환자에서 주의가 필요하다. Meropenem은 이런 경향이 더 낮아 CNS 감염에서 선호된다.",
+    "choice_explanations": [
+      "imipenem도 Gram-negative를 광범위하게 커버한다.",
+      "carbapenem은 bactericidal이다.",
+      "imipenem은 정주 약물이다.",
+      "정답. seizure 경향 차이가 핵심 이유다."
+    ]
+  },
+  {
+    "id": "asp-01-025",
+    "lessonNo": 1,
+    "lesson": "β-lactam 기본 구조",
+    "lessonRef": "lesson-01.html",
+    "level": 3,
+    "concept": "De-escalation",
+    "source_type": "material",
+    "question": "68세 septic shock 환자에게 empiric Vancomycin + Cefepime 투여 중, blood culture에서 MSSA가 확인되고 다른 균은 없으며 환자는 안정되었다. ASP 약사가 가장 먼저 제안할 것은?",
+    "options": [
+      "Cefazolin 등 MSSA-targeted β-lactam으로 de-escalation 검토",
+      "Vancomycin + Cefepime 그대로 유지",
+      "Meropenem으로 확대",
+      "Metronidazole 추가"
+    ],
+    "answer": 0,
+    "explanation": "원인균이 MSSA로 확인되었으므로 MRSA coverage(vancomycin)와 광범위 Gram-negative coverage(cefepime)를 유지할 이유가 있는지 재평가해야 한다. MSSA에는 cefazolin/nafcillin 같은 targeted β-lactam이 오히려 효과적이며, 이것이 de-escalation의 전형이다.",
+    "choice_explanations": [
+      "정답. MSSA 확인 후 targeted β-lactam으로 좁히는 것이 ASP 원칙이다.",
+      "필요 없는 broad coverage 유지는 ASP 원칙에 어긋난다.",
+      "확대는 반대 방향의 판단으로 부적절하다.",
+      "anaerobe 근거가 없어 metronidazole 추가는 불필요하다."
+    ]
+  },
+  {
+    "id": "asp-01-026",
+    "lessonNo": 1,
+    "lesson": "β-lactam 기본 구조",
+    "lessonRef": "lesson-01.html",
+    "level": 3,
+    "concept": "Empiric Therapy",
+    "source_type": "material",
+    "question": "72세 면역저하 환자의 세균성 meningitis에서 Listeria 가능성을 고려할 때, 표준 cephalosporin(ceftriaxone)에 추가로 고려해야 하는 약물은?",
+    "options": [
+      "Cefazolin",
+      "Ampicillin",
+      "Ertapenem",
+      "Aztreonam"
+    ],
+    "answer": 1,
+    "explanation": "Cephalosporin은 Listeria monocytogenes를 커버하지 못한다. 따라서 고령·면역저하·신생아 등 Listeria 위험군의 meningitis에서는 ceftriaxone에 ampicillin을 추가해 Listeria를 커버한다.",
+    "choice_explanations": [
+      "Cefazolin은 MSSA용 1세대로 Listeria·CNS 감염에 적절치 않다.",
+      "정답. Ampicillin이 Listeria를 커버한다.",
+      "Ertapenem은 Listeria 목적의 표준 추가 약제가 아니다.",
+      "Aztreonam은 Gram-negative 전용으로 Listeria(GP)를 커버하지 못한다."
+    ]
+  },
+  {
+    "id": "asp-01-027",
+    "lessonNo": 1,
+    "lesson": "β-lactam 기본 구조",
+    "lessonRef": "lesson-01.html",
+    "level": 3,
+    "concept": "De-escalation",
+    "source_type": "material",
+    "question": "Severe pneumonia로 Vancomycin + Pip/tazo를 시작한 환자에서 sputum culture로 ceftriaxone-susceptible Streptococcus pneumoniae만 확인되었다. 가장 적절한 ASP 조치는?",
+    "options": [
+      "그대로 유지한다",
+      "Meropenem으로 변경한다",
+      "Ceftriaxone으로 de-escalation한다",
+      "Vancomycin 용량을 증량한다"
+    ],
+    "answer": 2,
+    "explanation": "원인균이 ceftriaxone-susceptible S. pneumoniae로 확인되었으므로 MRSA·Pseudomonas coverage는 더 이상 필요하지 않다. 필요한 spectrum만 남기도록 ceftriaxone으로 de-escalation하는 것이 적절하다.",
+    "choice_explanations": [
+      "불필요한 broad coverage 유지는 ASP 원칙에 어긋난다.",
+      "meropenem은 오히려 spectrum을 확대하므로 부적절하다.",
+      "정답. targeted ceftriaxone으로 좁히는 것이 옳다.",
+      "감수성 균이 확인된 상황에서 vancomycin 증량은 근거가 없다."
+    ]
+  },
+  {
+    "id": "asp-01-028",
+    "lessonNo": 1,
+    "lesson": "β-lactam 기본 구조",
+    "lessonRef": "lesson-01.html",
+    "level": 3,
+    "concept": "Empiric Therapy",
+    "source_type": "extended",
+    "question": "Pseudomonas coverage가 필요한 중증 감염에서 empiric β-lactam으로 부적절한 약물은?",
+    "options": [
+      "Cefepime",
+      "Piperacillin/Tazobactam",
+      "Meropenem",
+      "Ceftriaxone"
+    ],
+    "answer": 3,
+    "explanation": "Ceftriaxone은 Pseudomonas를 커버하지 못하므로 antipseudomonal 목적에는 부적절하다. Cefepime·Pip/tazo·meropenem·ceftazidime 등이 antipseudomonal β-lactam이다.",
+    "choice_explanations": [
+      "Cefepime은 Pseudomonas를 커버한다.",
+      "Pip/tazo는 Pseudomonas를 커버한다.",
+      "Meropenem은 Pseudomonas를 커버한다.",
+      "정답. Ceftriaxone은 Pseudomonas 미커버로 부적절하다."
+    ]
+  },
+  {
+    "id": "asp-01-029",
+    "lessonNo": 1,
+    "lesson": "β-lactam 기본 구조",
+    "lessonRef": "lesson-01.html",
+    "level": 3,
+    "concept": "Carbapenems",
+    "source_type": "extended",
+    "question": "Pseudomonas 위험이 낮은 ESBL E. coli 요로감염에서 carbapenem이 필요할 때, 불필요한 antipseudomonal 노출을 줄이려는 ASP 관점에서 합리적인 선택은?",
+    "options": [
+      "Ertapenem",
+      "Meropenem",
+      "Imipenem",
+      "Ceftazidime"
+    ],
+    "answer": 0,
+    "explanation": "ESBL 감염에는 carbapenem이 신뢰 옵션이다. Pseudomonas 위험이 낮다면 antipseudomonal carbapenem(meropenem/imipenem) 대신 ertapenem을 선택해 Pseudomonas 압력을 줄이는 것이 ASP 관점에서 합리적이다.",
+    "choice_explanations": [
+      "정답. Pseudomonas가 불필요하면 ertapenem으로 antipseudomonal 노출을 아낀다.",
+      "Meropenem은 antipseudomonal이라 불필요한 광범위 사용이 된다.",
+      "Imipenem도 antipseudomonal carbapenem으로 이 상황엔 과하다.",
+      "Ceftazidime은 ESBL을 신뢰성 있게 커버하지 못한다."
+    ]
+  },
+  {
+    "id": "asp-01-030",
+    "lessonNo": 1,
+    "lesson": "β-lactam 기본 구조",
+    "lessonRef": "lesson-01.html",
+    "level": 3,
+    "concept": "Adverse Effects",
+    "source_type": "material",
+    "question": "신기능이 크게 저하된 환자가 cefepime 투여 중 confusion과 myoclonus가 발생했다. ASP 약사가 가장 먼저 확인·제안할 것은?",
+    "options": [
+      "즉시 meropenem 고용량으로 변경한다",
+      "현재 신기능에 맞는 cefepime 용량인지 확인하고 용량조절/변경을 검토한다",
+      "Vancomycin을 추가한다",
+      "바로 경구로 전환한다"
+    ],
+    "answer": 1,
+    "explanation": "이 증상은 cefepime neurotoxicity(encephalopathy·myoclonus)일 수 있다. cefepime은 신배설 약물이므로 신기능에 맞지 않는 고용량이 축적되어 발생할 수 있다. 우선 신기능 대비 용량 적절성을 확인하고 감량 또는 약물 변경을 검토해야 한다.",
+    "choice_explanations": [
+      "다른 carbapenem으로 무작정 바꾸기 전에 용량 적절성 평가가 먼저다.",
+      "정답. 신기능 대비 용량 확인이 우선 조치다.",
+      "vancomycin 추가는 neurotoxicity 상황과 무관하다.",
+      "경구 전환이 neurotoxicity 문제를 해결하지 않는다."
+    ]
+  },
+  {
+    "id": "asp-01-031",
+    "lessonNo": 1,
+    "lesson": "β-lactam 기본 구조",
+    "lessonRef": "lesson-01.html",
+    "level": 3,
+    "concept": "ASP Principles",
+    "source_type": "material",
+    "question": "Meropenem을 불필요하게 광범위·장기간 사용할 때 ASP가 우려하는 핵심은?",
+    "options": [
+      "약효가 즉시 사라진다",
+      "Gram-positive를 과도하게 사멸시킨다",
+      "carbapenem-resistant organism에 대한 선택 압력이 증가한다",
+      "신장 보호 효과가 생긴다"
+    ],
+    "answer": 2,
+    "explanation": "Carbapenem을 남용하면 carbapenem-resistant organism(CRE 등)의 선택 압력이 커진다. 그래서 meropenem은 '쓸 수 있는가'보다 '정말 필요한가'를 먼저 묻는, ASP에서 특히 관리가치가 높은 약이다.",
+    "choice_explanations": [
+      "약효가 즉시 사라지는 것이 우려의 본질이 아니다.",
+      "Gram-positive 과잉 사멸이 핵심 우려가 아니다.",
+      "정답. 내성 선택 압력 증가가 핵심 우려다.",
+      "신장 보호 효과와는 무관하다."
+    ]
+  },
+  {
+    "id": "asp-01-032",
+    "lessonNo": 1,
+    "lesson": "β-lactam 기본 구조",
+    "lessonRef": "lesson-01.html",
+    "level": 3,
+    "concept": "Empiric Therapy",
+    "source_type": "extended",
+    "question": "Legionella가 의심되는 폐렴 환자에서 β-lactam(ceftriaxone) 단독의 한계를 보완하기 위해 함께 고려하는 계열은?",
+    "options": [
+      "Aminoglycoside",
+      "Metronidazole",
+      "Vancomycin",
+      "Macrolide 또는 fluoroquinolone(atypical coverage)"
+    ],
+    "answer": 3,
+    "explanation": "β-lactam은 Legionella 같은 atypical 병원체를 커버하지 못한다. 따라서 atypical이 의심되면 macrolide나 respiratory fluoroquinolone처럼 atypical을 커버하는 약을 병용하거나 선택한다.",
+    "choice_explanations": [
+      "Aminoglycoside는 atypical(세포 내) 병원체에 적절하지 않다.",
+      "Metronidazole은 anaerobe용으로 atypical과 무관하다.",
+      "Vancomycin은 Gram-positive용으로 atypical을 커버하지 못한다.",
+      "정답. macrolide/fluoroquinolone이 atypical을 커버한다."
+    ]
+  },
+  {
+    "id": "asp-01-033",
+    "lessonNo": 1,
+    "lesson": "β-lactam 기본 구조",
+    "lessonRef": "lesson-01.html",
+    "level": 3,
+    "concept": "Adverse Effects",
+    "source_type": "extended",
+    "question": "중증 penicillin(β-lactam) 아나필락시스 병력이 있는 환자에서 Pseudomonas를 포함한 Gram-negative coverage가 필요할 때, 교차반응이 적어 대안으로 고려되는 약물은?",
+    "options": [
+      "Aztreonam",
+      "Meropenem",
+      "Cefepime",
+      "Ampicillin/sulbactam"
+    ],
+    "answer": 0,
+    "explanation": "Aztreonam(monobactam)은 다른 β-lactam과의 교차반응이 매우 적어 중증 penicillin allergy 환자에서 Gram-negative(Pseudomonas 포함) coverage 대안으로 고려된다. 단 ceftazidime과 side chain을 공유해 이 조합은 주의한다.",
+    "choice_explanations": [
+      "정답. aztreonam은 교차반응이 적어 대안이 된다.",
+      "Meropenem도 β-lactam으로 중증 아나필락시스에서는 신중해야 한다.",
+      "Cefepime 역시 β-lactam으로 교차반응 우려가 있다.",
+      "Ampicillin/sulbactam은 penicillin계로 금기에 가깝다."
+    ]
+  },
+  {
+    "id": "asp-01-034",
+    "lessonNo": 1,
+    "lesson": "β-lactam 기본 구조",
+    "lessonRef": "lesson-01.html",
+    "level": 3,
+    "concept": "Antibiotic Spectrum",
+    "source_type": "extended",
+    "question": "복강 내 감염에서 anaerobe coverage가 필요할 때, 단독으로는 anaerobe를 신뢰성 있게 커버하지 못하는 약물은?",
+    "options": [
+      "Piperacillin/Tazobactam",
+      "Ceftriaxone",
+      "Meropenem",
+      "Ampicillin/Sulbactam"
+    ],
+    "answer": 1,
+    "explanation": "Ceftriaxone은 anaerobe coverage가 부족해 복강 내 감염에서 anaerobe가 필요하면 metronidazole 병용이 흔히 필요하다. 반면 Pip/tazo·meropenem·ampicillin/sulbactam은 anaerobe를 커버한다.",
+    "choice_explanations": [
+      "Pip/tazo는 anaerobe를 잘 커버한다.",
+      "정답. Ceftriaxone은 anaerobe가 약해 단독으로는 부족하다.",
+      "Meropenem은 anaerobe를 커버한다.",
+      "Ampicillin/sulbactam은 anaerobe를 커버한다."
+    ]
+  },
+  {
+    "id": "asp-01-035",
+    "lessonNo": 1,
+    "lesson": "β-lactam 기본 구조",
+    "lessonRef": "lesson-01.html",
+    "level": 3,
+    "concept": "Adverse Effects",
+    "source_type": "extended",
+    "question": "Vancomycin + Piperacillin/Tazobactam을 병용 중인 환자에서 ASP·약사가 특히 monitoring해야 할 대표적 안전성 이슈는?",
+    "options": [
+      "QT 연장",
+      "저혈당",
+      "급성 신손상(AKI) 위험 신호 감시",
+      "시신경염"
+    ],
+    "answer": 2,
+    "explanation": "Vancomycin과 piperacillin/tazobactam 병용은 신기능 지표(SCr 상승 등) 악화와 연관될 수 있어 신기능 monitoring이 중요하다. 필요 이상으로 병용이 길어지지 않도록 de-escalation·기간도 함께 평가한다.",
+    "choice_explanations": [
+      "QT 연장은 이 병용의 대표 이슈가 아니다.",
+      "저혈당은 관련 안전성 이슈가 아니다.",
+      "정답. AKI 위험 감시가 핵심이다.",
+      "시신경염은 linezolid 장기 사용 등과 관련되며 이 병용의 이슈가 아니다."
+    ]
+  },
+  {
+    "id": "asp-01-036",
+    "lessonNo": 1,
+    "lesson": "β-lactam 기본 구조",
+    "lessonRef": "lesson-01.html",
+    "level": 3,
+    "concept": "IV-to-PO",
+    "source_type": "extended",
+    "question": "임상적으로 안정되고 경구 섭취가 가능한 환자에서 ASP가 권장하는 조치로 가장 적절한 것은?",
+    "options": [
+      "무조건 IV 유지가 항상 우월하다",
+      "항생제를 즉시 중단한다",
+      "spectrum을 확대한다",
+      "적절한 경우 bioavailability가 충분한 경구제로 IV-to-PO 전환을 검토한다"
+    ],
+    "answer": 3,
+    "explanation": "환자가 혈역학적으로 안정되고 위장관 흡수가 가능하며 적절한 경구 옵션이 있으면 IV-to-PO 전환이 권장된다. line 감염 위험 감소, 조기 퇴원, 비용 절감 등의 이점이 있다.",
+    "choice_explanations": [
+      "적절한 조건이 갖춰지면 IV 유지가 항상 우월하지는 않다.",
+      "안정되었다고 근거 없이 중단하는 것은 옳지 않다.",
+      "안정된 환자에서 spectrum 확대는 근거가 없다.",
+      "정답. 조건이 맞으면 IV-to-PO 전환을 검토한다."
+    ]
+  },
+  {
+    "id": "asp-01-037",
+    "lessonNo": 1,
+    "lesson": "β-lactam 기본 구조",
+    "lessonRef": "lesson-01.html",
+    "level": 3,
+    "concept": "ASP Principles",
+    "source_type": "extended",
+    "question": "무증상 환자의 소변 배양에서 균이 자랐다는 이유만으로 항생제를 시작하려 할 때, ASP 약사의 적절한 접근은?",
+    "options": [
+      "감염 징후가 없다면 colonization(정착) 가능성을 평가하고 불필요한 항생제 사용을 피하도록 권고한다",
+      "즉시 broad-spectrum 항생제를 시작한다",
+      "항상 carbapenem으로 시작한다",
+      "배양 양성은 곧 감염이므로 무조건 치료한다"
+    ],
+    "answer": 0,
+    "explanation": "배양에서 균이 검출되었다고 해서 반드시 감염(치료 대상)은 아니다. 특히 무증상 세균뇨는 대개 치료하지 않는다(임신 등 특정 상황 제외). infection vs colonization을 구분해 불필요한 항생제를 피하는 것이 ASP의 핵심이다.",
+    "choice_explanations": [
+      "정답. colonization 가능성을 평가하고 불필요한 사용을 피한다.",
+      "감염 근거 없이 broad-spectrum 시작은 부적절하다.",
+      "carbapenem을 일률적으로 시작하는 것은 잘못된 접근이다.",
+      "'배양 양성=감염'은 성립하지 않는다."
+    ]
+  },
+  {
+    "id": "asp-01-038",
+    "lessonNo": 1,
+    "lesson": "β-lactam 기본 구조",
+    "lessonRef": "lesson-01.html",
+    "level": 3,
+    "concept": "ASP Principles",
+    "source_type": "material",
+    "question": "ASP의 기본 치료 흐름으로 가장 옳은 것은?",
+    "options": [
+      "처음부터 가능한 좁은 항생제로 시작해 배양 없이 유지한다",
+      "Broad empiric therapy → microbiologic diagnosis → targeted(narrow) therapy",
+      "항상 가장 광범위한 약을 최대한 오래 사용한다",
+      "배양 결과와 무관하게 초기 항생제를 끝까지 유지한다"
+    ],
+    "answer": 1,
+    "explanation": "중증 감염에서는 초기에 필요한 broad empiric therapy로 시작하되, 배양·감수성 등 미생물학적 진단이 나오면 이를 근거로 targeted(narrow) therapy로 전환한다. 이 broad→narrow 흐름이 ASP의 기본이다.",
+    "choice_explanations": [
+      "중증에서 무조건 좁게 시작하고 배양을 안 보는 것은 위험하다.",
+      "정답. broad empiric → 진단 → targeted가 기본 흐름이다.",
+      "가장 광범위한 약을 오래 쓰는 것은 ASP 목표가 아니다.",
+      "배양 결과를 반영하지 않는 것은 ASP 원칙에 어긋난다."
+    ]
+  },
+  {
+    "id": "asp-01-039",
+    "lessonNo": 1,
+    "lesson": "β-lactam 기본 구조",
+    "lessonRef": "lesson-01.html",
+    "level": 3,
+    "concept": "Empiric Therapy",
+    "source_type": "extended",
+    "question": "MRSA 균혈증이 확인된 환자에서 Pip/tazo 또는 cefepime 단독으로 충분하지 않은 이유와 적절한 조치로 옳은 것은?",
+    "options": [
+      "Pip/tazo가 MRSA를 잡으므로 그대로 두면 된다",
+      "Cefepime이 MRSA를 잡으므로 문제없다",
+      "일반 β-lactam은 MRSA를 커버하지 못하므로 vancomycin 등 anti-MRSA 약제가 필요하다",
+      "항생제를 중단한다"
+    ],
+    "answer": 2,
+    "explanation": "MRSA는 PBP2a 때문에 pip/tazo·cefepime 같은 일반 β-lactam으로 커버되지 않는다. 따라서 MRSA 균혈증에는 vancomycin 같은 anti-MRSA 약제가 필요하다(ceftaroline은 MRSA를 커버하는 예외적 cephalosporin).",
+    "choice_explanations": [
+      "Pip/tazo는 MRSA를 커버하지 못한다.",
+      "Cefepime도 MRSA를 커버하지 못한다.",
+      "정답. 일반 β-lactam은 MRSA 미커버 → anti-MRSA 약제 필요.",
+      "균혈증 확인 상황에서 중단은 부적절하다."
+    ]
+  },
+  {
+    "id": "asp-01-040",
+    "lessonNo": 1,
+    "lesson": "β-lactam 기본 구조",
+    "lessonRef": "lesson-01.html",
+    "level": 3,
+    "concept": "ASP Principles",
+    "source_type": "material",
+    "question": "일반적인 수술 예방 항생제로 MSSA와 피부균 coverage를 목적으로 널리 사용되는 약물은?",
+    "options": [
+      "Meropenem",
+      "모든 환자에서 1차로 Vancomycin",
+      "Ceftriaxone",
+      "Cefazolin"
+    ],
+    "answer": 3,
+    "explanation": "Cefazolin(1세대)은 MSSA와 피부 상재균을 잘 커버하고 반감기·안전성이 적절해 대부분의 수술 예방 1차 약제로 널리 쓰인다. Vancomycin은 MRSA 위험이 높거나 β-lactam allergy 등 특정 상황에 국한한다.",
+    "choice_explanations": [
+      "Meropenem은 광범위 약제로 일상적 수술 예방에 부적절하다.",
+      "Vancomycin을 모든 환자 1차로 쓰는 것은 과도하며 특정 상황에 한정된다.",
+      "Ceftriaxone은 일반적 수술 예방의 표준 선택이 아니다.",
+      "정답. Cefazolin이 표준 수술 예방 약제다."
+    ]
+  }
+]
