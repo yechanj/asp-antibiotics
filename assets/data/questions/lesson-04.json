@@ -1,0 +1,818 @@
+[
+  {
+    "id": "asp-04-001",
+    "lessonNo": 4,
+    "lesson": "Non-fermenters",
+    "lessonRef": "lesson-04.html",
+    "level": 1,
+    "concept": "Pseudomonas",
+    "source_type": "material",
+    "question": "Pseudomonas aeruginosa를 확인했을 때 가장 먼저 확인해야 할 것은?",
+    "options": [
+      "현재 약이 Pseudomonas를 커버하는지 여부",
+      "환자가 vancomycin에 알레르기가 있는지 여부",
+      "균이 coagulase 양성인지 음성인지 여부",
+      "환자의 혈당이 조절되고 있는지 여부"
+    ],
+    "answer": 0,
+    "explanation": "Pseudomonas를 보면 우선 '현재 약이 Pseudomonas coverage가 있는 약인가?'를 확인한다. 동시에 이 균이 빠르게 내성을 획득할 수 있다는 점도 함께 고려한다.",
+    "choice_explanations": [
+      "정답. antipseudomonal 활성 여부 확인이 가장 먼저다.",
+      "vancomycin 알레르기는 Gram-positive용 약으로 초점이 아니다.",
+      "coagulase는 Staphylococcus 분류 개념이다.",
+      "혈당 조절은 이 판단의 1차 초점이 아니다."
+    ]
+  },
+  {
+    "id": "asp-04-002",
+    "lessonNo": 4,
+    "lesson": "Non-fermenters",
+    "lessonRef": "lesson-04.html",
+    "level": 1,
+    "concept": "Antipseudomonal Spectrum",
+    "source_type": "material",
+    "question": "다음 중 Pseudomonas aeruginosa를 커버하지 못하는 β-lactam은?",
+    "options": [
+      "antipseudomonal 4세대인 cefepime",
+      "광범위 복합제인 piperacillin/tazobactam",
+      "3세대 cephalosporin인 ceftriaxone",
+      "antipseudomonal carbapenem인 meropenem"
+    ],
+    "answer": 2,
+    "explanation": "Ceftriaxone은 Pseudomonas를 커버하지 못한다. Cefepime·pip/tazo·meropenem·ceftazidime·imipenem이 antipseudomonal β-lactam이다.",
+    "choice_explanations": [
+      "Cefepime은 Pseudomonas를 커버한다.",
+      "Pip/tazo는 Pseudomonas를 커버한다.",
+      "정답. Ceftriaxone은 Pseudomonas를 커버하지 못한다.",
+      "Meropenem은 Pseudomonas를 커버한다."
+    ]
+  },
+  {
+    "id": "asp-04-003",
+    "lessonNo": 4,
+    "lesson": "Non-fermenters",
+    "lessonRef": "lesson-04.html",
+    "level": 1,
+    "concept": "Antipseudomonal Spectrum",
+    "source_type": "material",
+    "question": "Pseudomonas coverage에 대한 β-lactam 암기로 옳게 묶인 것은?",
+    "options": [
+      "Cefepime X · Ceftriaxone O · Meropenem X · Ertapenem O",
+      "Cefepime O · Ceftriaxone X · Meropenem O · Ertapenem X",
+      "Cefepime X · Ceftriaxone X · Meropenem O · Ertapenem O",
+      "Cefepime O · Ceftriaxone O · Meropenem X · Ertapenem X"
+    ],
+    "answer": 1,
+    "explanation": "핵심 암기는 Cefepime O · Ceftriaxone X · Meropenem O · Ertapenem X이다. 같은 세대·계열이라도 Pseudomonas coverage가 갈린다.",
+    "choice_explanations": [
+      "Cefepime O, Ceftriaxone X, Ertapenem X가 맞아 이 조합은 틀리다.",
+      "정답. Cefepime O · Ceftriaxone X · Meropenem O · Ertapenem X.",
+      "Cefepime은 O, Ertapenem은 X이므로 틀리다.",
+      "Ceftriaxone X, Meropenem O이므로 틀리다."
+    ]
+  },
+  {
+    "id": "asp-04-004",
+    "lessonNo": 4,
+    "lesson": "Non-fermenters",
+    "lessonRef": "lesson-04.html",
+    "level": 1,
+    "concept": "Acinetobacter",
+    "source_type": "material",
+    "question": "Acinetobacter baumannii에서 가장 중요하게 떠올려야 할 내성 문제는?",
+    "options": [
+      "vancomycin 내성을 뜻하는 VRE 문제",
+      "cephalosporin intrinsic resistance 문제",
+      "urease에 의한 결석 형성 문제",
+      "carbapenem 내성을 뜻하는 CRAB 문제"
+    ],
+    "answer": 3,
+    "explanation": "Acinetobacter baumannii에서 가장 중요한 문제는 carbapenem 내성, 즉 CRAB이며 치료 옵션이 크게 제한될 수 있다.",
+    "choice_explanations": [
+      "VRE는 Enterococcus의 문제다.",
+      "cephalosporin intrinsic resistance는 Enterococcus의 특징이다.",
+      "urease·결석은 Proteus의 특징이다.",
+      "정답. Acinetobacter = CRAB."
+    ]
+  },
+  {
+    "id": "asp-04-005",
+    "lessonNo": 4,
+    "lesson": "Non-fermenters",
+    "lessonRef": "lesson-04.html",
+    "level": 1,
+    "concept": "Stenotrophomonas",
+    "source_type": "material",
+    "question": "Stenotrophomonas maltophilia를 보면 가장 먼저 연상해야 할 항생제는?",
+    "options": [
+      "엽산 합성을 차단하는 TMP/SMX",
+      "antipseudomonal carbapenem인 meropenem",
+      "glycopeptide 계열인 vancomycin",
+      "3세대 cephalosporin인 ceftriaxone"
+    ],
+    "answer": 0,
+    "explanation": "Stenotrophomonas는 여러 β-lactam에 intrinsic resistance를 가지며 carbapenem이 듣지 않는다. 대표 치료 연상은 TMP/SMX다.",
+    "choice_explanations": [
+      "정답. Stenotrophomonas → TMP/SMX.",
+      "carbapenem은 Stenotrophomonas에 intrinsic resistance라 부적절하다.",
+      "vancomycin은 Gram-negative를 커버하지 못한다.",
+      "ceftriaxone도 Stenotrophomonas의 대표 연상이 아니다."
+    ]
+  },
+  {
+    "id": "asp-04-006",
+    "lessonNo": 4,
+    "lesson": "Non-fermenters",
+    "lessonRef": "lesson-04.html",
+    "level": 1,
+    "concept": "Stenotrophomonas",
+    "source_type": "material",
+    "question": "Stenotrophomonas maltophilia의 대표적인 intrinsic resistance는?",
+    "options": [
+      "vancomycin에 대한 intrinsic resistance",
+      "carbapenem에 대한 intrinsic resistance",
+      "TMP/SMX에 대한 intrinsic resistance",
+      "fluoroquinolone에 대한 intrinsic resistance"
+    ],
+    "answer": 1,
+    "explanation": "Stenotrophomonas는 carbapenem에 intrinsic resistance를 가진다. 따라서 meropenem을 쓰고 있는데 Stenotrophomonas가 나오면 '더 강한 carbapenem'으로 가는 것은 잘못이다.",
+    "choice_explanations": [
+      "vancomycin은 Gram-negative에 원래 작용하지 않으며 대표 강조점이 아니다.",
+      "정답. carbapenem intrinsic resistance가 핵심 특징이다.",
+      "TMP/SMX는 오히려 대표 치료 연상이다.",
+      "fluoroquinolone(예: levofloxacin)은 일부 상황에서 고려된다."
+    ]
+  },
+  {
+    "id": "asp-04-007",
+    "lessonNo": 4,
+    "lesson": "Non-fermenters",
+    "lessonRef": "lesson-04.html",
+    "level": 1,
+    "concept": "Sulbactam",
+    "source_type": "material",
+    "question": "Acinetobacter 치료에서 sulbactam이 특별히 중요한 이유는?",
+    "options": [
+      "sulbactam이 Acinetobacter 자체에 직접적인 항균 활성을 갖기 때문이다",
+      "sulbactam이 Pseudomonas까지 강력하게 커버하기 때문이다",
+      "sulbactam이 carbapenem의 신독성을 줄여주기 때문이다",
+      "sulbactam이 vancomycin의 흡수를 돕기 때문이다"
+    ],
+    "answer": 0,
+    "explanation": "Sulbactam은 단순한 β-lactamase inhibitor를 넘어 Acinetobacter에 대한 intrinsic antibacterial activity를 가진다. 그래서 CRAB 치료에서 sulbactam 기반 전략이 중요하다.",
+    "choice_explanations": [
+      "정답. Acinetobacter에 대한 직접 항균 활성이 핵심이다.",
+      "sulbactam은 Pseudomonas를 커버하지 못한다(1강).",
+      "신독성 감소가 이유가 아니다.",
+      "vancomycin 흡수와 무관하다."
+    ]
+  },
+  {
+    "id": "asp-04-008",
+    "lessonNo": 4,
+    "lesson": "Non-fermenters",
+    "lessonRef": "lesson-04.html",
+    "level": 1,
+    "concept": "Infection vs Colonization",
+    "source_type": "material",
+    "question": "중환자실 환자의 호흡기 검체에서 non-fermenter가 검출되었을 때 ASP 관점에서 옳은 것은?",
+    "options": [
+      "검출되면 항상 감염이므로 즉시 치료를 시작한다",
+      "colonization 가능성을 임상으로 판단한다",
+      "검출되면 무조건 carbapenem으로 시작한다",
+      "호흡기 검체 균은 항상 오염이므로 무시한다"
+    ],
+    "answer": 1,
+    "explanation": "특히 non-fermenter는 colonization과 true infection을 구분하는 것이 중요하다. 발열·WBC·산소요구·새 침윤·화농성 분비물·임상 악화 등을 함께 평가한다.",
+    "choice_explanations": [
+      "검출이 곧 감염은 아니다.",
+      "정답. colonization 가능성을 임상으로 판단한다.",
+      "근거 없는 carbapenem 시작은 부적절하다.",
+      "항상 오염이라고 무시하는 것도 잘못이다."
+    ]
+  },
+  {
+    "id": "asp-04-009",
+    "lessonNo": 4,
+    "lesson": "Non-fermenters",
+    "lessonRef": "lesson-04.html",
+    "level": 1,
+    "concept": "Antipseudomonal Spectrum",
+    "source_type": "material",
+    "question": "Ertapenem과 Pseudomonas의 관계로 옳은 것은?",
+    "options": [
+      "ertapenem은 carbapenem이므로 Pseudomonas를 잘 커버한다",
+      "ertapenem은 Pseudomonas를 신뢰성 있게 커버하지 못한다",
+      "ertapenem은 Pseudomonas 전용 치료제이다",
+      "ertapenem은 Pseudomonas에만 활성이 있는 좁은 약이다"
+    ],
+    "answer": 1,
+    "explanation": "Ertapenem은 carbapenem이지만 Pseudomonas와 Acinetobacter를 신뢰성 있게 커버하지 못한다. Pseudomonas가 필요하면 meropenem·imipenem 등을 고려한다.",
+    "choice_explanations": [
+      "carbapenem이라고 모두 Pseudomonas를 커버하지는 않는다.",
+      "정답. ertapenem은 Pseudomonas 미커버다.",
+      "Pseudomonas 전용 치료제가 아니다.",
+      "ertapenem은 ESBL Enterobacterales 등 다른 균에 유효하다."
+    ]
+  },
+  {
+    "id": "asp-04-010",
+    "lessonNo": 4,
+    "lesson": "Non-fermenters",
+    "lessonRef": "lesson-04.html",
+    "level": 2,
+    "concept": "Resistance Mechanism",
+    "source_type": "material",
+    "question": "Pseudomonas aeruginosa의 내성에 대한 설명으로 가장 옳은 것은?",
+    "options": [
+      "단일 β-lactamase 하나만으로 모든 내성이 설명된다",
+      "여러 내성 기전을 조합할 수 있다",
+      "세포벽이 없어 β-lactam이 원래 듣지 않는다",
+      "오직 biofilm 형성만으로 모든 항생제에 내성을 보인다"
+    ],
+    "answer": 1,
+    "explanation": "Pseudomonas는 porin loss(유입 감소), efflux pump(배출), β-lactamase(분해), target 변화, biofilm 등 여러 내성 기전을 동시에 조합할 수 있어 치료가 까다롭다.",
+    "choice_explanations": [
+      "단일 효소만으로 설명되지 않는다.",
+      "정답. 여러 기전을 조합할 수 있다.",
+      "Pseudomonas는 세포벽이 있는 Gram-negative다.",
+      "biofilm 하나만으로 전체 내성을 설명하지 않는다."
+    ]
+  },
+  {
+    "id": "asp-04-011",
+    "lessonNo": 4,
+    "lesson": "Non-fermenters",
+    "lessonRef": "lesson-04.html",
+    "level": 2,
+    "concept": "PK/PD",
+    "source_type": "material",
+    "question": "Pseudomonas 감염에서 β-lactam의 extended(prolonged) infusion이 특히 도움이 될 수 있는 이유는?",
+    "options": [
+      "MIC가 높은 균에서 fT>MIC 확보가 어려워 노출 시간을 늘리려는 것이다",
+      "최고농도(Cmax)를 극대화해 순간 살균력을 높이려는 것이다",
+      "약물의 신독성을 줄이기 위한 목적이다",
+      "투여 횟수를 늘려 순응도를 높이기 위한 것이다"
+    ],
+    "answer": 0,
+    "explanation": "β-lactam은 time-dependent이며 Pseudomonas처럼 MIC가 높은 균에서는 fT>MIC 확보가 어려워진다. Extended infusion으로 농도를 MIC 위에 더 오래 유지해 노출을 최적화한다.",
+    "choice_explanations": [
+      "정답. 높은 MIC에서 fT>MIC 확보가 목적이다.",
+      "Cmax 극대화는 concentration-dependent 전략이다.",
+      "신독성 감소가 주 목적이 아니다.",
+      "주입 시간을 늘리는 것이지 횟수를 늘리는 것이 아니다."
+    ]
+  },
+  {
+    "id": "asp-04-012",
+    "lessonNo": 4,
+    "lesson": "Non-fermenters",
+    "lessonRef": "lesson-04.html",
+    "level": 2,
+    "concept": "Stenotrophomonas",
+    "source_type": "material",
+    "question": "Meropenem 투여 중 Stenotrophomonas가 배양되었을 때 \"더 강한 carbapenem으로 올리자\"가 잘못인 이유는?",
+    "options": [
+      "Stenotrophomonas는 carbapenem에 intrinsic resistance가 있기 때문이다",
+      "carbapenem이 Stenotrophomonas의 urease를 활성화하기 때문이다",
+      "carbapenem이 Stenotrophomonas에만 신독성을 일으키기 때문이다",
+      "Stenotrophomonas가 vancomycin에 내성이기 때문이다"
+    ],
+    "answer": 0,
+    "explanation": "Stenotrophomonas는 carbapenem에 intrinsic resistance를 가지므로 carbapenem을 올려도 효과가 없다. 오히려 TMP/SMX 등 감수성에 맞는 약을 고려해야 한다.",
+    "choice_explanations": [
+      "정답. carbapenem intrinsic resistance가 이유다.",
+      "urease는 Proteus의 특징이다.",
+      "carbapenem 특이 신독성이 이유가 아니다.",
+      "vancomycin 내성은 이 상황과 무관하다."
+    ]
+  },
+  {
+    "id": "asp-04-013",
+    "lessonNo": 4,
+    "lesson": "Non-fermenters",
+    "lessonRef": "lesson-04.html",
+    "level": 2,
+    "concept": "Sulbactam",
+    "source_type": "extended",
+    "question": "Sulbactam에 대한 설명으로 옳은 것은?",
+    "options": [
+      "Acinetobacter에 직접 항균 활성도 갖는다",
+      "오직 β-lactamase만 억제할 뿐 어떤 균에도 직접 활성은 없다",
+      "Pseudomonas에 대한 강력한 직접 항균 활성을 가진다",
+      "Gram-positive 전반에 대한 직접 항균 활성을 가진다"
+    ],
+    "answer": 0,
+    "explanation": "Sulbactam은 β-lactamase inhibitor이면서 동시에 Acinetobacter에 대한 intrinsic antibacterial activity를 가진다. 이 때문에 CRAB 치료에서 sulbactam 기반 전략이 중요하다.",
+    "choice_explanations": [
+      "정답. inhibitor + Acinetobacter 직접 활성이라는 이중성이 핵심이다.",
+      "Acinetobacter에 대한 직접 활성이 있으므로 틀리다.",
+      "Pseudomonas는 sulbactam이 커버하지 못한다.",
+      "Gram-positive 전반 직접 활성이 sulbactam의 특징은 아니다."
+    ]
+  },
+  {
+    "id": "asp-04-014",
+    "lessonNo": 4,
+    "lesson": "Non-fermenters",
+    "lessonRef": "lesson-04.html",
+    "level": 2,
+    "concept": "ASP Principles",
+    "source_type": "material",
+    "question": "광범위 carbapenem을 오래 사용하는 것이 Stenotrophomonas 같은 균의 등장에 영향을 줄 수 있는 이유는?",
+    "options": [
+      "carbapenem이 Stenotrophomonas의 성장을 직접 촉진하기 때문이다",
+      "감수성 균이 줄고 carbapenem 내성 균이 상대적으로 선택·생존하기 때문이다",
+      "carbapenem이 환자의 면역을 억제하기 때문이다",
+      "carbapenem이 Stenotrophomonas의 유전자를 직접 변형시키기 때문이다"
+    ],
+    "answer": 1,
+    "explanation": "광범위 carbapenem 노출은 감수성 균을 줄이고 carbapenem 내성 균(예: Stenotrophomonas)이 상대적으로 생존·선택되게 한다. 항생제 사용은 어떤 균이 선택되는지에도 영향을 준다.",
+    "choice_explanations": [
+      "직접 성장 촉진이 기전이 아니다.",
+      "정답. selection pressure에 의한 상대적 생존이 기전이다.",
+      "면역억제가 기전이 아니다.",
+      "유전자를 직접 변형시키는 것이 아니다."
+    ]
+  },
+  {
+    "id": "asp-04-015",
+    "lessonNo": 4,
+    "lesson": "Non-fermenters",
+    "lessonRef": "lesson-04.html",
+    "level": 2,
+    "concept": "Antipseudomonal Spectrum",
+    "source_type": "material",
+    "question": "\"Gram-negative니까 광범위 β-lactam이면 Pseudomonas도 잡겠지\"라는 생각이 틀린 이유로 옳은 것은?",
+    "options": [
+      "모든 광범위 β-lactam은 실제로 Pseudomonas를 커버한다",
+      "ceftriaxone·ertapenem은 Pseudomonas를 못 잡는다",
+      "Pseudomonas는 β-lactam 자체가 원래 듣지 않는다",
+      "Pseudomonas는 Gram-positive라 β-lactam 대상이 아니다"
+    ],
+    "answer": 1,
+    "explanation": "Ceftriaxone·ertapenem은 광범위해 보여도 Pseudomonas를 커버하지 못한다. 반면 cefepime·pip/tazo·meropenem·ceftazidime은 커버한다. 계열·세대가 아니라 약물별 spectrum을 봐야 한다.",
+    "choice_explanations": [
+      "모든 광범위 β-lactam이 Pseudomonas를 커버하지는 않는다.",
+      "정답. ceftriaxone·ertapenem이 대표적 예외다.",
+      "일부 β-lactam은 Pseudomonas를 잘 커버한다.",
+      "Pseudomonas는 Gram-negative다."
+    ]
+  },
+  {
+    "id": "asp-04-016",
+    "lessonNo": 4,
+    "lesson": "Non-fermenters",
+    "lessonRef": "lesson-04.html",
+    "level": 2,
+    "concept": "MDR / Newer Agents",
+    "source_type": "extended",
+    "question": "여러 기존 항생제에 내성인 MDR Pseudomonas 치료 원칙으로 옳은 것은?",
+    "options": [
+      "항상 가장 broad한 기존 carbapenem이 정답이다",
+      "감수성에 따라 newer β-lactam을 선택한다",
+      "vancomycin을 추가하면 대부분 해결된다",
+      "ertapenem 고용량이 표준 치료이다"
+    ],
+    "answer": 1,
+    "explanation": "MDR Pseudomonas에서는 가장 broad한 기존 약이 답이 아닐 수 있다. Ceftolozane/tazobactam, ceftazidime/avibactam, imipenem/relebactam, cefiderocol 등 newer agent를 resistance mechanism·susceptibility에 맞춰 선택한다.",
+    "choice_explanations": [
+      "가장 broad한 기존 약이 항상 정답은 아니다.",
+      "정답. mechanism·susceptibility 기반 newer β-lactam 선택.",
+      "vancomycin은 Gram-negative와 무관하다.",
+      "ertapenem은 Pseudomonas를 못 잡아 표준이 될 수 없다."
+    ]
+  },
+  {
+    "id": "asp-04-017",
+    "lessonNo": 4,
+    "lesson": "Non-fermenters",
+    "lessonRef": "lesson-04.html",
+    "level": 2,
+    "concept": "Antipseudomonal Spectrum",
+    "source_type": "extended",
+    "question": "중증 penicillin allergy 환자에서 Pseudomonas coverage가 필요할 때 교차반응이 적어 고려되는 monobactam은?",
+    "options": [
+      "Pseudomonas를 커버하는 aztreonam",
+      "Gram-positive 전용인 vancomycin",
+      "anaerobe 전용인 metronidazole",
+      "atypical 전용인 azithromycin"
+    ],
+    "answer": 0,
+    "explanation": "Aztreonam(monobactam)은 Pseudomonas를 포함한 Gram-negative에 작용하고 다른 β-lactam과 교차반응이 적어 중증 penicillin allergy 환자의 대안으로 고려된다(단 ceftazidime과 side chain 공유).",
+    "choice_explanations": [
+      "정답. aztreonam이 Pseudomonas를 커버하는 monobactam이다.",
+      "vancomycin은 Gram-negative를 커버하지 못한다.",
+      "metronidazole은 anaerobe용이다.",
+      "azithromycin은 atypical용이다."
+    ]
+  },
+  {
+    "id": "asp-04-018",
+    "lessonNo": 4,
+    "lesson": "Non-fermenters",
+    "lessonRef": "lesson-04.html",
+    "level": 2,
+    "concept": "Resistance Mechanism",
+    "source_type": "extended",
+    "question": "Pseudomonas의 biofilm 형성이 치료를 어렵게 만드는 이유로 옳은 것은?",
+    "options": [
+      "biofilm이 항생제를 분해하는 효소로만 작용하기 때문이다",
+      "biofilm이 약물 침투와 세균 제거를 어렵게 만들기 때문이다",
+      "biofilm이 세균을 Gram-positive로 바꾸기 때문이다",
+      "biofilm이 환자의 신기능을 떨어뜨리기 때문이다"
+    ],
+    "answer": 1,
+    "explanation": "Biofilm은 약물 침투와 면역·항생제에 의한 세균 제거를 어렵게 만들어 치료를 까다롭게 한다. device 관련 감염 등에서 source control이 중요해지는 이유이기도 하다.",
+    "choice_explanations": [
+      "biofilm은 효소가 아니라 물리·생물학적 장벽이다.",
+      "정답. 약물 침투·제거를 방해하는 것이 핵심이다.",
+      "biofilm이 그람 염색을 바꾸지는 않는다.",
+      "신기능 저하가 biofilm의 기전이 아니다."
+    ]
+  },
+  {
+    "id": "asp-04-019",
+    "lessonNo": 4,
+    "lesson": "Non-fermenters",
+    "lessonRef": "lesson-04.html",
+    "level": 2,
+    "concept": "Acinetobacter",
+    "source_type": "extended",
+    "question": "CRAB(carbapenem-resistant Acinetobacter) 치료 전략에 대한 최근 관점으로 옳은 것은?",
+    "options": [
+      "무조건 colistin 단독이 항상 최선의 치료이다",
+      "sulbactam 기반 옵션을 상태에 맞춰 평가한다",
+      "carbapenem을 고용량으로 올리면 대부분 해결된다",
+      "vancomycin을 추가하면 CRAB가 치료된다"
+    ],
+    "answer": 1,
+    "explanation": "CRAB 치료는 복잡하며 최근에는 sulbactam 기반 전략(예: sulbactam/durlobactam, high-dose ampicillin/sulbactam 기반)이 중요하다. 'CRAB면 colistin'으로 바로 가지 않고 환자·감수성에 맞춰 평가한다.",
+    "choice_explanations": [
+      "colistin 단독이 항상 최선은 아니다.",
+      "정답. sulbactam 기반 등 여러 옵션을 평가한다.",
+      "carbapenem 증량으로 CRAB가 해결되지 않는다.",
+      "vancomycin은 Gram-negative와 무관하다."
+    ]
+  },
+  {
+    "id": "asp-04-020",
+    "lessonNo": 4,
+    "lesson": "Non-fermenters",
+    "lessonRef": "lesson-04.html",
+    "level": 2,
+    "concept": "MDR / Newer Agents",
+    "source_type": "extended",
+    "question": "Cefiderocol이 저항성 Gram-negative에서 세포 내로 잘 들어가는 특징적 기전은?",
+    "options": [
+      "철 흡수 경로를 이용하는 약물이다",
+      "세포막을 직접 녹여 스스로 통로를 만드는 약물이다",
+      "리보솜에 결합해 능동적으로 유입되는 약물이다",
+      "biofilm을 분해해 유입되는 효소성 약물이다"
+    ],
+    "answer": 0,
+    "explanation": "Cefiderocol은 siderophore cephalosporin으로 세균의 철(iron) 흡수 시스템을 '트로이 목마'처럼 이용해 외막을 통과한다. 이 때문에 일부 저항성 Gram-negative(MDR Pseudomonas·CRAB 등)에 활용된다.",
+    "choice_explanations": [
+      "정답. 철 흡수 경로를 이용하는 siderophore 기전이다.",
+      "막을 직접 녹이는 약물이 아니다.",
+      "cephalosporin은 리보솜에 작용하지 않는다.",
+      "효소성 biofilm 분해가 기전이 아니다."
+    ]
+  },
+  {
+    "id": "asp-04-021",
+    "lessonNo": 4,
+    "lesson": "Non-fermenters",
+    "lessonRef": "lesson-04.html",
+    "level": 2,
+    "concept": "Empiric Therapy",
+    "source_type": "material",
+    "question": "Empiric Pseudomonas coverage 결정에 대한 설명으로 옳은 것은?",
+    "options": [
+      "모든 폐렴 환자에게 일률적으로 antipseudomonal을 시작해야 한다",
+      "위험요인(최근 광범위 항생제·중환자실·구조적 폐질환 등)을 고려해 결정한다",
+      "Pseudomonas는 드물므로 empiric coverage는 필요 없다",
+      "혈액배양이 나오기 전에는 어떤 항생제도 시작하지 않는다"
+    ],
+    "answer": 1,
+    "explanation": "모든 폐렴에 antipseudomonal이 필요한 것은 아니다. 최근 광범위 항생제 노출, 이전 Pseudomonas colonization/infection, 장기 입원·중환자실, 구조적 폐질환 등 위험요인과 가이드라인·antibiogram을 함께 본다.",
+    "choice_explanations": [
+      "일률적 antipseudomonal 시작은 과하다.",
+      "정답. 위험요인 기반으로 결정한다.",
+      "위험군에서는 empiric coverage가 필요할 수 있다.",
+      "중증 감염에서 배양 전 empiric 치료를 미루는 것은 위험하다."
+    ]
+  },
+  {
+    "id": "asp-04-022",
+    "lessonNo": 4,
+    "lesson": "Non-fermenters",
+    "lessonRef": "lesson-04.html",
+    "level": 3,
+    "concept": "De-escalation",
+    "source_type": "material",
+    "question": "VAP로 Vancomycin + Cefepime 투여 중 respiratory culture에서 Pseudomonas(Cefepime S)가 확인되고 MRSA는 음성이다. 가장 적절한 조치는?",
+    "options": [
+      "MRSA 근거가 없으므로 vancomycin 중단을 검토한다",
+      "안전을 위해 vancomycin을 그대로 유지한다",
+      "coverage 강화를 위해 daptomycin을 추가한다",
+      "linezolid를 추가해 Gram-positive를 보강한다"
+    ],
+    "answer": 0,
+    "explanation": "Pseudomonas가 확인되고 MRSA 근거가 없으므로 vancomycin을 유지할 이유가 없다. active antipseudomonal(cefepime)로 targeted therapy하고 vancomycin 중단을 검토한다.",
+    "choice_explanations": [
+      "정답. MRSA 근거 없으면 vancomycin 중단 검토.",
+      "근거 없는 vancomycin 유지는 ASP 원칙에 어긋난다.",
+      "daptomycin 추가는 근거가 없고 폐에도 부적절하다.",
+      "linezolid 추가도 Gram-positive 근거가 없어 불필요하다."
+    ]
+  },
+  {
+    "id": "asp-04-023",
+    "lessonNo": 4,
+    "lesson": "Non-fermenters",
+    "lessonRef": "lesson-04.html",
+    "level": 3,
+    "concept": "De-escalation",
+    "source_type": "material",
+    "question": "Meropenem 투여 중인 환자의 Pseudomonas가 Cefepime S·Meropenem S이며 임상적으로 안정적이다. 가장 적절한 ASP 판단은?",
+    "options": [
+      "cefepime 등으로 좁힐지 검토한다",
+      "가장 넓은 meropenem을 계속 유지한다",
+      "ertapenem으로 변경한다",
+      "vancomycin을 추가한다"
+    ],
+    "answer": 0,
+    "explanation": "Cefepime S이고 안정적이라면 carbapenem이 꼭 필요한 resistance pattern이 아닌 한 cefepime 등으로 좁히는 carbapenem-sparing 전략이 적절하다. 'Pseudomonas = 무조건 meropenem'이 아니다.",
+    "choice_explanations": [
+      "정답. cefepime S면 carbapenem-sparing을 고려한다.",
+      "불필요한 carbapenem 유지는 ASP 원칙에 어긋난다.",
+      "ertapenem은 Pseudomonas를 커버하지 못한다.",
+      "vancomycin은 Pseudomonas와 무관하다."
+    ]
+  },
+  {
+    "id": "asp-04-024",
+    "lessonNo": 4,
+    "lesson": "Non-fermenters",
+    "lessonRef": "lesson-04.html",
+    "level": 3,
+    "concept": "Infection vs Colonization",
+    "source_type": "material",
+    "question": "ICU 환자의 respiratory culture에서 Acinetobacter가 자랐으나 발열 없음·WBC 안정·산소요구 변화 없음·흉부 X선 변화 없음이다. 가장 적절한 판단은?",
+    "options": [
+      "즉시 CRAB 치료를 시작한다",
+      "colonization 가능성을 먼저 평가한다",
+      "예방적으로 colistin을 시작한다",
+      "carbapenem을 고용량으로 시작한다"
+    ],
+    "answer": 1,
+    "explanation": "감염을 시사하는 임상 소견이 없으므로 colonization 가능성이 높다. 바로 CRAB 치료를 시작하기보다 true infection 여부를 평가하는 것이 옳다. 불필요한 항생제를 시작하지 않는 것도 강력한 ASP intervention이다.",
+    "choice_explanations": [
+      "임상 근거 없이 CRAB 치료 시작은 부적절하다.",
+      "정답. colonization 평가 후 판단한다.",
+      "근거 없는 예방적 colistin은 부적절하다.",
+      "근거 없는 carbapenem 시작도 부적절하다."
+    ]
+  },
+  {
+    "id": "asp-04-025",
+    "lessonNo": 4,
+    "lesson": "Non-fermenters",
+    "lessonRef": "lesson-04.html",
+    "level": 3,
+    "concept": "Stenotrophomonas",
+    "source_type": "material",
+    "question": "장기간 meropenem 사용 중인 환자의 respiratory culture에서 Stenotrophomonas가 확인되고 실제 감염이 의심된다. 가장 적절한 조치는?",
+    "options": [
+      "meropenem을 더 오래·고용량으로 유지한다",
+      "TMP/SMX 등 감수성 약을 검토한다",
+      "vancomycin을 추가한다",
+      "ceftriaxone으로 전환한다"
+    ],
+    "answer": 1,
+    "explanation": "Stenotrophomonas는 carbapenem intrinsic resistance가 있어 meropenem을 올려도 효과가 없다. 진짜 감염이면 감수성에 맞춰 TMP/SMX 등을 검토한다.",
+    "choice_explanations": [
+      "carbapenem은 intrinsic resistance라 효과가 없다.",
+      "정답. TMP/SMX 등 감수성 기반 치료를 검토한다.",
+      "vancomycin은 Gram-negative와 무관하다.",
+      "ceftriaxone도 Stenotrophomonas의 신뢰 옵션이 아니다."
+    ]
+  },
+  {
+    "id": "asp-04-026",
+    "lessonNo": 4,
+    "lesson": "Non-fermenters",
+    "lessonRef": "lesson-04.html",
+    "level": 3,
+    "concept": "De-escalation",
+    "source_type": "material",
+    "question": "ICU septic shock로 Vancomycin + Meropenem 투여, blood culture Pseudomonas(Cefepime S·Pip/Tazo S·Meropenem S·Cipro R), MRSA 근거 없음, 안정화됨. 통합적으로 가장 적절한 조치는?",
+    "options": [
+      "vancomycin과 meropenem을 모두 그대로 유지한다",
+      "vancomycin은 유지하고 meropenem만 ertapenem으로 바꾼다",
+      "vancomycin 중단, 좁은 antipseudomonal로 조정한다",
+      "vancomycin을 daptomycin으로 바꾼다"
+    ],
+    "answer": 2,
+    "explanation": "MRSA 근거가 없으니 vancomycin은 중단 대상이고, carbapenem이 꼭 필요한 내성 근거가 없으면 cefepime 등 더 좁은 antipseudomonal β-lactam으로 조정한다. 이후 renal dose·prolonged infusion·duration을 함께 최적화한다.",
+    "choice_explanations": [
+      "근거 없는 광범위 유지는 ASP 원칙에 어긋난다.",
+      "ertapenem은 Pseudomonas를 커버하지 못한다.",
+      "정답. vancomycin 중단 + 좁은 antipseudomonal + 최적화.",
+      "Pseudomonas 감염에 daptomycin은 무관하다."
+    ]
+  },
+  {
+    "id": "asp-04-027",
+    "lessonNo": 4,
+    "lesson": "Non-fermenters",
+    "lessonRef": "lesson-04.html",
+    "level": 3,
+    "concept": "Empiric Therapy",
+    "source_type": "material",
+    "question": "Pseudomonas 위험요인이 없는 젊고 건강한 지역사회획득 폐렴 환자에게 처음부터 antipseudomonal 광범위 치료를 시작하려 할 때 ASP 약사의 대응은?",
+    "options": [
+      "모든 폐렴에는 antipseudomonal이 필요하므로 그대로 진행한다",
+      "위험요인이 없으면 antipseudomonal이 불필요할 수 있어 적절성을 재검토한다",
+      "즉시 carbapenem으로 상향하도록 권한다",
+      "vancomycin을 추가하도록 권한다"
+    ],
+    "answer": 1,
+    "explanation": "Pseudomonas 위험요인이 없는 전형적 CAP에는 antipseudomonal 광범위 치료가 불필요할 수 있다. 위험요인·가이드라인을 근거로 적절성을 재검토하는 것이 ASP 역할이다.",
+    "choice_explanations": [
+      "모든 폐렴에 antipseudomonal이 필요한 것은 아니다.",
+      "정답. 위험요인 없으면 적절성을 재검토한다.",
+      "근거 없는 carbapenem 상향은 부적절하다.",
+      "근거 없는 vancomycin 추가는 부적절하다."
+    ]
+  },
+  {
+    "id": "asp-04-028",
+    "lessonNo": 4,
+    "lesson": "Non-fermenters",
+    "lessonRef": "lesson-04.html",
+    "level": 3,
+    "concept": "De-escalation",
+    "source_type": "material",
+    "question": "중증 감염에서 empiric으로 Cefepime + amikacin(dual antipseudomonal)을 시작했고, 이후 감수성에서 cefepime S가 확인되며 환자가 안정되었다. 적절한 조치는?",
+    "options": [
+      "안정될 때까지 dual therapy를 계속 유지한다",
+      "single active agent로 단순화한다",
+      "amikacin을 유지하고 cefepime을 중단한다",
+      "meropenem을 추가해 coverage를 넓힌다"
+    ],
+    "answer": 1,
+    "explanation": "감수성이 확인되고 안정되면 dual antipseudomonal을 계속할지 재평가한다. 일반적으로 감수성 있는 single active agent로 단순화하는 것이 적절하다.",
+    "choice_explanations": [
+      "습관적 dual 유지는 재평가 없이 계속할 이유가 없다.",
+      "정답. single active agent로 단순화를 검토한다.",
+      "β-lactam 백본을 두고 aminoglycoside만 남기는 것은 부적절하다.",
+      "meropenem 추가는 근거 없는 확대다."
+    ]
+  },
+  {
+    "id": "asp-04-029",
+    "lessonNo": 4,
+    "lesson": "Non-fermenters",
+    "lessonRef": "lesson-04.html",
+    "level": 3,
+    "concept": "PK/PD",
+    "source_type": "extended",
+    "question": "Pseudomonas 폐렴에서 meropenem MIC가 높게 보고되었다. exposure를 개선하기 위한 합리적 전략은?",
+    "options": [
+      "prolonged infusion으로 투여한다",
+      "meropenem을 ertapenem으로 바꾼다",
+      "meropenem을 vancomycin으로 바꾼다",
+      "meropenem 투여를 1일 1회로 줄인다"
+    ],
+    "answer": 0,
+    "explanation": "MIC가 높을수록 fT>MIC 확보가 어렵다. meropenem을 prolonged infusion으로 투여하면 농도를 MIC 위에 더 오래 유지해 노출을 개선할 수 있다.",
+    "choice_explanations": [
+      "정답. prolonged infusion으로 fT>MIC를 늘린다.",
+      "ertapenem은 Pseudomonas를 커버하지 못한다.",
+      "vancomycin은 Pseudomonas와 무관하다.",
+      "투여 횟수를 줄이면 fT>MIC가 오히려 나빠진다."
+    ]
+  },
+  {
+    "id": "asp-04-030",
+    "lessonNo": 4,
+    "lesson": "Non-fermenters",
+    "lessonRef": "lesson-04.html",
+    "level": 3,
+    "concept": "Acinetobacter",
+    "source_type": "extended",
+    "question": "CRAB가 보고된 감염 환자에서 \"CRAB니까 바로 colistin\"이라는 제안이 있을 때 ASP 약사의 적절한 대응은?",
+    "options": [
+      "CRAB에는 colistin만이 유일한 치료이므로 즉시 시작한다",
+      "sulbactam 기반 전략을 포함해 감수성·환자 상태에 맞는 옵션을 함께 평가한다",
+      "carbapenem을 고용량으로 올리면 된다고 설명한다",
+      "vancomycin 병용을 권한다"
+    ],
+    "answer": 1,
+    "explanation": "CRAB 치료는 복잡하며 최근에는 sulbactam 기반 전략이 중요하다. 'CRAB=colistin'으로 바로 가지 않고 감수성·환자 상태에 맞는 여러 옵션을 평가해야 한다.",
+    "choice_explanations": [
+      "colistin이 유일한 치료는 아니다.",
+      "정답. sulbactam 기반 등 옵션을 감수성·상태에 맞춰 평가한다.",
+      "carbapenem 증량으로 CRAB가 해결되지 않는다.",
+      "vancomycin은 Gram-negative와 무관하다."
+    ]
+  },
+  {
+    "id": "asp-04-031",
+    "lessonNo": 4,
+    "lesson": "Non-fermenters",
+    "lessonRef": "lesson-04.html",
+    "level": 3,
+    "concept": "Empiric Therapy",
+    "source_type": "material",
+    "question": "Pseudomonas 위험이 높은 HAP 환자에게 empiric으로 ceftriaxone 단독을 시작하려 할 때 ASP 약사의 지적으로 옳은 것은?",
+    "options": [
+      "ceftriaxone은 Pseudomonas를 커버하지 못해 antipseudomonal 약제가 필요하다",
+      "ceftriaxone이 Pseudomonas를 잘 커버하므로 적절하다",
+      "ceftriaxone에 vancomycin만 추가하면 Pseudomonas가 커버된다",
+      "ceftriaxone을 고용량으로 올리면 Pseudomonas를 커버한다"
+    ],
+    "answer": 0,
+    "explanation": "Ceftriaxone은 Pseudomonas를 커버하지 못하므로 Pseudomonas 위험이 높은 HAP empiric으로 부적절하다. cefepime·pip/tazo·meropenem 등 antipseudomonal 약제가 필요하다.",
+    "choice_explanations": [
+      "정답. ceftriaxone은 Pseudomonas 미커버다.",
+      "ceftriaxone은 Pseudomonas를 커버하지 못한다.",
+      "vancomycin은 Gram-positive용으로 Pseudomonas와 무관하다.",
+      "증량해도 ceftriaxone의 Pseudomonas 미커버는 변하지 않는다."
+    ]
+  },
+  {
+    "id": "asp-04-032",
+    "lessonNo": 4,
+    "lesson": "Non-fermenters",
+    "lessonRef": "lesson-04.html",
+    "level": 3,
+    "concept": "ASP Principles",
+    "source_type": "material",
+    "question": "Non-fermenter 감염에서 AST를 볼 때 권장되는 ASP 사고 순서로 가장 적절한 것은?",
+    "options": [
+      "가장 넓은 약을 먼저 정하고 나중에 감염 여부를 확인한다",
+      "감염 여부부터 확인해 최소 spectrum으로 좁힌다",
+      "감수성만 보고 S가 가장 많은 약을 고른다",
+      "환자 상태와 무관하게 무조건 병용요법을 유지한다"
+    ],
+    "answer": 1,
+    "explanation": "Non-fermenter에서는 먼저 true infection인지(colonization 배제), 어떤 균인지, 감수성, 가장 좁은 active agent, PK/PD 최적화, duration·source control 순으로 판단하는 것이 ASP 흐름이다.",
+    "choice_explanations": [
+      "감염 여부 확인이 뒤로 밀리면 안 된다.",
+      "정답. 감염 여부→균→감수성→최소 spectrum→PK/PD→source control.",
+      "S가 많은 약을 고르는 단순 접근은 부족하다.",
+      "무조건 병용 유지는 ASP 원칙에 어긋난다."
+    ]
+  },
+  {
+    "id": "asp-04-033",
+    "lessonNo": 4,
+    "lesson": "Non-fermenters",
+    "lessonRef": "lesson-04.html",
+    "level": 3,
+    "concept": "Infection vs Colonization",
+    "source_type": "material",
+    "question": "Wound·device 검체에서 non-fermenter가 검출되었을 때 true infection 판단에 도움이 되는 소견으로 가장 적절한 것은?",
+    "options": [
+      "균이 검출되었다는 사실 자체만으로 감염을 확정한다",
+      "감염을 시사하는 임상 소견을 함께 확인한다",
+      "균 이름이 길수록 감염 가능성이 높다고 본다",
+      "검체가 나온 시간대만으로 감염을 판단한다"
+    ],
+    "answer": 1,
+    "explanation": "검출 자체가 감염을 뜻하지 않는다. 발열·화농성 분비물·국소 염증·임상 악화 등 감염을 시사하는 소견을 함께 평가해 true infection과 colonization을 구분한다.",
+    "choice_explanations": [
+      "검출만으로 감염을 확정할 수 없다.",
+      "정답. 감염을 시사하는 임상 소견을 함께 본다.",
+      "균 이름 길이는 판단 기준이 아니다.",
+      "검체 시간대만으로 감염을 판단할 수 없다."
+    ]
+  },
+  {
+    "id": "asp-04-034",
+    "lessonNo": 4,
+    "lesson": "Non-fermenters",
+    "lessonRef": "lesson-04.html",
+    "level": 3,
+    "concept": "ASP Principles",
+    "source_type": "extended",
+    "question": "광범위 항생제를 넓게 쓰는 것이 개별 환자의 부작용을 넘어 갖는 ASP상 의미로 옳은 것은?",
+    "options": [
+      "환자 microbiome과 병원 환경에서 어떤 균이 선택되는지에도 영향을 준다",
+      "항생제 사용은 병원 내 내성 생태에는 전혀 영향을 주지 않는다",
+      "광범위 사용은 언제나 이득이 위험보다 크다",
+      "선택 압력은 이론일 뿐 실제 임상과 무관하다"
+    ],
+    "answer": 0,
+    "explanation": "광범위 항생제 사용은 개별 부작용을 넘어 환자 microbiome과 병원 환경에서 어떤 균이 선택·생존하는지에 영향을 준다. 이것이 ASP가 불필요한 광범위 사용을 줄이려는 이유다.",
+    "choice_explanations": [
+      "정답. 균 선택·내성 생태에 영향을 준다.",
+      "실제로 내성 생태에 영향을 준다.",
+      "광범위 사용이 항상 이득이 큰 것은 아니다.",
+      "선택 압력은 실제 임상에서 관찰되는 현상이다."
+    ]
+  }
+]

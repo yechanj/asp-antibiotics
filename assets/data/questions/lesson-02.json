@@ -1,0 +1,818 @@
+[
+  {
+    "id": "asp-02-001",
+    "lessonNo": 2,
+    "lesson": "Gram-positive 균 지도",
+    "lessonRef": "lesson-02.html",
+    "level": 1,
+    "concept": "MSSA",
+    "source_type": "material",
+    "question": "Blood culture에서 Staphylococcus aureus가 확인되었을 때 항생제 선택을 위해 가장 먼저 구분해야 하는 것은?",
+    "options": [
+      "methicillin 감수성 여부, 즉 MSSA인지 MRSA인지",
+      "coagulase 양성 여부, 즉 S. aureus인지 CoNS인지",
+      "vancomycin 내성 여부, 즉 VRSA인지 아닌지",
+      "감염 부위가 폐인지 혈류인지의 구분"
+    ],
+    "answer": 0,
+    "explanation": "S. aureus를 보면 가장 먼저 MSSA인지 MRSA인지를 구분한다. 이 구분이 cefazolin 중심 치료와 vancomycin 중심 치료를 가르는 분기점이 된다.",
+    "choice_explanations": [
+      "정답. MSSA vs MRSA 구분이 치료 전략의 첫 분기다.",
+      "이미 S. aureus로 동정된 상황이므로 CoNS 구분은 앞 단계다.",
+      "VRSA는 매우 드물어 첫 분기 기준이 아니다.",
+      "부위도 중요하지만 균의 methicillin 감수성 구분이 먼저다."
+    ]
+  },
+  {
+    "id": "asp-02-002",
+    "lessonNo": 2,
+    "lesson": "Gram-positive 균 지도",
+    "lessonRef": "lesson-02.html",
+    "level": 1,
+    "concept": "MSSA",
+    "source_type": "material",
+    "question": "MSSA 감염에서 가장 먼저 연결해 떠올려야 할 대표 치료제는?",
+    "options": [
+      "glycopeptide 계열인 vancomycin",
+      "oxazolidinone 계열인 linezolid",
+      "1세대 cephalosporin인 cefazolin",
+      "lipopeptide 계열인 daptomycin"
+    ],
+    "answer": 2,
+    "explanation": "MSSA에서 가장 먼저 연상할 약은 cefazolin이며, 상황에 따라 antistaphylococcal penicillin(nafcillin, oxacillin)도 사용한다. vancomycin은 MSSA에 활성은 있으나 최적은 아니다.",
+    "choice_explanations": [
+      "Vancomycin은 MSSA에 활성은 있으나 최적 targeted therapy가 아니다.",
+      "Linezolid는 MRSA/VRE에서 중요하며 MSSA 1차 연상이 아니다.",
+      "정답. MSSA = Cefazolin(또는 nafcillin/oxacillin).",
+      "Daptomycin은 MRSA bacteremia 등에서 쓰이며 MSSA 1차 연상이 아니다."
+    ]
+  },
+  {
+    "id": "asp-02-003",
+    "lessonNo": 2,
+    "lesson": "Gram-positive 균 지도",
+    "lessonRef": "lesson-02.html",
+    "level": 1,
+    "concept": "MRSA",
+    "source_type": "material",
+    "question": "MRSA 감염에서 가장 먼저 연결해 떠올려야 할 대표 치료제는?",
+    "options": [
+      "1세대 cephalosporin인 cefazolin",
+      "glycopeptide 계열인 vancomycin",
+      "aminopenicillin인 ampicillin",
+      "3세대 cephalosporin인 ceftriaxone"
+    ],
+    "answer": 1,
+    "explanation": "MRSA에서 가장 먼저 떠올릴 약은 vancomycin이며, 감염 부위에 따라 linezolid·daptomycin·ceftaroline 등이 대안이 된다.",
+    "choice_explanations": [
+      "Cefazolin은 MSSA용으로 MRSA를 커버하지 못한다.",
+      "정답. MRSA = Vancomycin(첫 연상).",
+      "Ampicillin은 MRSA를 커버하지 못한다.",
+      "Ceftriaxone은 MRSA를 커버하지 못한다."
+    ]
+  },
+  {
+    "id": "asp-02-004",
+    "lessonNo": 2,
+    "lesson": "Gram-positive 균 지도",
+    "lessonRef": "lesson-02.html",
+    "level": 1,
+    "concept": "Daptomycin",
+    "source_type": "material",
+    "question": "Daptomycin 사용에 대한 설명으로 옳은 것은?",
+    "options": [
+      "MRSA pneumonia에서 vancomycin보다 우선 권장되는 약물이다",
+      "Gram-negative 감염까지 폭넓게 커버하는 약물이다",
+      "경구 흡수가 좋아 외래 경구치료에 널리 쓰이는 약물이다",
+      "MRSA bacteremia에는 쓰지만 pneumonia에는 사용하지 않는다"
+    ],
+    "answer": 3,
+    "explanation": "Daptomycin은 MRSA bacteremia·일부 endocarditis·VRE 등에서 중요하지만, 폐의 surfactant에 의해 불활성화되어 pneumonia에는 사용하지 않는다.",
+    "choice_explanations": [
+      "MRSA pneumonia에는 부적절하다(surfactant 불활성화).",
+      "Daptomycin은 Gram-positive 전용이다.",
+      "Daptomycin은 정주 약물이다.",
+      "정답. Bacteremia O / Pneumonia X가 핵심이다."
+    ]
+  },
+  {
+    "id": "asp-02-005",
+    "lessonNo": 2,
+    "lesson": "Gram-positive 균 지도",
+    "lessonRef": "lesson-02.html",
+    "level": 1,
+    "concept": "Linezolid",
+    "source_type": "material",
+    "question": "Linezolid와 강하게 연결해 기억해야 할 두 대상은?",
+    "options": [
+      "저항성 Gram-positive인 MRSA와 VRE",
+      "장내 Gram-negative인 E. coli와 Klebsiella",
+      "비발효균인 Pseudomonas와 Acinetobacter",
+      "세포벽 없는 Mycoplasma와 Legionella"
+    ],
+    "answer": 0,
+    "explanation": "Linezolid는 MRSA(특히 pneumonia에서 중요)와 VRE 모두에서 중요한 Gram-positive 항생제다.",
+    "choice_explanations": [
+      "정답. Linezolid = MRSA + VRE.",
+      "Gram-negative는 linezolid의 표적이 아니다.",
+      "비발효 Gram-negative는 linezolid가 커버하지 못한다.",
+      "atypical은 linezolid의 대표 연상이 아니다."
+    ]
+  },
+  {
+    "id": "asp-02-006",
+    "lessonNo": 2,
+    "lesson": "Gram-positive 균 지도",
+    "lessonRef": "lesson-02.html",
+    "level": 1,
+    "concept": "Enterococcus",
+    "source_type": "material",
+    "question": "Enterococcus와 cephalosporin의 관계로 옳은 것은?",
+    "options": [
+      "1세대 cephalosporin은 커버하지만 3세대는 커버하지 못한다",
+      "ceftriaxone 같은 광범위 cephalosporin은 신뢰성 있게 커버한다",
+      "cephalosporin 전반에 intrinsic resistance가 있어 커버되지 않는다",
+      "cefepime 같은 4세대만 예외적으로 커버할 수 있다"
+    ],
+    "answer": 2,
+    "explanation": "Enterococcus는 cephalosporin에 intrinsic resistance를 가져 cefazolin·ceftriaxone·cefepime 모두 신뢰성 있게 커버하지 못한다. 그래서 감수성에 따라 ampicillin/vancomycin 등을 고려한다.",
+    "choice_explanations": [
+      "1세대 cefazolin도 Enterococcus를 커버하지 못한다.",
+      "Ceftriaxone도 Enterococcus를 커버하지 못한다.",
+      "정답. cephalosporin 전반에 intrinsic resistance가 있다.",
+      "Cefepime도 Enterococcus를 커버하지 못한다."
+    ]
+  },
+  {
+    "id": "asp-02-007",
+    "lessonNo": 2,
+    "lesson": "Gram-positive 균 지도",
+    "lessonRef": "lesson-02.html",
+    "level": 1,
+    "concept": "Enterococcus",
+    "source_type": "material",
+    "question": "Ampicillin과 가장 강하게 연결해 기억할 Enterococcus species는?",
+    "options": [
+      "내성 빈도가 높은 Enterococcus faecium",
+      "ampicillin 감수성이 흔한 Enterococcus faecalis",
+      "vancomycin 내성 표현형인 VRE",
+      "coagulase 음성인 Enterococcus 종 전반"
+    ],
+    "answer": 1,
+    "explanation": "E. faecalis는 ampicillin 감수성이 상대적으로 흔해 초기 mental map은 'E. faecalis → ampicillin'이다. E. faecium은 내성 문제가 크고 VRE와 강하게 연결된다.",
+    "choice_explanations": [
+      "E. faecium은 내성이 흔해 ampicillin 연상이 약하다.",
+      "정답. E. faecalis → Ampicillin.",
+      "VRE는 vancomycin 내성 표현형으로 ampicillin 연상 대상이 아니다.",
+      "특정 species를 지목하는 문제이므로 '전반'은 답이 아니다."
+    ]
+  },
+  {
+    "id": "asp-02-008",
+    "lessonNo": 2,
+    "lesson": "Gram-positive 균 지도",
+    "lessonRef": "lesson-02.html",
+    "level": 1,
+    "concept": "Streptococcus",
+    "source_type": "material",
+    "question": "Community-acquired pneumonia의 대표 원인균인 S. pneumoniae에서 초기에 자주 연결하는 β-lactam은?",
+    "options": [
+      "antipseudomonal cephalosporin인 ceftazidime",
+      "MSSA용 1세대인 cefazolin",
+      "penicillin계 복합제인 ampicillin/sulbactam",
+      "3세대 cephalosporin인 ceftriaxone"
+    ],
+    "answer": 3,
+    "explanation": "S. pneumoniae는 CAP·meningitis 등의 대표 원인균으로 임상·감수성에 따라 다르지만 초기에 ceftriaxone을 자주 연결한다(단 CAP empiric이 항상 ceftriaxone 단독은 아니다).",
+    "choice_explanations": [
+      "Ceftazidime은 Pseudomonas용으로 S. pneumoniae 1차 연상이 아니다.",
+      "Cefazolin은 MSSA용이다.",
+      "Ampicillin/sulbactam이 S. pneumoniae의 대표 연상은 아니다.",
+      "정답. S. pneumoniae → Ceftriaxone(초기 연상)."
+    ]
+  },
+  {
+    "id": "asp-02-009",
+    "lessonNo": 2,
+    "lesson": "Gram-positive 균 지도",
+    "lessonRef": "lesson-02.html",
+    "level": 1,
+    "concept": "VRE",
+    "source_type": "material",
+    "question": "Vancomycin-resistant Enterococcus(VRE) 감염의 대표 치료 옵션으로 옳은 것은?",
+    "options": [
+      "linezolid 또는 daptomycin을 고려한다",
+      "cefazolin 또는 ceftriaxone을 고려한다",
+      "vancomycin 고용량 또는 teicoplanin으로 변경한다",
+      "ampicillin 단독으로 충분히 치료한다"
+    ],
+    "answer": 0,
+    "explanation": "VRE(특히 E. faecium)에서는 vancomycin이 듣지 않으므로 linezolid·daptomycin을 대표 옵션으로 고려한다.",
+    "choice_explanations": [
+      "정답. VRE → Linezolid / Daptomycin.",
+      "cephalosporin은 Enterococcus를 커버하지 못한다.",
+      "VanA 등에서는 teicoplanin도 신뢰할 수 없다.",
+      "VRE는 흔히 ampicillin 내성도 동반해 단독으로 충분하지 않다."
+    ]
+  },
+  {
+    "id": "asp-02-010",
+    "lessonNo": 2,
+    "lesson": "Gram-positive 균 지도",
+    "lessonRef": "lesson-02.html",
+    "level": 2,
+    "concept": "Resistance Mechanism",
+    "source_type": "material",
+    "question": "MRSA가 일반 β-lactam에 내성을 보이는 대표 기전은?",
+    "options": [
+      "efflux pump가 β-lactam을 세포 밖으로 배출하기 때문이다",
+      "penicillinase를 과생산해 β-lactam을 가수분해하기 때문이다",
+      "mecA가 만드는 PBP2a가 β-lactam에 낮은 친화도를 갖기 때문이다",
+      "외막 porin 소실로 약물 유입이 차단되기 때문이다"
+    ],
+    "answer": 2,
+    "explanation": "MRSA는 mecA가 코딩하는 PBP2a를 발현한다. PBP2a는 대부분의 β-lactam에 친화도가 낮아 약물이 있어도 세포벽 합성을 지속한다. ceftaroline은 PBP2a에 결합하는 예외다.",
+    "choice_explanations": [
+      "efflux는 MRSA의 methicillin 내성 주 기전이 아니다.",
+      "단순 penicillinase가 아니라 PBP2a가 핵심이다.",
+      "정답. mecA → PBP2a가 핵심 기전이다.",
+      "porin은 Gram-negative의 개념에 가깝다."
+    ]
+  },
+  {
+    "id": "asp-02-011",
+    "lessonNo": 2,
+    "lesson": "Gram-positive 균 지도",
+    "lessonRef": "lesson-02.html",
+    "level": 2,
+    "concept": "Daptomycin",
+    "source_type": "material",
+    "question": "Daptomycin을 pneumonia 치료에 사용하지 않는 기전적 이유는?",
+    "options": [
+      "폐포에 도달하는 혈중농도가 원래 너무 낮기 때문이다",
+      "폐의 pulmonary surfactant가 daptomycin을 불활성화하기 때문이다",
+      "폐 조직에서 daptomycin이 빠르게 대사되어 사라지기 때문이다",
+      "호흡기 병원체가 daptomycin에 내성을 획득했기 때문이다"
+    ],
+    "answer": 1,
+    "explanation": "Daptomycin은 폐의 surfactant에 결합·불활성화되어 폐포 내에서 충분한 활성을 내지 못한다. 그래서 MRSA pneumonia에는 vancomycin·linezolid를 사용한다.",
+    "choice_explanations": [
+      "혈중농도 문제가 아니라 국소 불활성화가 핵심이다.",
+      "정답. surfactant에 의한 불활성화가 이유다.",
+      "빠른 대사가 이유가 아니다.",
+      "내성 획득이 이유가 아니다."
+    ]
+  },
+  {
+    "id": "asp-02-012",
+    "lessonNo": 2,
+    "lesson": "Gram-positive 균 지도",
+    "lessonRef": "lesson-02.html",
+    "level": 2,
+    "concept": "Resistance Mechanism",
+    "source_type": "extended",
+    "question": "Enterococcus가 cephalosporin에 내성을 보이는 기전으로 옳은 것은?",
+    "options": [
+      "cephalosporin을 분해하는 ESBL을 항상 생산하기 때문이다",
+      "세포벽이 없어 cephalosporin 표적이 존재하지 않기 때문이다",
+      "biofilm으로 약물 접근을 차단하는 것이 유일한 이유이기 때문이다",
+      "저친화 PBP에 의한 intrinsic resistance 때문이다"
+    ],
+    "answer": 3,
+    "explanation": "Enterococcus는 cephalosporin에 친화도가 낮은 PBP(대표적으로 PBP5)를 발현해 내재적으로 반응하지 않는다. 이는 ESBL이나 세포벽 부재와는 다른 기전이다.",
+    "choice_explanations": [
+      "ESBL은 Gram-negative 기전으로 설명이 맞지 않는다.",
+      "Enterococcus는 세포벽이 있는 Gram-positive다.",
+      "biofilm이 유일한 이유는 아니다.",
+      "정답. 저친화도 PBP에 의한 intrinsic resistance가 핵심이다."
+    ]
+  },
+  {
+    "id": "asp-02-013",
+    "lessonNo": 2,
+    "lesson": "Gram-positive 균 지도",
+    "lessonRef": "lesson-02.html",
+    "level": 2,
+    "concept": "VRE",
+    "source_type": "extended",
+    "question": "VRE(특히 VanA)에서 vancomycin이 듣지 않게 되는 기전으로 옳은 것은?",
+    "options": [
+      "target이 D-Ala-D-Lac으로 바뀌어 결합이 감소한다",
+      "vancomycin을 가수분해하는 효소를 새로 생산하게 된다",
+      "PBP2a를 발현해 vancomycin이 결합하지 못하게 된다",
+      "efflux pump가 vancomycin을 세포 밖으로 배출하게 된다"
+    ],
+    "answer": 0,
+    "explanation": "Vancomycin은 D-Ala-D-Ala에 결합한다. VanA/VanB VRE에서는 target이 D-Ala-D-Lac으로 변해 결합력이 크게 떨어져 내성이 생긴다. VanA에서는 teicoplanin도 신뢰할 수 없다.",
+    "choice_explanations": [
+      "정답. D-Ala-D-Ala → D-Ala-D-Lac target 변화가 기전이다.",
+      "vancomycin은 효소적 가수분해가 주 기전이 아니다.",
+      "PBP2a는 MRSA(β-lactam) 관련 기전이다.",
+      "efflux가 VanA의 대표 기전이 아니다."
+    ]
+  },
+  {
+    "id": "asp-02-014",
+    "lessonNo": 2,
+    "lesson": "Gram-positive 균 지도",
+    "lessonRef": "lesson-02.html",
+    "level": 2,
+    "concept": "Mechanism of Action",
+    "source_type": "material",
+    "question": "Severe invasive group A Streptococcus(GAS) 감염에서 penicillin에 clindamycin을 추가하는 주된 이유는?",
+    "options": [
+      "clindamycin이 penicillin의 신장 배설을 늦춰 농도를 높이기 때문이다",
+      "clindamycin이 Gram-negative까지 coverage를 넓혀주기 때문이다",
+      "clindamycin이 단백질 합성을 억제해 toxin 생성을 줄이기 때문이다",
+      "clindamycin이 penicillin의 세포벽 침투를 돕기 때문이다"
+    ],
+    "answer": 2,
+    "explanation": "Severe invasive GAS(예: necrotizing fasciitis)에서는 penicillin의 항균 작용에 더해, 단백질 합성을 억제하는 clindamycin으로 exotoxin 생성을 줄이는 임상적 이점을 노려 병용한다.",
+    "choice_explanations": [
+      "배설 지연이 병용 이유가 아니다.",
+      "GAS는 Gram-positive로 Gram-negative coverage가 목적이 아니다.",
+      "정답. 단백질 합성 억제를 통한 toxin 생성 감소가 목적이다.",
+      "침투 보조가 병용 이유가 아니다."
+    ]
+  },
+  {
+    "id": "asp-02-015",
+    "lessonNo": 2,
+    "lesson": "Gram-positive 균 지도",
+    "lessonRef": "lesson-02.html",
+    "level": 2,
+    "concept": "Mechanism of Action",
+    "source_type": "extended",
+    "question": "Linezolid의 작용기전으로 옳은 것은?",
+    "options": [
+      "세포벽 peptidoglycan cross-linking을 억제한다",
+      "리보솜에 결합해 세균 단백질 합성을 억제한다",
+      "세포막을 탈분극시켜 세균을 사멸시킨다",
+      "DNA gyrase를 억제해 복제를 차단한다"
+    ],
+    "answer": 1,
+    "explanation": "Linezolid는 oxazolidinone으로 세균 리보솜에 결합해 단백질 합성 개시를 억제한다. 이는 세포벽을 표적으로 하는 β-lactam·glycopeptide와 다르다.",
+    "choice_explanations": [
+      "cross-linking 억제는 β-lactam의 기전이다.",
+      "정답. linezolid는 단백질 합성 억제제다.",
+      "막 탈분극은 daptomycin의 기전이다.",
+      "DNA gyrase 억제는 fluoroquinolone의 기전이다."
+    ]
+  },
+  {
+    "id": "asp-02-016",
+    "lessonNo": 2,
+    "lesson": "Gram-positive 균 지도",
+    "lessonRef": "lesson-02.html",
+    "level": 2,
+    "concept": "Adverse Effects",
+    "source_type": "extended",
+    "question": "Linezolid와 SSRI 등 serotonergic 약물의 병용에서 주의해야 할 상호작용의 기전은?",
+    "options": [
+      "linezolid가 QT를 연장하는 약물과 상승작용을 일으키기 때문이다",
+      "linezolid가 CYP3A4를 강력히 억제해 약물농도를 높이기 때문이다",
+      "linezolid가 신독성 약물과 겹쳐 신손상을 악화시키기 때문이다",
+      "MAO 억제 작용에 의한 serotonin syndrome 위험 때문이다"
+    ],
+    "answer": 3,
+    "explanation": "Linezolid는 약한 비가역적 MAO 억제 작용이 있어 SSRI·SNRI 등과 병용 시 serotonin syndrome 위험이 있다. 병용 필요성과 대체·모니터링을 평가해야 한다.",
+    "choice_explanations": [
+      "QT 상승작용이 대표 기전이 아니다.",
+      "linezolid는 CYP 강력 억제제가 아니다.",
+      "신독성 상호작용이 대표 기전이 아니다.",
+      "정답. MAO 억제 작용에 의한 serotonin syndrome 위험이 핵심이다."
+    ]
+  },
+  {
+    "id": "asp-02-017",
+    "lessonNo": 2,
+    "lesson": "Gram-positive 균 지도",
+    "lessonRef": "lesson-02.html",
+    "level": 2,
+    "concept": "Infection vs Colonization",
+    "source_type": "material",
+    "question": "혈액배양에서 Staphylococcus epidermidis(CoNS)가 자랐을 때 contamination 가능성을 먼저 고려하는 이유는?",
+    "options": [
+      "CoNS는 피부 정상균총이라 채혈 과정에서 흔히 혼입될 수 있기 때문이다",
+      "CoNS는 배양에서 절대 자라지 않는 균이기 때문이다",
+      "CoNS는 항상 vancomycin에 내성이라 치료가 무의미하기 때문이다",
+      "CoNS는 혈류감염을 일으킬 수 없는 무해한 균이기 때문이다"
+    ],
+    "answer": 0,
+    "explanation": "S. epidermidis는 피부 정상균총이라 채혈 시 혼입되어 배양 양성이 될 수 있다. 몇 개 bottle에서 자랐는지, 반복 배양 일치, catheter·prosthetic material, 임상 징후 등을 함께 평가한다.",
+    "choice_explanations": [
+      "정답. 피부 상재균이라 오염 가능성이 있다.",
+      "CoNS는 배양에서 자랄 수 있다.",
+      "항상 내성인 것도 아니고 그것이 오염 판단 근거도 아니다.",
+      "CoNS도 device 관련 등 진짜 감염을 일으킬 수 있다."
+    ]
+  },
+  {
+    "id": "asp-02-018",
+    "lessonNo": 2,
+    "lesson": "Gram-positive 균 지도",
+    "lessonRef": "lesson-02.html",
+    "level": 2,
+    "concept": "Daptomycin",
+    "source_type": "extended",
+    "question": "Daptomycin의 작용기전으로 옳은 것은?",
+    "options": [
+      "리보솜에 결합해 단백질 합성을 억제한다",
+      "D-Ala-D-Ala에 결합해 세포벽 합성을 막는다",
+      "세포막에 삽입되어 탈분극을 일으켜 세균을 사멸시킨다",
+      "엽산 합성 경로를 차단해 DNA 합성을 방해한다"
+    ],
+    "answer": 2,
+    "explanation": "Daptomycin(lipopeptide)은 세균 세포막에 삽입되어 이온 유출과 막 탈분극을 유발해 사멸시킨다. 이 막 활성 때문에 폐 surfactant에 의해 불활성화된다.",
+    "choice_explanations": [
+      "단백질 합성 억제는 linezolid 등의 기전이다.",
+      "D-Ala-D-Ala 결합은 vancomycin의 기전이다.",
+      "정답. 막 탈분극이 daptomycin의 기전이다.",
+      "엽산 경로 차단은 TMP/SMX의 기전이다."
+    ]
+  },
+  {
+    "id": "asp-02-019",
+    "lessonNo": 2,
+    "lesson": "Gram-positive 균 지도",
+    "lessonRef": "lesson-02.html",
+    "level": 2,
+    "concept": "MRSA",
+    "source_type": "extended",
+    "question": "일반 β-lactam이 MRSA를 못 잡는 것과 달리 ceftaroline이 MRSA를 커버하는 기전은?",
+    "options": [
+      "ceftaroline이 MRSA의 penicillinase를 억제하기 때문이다",
+      "ceftaroline이 변형된 PBP2a에 결합할 수 있기 때문이다",
+      "ceftaroline이 세포막을 탈분극시키기 때문이다",
+      "ceftaroline이 단백질 합성을 억제하기 때문이다"
+    ],
+    "answer": 1,
+    "explanation": "Ceftaroline은 5세대 cephalosporin으로 다른 β-lactam과 달리 MRSA의 PBP2a에 결합할 수 있어 MRSA를 커버한다. 이는 β-lactam도 예외가 있음을 보여준다.",
+    "choice_explanations": [
+      "penicillinase 억제가 기전이 아니다.",
+      "정답. PBP2a에 결합할 수 있는 것이 핵심이다.",
+      "막 탈분극은 daptomycin의 기전이다.",
+      "ceftaroline은 세포벽 작용 β-lactam이다."
+    ]
+  },
+  {
+    "id": "asp-02-020",
+    "lessonNo": 2,
+    "lesson": "Gram-positive 균 지도",
+    "lessonRef": "lesson-02.html",
+    "level": 2,
+    "concept": "PK/PD",
+    "source_type": "extended",
+    "question": "Linezolid가 IV-to-PO 전환에 유리한 약동학적 특징은?",
+    "options": [
+      "반감기가 매우 길어 주 1회 투여가 가능하기 때문이다",
+      "신장으로만 배설되어 용량조절이 필요 없기 때문이다",
+      "혈장 단백결합이 거의 없어 조직 분포가 제한적이기 때문이다",
+      "경구 bioavailability가 거의 100%에 가깝기 때문이다"
+    ],
+    "answer": 3,
+    "explanation": "Linezolid는 경구 bioavailability가 매우 높아 경구 전환 시에도 유사한 전신 노출을 얻을 수 있어 IV-to-PO 전환에 유리하다. 이는 조기 퇴원·line 제거 등 ASP 이점과 연결된다.",
+    "choice_explanations": [
+      "반감기가 극단적으로 길어 주 1회 투여하는 약이 아니다.",
+      "신배설 전용이라는 설명은 정확하지 않다.",
+      "단백결합·분포가 IV-to-PO 유리성의 핵심이 아니다.",
+      "정답. 높은 경구 bioavailability가 핵심이다."
+    ]
+  },
+  {
+    "id": "asp-02-021",
+    "lessonNo": 2,
+    "lesson": "Gram-positive 균 지도",
+    "lessonRef": "lesson-02.html",
+    "level": 2,
+    "concept": "Site-based Therapy",
+    "source_type": "material",
+    "question": "같은 MRSA라도 감염 부위에 따라 약물 선택이 달라진다. 부위별 연결로 옳은 것은?",
+    "options": [
+      "Pneumonia는 vancomycin·linezolid, bacteremia는 daptomycin",
+      "Pneumonia에는 daptomycin, bacteremia에는 ceftriaxone",
+      "Pneumonia에는 cefazolin, bacteremia에는 ampicillin",
+      "Pneumonia와 bacteremia 모두 daptomycin이 1차이다"
+    ],
+    "answer": 0,
+    "explanation": "MRSA pneumonia에는 vancomycin·linezolid(daptomycin은 X), bacteremia/endocarditis에는 vancomycin·daptomycin이 대표 옵션이다. infection site가 약물 선택을 바꾼다.",
+    "choice_explanations": [
+      "정답. 부위별 대표 연결이 맞다.",
+      "daptomycin은 pneumonia에 부적절하고 ceftriaxone은 MRSA를 못 잡는다.",
+      "cefazolin·ampicillin은 MRSA를 커버하지 못한다.",
+      "daptomycin은 pneumonia 1차가 될 수 없다."
+    ]
+  },
+  {
+    "id": "asp-02-022",
+    "lessonNo": 2,
+    "lesson": "Gram-positive 균 지도",
+    "lessonRef": "lesson-02.html",
+    "level": 3,
+    "concept": "De-escalation",
+    "source_type": "material",
+    "question": "Severe sepsis로 Vancomycin + Cefepime을 시작한 환자에서 blood culture가 MSSA로 확인되고 다른 균이 없다. 가장 적절한 조치는?",
+    "options": [
+      "MSSA에 최적인 cefazolin 등 β-lactam으로 변경을 검토한다",
+      "활성이 있으므로 vancomycin을 그대로 유지한다",
+      "coverage 강화를 위해 daptomycin을 추가한다",
+      "안전을 위해 meropenem으로 확대한다"
+    ],
+    "answer": 0,
+    "explanation": "MSSA가 확인되면 vancomycin이 활성은 있어도 최적은 아니다. cefazolin 등 targeted β-lactam으로 de-escalation하는 것이 ASP 원칙이다.",
+    "choice_explanations": [
+      "정답. MSSA에는 targeted β-lactam이 우선이다.",
+      "vancomycin 유지는 최적 치료가 아니다.",
+      "daptomycin 추가는 근거가 없다.",
+      "meropenem 확대는 반대 방향의 판단이다."
+    ]
+  },
+  {
+    "id": "asp-02-023",
+    "lessonNo": 2,
+    "lesson": "Gram-positive 균 지도",
+    "lessonRef": "lesson-02.html",
+    "level": 3,
+    "concept": "Site-based Therapy",
+    "source_type": "material",
+    "question": "MRSA pneumonia 환자에게 daptomycin으로 변경하자는 제안이 있을 때 ASP 약사의 적절한 대응은?",
+    "options": [
+      "daptomycin은 pneumonia에 더 강력하므로 즉시 변경한다",
+      "daptomycin은 폐에서 불활성화되므로 vancomycin·linezolid를 권한다",
+      "daptomycin과 vancomycin을 병용하도록 권한다",
+      "daptomycin으로 바꾸되 용량만 증량하도록 권한다"
+    ],
+    "answer": 1,
+    "explanation": "Daptomycin은 폐 surfactant에 의해 불활성화되어 pneumonia에 부적절하다. MRSA pneumonia에는 vancomycin 또는 linezolid를 권한다.",
+    "choice_explanations": [
+      "pneumonia에서 daptomycin은 오히려 부적절하다.",
+      "정답. 폐에서 불활성화되므로 vancomycin·linezolid가 옳다.",
+      "부적절한 약을 병용하는 것은 해결책이 아니다.",
+      "증량해도 폐 불활성화 문제는 해결되지 않는다."
+    ]
+  },
+  {
+    "id": "asp-02-024",
+    "lessonNo": 2,
+    "lesson": "Gram-positive 균 지도",
+    "lessonRef": "lesson-02.html",
+    "level": 3,
+    "concept": "Site-based Therapy",
+    "source_type": "material",
+    "question": "MRSA bacteremia 환자에서 vancomycin 외에 사용을 고려할 수 있는 대표 대안 약물은?",
+    "options": [
+      "폐 감염용으로 제한되는 linezolid만 사용한다",
+      "MRSA를 못 잡는 cefazolin으로 변경한다",
+      "혈류감염에 활성이 있는 daptomycin을 고려한다",
+      "Gram-negative용 aztreonam을 추가한다"
+    ],
+    "answer": 2,
+    "explanation": "MRSA bacteremia/endocarditis에서는 vancomycin과 함께 daptomycin이 중요한 대안이다(폐가 아닌 혈류·endovascular 감염이므로 daptomycin이 적합).",
+    "choice_explanations": [
+      "linezolid도 옵션이나 '만'이라는 제한은 부적절하다.",
+      "cefazolin은 MRSA를 커버하지 못한다.",
+      "정답. bacteremia에는 daptomycin이 적합한 대안이다.",
+      "aztreonam은 Gram-negative용으로 MRSA와 무관하다."
+    ]
+  },
+  {
+    "id": "asp-02-025",
+    "lessonNo": 2,
+    "lesson": "Gram-positive 균 지도",
+    "lessonRef": "lesson-02.html",
+    "level": 3,
+    "concept": "Infection vs Colonization",
+    "source_type": "material",
+    "question": "무증상 환자의 혈액배양 4쌍 중 1개 bottle에서만 S. epidermidis가 자랐고 catheter나 prosthesis는 없다. ASP 약사의 가장 적절한 접근은?",
+    "options": [
+      "즉시 vancomycin 전신치료를 시작한다",
+      "MRSA 대비를 위해 daptomycin을 시작한다",
+      "carbapenem 광범위 치료로 조기에 대응한다",
+      "contamination 가능성을 평가하고 불필요한 치료를 피한다"
+    ],
+    "answer": 3,
+    "explanation": "단일 bottle 양성·무증상·device 없음은 contamination을 강하게 시사한다. 반복 배양·임상 경과를 함께 보고 불필요한 항생제를 피하는 것이 ASP 판단이다(culture positive ≠ infection).",
+    "choice_explanations": [
+      "오염 가능성이 큰데 즉시 전신치료는 과하다.",
+      "daptomycin 시작도 근거가 부족하다.",
+      "carbapenem은 이 상황과 무관하게 과도하다.",
+      "정답. contamination 평가 후 불필요한 치료를 피한다."
+    ]
+  },
+  {
+    "id": "asp-02-026",
+    "lessonNo": 2,
+    "lesson": "Gram-positive 균 지도",
+    "lessonRef": "lesson-02.html",
+    "level": 3,
+    "concept": "Enterococcus",
+    "source_type": "material",
+    "question": "Blood culture에서 E. faecalis가 확인되고 ampicillin S, vancomycin S이며 현재 vancomycin 투여 중이다. 가장 적절한 조치는?",
+    "options": [
+      "ampicillin 기반 targeted therapy를 검토한다",
+      "vancomycin이 S이므로 변경 없이 그대로 유지한다",
+      "coverage 강화를 위해 ceftriaxone을 추가한다",
+      "내성 대비를 위해 linezolid로 변경한다"
+    ],
+    "answer": 0,
+    "explanation": "Ampicillin-susceptible E. faecalis라면 ampicillin 기반 치료가 targeted therapy로 더 적절할 수 있다. vancomycin이 S라고 반드시 최선인 것은 아니다(Susceptible ≠ Optimal).",
+    "choice_explanations": [
+      "정답. ampicillin S E. faecalis는 ampicillin 기반이 적절하다.",
+      "S라고 vancomycin 유지가 최선은 아니다.",
+      "ceftriaxone은 Enterococcus를 커버하지 못한다.",
+      "linezolid는 VRE 등에 쓰며 감수성 균에 우선 선택이 아니다."
+    ]
+  },
+  {
+    "id": "asp-02-027",
+    "lessonNo": 2,
+    "lesson": "Gram-positive 균 지도",
+    "lessonRef": "lesson-02.html",
+    "level": 3,
+    "concept": "VRE",
+    "source_type": "material",
+    "question": "Blood culture에서 E. faecium(vancomycin R)이 확인되었다. ASP 관점에서 가장 적절한 접근은?",
+    "options": [
+      "같은 glycopeptide인 teicoplanin으로 단순 변경한다",
+      "linezolid/daptomycin을 감염 여부와 함께 평가한다",
+      "vancomycin 용량을 크게 증량해 내성을 극복한다",
+      "ampicillin 단독으로 충분히 치료할 수 있다"
+    ],
+    "answer": 1,
+    "explanation": "VRE는 단순 약물 매칭으로 끝나지 않는다. 실제 infection인지, bacteremia·source·catheter·source control 가능성을 함께 보고 linezolid/daptomycin을 부위·MIC에 맞춰 선택한다. VanA에서는 teicoplanin도 신뢰할 수 없다.",
+    "choice_explanations": [
+      "VanA 등에서 teicoplanin도 내성일 수 있어 단순 변경은 위험하다.",
+      "정답. 감염 여부·source control과 함께 linezolid/daptomycin 평가.",
+      "증량으로 극복되는 내성이 아니다.",
+      "VRE는 흔히 ampicillin 내성도 동반한다."
+    ]
+  },
+  {
+    "id": "asp-02-028",
+    "lessonNo": 2,
+    "lesson": "Gram-positive 균 지도",
+    "lessonRef": "lesson-02.html",
+    "level": 3,
+    "concept": "Source Control",
+    "source_type": "extended",
+    "question": "Group A Streptococcus에 의한 necrotizing fasciitis 환자에서 항생제 외에 반드시 함께 고려해야 할 핵심 조치는?",
+    "options": [
+      "vancomycin을 추가해 MRSA까지 폭넓게 커버한다",
+      "항생제 용량을 최대로 올려 수술을 피한다",
+      "source control(debridement)을 시행한다",
+      "경구 항생제로 전환해 조기 퇴원을 준비한다"
+    ],
+    "answer": 2,
+    "explanation": "Necrotizing fasciitis는 penicillin + clindamycin 같은 항생제만으로 해결되지 않으며, 괴사조직 제거(surgical debridement) 등 source control이 필수적이다.",
+    "choice_explanations": [
+      "GAS는 penicillin 감수성으로 MRSA coverage가 초점이 아니다.",
+      "용량 증량으로 수술을 대체할 수 없다.",
+      "정답. debridement 등 source control이 필수다.",
+      "괴사성 감염 급성기에 경구 전환·퇴원 준비는 부적절하다."
+    ]
+  },
+  {
+    "id": "asp-02-029",
+    "lessonNo": 2,
+    "lesson": "Gram-positive 균 지도",
+    "lessonRef": "lesson-02.html",
+    "level": 3,
+    "concept": "Adverse Effects",
+    "source_type": "extended",
+    "question": "MRSA 감염으로 linezolid를 3주 이상 장기 투여 중인 환자에서 특히 monitoring해야 할 부작용은?",
+    "options": [
+      "vancomycin과 유사한 급성 신손상(AKI)",
+      "cefepime과 유사한 seizure·encephalopathy",
+      "aminoglycoside와 유사한 이독성(ototoxicity)",
+      "thrombocytopenia 등 골수억제 및 신경병증"
+    ],
+    "answer": 3,
+    "explanation": "Linezolid는 장기 사용 시 thrombocytopenia·골수억제, 말초·시신경병증 위험이 커진다. 치료기간이 길수록 혈액학적 지표와 신경학적 증상 monitoring이 중요하다.",
+    "choice_explanations": [
+      "AKI는 linezolid의 대표 장기 독성이 아니다.",
+      "seizure·encephalopathy는 cefepime과 더 관련된다.",
+      "ototoxicity는 aminoglycoside의 특징이다.",
+      "정답. 골수억제·신경병증이 linezolid 장기 사용의 핵심 독성이다."
+    ]
+  },
+  {
+    "id": "asp-02-030",
+    "lessonNo": 2,
+    "lesson": "Gram-positive 균 지도",
+    "lessonRef": "lesson-02.html",
+    "level": 3,
+    "concept": "De-escalation",
+    "source_type": "material",
+    "question": "Empiric Vancomycin + Piperacillin/Tazobactam 투여 중 culture에서 MSSA만 확인되고 Gram-negative 근거가 없다. 가장 적절한 조치는?",
+    "options": [
+      "MSSA에 맞춰 β-lactam으로 좁히고 불필요한 약제를 중단한다",
+      "안정 전까지 두 약을 모두 유지한다",
+      "vancomycin을 daptomycin으로 교체한다",
+      "Pip/tazo를 meropenem으로 상향한다"
+    ],
+    "answer": 0,
+    "explanation": "MSSA만 확인되고 Gram-negative 근거가 없으면 vancomycin과 광범위 Gram-negative coverage 모두 재평가 대상이다. cefazolin 등 targeted β-lactam으로 좁히고 불필요한 약제를 중단하는 것이 de-escalation이다.",
+    "choice_explanations": [
+      "정답. targeted β-lactam으로 좁히고 불필요한 약을 중단한다.",
+      "근거 없는 광범위 유지는 ASP 원칙에 어긋난다.",
+      "MSSA에 daptomycin 교체는 부적절하다.",
+      "meropenem 상향은 근거가 없다."
+    ]
+  },
+  {
+    "id": "asp-02-031",
+    "lessonNo": 2,
+    "lesson": "Gram-positive 균 지도",
+    "lessonRef": "lesson-02.html",
+    "level": 3,
+    "concept": "Enterococcus",
+    "source_type": "extended",
+    "question": "Enterococcus faecalis 균혈증 환자가 ceftriaxone 단독으로 치료되고 있을 때 우려되는 문제는?",
+    "options": [
+      "ceftriaxone이 과도하게 광범위해 내성을 유발하는 점",
+      "Enterococcus를 커버하지 못해 치료가 부적절한 점",
+      "ceftriaxone이 신독성을 일으켜 위험한 점",
+      "ceftriaxone이 daptomycin과 상호작용하는 점"
+    ],
+    "answer": 1,
+    "explanation": "Enterococcus는 cephalosporin에 intrinsic resistance가 있어 ceftriaxone 단독으로는 치료되지 않는다. 감수성에 따라 ampicillin 등으로 변경해야 한다.",
+    "choice_explanations": [
+      "문제의 핵심은 광범위성이 아니라 Enterococcus 미커버다.",
+      "정답. cephalosporin은 Enterococcus를 커버하지 못한다.",
+      "신독성이 이 상황의 핵심 문제가 아니다.",
+      "daptomycin 상호작용은 관련이 없다."
+    ]
+  },
+  {
+    "id": "asp-02-032",
+    "lessonNo": 2,
+    "lesson": "Gram-positive 균 지도",
+    "lessonRef": "lesson-02.html",
+    "level": 3,
+    "concept": "IV-to-PO",
+    "source_type": "extended",
+    "question": "MRSA 감염이 안정되고 경구 섭취가 가능한 환자에서 경구 전환을 고려할 때, bioavailability가 높아 유리한 anti-MRSA 약물은?",
+    "options": [
+      "정주로만 투여되는 vancomycin",
+      "정주 lipopeptide인 daptomycin",
+      "경구 흡수가 우수한 linezolid",
+      "정주 cephalosporin인 ceftaroline"
+    ],
+    "answer": 2,
+    "explanation": "Linezolid는 경구 bioavailability가 높아 조건이 맞으면 IV-to-PO 전환에 유리하다. vancomycin·daptomycin·ceftaroline은 정주 약물이다.",
+    "choice_explanations": [
+      "vancomycin은 전신치료에 경구로 쓰지 않는다.",
+      "daptomycin은 정주 약물이다.",
+      "정답. linezolid는 경구 전환에 유리하다.",
+      "ceftaroline은 정주 약물이다."
+    ]
+  },
+  {
+    "id": "asp-02-033",
+    "lessonNo": 2,
+    "lesson": "Gram-positive 균 지도",
+    "lessonRef": "lesson-02.html",
+    "level": 3,
+    "concept": "Site-based Therapy",
+    "source_type": "extended",
+    "question": "MRSA bacteremia로 daptomycin을 사용하던 환자가 이후 MRSA pneumonia가 동반된 것으로 확인되었다. 가장 적절한 조치는?",
+    "options": [
+      "daptomycin 용량만 증량해 폐 침투를 높인다",
+      "daptomycin에 ceftriaxone을 추가한다",
+      "daptomycin을 유지한 채 경과만 관찰한다",
+      "폐에서 불활성화되므로 vancomycin·linezolid로 조정한다"
+    ],
+    "answer": 3,
+    "explanation": "폐 침범이 확인되면 daptomycin은 surfactant 불활성화로 부적절하다. 폐를 커버할 수 있는 vancomycin 또는 linezolid로 조정해야 한다.",
+    "choice_explanations": [
+      "증량으로 폐 불활성화 문제가 해결되지 않는다.",
+      "ceftriaxone은 MRSA를 커버하지 못한다.",
+      "폐 침범이 있는데 유지·관찰만 하는 것은 부적절하다.",
+      "정답. 폐를 커버하는 vancomycin·linezolid로 조정한다."
+    ]
+  },
+  {
+    "id": "asp-02-034",
+    "lessonNo": 2,
+    "lesson": "Gram-positive 균 지도",
+    "lessonRef": "lesson-02.html",
+    "level": 3,
+    "concept": "Infection vs Colonization",
+    "source_type": "material",
+    "question": "\"Culture positive = infection\"이라는 명제에 대한 ASP 관점의 판단으로 옳은 것은?",
+    "options": [
+      "배양에서 균이 나오면 정착·오염 가능성도 평가해야 하며 항상 감염은 아니다",
+      "배양 양성은 곧 감염이므로 예외 없이 치료를 시작해야 한다",
+      "배양 양성이면 반드시 broad-spectrum으로 시작해야 한다",
+      "배양 양성 균은 무조건 carbapenem으로 치료해야 한다"
+    ],
+    "answer": 0,
+    "explanation": "배양 양성이 곧 감염을 의미하지는 않는다. colonization·contamination 가능성과 임상 징후를 함께 평가해 불필요한 항생제를 피하는 것이 ASP의 기본이다.",
+    "choice_explanations": [
+      "정답. 정착·오염 가능성을 평가해야 한다.",
+      "'배양 양성=감염'은 성립하지 않는다.",
+      "근거 없는 broad-spectrum 시작은 부적절하다.",
+      "carbapenem 일률 사용은 잘못된 접근이다."
+    ]
+  }
+]

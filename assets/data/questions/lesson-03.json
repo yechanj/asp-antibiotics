@@ -1,0 +1,818 @@
+[
+  {
+    "id": "asp-03-001",
+    "lessonNo": 3,
+    "lesson": "Enterobacterales",
+    "lessonRef": "lesson-03.html",
+    "level": 1,
+    "concept": "E. coli",
+    "source_type": "material",
+    "question": "Enterobacterales 중 요로감염(UTI)의 대표 원인균으로 가장 먼저 떠올려야 할 균은?",
+    "options": [
+      "urease를 생성하는 Proteus mirabilis",
+      "장내 정상균총이자 UTI 대표균인 Escherichia coli",
+      "inducible AmpC로 유명한 Enterobacter cloacae",
+      "ESBL·CRE와 강하게 연결되는 Klebsiella pneumoniae"
+    ],
+    "answer": 1,
+    "explanation": "E. coli는 장내 정상균총의 일부이지만 요로로 이동하면 UTI를 일으키는 대표 원인균이며, pyelonephritis·bacteremia·복강내 감염도 흔하다.",
+    "choice_explanations": [
+      "Proteus도 UTI를 일으키지만 '대표 원인균'은 E. coli다.",
+      "정답. E. coli = UTI의 대표균.",
+      "Enterobacter는 AmpC로 기억하는 균이다.",
+      "Klebsiella는 내성(ESBL/CRE) 맥락에서 더 강조된다."
+    ]
+  },
+  {
+    "id": "asp-03-002",
+    "lessonNo": 3,
+    "lesson": "Enterobacterales",
+    "lessonRef": "lesson-03.html",
+    "level": 1,
+    "concept": "Klebsiella",
+    "source_type": "material",
+    "question": "Klebsiella pneumoniae에 대한 설명으로 옳은 것은?",
+    "options": [
+      "이름에 pneumoniae가 있어 폐렴 환자에서만 문제가 된다",
+      "장내 정상균총이 아니어서 임상 검체에서 드물게 발견된다",
+      "이름과 달리 UTI·bacteremia 등 다양한 감염을 일으키며 내성이 중요하다",
+      "cephalosporin에 intrinsic resistance가 있어 β-lactam이 듣지 않는다"
+    ],
+    "answer": 2,
+    "explanation": "Klebsiella는 이름과 달리 폐렴 전용이 아니며 UTI·bacteremia·복강내 감염 등을 일으킨다. 특히 ESBL·CRE 같은 내성 문제에서 매우 중요하다.",
+    "choice_explanations": [
+      "폐렴 전용이 아니며 검체·감염 부위가 더 중요하다.",
+      "Klebsiella는 임상에서 흔히 접하는 균이다.",
+      "정답. 다양한 감염 + 내성 중요성이 핵심이다.",
+      "cephalosporin intrinsic resistance는 Enterococcus의 특징이다."
+    ]
+  },
+  {
+    "id": "asp-03-003",
+    "lessonNo": 3,
+    "lesson": "Enterobacterales",
+    "lessonRef": "lesson-03.html",
+    "level": 1,
+    "concept": "Proteus",
+    "source_type": "material",
+    "question": "Proteus mirabilis와 가장 강하게 연결해 기억해야 할 특징 조합은?",
+    "options": [
+      "UTI · urease 생성 · struvite stone",
+      "폐렴 · biofilm · carbapenem 내성",
+      "복강내 감염 · anaerobe · 농양 형성",
+      "혈류감염 · ESBL · 다제내성"
+    ],
+    "answer": 0,
+    "explanation": "Proteus는 UTI와 강하게 연결되며 urease(+)로 urea를 분해해 요를 알칼리화하고 struvite stone을 형성할 수 있다.",
+    "choice_explanations": [
+      "정답. Proteus = UTI + urease + struvite stone.",
+      "폐렴·carbapenem 내성은 Proteus의 대표 연상이 아니다.",
+      "anaerobe·농양은 Proteus의 핵심 연상이 아니다.",
+      "ESBL·다제내성은 Klebsiella에 더 강하게 연결된다."
+    ]
+  },
+  {
+    "id": "asp-03-004",
+    "lessonNo": 3,
+    "lesson": "Enterobacterales",
+    "lessonRef": "lesson-03.html",
+    "level": 1,
+    "concept": "Enterobacter / AmpC",
+    "source_type": "material",
+    "question": "Enterobacter cloacae complex를 보면 가장 먼저 떠올려야 할 resistance mechanism은?",
+    "options": [
+      "target 변화에 의한 vancomycin 내성",
+      "변형 PBP2a에 의한 methicillin 내성",
+      "carbapenem을 분해하는 metallo-β-lactamase",
+      "특정 β-lactam 노출로 발현이 증가하는 inducible AmpC"
+    ],
+    "answer": 3,
+    "explanation": "Enterobacter cloacae complex는 chromosomal AmpC를 가져 β-lactam 노출 시 enzyme 발현이 증가할 수 있다. 초기 ceftriaxone S여도 치료 중 resistance가 나타날 수 있다.",
+    "choice_explanations": [
+      "vancomycin 내성은 VRE의 개념이다.",
+      "PBP2a는 MRSA의 기전이다.",
+      "metallo-β-lactamase는 CRE(NDM 등)와 연결된다.",
+      "정답. Enterobacter = inducible AmpC."
+    ]
+  },
+  {
+    "id": "asp-03-005",
+    "lessonNo": 3,
+    "lesson": "Enterobacterales",
+    "lessonRef": "lesson-03.html",
+    "level": 1,
+    "concept": "ESBL",
+    "source_type": "material",
+    "question": "ESBL(Extended-Spectrum β-Lactamase)에 대한 설명으로 옳은 것은?",
+    "options": [
+      "penicillin·cephalosporin은 무력화하나 carbapenem엔 약하다",
+      "carbapenem을 포함한 모든 β-lactam을 강력하게 분해한다",
+      "Gram-positive 세균이 주로 생산하는 효소이다",
+      "vancomycin과 aminoglycoside를 비활성화하는 효소이다"
+    ],
+    "answer": 0,
+    "explanation": "ESBL은 여러 penicillin·cephalosporin·aztreonam을 비활성화하지만 carbapenem은 일반적으로 ESBL에 의해 분해되지 않아 신뢰 옵션이 된다.",
+    "choice_explanations": [
+      "정답. cephalosporin은 무력화되나 carbapenem은 안정적이다.",
+      "carbapenem은 ESBL에 대체로 안정적이다.",
+      "ESBL은 Gram-negative의 효소다.",
+      "ESBL은 β-lactam을 표적으로 하며 vancomycin과 무관하다."
+    ]
+  },
+  {
+    "id": "asp-03-006",
+    "lessonNo": 3,
+    "lesson": "Enterobacterales",
+    "lessonRef": "lesson-03.html",
+    "level": 1,
+    "concept": "Carbapenems",
+    "source_type": "material",
+    "question": "ESBL-producing Enterobacterales 중증 감염에서 중요한 역할을 하는 β-lactam 계열은?",
+    "options": [
+      "3세대 cephalosporin 계열",
+      "aminopenicillin 계열",
+      "carbapenem 계열",
+      "1세대 cephalosporin 계열"
+    ],
+    "answer": 2,
+    "explanation": "ESBL 중증 감염에서는 ESBL에 안정적인 carbapenem이 중요한 치료군이다. 단 부위·중증도에 따라 ertapenem으로 충분한지, meropenem이 필요한지를 함께 평가한다.",
+    "choice_explanations": [
+      "3세대 cephalosporin은 ESBL에 의해 무력화된다.",
+      "aminopenicillin도 ESBL에 무력화된다.",
+      "정답. carbapenem이 ESBL 중증 감염의 신뢰 옵션이다.",
+      "1세대 cephalosporin은 ESBL 감염에 부적절하다."
+    ]
+  },
+  {
+    "id": "asp-03-007",
+    "lessonNo": 3,
+    "lesson": "Enterobacterales",
+    "lessonRef": "lesson-03.html",
+    "level": 1,
+    "concept": "Carbapenems",
+    "source_type": "material",
+    "question": "Ertapenem과 meropenem 중 Pseudomonas coverage가 있는 약물은?",
+    "options": [
+      "ertapenem만 Pseudomonas를 커버한다",
+      "meropenem이 Pseudomonas를 커버한다",
+      "두 약 모두 Pseudomonas를 커버하지 못한다",
+      "두 약 모두 Pseudomonas를 커버한다"
+    ],
+    "answer": 1,
+    "explanation": "Meropenem은 Pseudomonas를 커버하지만 ertapenem은 Pseudomonas·Acinetobacter를 신뢰성 있게 커버하지 못한다. 두 약 모두 ESBL Enterobacterales에는 유효하다.",
+    "choice_explanations": [
+      "ertapenem은 Pseudomonas를 커버하지 못한다.",
+      "정답. meropenem이 Pseudomonas를 커버한다.",
+      "meropenem은 Pseudomonas를 커버한다.",
+      "ertapenem은 Pseudomonas를 커버하지 못한다."
+    ]
+  },
+  {
+    "id": "asp-03-008",
+    "lessonNo": 3,
+    "lesson": "Enterobacterales",
+    "lessonRef": "lesson-03.html",
+    "level": 1,
+    "concept": "CRE",
+    "source_type": "material",
+    "question": "CRE(Carbapenem-Resistant Enterobacterales)에 대한 설명으로 옳은 것은?",
+    "options": [
+      "carbapenem에 내성을 가진 Enterobacterales로 치료가 까다로운 저항균이다",
+      "cephalosporin에만 내성이고 carbapenem에는 감수성인 균이다",
+      "vancomycin에 내성을 가진 Gram-positive 균이다",
+      "항생제에 전혀 내성이 없는 감수성 균을 의미한다"
+    ],
+    "answer": 0,
+    "explanation": "CRE는 carbapenem에 내성을 가진 Enterobacterales로 매우 중요한 healthcare-associated 저항균이다. carbapenemase(KPC·NDM·OXA-48-like) 등 다양한 기전이 관여한다.",
+    "choice_explanations": [
+      "정답. carbapenem 내성 Enterobacterales가 CRE다.",
+      "carbapenem에 내성을 갖는 것이 CRE의 정의다.",
+      "vancomycin 내성 Gram-positive는 VRE다.",
+      "CRE는 내성이 없는 균이 아니다."
+    ]
+  },
+  {
+    "id": "asp-03-009",
+    "lessonNo": 3,
+    "lesson": "Enterobacterales",
+    "lessonRef": "lesson-03.html",
+    "level": 1,
+    "concept": "Infection vs Colonization",
+    "source_type": "material",
+    "question": "Urine culture에서 균이 자랐다는 사실만으로 항생제를 시작하려 할 때 ASP 관점의 옳은 판단은?",
+    "options": [
+      "배양 양성은 곧 UTI이므로 즉시 치료를 시작한다",
+      "증상 여부를 먼저 확인하며 무증상 세균뇨는 대개 치료하지 않는다",
+      "모든 배양 양성에는 broad-spectrum으로 시작한다",
+      "균이 검출되면 carbapenem으로 시작하는 것이 안전하다"
+    ],
+    "answer": 1,
+    "explanation": "Culture positive ≠ infection이다. dysuria·frequency·fever·flank pain 등 증상을 먼저 확인하고, 무증상 세균뇨는 대개(임신 등 예외 제외) 치료하지 않는다.",
+    "choice_explanations": [
+      "배양 양성이 곧 UTI는 아니다.",
+      "정답. 증상 확인이 먼저이며 ASB는 대개 치료하지 않는다.",
+      "근거 없는 broad-spectrum 시작은 부적절하다.",
+      "carbapenem 일률 시작은 잘못된 접근이다."
+    ]
+  },
+  {
+    "id": "asp-03-010",
+    "lessonNo": 3,
+    "lesson": "Enterobacterales",
+    "lessonRef": "lesson-03.html",
+    "level": 2,
+    "concept": "Beta-lactamase",
+    "source_type": "material",
+    "question": "ESBL producer에서 ceftriaxone이 실패하는 기전으로 옳은 것은?",
+    "options": [
+      "ceftriaxone이 세균 안으로 들어가지 못하도록 porin이 완전히 사라진다",
+      "ESBL이 ceftriaxone을 가수분해해 표적(PBP)에 도달하지 못하게 한다",
+      "ceftriaxone의 표적 PBP가 변형되어 결합이 사라진다",
+      "efflux pump가 ceftriaxone을 즉시 배출한다"
+    ],
+    "answer": 1,
+    "explanation": "ESBL은 확장된 spectrum의 β-lactamase로 ceftriaxone 같은 cephalosporin을 가수분해한다. 그 결과 약물이 PBP에 도달하지 못해 세포벽 억제가 실패한다.",
+    "choice_explanations": [
+      "porin 완전 소실이 ESBL의 정의적 기전은 아니다.",
+      "정답. 효소적 가수분해가 핵심 기전이다.",
+      "PBP 변형은 ESBL의 기전이 아니다.",
+      "efflux가 ESBL의 대표 기전은 아니다."
+    ]
+  },
+  {
+    "id": "asp-03-011",
+    "lessonNo": 3,
+    "lesson": "Enterobacterales",
+    "lessonRef": "lesson-03.html",
+    "level": 2,
+    "concept": "Culture Interpretation",
+    "source_type": "material",
+    "question": "E. coli에서 Ceftriaxone R · Ceftazidime R · Ertapenem S · Meropenem S 패턴이 보일 때 가장 먼저 의심할 것은?",
+    "options": [
+      "carbapenem을 분해하는 CRE(carbapenemase) 표현형",
+      "cephalosporin은 무력화되나 carbapenem은 유지되는 ESBL 표현형",
+      "methicillin 내성을 뜻하는 MRSA 표현형",
+      "vancomycin 내성을 뜻하는 VRE 표현형"
+    ],
+    "answer": 1,
+    "explanation": "3세대 cephalosporin R + carbapenem S 패턴은 전형적인 ESBL-producing Enterobacterales를 시사한다(실제 해석은 검사법·기관 기준 확인 필요).",
+    "choice_explanations": [
+      "carbapenem이 S이므로 CRE 패턴은 아니다.",
+      "정답. cephalosporin R + carbapenem S는 ESBL을 시사한다.",
+      "MRSA는 Gram-positive로 해당되지 않는다.",
+      "VRE는 Enterococcus로 해당되지 않는다."
+    ]
+  },
+  {
+    "id": "asp-03-012",
+    "lessonNo": 3,
+    "lesson": "Enterobacterales",
+    "lessonRef": "lesson-03.html",
+    "level": 2,
+    "concept": "Beta-lactamase",
+    "source_type": "material",
+    "question": "ESBL 감염에서 carbapenem이 신뢰받는 이유로 옳은 것은?",
+    "options": [
+      "carbapenem이 대부분의 ESBL 효소에 의해 가수분해되지 않기 때문이다",
+      "carbapenem이 ESBL 균의 porin을 복구시키기 때문이다",
+      "carbapenem이 ESBL 유전자 발현 자체를 차단하기 때문이다",
+      "carbapenem이 ESBL 균의 세포막을 직접 파괴하기 때문이다"
+    ],
+    "answer": 0,
+    "explanation": "Carbapenem은 대부분의 ESBL 효소에 안정적이어서 가수분해되지 않는다. 그래서 ESBL 중증 감염의 신뢰 옵션이 된다(단 carbapenemase가 있으면 다르다).",
+    "choice_explanations": [
+      "정답. ESBL에 안정적이라 가수분해되지 않는다.",
+      "porin 복구는 carbapenem의 작용이 아니다.",
+      "유전자 발현 차단이 기전이 아니다.",
+      "carbapenem은 세포벽 작용 약물로 막을 직접 파괴하지 않는다."
+    ]
+  },
+  {
+    "id": "asp-03-013",
+    "lessonNo": 3,
+    "lesson": "Enterobacterales",
+    "lessonRef": "lesson-03.html",
+    "level": 2,
+    "concept": "Enterobacter / AmpC",
+    "source_type": "material",
+    "question": "Enterobacter cloacae가 초기 ceftriaxone S로 보고되어도 ceftriaxone을 신중히 판단해야 하는 이유는?",
+    "options": [
+      "ceftriaxone이 Enterobacter에 intrinsic resistance를 갖기 때문이다",
+      "ceftriaxone이 신독성을 유발하기 때문이다",
+      "β-lactam 노출 중 AmpC 발현이 증가해 치료 중 내성이 나타날 수 있기 때문이다",
+      "ceftriaxone이 Pseudomonas를 커버하지 못하기 때문이다"
+    ],
+    "answer": 2,
+    "explanation": "Enterobacter cloacae는 inducible AmpC를 가져 ceftriaxone 등 β-lactam 노출 중 enzyme 발현이 증가하면서 치료 중 resistance emergence가 나타날 수 있다. 그래서 초기 S만 보고 안심하면 안 된다.",
+    "choice_explanations": [
+      "intrinsic resistance는 Enterococcus/cephalosporin 관계의 개념이다.",
+      "신독성이 이 상황의 핵심 이유가 아니다.",
+      "정답. inducible AmpC에 의한 치료 중 내성 emergence가 이유다.",
+      "Pseudomonas coverage 문제는 이 상황의 초점이 아니다."
+    ]
+  },
+  {
+    "id": "asp-03-014",
+    "lessonNo": 3,
+    "lesson": "Enterobacterales",
+    "lessonRef": "lesson-03.html",
+    "level": 2,
+    "concept": "Proteus",
+    "source_type": "material",
+    "question": "Proteus 감염이 struvite stone과 연결되는 기전으로 옳은 것은?",
+    "options": [
+      "urease가 요를 알칼리화하기 때문이다",
+      "biofilm을 형성해 결정을 직접 침착시키기 때문이다",
+      "요를 산성화해 칼슘 결석을 유도하기 때문이다",
+      "ESBL을 생산해 결정 형성을 촉진하기 때문이다"
+    ],
+    "answer": 0,
+    "explanation": "Proteus의 urease는 urea를 ammonia로 분해해 요 pH를 올린다(알칼리화). 알칼리 환경에서 struvite stone이 형성될 수 있어 stone이 있으면 source control이 필요할 수 있다.",
+    "choice_explanations": [
+      "정답. urease → ammonia → 알칼리화 → struvite stone.",
+      "biofilm이 struvite stone의 핵심 기전은 아니다.",
+      "Proteus는 요를 알칼리화하며 산성화가 아니다.",
+      "ESBL은 결석 형성 기전과 무관하다."
+    ]
+  },
+  {
+    "id": "asp-03-015",
+    "lessonNo": 3,
+    "lesson": "Enterobacterales",
+    "lessonRef": "lesson-03.html",
+    "level": 2,
+    "concept": "Resistance Mechanism",
+    "source_type": "material",
+    "question": "Microbiology report에서 균 이름 자체가 유용한 이유로 옳은 것은?",
+    "options": [
+      "균 이름만으로 항생제 투여기간을 정확히 결정할 수 있기 때문이다",
+      "예상 내성기전의 단서를 주기 때문이다",
+      "균 이름으로 감염 부위를 확정할 수 있기 때문이다",
+      "균 이름이 환자의 신기능을 알려주기 때문이다"
+    ],
+    "answer": 1,
+    "explanation": "예를 들어 Enterobacter cloacae → AmpC, Klebsiella → ESBL/CRE처럼 균종은 intrinsic/inducible resistance와 예상 susceptibility의 힌트가 된다. 그래서 S/R 문자만이 아니라 균종을 함께 본다.",
+    "choice_explanations": [
+      "투여기간은 균 이름만으로 정해지지 않는다.",
+      "정답. 균종은 예상 내성기전의 단서다.",
+      "감염 부위는 균 이름만으로 확정되지 않는다.",
+      "신기능은 균 이름과 무관하다."
+    ]
+  },
+  {
+    "id": "asp-03-016",
+    "lessonNo": 3,
+    "lesson": "Enterobacterales",
+    "lessonRef": "lesson-03.html",
+    "level": 2,
+    "concept": "CRE",
+    "source_type": "material",
+    "question": "CRE에서 carbapenem 내성을 일으키는 대표적 carbapenemase로 묶인 것은?",
+    "options": [
+      "mecA · vanA · vanB",
+      "KPC · NDM · OXA-48-like",
+      "PBP2a · PBP5 · porin",
+      "SSRI · MAO · CYP3A4"
+    ],
+    "answer": 1,
+    "explanation": "CRE의 carbapenemase 대표 예는 KPC·NDM·OXA-48-like다. 어떤 carbapenemase인지에 따라 효과적인 newer β-lactam이 달라질 수 있어 mechanism이 중요하다.",
+    "choice_explanations": [
+      "mecA/vanA/vanB는 Gram-positive 내성 유전자다.",
+      "정답. KPC·NDM·OXA-48-like가 대표 carbapenemase다.",
+      "PBP2a/PBP5는 β-lactam 표적 관련 개념이다.",
+      "SSRI·MAO·CYP3A4는 약물상호작용 용어다."
+    ]
+  },
+  {
+    "id": "asp-03-017",
+    "lessonNo": 3,
+    "lesson": "Enterobacterales",
+    "lessonRef": "lesson-03.html",
+    "level": 2,
+    "concept": "Resistance Mechanism",
+    "source_type": "extended",
+    "question": "CRE 치료에서 carbapenemase의 종류(예: KPC vs NDM)를 아는 것이 중요한 이유는?",
+    "options": [
+      "carbapenemase 종류와 무관하게 항상 colistin이 최선이기 때문이다",
+      "carbapenemase 종류에 따라 효과적인 newer β-lactam이 달라질 수 있기 때문이다",
+      "carbapenemase 종류가 감염 부위를 결정하기 때문이다",
+      "carbapenemase 종류가 환자의 신기능을 결정하기 때문이다"
+    ],
+    "answer": 1,
+    "explanation": "예컨대 ceftazidime/avibactam은 KPC·OXA-48-like에는 유효하지만 metallo-β-lactamase인 NDM에는 듣지 않는다. 그래서 CRE에서는 mechanism에 따라 치료가 달라질 수 있다(자세한 regimen은 CRE 강의).",
+    "choice_explanations": [
+      "colistin이 항상 최선인 것은 아니며 mechanism이 선택을 바꾼다.",
+      "정답. mechanism에 따라 유효한 newer β-lactam이 달라진다.",
+      "감염 부위를 결정하는 요소가 아니다.",
+      "신기능과 무관하다."
+    ]
+  },
+  {
+    "id": "asp-03-018",
+    "lessonNo": 3,
+    "lesson": "Enterobacterales",
+    "lessonRef": "lesson-03.html",
+    "level": 2,
+    "concept": "Proteus",
+    "source_type": "extended",
+    "question": "\"UTI니까 nitrofurantoin\"이 Proteus에서 부적절할 수 있는 이유는?",
+    "options": [
+      "nitrofurantoin이 Proteus를 신뢰성 있게 커버하지 못하기 때문이다",
+      "nitrofurantoin이 Proteus에만 특이적으로 신독성을 일으키기 때문이다",
+      "nitrofurantoin이 struvite stone을 직접 키우기 때문이다",
+      "nitrofurantoin이 Proteus의 urease를 활성화하기 때문이다"
+    ],
+    "answer": 0,
+    "explanation": "Nitrofurantoin은 Proteus를 신뢰성 있게 커버하지 못한다. Urine culture에서 Proteus가 확인되면 현재 처방이 nitrofurantoin인지 확인하는 것이 좋은 검토 포인트다.",
+    "choice_explanations": [
+      "정답. nitrofurantoin은 Proteus coverage가 신뢰되지 않는다.",
+      "Proteus 특이 신독성 때문이 아니다.",
+      "stone을 직접 키우는 것이 이유가 아니다.",
+      "urease 활성화가 이유가 아니다."
+    ]
+  },
+  {
+    "id": "asp-03-019",
+    "lessonNo": 3,
+    "lesson": "Enterobacterales",
+    "lessonRef": "lesson-03.html",
+    "level": 2,
+    "concept": "Beta-lactamase",
+    "source_type": "extended",
+    "question": "ESBL이 무력화할 수 있는 β-lactam으로 옳게 묶인 것은?",
+    "options": [
+      "여러 penicillin · cephalosporin · aztreonam",
+      "carbapenem 계열 전체",
+      "vancomycin과 teicoplanin",
+      "aminoglycoside와 fluoroquinolone"
+    ],
+    "answer": 0,
+    "explanation": "ESBL은 여러 penicillin·cephalosporin뿐 아니라 monobactam인 aztreonam도 무력화할 수 있다. 반면 carbapenem은 일반적으로 안정적이다(vancomycin·aminoglycoside·fluoroquinolone은 β-lactam이 아니다).",
+    "choice_explanations": [
+      "정답. penicillin·cephalosporin·aztreonam이 영향을 받는다.",
+      "carbapenem은 일반적으로 ESBL에 안정적이다.",
+      "vancomycin·teicoplanin은 β-lactam이 아니다.",
+      "aminoglycoside·fluoroquinolone은 β-lactam이 아니다."
+    ]
+  },
+  {
+    "id": "asp-03-020",
+    "lessonNo": 3,
+    "lesson": "Enterobacterales",
+    "lessonRef": "lesson-03.html",
+    "level": 2,
+    "concept": "Enterobacter / AmpC",
+    "source_type": "extended",
+    "question": "임상적으로 중요한 inducible AmpC 위험이 강조되는 대표 균으로 묶인 것은?",
+    "options": [
+      "Staphylococcus aureus · Streptococcus pneumoniae · Enterococcus faecalis",
+      "Enterobacter cloacae · Klebsiella aerogenes · Citrobacter freundii",
+      "Pseudomonas aeruginosa · Acinetobacter baumannii · Stenotrophomonas",
+      "E. coli · Proteus mirabilis · Klebsiella pneumoniae"
+    ],
+    "answer": 1,
+    "explanation": "최신 IDSA guidance는 임상적으로 중요한 inducible AmpC 위험균으로 Enterobacter cloacae complex, Klebsiella aerogenes, Citrobacter freundii를 특히 강조한다.",
+    "choice_explanations": [
+      "이들은 Gram-positive로 AmpC와 무관하다.",
+      "정답. 이 세 균이 대표적 inducible AmpC 위험균이다.",
+      "이들은 non-fermenter로 별도 개념이다.",
+      "E. coli·Proteus·K. pneumoniae는 대표 inducible AmpC 강조군이 아니다."
+    ]
+  },
+  {
+    "id": "asp-03-021",
+    "lessonNo": 3,
+    "lesson": "Enterobacterales",
+    "lessonRef": "lesson-03.html",
+    "level": 2,
+    "concept": "GN Classification",
+    "source_type": "material",
+    "question": "Gram-negative bacilli를 ASP 관점에서 크게 둘로 나눌 때 옳은 구분은?",
+    "options": [
+      "Gram-positive와 Gram-negative로 나눈다",
+      "호기성균과 혐기성균으로 나눈다",
+      "Enterobacterales와 non-fermenters로 나눈다",
+      "구균과 간균으로 나눈다"
+    ],
+    "answer": 2,
+    "explanation": "Gram-negative bacilli는 우선 Enterobacterales(E. coli·Klebsiella 등)와 non-fermenters(Pseudomonas·Acinetobacter·Stenotrophomonas)로 나누면 spectrum 해석이 쉬워진다.",
+    "choice_explanations": [
+      "이미 Gram-negative bacilli 안에서의 구분을 묻고 있다.",
+      "호기·혐기 구분은 이 맥락의 1차 분류가 아니다.",
+      "정답. Enterobacterales vs non-fermenters로 나눈다.",
+      "구균·간균 구분은 이 맥락의 핵심이 아니다."
+    ]
+  },
+  {
+    "id": "asp-03-022",
+    "lessonNo": 3,
+    "lesson": "Enterobacterales",
+    "lessonRef": "lesson-03.html",
+    "level": 3,
+    "concept": "Infection vs Colonization",
+    "source_type": "material",
+    "question": "72세 여성, urine culture에서 E. coli ≥100,000 CFU/mL(CTX S·Cipro S·TMP-SMX S). 증상 정보가 없을 때 ASP 약사의 첫 조치는?",
+    "options": [
+      "감수성이 좋으므로 즉시 ceftriaxone을 시작한다",
+      "dysuria·fever 등 증상 유무를 먼저 확인한다",
+      "재발 방지를 위해 예방적 항생제를 시작한다",
+      "carbapenem으로 조기에 강하게 치료한다"
+    ],
+    "answer": 1,
+    "explanation": "배양 양성만으로는 UTI가 아니다. 증상(dysuria·frequency·fever·flank pain 등)을 먼저 확인해야 하며, 무증상 세균뇨라면 대개 치료하지 않는다.",
+    "choice_explanations": [
+      "증상 확인 없이 시작하는 것은 부적절하다.",
+      "정답. 증상 유무 확인이 첫 단계다.",
+      "근거 없는 예방적 항생제는 부적절하다.",
+      "carbapenem 조기 사용은 과도하다."
+    ]
+  },
+  {
+    "id": "asp-03-023",
+    "lessonNo": 3,
+    "lesson": "Enterobacterales",
+    "lessonRef": "lesson-03.html",
+    "level": 3,
+    "concept": "ESBL",
+    "source_type": "material",
+    "question": "65세 남성 pyelonephritis + bacteremia, blood·urine 모두 E. coli(CTX R·Cipro R·TMP-SMX R·Ertapenem S·Meropenem S). 가장 적절한 판단은?",
+    "options": [
+      "감수성인 ciprofloxacin 경구로 전환한다",
+      "감수성에 맞는 carbapenem으로 치료한다",
+      "ceftriaxone을 고용량으로 증량해 사용한다",
+      "TMP-SMX를 병용해 coverage를 보강한다"
+    ],
+    "answer": 1,
+    "explanation": "CTX R + carbapenem S 패턴은 ESBL을 시사하며, cephalosporin·FQ·TMP-SMX 모두 R이다. 중증(bacteremia+pyelonephritis)이므로 감수성이 확인된 carbapenem으로 치료하는 것이 적절하다.",
+    "choice_explanations": [
+      "ciprofloxacin은 R이므로 부적절하다.",
+      "정답. ESBL 중증 감염에 감수성 carbapenem이 적절하다.",
+      "ceftriaxone은 R이며 증량으로 해결되지 않는다.",
+      "TMP-SMX도 R이라 병용해도 도움이 되지 않는다."
+    ]
+  },
+  {
+    "id": "asp-03-024",
+    "lessonNo": 3,
+    "lesson": "Enterobacterales",
+    "lessonRef": "lesson-03.html",
+    "level": 3,
+    "concept": "Enterobacter / AmpC",
+    "source_type": "material",
+    "question": "Blood culture에서 Enterobacter cloacae가 초기 ceftriaxone S로 보고되었다. ASP 약사의 적절한 판단은?",
+    "options": [
+      "S로 보고되었으므로 ceftriaxone을 안심하고 사용한다",
+      "AmpC 내성 emergence를 고려해 옵션을 바꾼다",
+      "vancomycin을 추가해 coverage를 넓힌다",
+      "즉시 항생제를 중단하고 경과만 관찰한다"
+    ],
+    "answer": 1,
+    "explanation": "Enterobacter cloacae는 inducible AmpC 위험균으로 초기 ceftriaxone S여도 치료 중 resistance가 나타날 수 있다. cefepime이나 carbapenem 등 더 안정적인 옵션을 검토한다.",
+    "choice_explanations": [
+      "S만 보고 안심하면 안 되는 대표 상황이다.",
+      "정답. AmpC emergence를 고려해 다른 옵션을 검토한다.",
+      "vancomycin은 Gram-negative와 무관하다.",
+      "혈류감염에서 중단·관찰만 하는 것은 부적절하다."
+    ]
+  },
+  {
+    "id": "asp-03-025",
+    "lessonNo": 3,
+    "lesson": "Enterobacterales",
+    "lessonRef": "lesson-03.html",
+    "level": 3,
+    "concept": "Source Control",
+    "source_type": "material",
+    "question": "78세, recurrent UTI, urine culture에서 Proteus mirabilis, CT에서 renal stone이 확인되었다. 가장 중요한 추가 고려는?",
+    "options": [
+      "항생제만 더 넓은 것으로 바꾸면 충분하다",
+      "감염 지속의 원인이 되는 stone에 대한 source control을 평가한다",
+      "vancomycin을 추가해 Gram-positive까지 커버한다",
+      "무증상이면 무조건 예방적 항생제를 장기 투여한다"
+    ],
+    "answer": 1,
+    "explanation": "Proteus는 urease로 struvite stone을 형성할 수 있고, stone 자체가 감염 persistence에 관여한다. 항생제만으로 해결되지 않을 수 있어 stone에 대한 source control을 평가해야 한다.",
+    "choice_explanations": [
+      "항생제 변경만으로는 구조적 문제가 남는다.",
+      "정답. stone에 대한 source control 평가가 핵심이다.",
+      "vancomycin은 Proteus와 무관하다.",
+      "근거 없는 장기 예방 항생제는 부적절하다."
+    ]
+  },
+  {
+    "id": "asp-03-026",
+    "lessonNo": 3,
+    "lesson": "Enterobacterales",
+    "lessonRef": "lesson-03.html",
+    "level": 3,
+    "concept": "De-escalation",
+    "source_type": "material",
+    "question": "ESBL E. coli 요로감염으로 meropenem을 사용 중이며 Pseudomonas 위험은 없고 환자는 안정적이다. 감수성상 ertapenem S일 때 ASP 조치는?",
+    "options": [
+      "ertapenem으로 좁힐지 검토한다",
+      "가장 넓은 meropenem을 계속 유지한다",
+      "ceftriaxone으로 전환한다",
+      "ciprofloxacin으로 전환한다"
+    ],
+    "answer": 0,
+    "explanation": "Pseudomonas가 불필요한 ESBL 감염에서 ertapenem S라면 antipseudomonal meropenem 대신 ertapenem으로 좁혀 Pseudomonas 선택 압력을 줄이는 것이 ASP 관점에서 합리적이다.",
+    "choice_explanations": [
+      "정답. Pseudomonas 불필요 시 ertapenem으로 좁힌다.",
+      "'가장 넓어서' 유지하는 것은 ASP 원칙에 어긋난다.",
+      "ceftriaxone은 ESBL에 무력하다.",
+      "ESBL은 흔히 FQ도 R이라 부적절할 수 있다."
+    ]
+  },
+  {
+    "id": "asp-03-027",
+    "lessonNo": 3,
+    "lesson": "Enterobacterales",
+    "lessonRef": "lesson-03.html",
+    "level": 3,
+    "concept": "Culture Interpretation",
+    "source_type": "extended",
+    "question": "가래 배양에서 Klebsiella pneumoniae가 자랐다. 이 결과를 해석할 때 가장 중요한 판단 요소는?",
+    "options": [
+      "균 이름에 pneumoniae가 있으므로 무조건 폐렴으로 치료한다",
+      "검체 종류·임상 징후와 실제 감염 부위가 진짜 감염인지 판단하는 데 더 중요하다",
+      "Klebsiella는 항상 ESBL이므로 즉시 carbapenem을 시작한다",
+      "가래에서 나온 균은 항상 오염이므로 무시한다"
+    ],
+    "answer": 1,
+    "explanation": "이름의 pneumoniae가 곧 폐렴을 의미하지 않는다. 검체 종류, 임상 징후(발열·산소요구·침윤 등), 실제 감염 부위를 종합해 진짜 감염인지 판단해야 한다.",
+    "choice_explanations": [
+      "이름만으로 폐렴을 확정할 수 없다.",
+      "정답. 검체·임상·부위 종합 판단이 핵심이다.",
+      "Klebsiella가 항상 ESBL인 것은 아니다.",
+      "가래 배양이 항상 오염인 것도 아니다."
+    ]
+  },
+  {
+    "id": "asp-03-028",
+    "lessonNo": 3,
+    "lesson": "Enterobacterales",
+    "lessonRef": "lesson-03.html",
+    "level": 3,
+    "concept": "Proteus",
+    "source_type": "extended",
+    "question": "UTI 환자가 nitrofurantoin을 복용 중인데 urine culture에서 Proteus mirabilis가 확인되었다. 적절한 검토는?",
+    "options": [
+      "nitrofurantoin은 Proteus 커버가 신뢰되지 않으므로 처방 적절성을 재검토한다",
+      "nitrofurantoin이 Proteus에 가장 효과적이므로 그대로 유지한다",
+      "nitrofurantoin 용량을 두 배로 올린다",
+      "vancomycin을 추가한다"
+    ],
+    "answer": 0,
+    "explanation": "Nitrofurantoin은 Proteus를 신뢰성 있게 커버하지 못하므로, Proteus가 확인되면 현재 nitrofurantoin 처방이 적절한지 재검토하고 감수성에 맞는 약으로 조정해야 한다.",
+    "choice_explanations": [
+      "정답. Proteus 확인 시 nitrofurantoin 적절성을 재검토한다.",
+      "nitrofurantoin은 Proteus에 신뢰되는 약이 아니다.",
+      "용량 증량으로 coverage 문제가 해결되지 않는다.",
+      "vancomycin은 Gram-negative와 무관하다."
+    ]
+  },
+  {
+    "id": "asp-03-029",
+    "lessonNo": 3,
+    "lesson": "Enterobacterales",
+    "lessonRef": "lesson-03.html",
+    "level": 3,
+    "concept": "De-escalation",
+    "source_type": "material",
+    "question": "72세 septic shock로 pip/tazo 시작, blood culture E. coli(CTX R·Ertapenem S·Meropenem S). 안정화된 뒤 Pseudomonas 근거가 없을 때 통합적 ASP 흐름으로 옳은 것은?",
+    "options": [
+      "가장 넓은 meropenem을 끝까지 유지한다",
+      "치료 후 좁힐 수 있는지 재평가한다",
+      "ceftriaxone으로 즉시 전환한다",
+      "항생제를 조기에 모두 중단한다"
+    ],
+    "answer": 1,
+    "explanation": "ESBL 가능성이 높은 중증 감염은 감수성이 확인된 carbapenem으로 치료하되, 안정화·Pseudomonas 부재가 확인되면 ertapenem 등으로 더 좁힐 수 있는지 지속적으로 재평가하는 것이 ASP 흐름이다.",
+    "choice_explanations": [
+      "'가장 넓어서' 끝까지 유지하는 것은 ASP 원칙에 어긋난다.",
+      "정답. 감수성 carbapenem 치료 후 de-escalation 재평가.",
+      "ceftriaxone은 ESBL에 무력하다.",
+      "중증 감염을 조기에 모두 중단하는 것은 위험하다."
+    ]
+  },
+  {
+    "id": "asp-03-030",
+    "lessonNo": 3,
+    "lesson": "Enterobacterales",
+    "lessonRef": "lesson-03.html",
+    "level": 3,
+    "concept": "CRE",
+    "source_type": "extended",
+    "question": "혈액배양에서 CRE(carbapenemase-producing Klebsiella)가 확인되었다. ASP 관점의 적절한 접근은?",
+    "options": [
+      "일반 meropenem 고용량으로 밀어붙이면 충분하다",
+      "기전·감수성 기반으로 치료한다",
+      "vancomycin을 추가해 coverage를 넓힌다",
+      "ceftriaxone으로 de-escalation한다"
+    ],
+    "answer": 1,
+    "explanation": "CRE는 carbapenemase 종류(KPC/NDM/OXA-48-like)에 따라 유효한 newer β-lactam이 달라진다. 기전·감수성 기반 치료, 감염내과 협진, source control을 함께 고려해야 한다.",
+    "choice_explanations": [
+      "carbapenem 내성 균에 meropenem만으로는 부족하다.",
+      "정답. 기전·감수성 기반 치료 + 협진·source control이 적절하다.",
+      "vancomycin은 Gram-negative와 무관하다.",
+      "ceftriaxone은 CRE에 무력하다."
+    ]
+  },
+  {
+    "id": "asp-03-031",
+    "lessonNo": 3,
+    "lesson": "Enterobacterales",
+    "lessonRef": "lesson-03.html",
+    "level": 3,
+    "concept": "Culture Interpretation",
+    "source_type": "material",
+    "question": "E. coli AST에서 Ampicillin R·Ceftriaxone R·Cefepime S·Ertapenem S·Meropenem S 패턴을 보였다. 가장 먼저 의심할 표현형은?",
+    "options": [
+      "carbapenem을 분해하는 CRE",
+      "ESBL을 시사하는 표현형",
+      "methicillin 내성인 MRSA",
+      "vancomycin 내성인 VRE"
+    ],
+    "answer": 1,
+    "explanation": "3세대 cephalosporin(ceftriaxone) R + carbapenem S 패턴은 ESBL-producing Enterobacterales를 시사한다. 실제 해석은 검사법·기관 기준을 함께 확인한다.",
+    "choice_explanations": [
+      "carbapenem이 S이므로 CRE로 보기 어렵다.",
+      "정답. cephalosporin R + carbapenem S → ESBL 가능성.",
+      "MRSA는 Gram-positive라 해당되지 않는다.",
+      "VRE는 Enterococcus라 해당되지 않는다."
+    ]
+  },
+  {
+    "id": "asp-03-032",
+    "lessonNo": 3,
+    "lesson": "Enterobacterales",
+    "lessonRef": "lesson-03.html",
+    "level": 3,
+    "concept": "De-escalation",
+    "source_type": "material",
+    "question": "감수성 결과 ceftriaxone S인 E. coli 요로감염 환자가 empiric으로 meropenem을 받고 있으며 임상적으로 안정적이다. 적절한 ASP 조치는?",
+    "options": [
+      "더 좁은 약으로 de-escalation한다",
+      "가장 넓은 meropenem을 그대로 유지한다",
+      "vancomycin을 추가한다",
+      "ciprofloxacin 정맥주사로 확대한다"
+    ],
+    "answer": 0,
+    "explanation": "Ceftriaxone S로 확인된 E. coli 감염에서 안정적이라면 불필요한 carbapenem을 유지할 이유가 없다. 감수성에 맞춰 더 좁은 약으로 de-escalation하는 것이 옳다.",
+    "choice_explanations": [
+      "정답. 감수성 기반으로 더 좁은 약으로 de-escalation.",
+      "불필요한 carbapenem 유지는 ASP 원칙에 어긋난다.",
+      "vancomycin은 Gram-negative와 무관하다.",
+      "안정 환자에서 spectrum 확대는 근거가 없다."
+    ]
+  },
+  {
+    "id": "asp-03-033",
+    "lessonNo": 3,
+    "lesson": "Enterobacterales",
+    "lessonRef": "lesson-03.html",
+    "level": 3,
+    "concept": "Klebsiella",
+    "source_type": "extended",
+    "question": "임상의가 \"Klebsiella pneumoniae니까 이 UTI 환자는 폐도 침범했을 것\"이라고 말할 때 ASP 약사의 적절한 대응은?",
+    "options": [
+      "균 이름과 폐렴은 별개이며 검체·부위·임상으로 판단해야 함을 설명한다",
+      "이름에 pneumoniae가 있으므로 폐렴 치료를 함께 시작하자고 제안한다",
+      "Klebsiella는 폐에서만 자라므로 UTI가 아니라고 정정한다",
+      "즉시 흉부 항생제 용량으로 증량하자고 제안한다"
+    ],
+    "answer": 0,
+    "explanation": "'pneumoniae'라는 종명이 폐렴을 의미하지 않는다. Klebsiella는 UTI·bacteremia 등 여러 감염을 일으키며, 실제 감염 부위는 검체·임상 소견으로 판단해야 한다.",
+    "choice_explanations": [
+      "정답. 이름과 실제 감염 부위는 별개임을 설명한다.",
+      "이름을 근거로 폐렴 치료를 시작하는 것은 부적절하다.",
+      "Klebsiella는 요로 등 여러 부위에서 감염을 일으킨다.",
+      "근거 없는 용량 증량은 부적절하다."
+    ]
+  },
+  {
+    "id": "asp-03-034",
+    "lessonNo": 3,
+    "lesson": "Enterobacterales",
+    "lessonRef": "lesson-03.html",
+    "level": 3,
+    "concept": "Infection vs Colonization",
+    "source_type": "extended",
+    "question": "입원 환자의 소변 배양에서 E. coli가 자랐으나 발열·배뇨증상이 전혀 없고 유치도뇨관도 없다. 가장 적절한 판단은?",
+    "options": [
+      "감수성이 좋으면 예방적으로 항생제를 시작한다",
+      "증상이 없는 무증상 세균뇨 가능성을 고려해 대개 치료하지 않는다",
+      "배양 양성이므로 반드시 치료를 시작한다",
+      "재발 위험이 있으므로 carbapenem으로 시작한다"
+    ],
+    "answer": 1,
+    "explanation": "증상이 없는 세균뇨(무증상 세균뇨)는 임신 등 특정 상황을 제외하면 대개 치료하지 않는다. 불필요한 항생제를 피하는 것이 ASP 판단이다.",
+    "choice_explanations": [
+      "무증상에서 예방적 시작은 근거가 부족하다.",
+      "정답. 무증상 세균뇨는 대개 치료하지 않는다.",
+      "배양 양성이 곧 치료 적응증은 아니다.",
+      "carbapenem 시작은 과도하다."
+    ]
+  }
+]
